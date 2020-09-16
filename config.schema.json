@@ -1,0 +1,49 @@
+{
+  "pluginAlias": "Govee",
+  "pluginType": "platform",
+  "singular": true,
+  "headerDisplay": "Homebridge plugin to control Govee devices.",
+  "footerDisplay": "",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "default": "Govee"
+      },
+      "apiKey": {
+        "type": "string",
+        "title": "API Key",
+        "description": "The API key linked to your Govee account."
+      },
+      "debug": {
+        "title": "Debug Logging",
+        "type": "boolean",
+        "required": true,
+        "description": "If enabled, more information will be added to the Homebridge log.",
+        "default": false
+      },
+      "debugReqRes": {
+        "title": "Request & Response Logging",
+        "type": "boolean",
+        "required": true,
+        "description": "If enabled, HTTP, web socket and LAN mode messages will be added to the log. Not recommended for long-term use.",
+        "default": false
+      }
+    },
+    "required": ["apiKey", "debug", "debugReqRes"]
+  },
+  "layout": [
+    {
+      "type": "fieldset",
+      "items": ["apiKey"]
+    },
+    {
+      "type": "fieldset",
+      "title": "Optional",
+      "description": "Only adjust these settings if you know what you are doing.",
+      "expandable": true,
+      "items": ["debug", "debugReqRes"]
+    }
+  ]
+}
