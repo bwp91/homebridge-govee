@@ -1,0 +1,5 @@
+.DS_Store
+.nova
+.github
+.npm
+node_modules/

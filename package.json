@@ -1,0 +1,44 @@
+{
+  "name": "homebridge-govee",
+  "version": "0.0.0",
+  "author": "bwp91",
+  "description": "Homebridge plugin to control Govee devices. DO NOT INSTALL - UNDER CONSTRUCTION",
+  "license": "MIT",
+  "keywords": [
+    "homebridge",
+    "homebridge-plugin",
+    "homekit",
+    "govee"
+  ],
+  "engines": {
+    "node": ">=6.0.0",
+    "homebridge": ">=0.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bwp91/homebridge-govee"
+  },
+  "bugs": {
+    "url": "https://github.com/bwp91/homebridge-govee/issues"
+  },
+  "funding": [
+    {
+      "type": "kofi",
+      "url": "https://ko-fi.com/bwp91"
+    },
+    {
+      "type": "patreon",
+      "url": "https://www.patreon.com/bwp91"
+    },
+    {
+      "type": "paypal",
+      "url": "https://www.paypal.me/BenPotter"
+    }
+  ],
+  "dependencies": {
+    "axios": "0.20.0"
+  },
+  "devDependencies": {
+    "prettier": "2.1.2"
+  }
+}
