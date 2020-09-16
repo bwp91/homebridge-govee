@@ -2,7 +2,7 @@
   "name": "homebridge-govee",
   "version": "0.0.4",
   "author": "bwp91",
-  "description": "Homebridge plugin to control Govee devices. DO NOT INSTALL - UNDER CONSTRUCTION",
+  "description": "Homebridge plugin to control Govee devices.",
   "license": "MIT",
   "keywords": [
     "homebridge",
