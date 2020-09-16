@@ -13,7 +13,7 @@ assignees: ''
 **Is your feature request related to a problem? Please describe.**
 ...
 
-**Any particular Sonoff devices that this relates to?**
+**Any particular Govee devices that this relates to?**
 ...
 
 **Anything else?**
