@@ -20,11 +20,11 @@ Which version of Homebridge/HOOBS do you have?
 
 ...
 
-Which version of this plugin (homebridge-govee) do you have?
+Which version of this plugin (homebridge-ewelink) do you have?
 
 ...
 
-**Please paste any relevant logs below..**
+**Please paste any relevant logs below. It helps if you can turn `debug` and `debugReqRes` in the package settings for more thorough logging.**
 > If you are posting an error then it is helpful for me to also see the previous few lines as this can show the cause of the error.
 
 ...
