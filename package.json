@@ -36,7 +36,9 @@
     }
   ],
   "dependencies": {
-    "axios": "0.20.0"
+    "axios": "0.20.0",
+    "color-convert": "2.0.1",
+    "color-temp": "0.0.2"
   },
   "devDependencies": {
     "prettier": "2.1.2"
