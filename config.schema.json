@@ -14,7 +14,7 @@
       "apiKey": {
         "type": "string",
         "title": "API Key",
-        "description": "The API key linked to your Govee account."
+        "description": "The API key linked to your Govee account. This is obtained through the Govee mobile app."
       },
       "debug": {
         "title": "Debug Logging",
