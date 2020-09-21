@@ -1,4 +1,4 @@
-/* jshint esversion: 9, -W030, node: true */
+/* jshint esversion: 9, -W014, -W030, node: true */
 "use strict";
 module.exports = function (homebridge) {
   let Govee = require("./lib/govee.js")(homebridge);
