@@ -29,3 +29,6 @@ For the following Govee models:
 
 You will need to retrieve an API key which you can obtain through the Govee mobile app.
 * Go to your account tab → "About us" → "Apply for API key".
+
+### Disclaimer
+I am in no way affiliated with Govee and this plugin is a personal project that I maintain in my free time.
