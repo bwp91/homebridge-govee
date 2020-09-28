@@ -25,10 +25,19 @@ This plugin uses the official Govee HTTP API and currently allows you to control
 
 For the following Govee models:
 
-* H6160, H6163, H6104, H6109, H6110, H6117, H6159, H7021, H7022, H6086, H6089, H6182, H6085, H7014, H5081, H6188, H6135, H6137, H6141, H6142, H6195, H6196, H7005, H6083, H6002, H6003, H6148.
+* `H50**`
+  * `H5081`
+* `H60**`
+  * `H6002`, `H6003`, `H6083`, `H6085`, `H6086`, `H6089` 
+* `H61**`
+  * `H6104`, `H6109`, `H6110`, `H6117`, `H6135`, `H6137`, `H6141`, `H6142`, `H6148`, `H6159`, `H6160`, `H6163`, `H6182`, `H6188`, `H6195`, `H6196`
+* `H70**`
+  * `H7005`, `H7014`, `H7021`, `H7022` 
 
 You will need to retrieve an API key which you can obtain through the Govee mobile app.
-* Go to your account tab → "About us" → "Apply for API key".
+* Go to your account tab → "About us" → "Apply for API key"
+* Fill out your name and your reason - I'm sure "Control through Homebridge" would be sufficient
+* You'll receive your API key to your Govee registered email address within minutes
 
 ### Disclaimer
 I am in no way affiliated with Govee and this plugin is a personal project that I maintain in my free time.
