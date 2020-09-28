@@ -3,7 +3,7 @@
   "pluginType": "platform",
   "singular": true,
   "headerDisplay": "Homebridge plugin to control Govee devices that are supported by the official Govee API.",
-  "footerDisplay": "",
+  "footerDisplay": "For help and support please visit our [GitHub Wiki](https://github.com/bwp91/homebridge-govee/wiki).",
   "schema": {
     "type": "object",
     "properties": {
@@ -29,21 +29,30 @@
         "required": true,
         "description": "If enabled, HTTP, web socket and LAN mode messages will be added to the log. Not recommended for long-term use.",
         "default": false
+      },
+      "allowNonSupported": {
+        "title": "Allow Non-Supported Devices",
+        "type": "boolean",
+        "required": true,
+        "description": "If enabled, the plugin will attempt to add devices that aren't officially supported by the Govee API.",
+        "default": false
       }
     },
-    "required": ["apiKey", "debug", "debugReqRes"]
+    "required": ["apiKey", "debug", "debugReqRes", "allowNonSupported"]
   },
   "layout": [
     {
       "type": "fieldset",
+      "title": "Required Settings",
+      "description": "These are the basic settings that are required for this plugin to work.",
       "items": ["apiKey"]
     },
     {
       "type": "fieldset",
-      "title": "Optional",
-      "description": "Only adjust these settings if you know what you are doing.",
+      "title": "Optional Settings (General)",
+      "description": "A variety of optional settings for general use of this plugin.",
       "expandable": true,
-      "items": ["debug", "debugReqRes"]
+      "items": ["debug", "debugReqRes", "allowNonSupported"]
     }
   ]
 }
