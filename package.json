@@ -33,6 +33,10 @@
     {
       "type": "paypal",
       "url": "https://www.paypal.me/BenPotter"
+    },
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/bwp91"
     }
   ],
   "dependencies": {
