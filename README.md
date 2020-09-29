@@ -17,7 +17,11 @@
 </span>
 
 ### About
-This plugin uses the official Govee HTTP API and currently allows you to control:
+This plugin uses the official Govee HTTP API to enable you to control supported Govee devices through Homebridge.
+
+⚠️ Your devices will need have a stable connection to your Wi-Fi as this plugin uses the internet to control your devices. This plugin does **not** use a Bluetooth connection to control your devices.
+
+The plugin allows you to control:
 
 * On/Off state
 * Brightness
