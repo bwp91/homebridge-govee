@@ -21,7 +21,9 @@ This plugin uses the official Govee HTTP API to enable you to control supported 
 
 ⚠️ Your devices will need have a stable connection to your Wi-Fi as this plugin uses the internet to control your devices. This plugin does **not** use a Bluetooth connection to control your devices.
 
-The plugin allows you to control:
+⚠️ There are some light modes in which the plugin is unable to determine the current state and/or control your device. If you experience any issues then please enable "Debug Logging" from the plugin settings and useful information will be added to the Homebridge logs.
+
+That said, in most situations this plugin allows you to control:
 
 * On/Off state
 * Brightness
@@ -42,6 +44,8 @@ You will need to retrieve an API key which you can obtain through the Govee mobi
 * Go to your account tab → "About us" → "Apply for API key"
 * Fill out your name and your reason - I'm sure "Control through Homebridge" would be sufficient
 * You'll receive your API key to your Govee registered email address within minutes
+
+The plugin is limited to the current functionality of the Govee API. I will continue to implement new features to the plugin as the Govee API is updated.
 
 ### Disclaimer
 I am in no way affiliated with Govee and this plugin is a personal project that I maintain in my free time.
