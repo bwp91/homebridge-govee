@@ -8,11 +8,11 @@
  Homebridge plugin to control Govee devices that are supported by the official Govee API.
  
  [![verified-by-homebridge](https://badgen.net/badge/homebridge/verified/purple)](https://github.com/homebridge/homebridge/wiki/Verified-Plugins)
- [![hoobs-certified](https://badgen.net/badge/HOOBS/Certified/yellow)](https://plugins.hoobs.org/plugin/homebridge-govee)
- [![Discord](https://img.shields.io/discord/432663330281226270?color=728ED5&logo=discord&label=discord)](https://discord.com/channels/432663330281226270/742733745743855627)   
+ [![hoobs-certified](https://badgen.net/badge/HOOBS/Certified/yellow)](https://plugins.hoobs.org/plugin/homebridge-govee)   
  [![npm](https://img.shields.io/npm/v/homebridge-govee/latest?label=release)](https://www.npmjs.com/package/homebridge-govee)   
  [![npm](https://img.shields.io/npm/dt/homebridge-govee)](https://www.npmjs.com/package/homebridge-govee)
-  [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)   
+ [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)   
+ [![Discord](https://img.shields.io/discord/432663330281226270?color=728ED5&logo=discord&label=discord)](https://discord.com/channels/432663330281226270/742733745743855627)
  [![Contribute](https://img.shields.io/badge/contribute-a%20drink-yellow)](https://ko-fi.com/bwp91)
 
 </span>
