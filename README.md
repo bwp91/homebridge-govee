@@ -17,7 +17,7 @@
 
 </span>
 
-### About
+### Plugin Information
 This plugin uses the official Govee HTTP API to enable you to control supported Govee devices through Homebridge.
 
 ⚠️ Your devices will need have a stable connection to your Wi-Fi as this plugin uses the internet to control your devices. This plugin does **not** use a Bluetooth connection to control your devices.
@@ -47,6 +47,10 @@ You will need to retrieve an API key which you can obtain through the Govee mobi
 * You'll receive your API key to your Govee registered email address within minutes
 
 The plugin is limited to the current functionality of the Govee API. I will continue to implement new features to the plugin as the Govee API is updated.
+
+### About
+* [About Me](https://github.com/sponsors/bwp91)
+* [Support Request](https://github.com/bwp91/homebridge-govee/issues/new/choose)
 
 ### Disclaimer
 I am in no way affiliated with Govee and this plugin is a personal project that I maintain in my free time.
