@@ -30,15 +30,17 @@
         "description": "If enabled, HTTP, web socket and LAN mode messages will be added to the log. Not recommended for long-term use.",
         "default": false
       },
-      "allowNonSupported": {
-        "title": "Allow Non-Supported Devices",
-        "type": "boolean",
+      "refreshTime": {
+        "title": "Refresh Interval Time",
+        "type": "integer",
         "required": true,
-        "description": "If enabled, the plugin will attempt to add devices that aren't officially supported by the Govee API.",
-        "default": false
+        "description": "How often Homebridge should request status updates from Govee, in seconds.",
+        "default": 30,
+        "minimum": 30,
+        "maximum": 300
       }
     },
-    "required": ["apiKey", "debug", "debugReqRes", "allowNonSupported"]
+    "required": ["apiKey", "debug", "debugReqRes", "refreshTime"]
   },
   "layout": [
     {
@@ -52,7 +54,7 @@
       "title": "Optional Settings (General)",
       "description": "A variety of optional settings for general use of this plugin.",
       "expandable": true,
-      "items": ["debug", "debugReqRes", "allowNonSupported"]
+      "items": ["debug", "debugReqRes", "refreshTime"]
     }
   ]
 }
