@@ -48,6 +48,11 @@ You will need to retrieve an API key which you can obtain through the Govee mobi
 
 The plugin is limited to the current functionality of the Govee API. I will continue to implement new features to the plugin as the Govee API is updated.
 
+### Setup
+* [Installation (Homebridge)](https://github.com/bwp91/homebridge-govee/wiki/Installation-(Homebridge))
+* [Installation (HOOBS)](https://github.com/bwp91/homebridge-govee/wiki/Installation-(HOOBS))
+* [Beta Version](https://github.com/bwp91/homebridge-govee/wiki/Beta-Version)
+
 ### About
 * [About Me](https://github.com/sponsors/bwp91)
 * [Support Request](https://github.com/bwp91/homebridge-govee/issues/new/choose)
