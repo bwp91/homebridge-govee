@@ -31,7 +31,7 @@
         "default": false
       },
       "refreshTime": {
-        "title": "Refresh Interval Time",
+        "title": "Refresh Timer",
         "type": "integer",
         "required": true,
         "description": "How often Homebridge should request status updates from Govee, in seconds.",
