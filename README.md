@@ -17,6 +17,9 @@
 
 </span>
 
+### Homebridge
+To use this plugin, you will need to already have Homebridge installed. Please refer to the [Homebridge website](https://homebridge.io) for more information and installation instructions.
+
 ### Plugin Information
 This plugin uses the official Govee HTTP API to enable you to control supported Govee devices through Homebridge.
 
