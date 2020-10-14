@@ -54,6 +54,7 @@ The plugin is limited to the current functionality of the Govee API. I will cont
 ### Setup
 * [Installation (Homebridge)](https://github.com/bwp91/homebridge-govee/wiki/Installation-(Homebridge))
 * [Installation (HOOBS)](https://github.com/bwp91/homebridge-govee/wiki/Installation-(HOOBS))
+* [Configuration](https://github.com/bwp91/homebridge-govee/wiki/Configuration)
 * [Beta Version](https://github.com/bwp91/homebridge-govee/wiki/Beta-Version)
 
 ### About
