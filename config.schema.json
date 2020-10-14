@@ -13,48 +13,54 @@
       },
       "apiKey": {
         "type": "string",
-        "title": "API Key",
-        "description": "The API key linked to your Govee account. This is obtained through the Govee mobile app."
+        "title": "Govee API Key",
+        "description": "The API key linked to your Govee account. This is obtained through the Govee mobile app.",
+        "required": true
       },
       "debug": {
         "title": "Debug Logging",
         "type": "boolean",
-        "required": true,
         "description": "If enabled, more information will be added to the Homebridge log.",
         "default": false
       },
       "debugReqRes": {
         "title": "Request & Response Logging",
         "type": "boolean",
-        "required": true,
-        "description": "If enabled, HTTP, web socket and LAN mode messages will be added to the log. Not recommended for long-term use.",
+        "description": "If enabled, HTTP messages will be added to the log. Not recommended for long-term use.",
         "default": false
       },
       "refreshTime": {
         "title": "Refresh Timer",
         "type": "integer",
-        "required": true,
-        "description": "How often Homebridge should request status updates from Govee, in seconds.",
+        "description": "An interval (in seconds) in which your devices will refresh with Govee.",
         "default": 30,
         "minimum": 30,
         "maximum": 300
+      },
+      "disablePlugin": {
+        "type": "boolean"
       }
-    },
-    "required": ["apiKey", "debug", "debugReqRes", "refreshTime"]
+    }
   },
   "layout": [
     {
       "type": "fieldset",
       "title": "Required Settings",
       "description": "These are the basic settings that are required for this plugin to work.",
-      "items": ["apiKey"]
+      "items": [
+        "apiKey"
+      ]
     },
     {
       "type": "fieldset",
-      "title": "Optional Settings (General)",
+      "title": "Optional Settings",
       "description": "A variety of optional settings for general use of this plugin.",
       "expandable": true,
-      "items": ["debug", "debugReqRes", "refreshTime"]
+      "items": [
+        "debug",
+        "debugReqRes",
+        "refreshTime"
+      ]
     }
   ]
 }
