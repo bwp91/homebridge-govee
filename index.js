@@ -2,6 +2,6 @@
 /* eslint-disable new-cap */
 'use strict'
 const GoveePlatform = require('./lib/govee-platform.js')
-module.exports = function (hb) {
+module.exports = (hb) => {
   hb.registerPlatform('homebridge-govee', 'Govee', GoveePlatform, true)
 }
