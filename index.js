@@ -1,6 +1,6 @@
-/* jshint -W014, -W033, esversion: 8 */
+/* jshint -W014, -W033, esversion: 9 */
 'use strict'
-module.exports = function (homebridge) {
-  const Govee = require('./lib/govee.js')(homebridge)
-  homebridge.registerPlatform('homebridge-govee', 'Govee', Govee, true)
+const GoveePlatform = require('./lib/govee-platform.js')
+module.exports = function (hb) {
+  hb.registerPlatform('homebridge-govee', 'Govee', GoveePlatform, true)
 }
