@@ -47,7 +47,7 @@ For the following Govee models:
 You will need to retrieve an API key which you can obtain through the Govee mobile app.
 * Go to your account tab → "About us" → "Apply for API key"
 * Fill out your name and your reason - I'm sure "Control through Homebridge" would be sufficient
-* You'll receive your API key to your Govee registered email address within minutes
+* You'll receive your API key to your Govee registered email address normally within minutes
 
 The plugin is limited to the current functionality of the Govee API. I will continue to implement new features to the plugin as the Govee API is updated.
 
