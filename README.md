@@ -1,11 +1,11 @@
 <p align="center">
-   <a href="https://github.com/homebridge/verified/blob/master/verified-plugins.json"><img src="https://user-images.githubusercontent.com/43026681/93664399-944e7780-fa66-11ea-8c5f-21b98d4532ce.png" width="600px"></a>
+   <a href="https://github.com/bwp91/homebridge-govee"><img src="https://user-images.githubusercontent.com/43026681/93664399-944e7780-fa66-11ea-8c5f-21b98d4532ce.png" width="600px"></a>
 </p>
 <span align="center">
   
 # homebridge-govee 
 
- Homebridge plugin to control Govee devices that are supported by the official Govee API.
+ Homebridge/HOOBS plugin to control Govee devices that are supported by the official Govee API.
  
  [![verified-by-homebridge](https://badgen.net/badge/homebridge/verified/purple)](https://github.com/homebridge/homebridge/wiki/Verified-Plugins)
  [![hoobs-certified](https://badgen.net/badge/HOOBS/Certified/yellow)](https://plugins.hoobs.org/plugin/homebridge-govee)   
@@ -17,8 +17,8 @@
 
 </span>
 
-### Homebridge
-To use this plugin, you will need to already have Homebridge installed. Please refer to the [Homebridge website](https://homebridge.io) for more information and installation instructions.
+### Prerequisites
+To use this plugin, you will need to already have [Homebridge](https://homebridge.io) or [HOOBS](https://hoobs.org) installed. Please refer to the links for more information and installation instructions.
 
 ### Plugin Information
 This plugin uses the official Govee HTTP API to enable you to control supported Govee devices through Homebridge.
