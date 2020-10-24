@@ -7,9 +7,11 @@
   "keywords": [
     "homebridge",
     "homebridge-plugin",
+    "homebridge-govee",
+    "hoobs",
     "homekit",
-    "govee",
-    "siri"
+    "siri",
+    "govee"
   ],
   "engines": {
     "homebridge": ">=1.1.0",
