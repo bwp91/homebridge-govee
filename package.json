@@ -1,6 +1,6 @@
 {
   "name": "homebridge-govee",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "author": "bwp91",
   "description": "Homebridge/HOOBS plugin to control Govee devices that are supported by the official Govee API.",
   "license": "MIT",
