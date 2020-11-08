@@ -1,6 +1,5 @@
 .DS_Store
 .nova
-.github
 .npm
+info/
 node_modules/
-API.pdf
