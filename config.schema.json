@@ -2,8 +2,7 @@
   "pluginAlias": "Govee",
   "pluginType": "platform",
   "singular": true,
-  "headerDisplay": "Homebridge/HOOBS plugin to control Govee devices that are supported by the official Govee API.",
-  "footerDisplay": "For help and support please visit our [GitHub Wiki](https://github.com/bwp91/homebridge-govee/wiki).",
+  "headerDisplay": "<p align=\"center\"><img width=\"75%\" src=\"https://user-images.githubusercontent.com/43026681/93664399-944e7780-fa66-11ea-8c5f-21b98d4532ce.png\"></p><p align=\"center\">For help and support please visit our <a href=\"https://github.com/bwp91/homebridge-govee/wiki\">GitHub Wiki</a>. We hope you find this plugin useful!</p>",
   "schema": {
     "type": "object",
     "properties": {
