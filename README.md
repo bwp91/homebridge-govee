@@ -57,6 +57,10 @@ The plugin is limited to the current functionality of the Govee API. I will cont
 * [Configuration](https://github.com/bwp91/homebridge-govee/wiki/Configuration)
 * [Beta Version](https://github.com/bwp91/homebridge-govee/wiki/Beta-Version)
 
+### How-to Guides
+* [How to remove an accessory from the cache](https://github.com/bwp91/homebridge-govee/wiki/How-to-remove-an-accessory-from-the-cache)
+* [How to update node](https://github.com/bwp91/homebridge-govee/wiki/How-to-update-node)
+
 ### About
 * [About Me](https://github.com/sponsors/bwp91)
 * [Support Request](https://github.com/bwp91/homebridge-govee/issues/new/choose)
