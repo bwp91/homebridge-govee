@@ -1,5 +1,5 @@
 <p align="center">
-   <a href="https://github.com/bwp91/homebridge-govee"><img src="https://user-images.githubusercontent.com/43026681/93664399-944e7780-fa66-11ea-8c5f-21b98d4532ce.png" width="600px"></a>
+   <a href="https://github.com/bwp91/homebridge-govee"><img src="https://user-images.githubusercontent.com/43026681/98990215-094ba400-2522-11eb-8538-fc10cf607b60.png" width="600px"></a>
 </p>
 <span align="center">
   
