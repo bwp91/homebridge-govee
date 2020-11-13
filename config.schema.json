@@ -13,7 +13,7 @@
       "apiKey": {
         "type": "string",
         "title": "Govee API Key",
-        "description": "The API key linked to your Govee account. This is obtained through the Govee mobile app.",
+        "description": "The API key linked to your Govee account. You can obtain this using <a href=\"https://github.com/bwp91/homebridge-govee/wiki/Configuration#obtaining-your-api-key\" target=\"_blank\">this guide</a>.",
         "required": true
       },
       "debug": {
