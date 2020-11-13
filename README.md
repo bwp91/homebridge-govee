@@ -22,7 +22,8 @@
 
 ### Plugin Information
 * This plugin uses the official Govee HTTP API to enable you to control supported Govee devices through Homebridge.
-* The plugin is limited to the current functionality of the API. I will continue to implement new features to the plugin as the API is updated.
+* This plugin is limited to the current functionality of the API. I will continue to implement new features to the plugin as the API is updated.
+* This plugin uses an API key linked to your Govee account which can be obtained as per [these instructions](https://github.com/bwp91/homebridge-govee/wiki/Configuration#obtaining-your-api-key).
 * Please check that your Govee model is supported before installing this plugin.
 
 ### Setup
