@@ -21,41 +21,16 @@
 To use this plugin, you will need to already have [Homebridge](https://homebridge.io) or [HOOBS](https://hoobs.org) installed. Please refer to the links for more information and installation instructions.
 
 ### Plugin Information
-This plugin uses the official Govee HTTP API to enable you to control supported Govee devices through Homebridge.
-
-⚠️ Your devices will need have a stable connection to your Wi-Fi as this plugin uses the internet to control your devices. This plugin does **not** use a Bluetooth connection to control your devices.
-
-⚠️ There are some light modes in which the plugin is unable to determine the current state and/or control your device. If you experience any issues then please enable "Debug Logging" from the plugin settings and useful information will be added to the Homebridge logs.
-
-That said, in most situations this plugin allows you to control:
-
-* On/Off state
-* Brightness
-* Colour
-
-For the following Govee models:
-
-* `H50**`
-  * `H5081`
-* `H60**`
-  * `H6002`, `H6003`, `H6083`, `H6085`, `H6086`, `H6089` 
-* `H61**`
-  * `H6104`, `H6109`, `H6110`, `H6117`, `H6135`, `H6137`, `H6141`, `H6142`, `H6148`, `H6159`, `H6160`, `H6163`, `H6182`, `H6188`, `H6195`, `H6196`
-* `H70**`
-  * `H7005`, `H7014`, `H7021`, `H7022` 
-
-You will need to retrieve an API key which you can obtain through the Govee mobile app.
-* Go to your account tab → "About us" → "Apply for API key"
-* Fill out your name and your reason - I'm sure "Control through Homebridge" would be sufficient
-* You'll receive your API key to your Govee registered email address normally within minutes
-
-The plugin is limited to the current functionality of the Govee API. I will continue to implement new features to the plugin as the Govee API is updated.
+This plugin uses the official Govee HTTP API to enable you to control supported Govee devices through Homebridge. The plugin is limited to the current functionality of the API. I will continue to implement new features to the plugin as the API is updated. Please check that your Govee model is supported before installing this plugin.
 
 ### Setup
 * [Installation (Homebridge)](https://github.com/bwp91/homebridge-govee/wiki/Installation-(Homebridge))
 * [Installation (HOOBS)](https://github.com/bwp91/homebridge-govee/wiki/Installation-(HOOBS))
 * [Configuration](https://github.com/bwp91/homebridge-govee/wiki/Configuration)
 * [Beta Version](https://github.com/bwp91/homebridge-govee/wiki/Beta-Version)
+
+### Features
+* [Supported Devices](https://github.com/bwp91/homebridge-govee/wiki/Supported-Devices)
 
 ### How-to Guides
 * [How to remove an accessory from the cache](https://github.com/bwp91/homebridge-govee/wiki/How-to-remove-an-accessory-from-the-cache)
