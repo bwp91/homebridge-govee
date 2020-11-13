@@ -40,6 +40,7 @@
 
 ### About
 * [About Me](https://github.com/sponsors/bwp91)
+* [Changelog](https://github.com/bwp91/homebridge-govee/releases)
 * [Support Request](https://github.com/bwp91/homebridge-govee/issues/new/choose)
 
 ### Disclaimer
