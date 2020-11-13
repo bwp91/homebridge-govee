@@ -1,6 +1,6 @@
 ---
-name: Feature Request
-about: I have an idea for the package or a device that isn't supported.
+name: 🆕 Device/Feature Request
+about: Submit new ideas for the plugin or request support for a new device.
 title: ''
 labels: ''
 assignees: ''
