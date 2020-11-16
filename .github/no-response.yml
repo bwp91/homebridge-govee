@@ -1,0 +1,10 @@
+# Number of days of inactivity before an Issue is closed for lack of response
+daysUntilClose: 3
+# Label requiring a response
+responseRequiredLabel: complete
+# Comment to post when closing an Issue for lack of response. Set to `false` to disable
+closeComment: >
+  This issue has been automatically closed as it was marked as complete and has had
+  no further responses within three days. If you are still experiencing problems related
+  to the original issue then please reply to this message and the issue will be reopened
+  if necessary. Thank you.
