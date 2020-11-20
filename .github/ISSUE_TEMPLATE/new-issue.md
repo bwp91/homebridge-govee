@@ -8,7 +8,9 @@ assignees: ''
 ---
 
 <!-- PLEASE READ BEFORE POSTING A NEW ISSUE
-   * Please use this template as well as you can, in a lot of cases I will probably ask for things you might skip anyway. -->
+   → Please use this template as well as you can.
+   → Things that may seem unimportant to you are often helpful in finding the cause of the issue.
+-->
 
 ### What issue do you have? Please be as thorough and explicit as possible.
 
@@ -32,10 +34,13 @@ assignees: ''
 
 
 ### Please paste any relevant logs below.
-<!--
-   It helps if you can turn on 'Debug Logging' and 'Request & Response Logging' in the plugin settings for more thorough logging.
-   If you are posting an error then it is helpful for me to also see the previous few lines as this can show the cause of the error.
-   Please enter the logs between the two ``` lines below so that the logs are formatted in a way which is easier to read
+<!-- ABOUT LOGS
+   → More thorough logging can be seen by enabling 'Debug Logging' and
+     ...'Request & Response Logging' in the plugin settings.
+   → If you are posting an error then it is helpful for me to also see
+     ...the previous few lines as this can show the cause of the error.
+   → Please enter the logs between the two ``` lines below so that
+     ...the logs are formatted in a way which is easier to read.
 -->
 
 ```
