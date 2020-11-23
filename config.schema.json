@@ -2,6 +2,7 @@
   "pluginAlias": "Govee",
   "pluginType": "platform",
   "singular": true,
+  "customUi": true,
   "headerDisplay": "<p align=\"center\"><img width=\"75%\" src=\"https://user-images.githubusercontent.com/43026681/98990215-094ba400-2522-11eb-8538-fc10cf607b60.png\"></p><p align=\"center\">For help and support please visit our <a href=\"https://github.com/bwp91/homebridge-govee/wiki\">GitHub Wiki</a>. We hope you find this plugin useful!</p>",
   "schema": {
     "type": "object",

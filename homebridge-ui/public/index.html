@@ -1,0 +1,182 @@
+<p align="center">
+  <img width="60%" src="https://user-images.githubusercontent.com/43026681/98990215-094ba400-2522-11eb-8538-fc10cf607b60.png">
+</p>
+<div id="pageIntro" style="display:none;">
+  <center>
+    <p class="lead">Thank you for installing homebridge-govee.</p>
+    <p>You will need to enter your Govee API key which can be obtained from the Govee app.</p>
+    <button type="button" class="btn btn-primary" id="introContinue">Continue &rarr;</button>
+  </center>
+</div>
+<div id="menuWrapper" class="btn-group w-100 mb-3" role="group" aria-label="UI Menu" style="display:none;">
+  <button type="button" class="btn btn-primary ml-0" id="menuSettings">Settings</button>
+  <button type="button" class="btn btn-primary" id="menuDevices">My Devices</button>
+  <button type="button" class="btn btn-primary mr-0" id="menuHome">Support</button>
+</div>
+<div id="pageDevices" style="display:none;">
+  <div class="card card-body" id="deviceInfo">
+    <form>
+      <div class="form-group">
+        <select class="form-control" id="deviceSelect"></select>
+      </div>
+    </form>
+    <table class="table w-100" id="deviceTable">
+      <thead>
+        <tr class="table-active">
+          <th scope="col" style="width: 40%;">Device Name</th>
+          <th scope="col" style="width: 60%;" id="displayName"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Cloud Status</th>
+          <td id="reachable"></td>
+        </tr>
+        <tr>
+          <th scope="row">Controllable</th>
+          <td id="controllable"></td>
+        </tr>
+        <tr>
+          <th scope="row">Govee Device ID</th>
+          <td id="gvDeviceId"></td>
+        </tr>
+        <tr>
+          <th scope="row">Govee Model</th>
+          <td id="gvModel"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div id="pageSupport" style="display:none;">
+  <div class="card card-body">
+    <p align="center">Thank you for using homebridge-govee. We hope you find it useful!</p>
+    <p align="center">The links below will take you to our GitHub wiki.</p>
+    <h4>Features</h4>
+    <ul>
+    <li><a href="https://github.com/bwp91/homebridge-govee/wiki/Supported-Devices" target="_blank">Supported Devices</a></li>
+    <li><a href="https://github.com/bwp91/homebridge-govee/wiki/Beta-Version" target="_blank">Beta Version</a></li>
+    </ul>
+    <h4>How-to Guides</h4>
+    <ul>
+    <li><a href="https://github.com/bwp91/homebridge-govee/wiki/How-to-remove-an-accessory-from-the-cache" target="_blank">How to remove an accessory from the cache</a></li>
+    <li><a href="https://github.com/bwp91/homebridge-govee/wiki/How-to-update-node" target="_blank">How to update node</a></li>
+    </ul>
+    <h4>About</h4>
+    <ul>
+    <li><a href="https://github.com/sponsors/bwp91" target="_blank">About Me</a></li>
+    <li><a href="https://github.com/bwp91/homebridge-govee/releases" target="_blank">Changelog</a></li>
+    <li><a href="https://github.com/bwp91/homebridge-govee/issues/new/choose" target="_blank">Support Request</a></li>
+    </ul>
+    <h4>Disclaimer</h4>
+    <p>I am in no way affiliated with Govee and this plugin is a personal project that I maintain in my free time.</p>
+  </div>
+</div>
+<script>
+  (async () => {
+    try {
+      const currentConfig = await homebridge.getPluginConfig()
+      showIntro = () => {
+        const introContinue = document.getElementById('introContinue')
+        introContinue.addEventListener('click', () => {
+          homebridge.showSpinner()
+          document.getElementById('pageIntro').style.display = 'none'
+          document.getElementById('menuWrapper').style.display = 'inline-flex'
+          showSettings()
+          homebridge.hideSpinner()
+        })
+        document.getElementById('pageIntro').style.display = 'block'
+      }
+      showDevices = async () => {
+        homebridge.showSpinner()
+        homebridge.hideSchemaForm()
+        document.getElementById('menuHome').classList.remove('btn-primary-outline')
+        document.getElementById('menuHome').classList.add('btn-primary')
+        document.getElementById('menuDevices').classList.add('btn-primary-outline')
+        document.getElementById('menuDevices').classList.remove('btn-primary')
+        document.getElementById('menuSettings').classList.remove('btn-primary-outline')
+        document.getElementById('menuSettings').classList.add('btn-primary')
+        document.getElementById('pageSupport').style.display = 'none'
+        document.getElementById('pageDevices').style.display = 'block'
+        const cachedAccessories = await homebridge.request('/getCachedAccessories')
+        const deviceSelect = document.getElementById('deviceSelect')
+        deviceSelect.innerHTML = ''
+        cachedAccessories.forEach(a => {
+          const option = document.createElement('option')
+          option.text = a.displayName
+          option.value = a.context.gvDeviceId
+          deviceSelect.add(option)
+        })
+        showDeviceInfo = async hbDeviceId => {
+          homebridge.showSpinner()
+          const selectedAccessory = cachedAccessories.find(x => x.context.hbDeviceId === hbDeviceId)
+          
+          console.log(selectedAccessory)
+          document.getElementById('displayName').innerHTML = selectedAccessory.displayName
+          document.getElementById('reachable').innerHTML = selectedAccessory.context.retrievable
+            ? 'Online'
+            : 'Offline'
+          document.getElementById('controllable').innerHTML = selectedAccessory.context.controllable
+            ? 'Yes'
+            : 'No'
+          document.getElementById('gvDeviceId').innerHTML = selectedAccessory.context.gvDeviceId
+          document.getElementById('gvModel').innerHTML = selectedAccessory.context.gvModel
+          document.getElementById('deviceTable').style.display = 'inline-table'
+          homebridge.hideSpinner()
+        }
+        deviceSelect.addEventListener('change', event => showDeviceInfo(event.target.value))
+        if (Object.keys(cachedAccessories).length > 0) {
+          showDeviceInfo(cachedAccessories[0].context.hbDeviceId)
+        } else {
+          const option = document.createElement('option')
+          option.text = 'No Devices'
+          deviceSelect.add(option)
+          deviceSelect.disabled = true
+        }
+        homebridge.hideSpinner()
+      }
+      showSupport = () => {
+        homebridge.showSpinner()
+        homebridge.hideSchemaForm()
+        document.getElementById('menuHome').classList.add('btn-primary-outline')
+        document.getElementById('menuHome').classList.remove('btn-primary')
+        document.getElementById('menuDevices').classList.remove('btn-primary-outline')
+        document.getElementById('menuDevices').classList.add('btn-primary')
+        document.getElementById('menuSettings').classList.remove('btn-primary-outline')
+        document.getElementById('menuSettings').classList.add('btn-primary')
+        document.getElementById('pageSupport').style.display = 'block'
+        document.getElementById('pageDevices').style.display = 'none'
+        homebridge.hideSpinner()
+      }
+      showSettings = () => {
+        homebridge.showSpinner()
+        document.getElementById('menuHome').classList.remove('btn-primary-outline')
+        document.getElementById('menuHome').classList.add('btn-primary')
+        document.getElementById('menuDevices').classList.remove('btn-primary-outline')
+        document.getElementById('menuDevices').classList.add('btn-primary')
+        document.getElementById('menuSettings').classList.add('btn-primary-outline')
+        document.getElementById('menuSettings').classList.remove('btn-primary')
+        document.getElementById('pageSupport').style.display = 'none'
+        document.getElementById('pageDevices').style.display = 'none'
+        homebridge.showSchemaForm()
+        homebridge.hideSpinner()
+      }
+      menuHome.addEventListener('click', () => showSupport())
+      menuDevices.addEventListener('click', () => showDevices())
+      menuSettings.addEventListener('click', () => showSettings())
+      if (currentConfig.length) {
+        document.getElementById('menuWrapper').style.display = 'inline-flex'
+        showSettings()
+      } else {
+        currentConfig.push({ name: 'eWeLink' })
+        await homebridge.updatePluginConfig(currentConfig)
+        showIntro()
+      }
+      
+    } catch (err) {
+      homebridge.toast.error(err.message, 'Error')
+    } finally {
+      homebridge.hideSpinner()
+    }
+  })()
+</script>
