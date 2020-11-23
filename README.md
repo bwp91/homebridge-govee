@@ -30,10 +30,10 @@
 * [Installation (Homebridge)](https://github.com/bwp91/homebridge-govee/wiki/Installation-(Homebridge))
 * [Installation (HOOBS)](https://github.com/bwp91/homebridge-govee/wiki/Installation-(HOOBS))
 * [Configuration](https://github.com/bwp91/homebridge-govee/wiki/Configuration)
-* [Beta Version](https://github.com/bwp91/homebridge-govee/wiki/Beta-Version)
 
 ### Features
 * [Supported Devices](https://github.com/bwp91/homebridge-govee/wiki/Supported-Devices)
+* [Beta Version](https://github.com/bwp91/homebridge-govee/wiki/Beta-Version)
 
 ### How-to Guides
 * [How to remove an accessory from the cache](https://github.com/bwp91/homebridge-govee/wiki/How-to-remove-an-accessory-from-the-cache)
