@@ -44,5 +44,9 @@
 * [Changelog](https://github.com/bwp91/homebridge-govee/releases)
 * [Support Request](https://github.com/bwp91/homebridge-govee/issues/new/choose)
 
+### Credits
+* To the creators/contributors of [Homebridge](https://homebridge.io) who make this plugin possible
+* To all users who have shared their devices to enable functionality
+
 ### Disclaimer
 * I am in no way affiliated with Govee and this plugin is a personal project that I maintain in my free time.
