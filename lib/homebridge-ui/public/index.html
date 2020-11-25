@@ -13,6 +13,9 @@
   <button type="button" class="btn btn-primary" id="menuDevices">My Devices</button>
   <button type="button" class="btn btn-primary mr-0" id="menuHome">Support</button>
 </div>
+<div id="disabledBanner" class="alert alert-secondary" role="alert" style="display:none;">
+  Plugin is currently disabled <button id="disabledEnable" type="button" class="btn btn-link p-0 m-0 float-right">Enable</button>
+</div>
 <div id="pageDevices" style="display:none;">
   <div class="card card-body mt-4" id="deviceInfo">
     <form>
@@ -168,12 +171,27 @@
         homebridge.showSchemaForm()
         homebridge.hideSpinner()
       }
+      showDisabledBanner = () => {
+        document.getElementById('disabledBanner').style.display = 'block'
+      }
+      enablePlugin = async () => {
+        homebridge.showSpinner()
+        document.getElementById('disabledBanner').style.display = 'none'
+        currentConfig[0].disablePlugin = false
+        await homebridge.updatePluginConfig(currentConfig)
+        await homebridge.savePluginConfig()
+        homebridge.hideSpinner()
+      }
       menuHome.addEventListener('click', () => showSupport())
       menuDevices.addEventListener('click', () => showDevices())
       menuSettings.addEventListener('click', () => showSettings())
+      disabledEnable.addEventListener('click', () => enablePlugin())
       if (currentConfig.length) {
         document.getElementById('menuWrapper').style.display = 'inline-flex'
         showSettings()
+        if (currentConfig[0].disablePlugin) {
+          showDisabledBanner()
+        }
       } else {
         currentConfig.push({ name: 'Govee' })
         await homebridge.updatePluginConfig(currentConfig)
