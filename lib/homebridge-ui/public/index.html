@@ -8,16 +8,16 @@
     <button type="button" class="btn btn-primary" id="introContinue">Continue &rarr;</button>
   </center>
 </div>
-<div id="menuWrapper" class="btn-group w-100 mb-3" role="group" aria-label="UI Menu" style="display:none;">
+<div id="menuWrapper" class="btn-group w-100 mb-0" role="group" aria-label="UI Menu" style="display:none;">
   <button type="button" class="btn btn-primary ml-0" id="menuSettings">Settings</button>
   <button type="button" class="btn btn-primary" id="menuDevices">My Devices</button>
   <button type="button" class="btn btn-primary mr-0" id="menuHome">Support</button>
 </div>
-<div id="disabledBanner" class="alert alert-secondary" role="alert" style="display:none;">
+<div id="disabledBanner mb-0 mt-3" class="alert alert-secondary" role="alert" style="display:none;">
   Plugin is currently disabled <button id="disabledEnable" type="button" class="btn btn-link p-0 m-0 float-right">Enable</button>
 </div>
-<div id="pageDevices" style="display:none;">
-  <div class="card card-body mt-4" id="deviceInfo">
+<div id="pageDevices" class="mt-4" style="display:none;">
+  <div id="deviceInfo">
     <form>
       <div class="form-group">
         <select class="form-control" id="deviceSelect"></select>
@@ -51,36 +51,34 @@
     </table>
   </div>
 </div>
-<div id="pageSupport" style="display:none;">
-  <div class="card card-body mt-4">
-    <p align="center" class="lead">Thank you for using <strong>homebridge-govee</strong></p>
-    <p align="center">The links below will take you to our GitHub wiki</p>
-    <h4>Features</h4>
-    <ul>
-    <li><a href="https://github.com/bwp91/homebridge-govee/wiki/Supported-Devices" target="_blank">Supported Devices</a></li>
-    <li><a href="https://github.com/bwp91/homebridge-govee/wiki/Beta-Version" target="_blank">Beta Version</a></li>
-    </ul>
-    <h4>How-to Guides</h4>
-    <ul>
-    <li><a href="https://github.com/bwp91/homebridge-govee/wiki/How-to-remove-an-accessory-from-the-cache" target="_blank">How to remove an accessory from the cache</a></li>
-    <li><a href="https://github.com/bwp91/homebridge-govee/wiki/How-to-update-node" target="_blank">How to update node</a></li>
-    </ul>
-    <h4>About</h4>
-    <ul>
-    <li><a href="https://github.com/sponsors/bwp91" target="_blank">About Me</a></li>
-    <li><a href="https://github.com/bwp91/homebridge-govee/releases" target="_blank">Changelog</a></li>
-    <li><a href="https://github.com/bwp91/homebridge-govee/issues/new/choose" target="_blank">Support Request</a></li>
-    </ul>
-    <h4>Credits</h4>
-    <ul>
-      <li>To the creators/contributors of <a href="https://homebridge.io" target="_blank">Homebridge</a> who make this plugin possible</li>
-      <li>To all users who have shared their devices to enable functionality</li>
-    </ul>
-    <h4>Disclaimer</h4>
-    <ul>
-      <li>I am in no way affiliated with Govee and this plugin is a personal project that I maintain in my free time.</li>
-    </ul>
-  </div>
+<div id="pageSupport" class="mt-4" style="display:none;">
+  <p align="center" class="lead">Thank you for using <strong>homebridge-govee</strong></p>
+  <p align="center">The links below will take you to our GitHub wiki</p>
+  <h4>Features</h4>
+  <ul>
+  <li><a href="https://github.com/bwp91/homebridge-govee/wiki/Supported-Devices" target="_blank">Supported Devices</a></li>
+  <li><a href="https://github.com/bwp91/homebridge-govee/wiki/Beta-Version" target="_blank">Beta Version</a></li>
+  </ul>
+  <h4>How-to Guides</h4>
+  <ul>
+  <li><a href="https://github.com/bwp91/homebridge-govee/wiki/How-to-remove-an-accessory-from-the-cache" target="_blank">How to remove an accessory from the cache</a></li>
+  <li><a href="https://github.com/bwp91/homebridge-govee/wiki/How-to-update-node" target="_blank">How to update node</a></li>
+  </ul>
+  <h4>About</h4>
+  <ul>
+  <li><a href="https://github.com/sponsors/bwp91" target="_blank">About Me</a></li>
+  <li><a href="https://github.com/bwp91/homebridge-govee/releases" target="_blank">Changelog</a></li>
+  <li><a href="https://github.com/bwp91/homebridge-govee/issues/new/choose" target="_blank">Support Request</a></li>
+  </ul>
+  <h4>Credits</h4>
+  <ul>
+    <li>To the creators/contributors of <a href="https://homebridge.io" target="_blank">Homebridge</a> who make this plugin possible</li>
+    <li>To all users who have shared their devices to enable functionality</li>
+  </ul>
+  <h4>Disclaimer</h4>
+  <ul>
+    <li>I am in no way affiliated with Govee and this plugin is a personal project that I maintain in my free time.</li>
+  </ul>
 </div>
 <script>
   (async () => {
