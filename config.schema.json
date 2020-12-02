@@ -21,7 +21,7 @@
       "debug": {
         "title": "Debug Logging",
         "type": "boolean",
-        "description": "If enabled, more information will be added to the Homebridge log.",
+        "description": "If enabled, more information will be added to the log.",
         "default": false
       },
       "debugReqRes": {
@@ -33,7 +33,7 @@
       "disablePlugin": {
         "title": "Disable Plugin",
         "type": "boolean",
-        "description": "If checked, the plugin will remove all Govee accessories from Homebridge and not load the plugin on Homebridge restart.",
+        "description": "If checked, the plugin will remove all accessories and not load the plugin on restart.",
         "default": false
       },
       "refreshTime": {
