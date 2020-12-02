@@ -1,7 +1,8 @@
 on:
   issues:
     types:
-      - complete
+      - labeled
+      - unlabeled
 
 jobs:
   comment:
