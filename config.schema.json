@@ -41,7 +41,7 @@
         "type": "number",
         "description": "An interval (in seconds) in which your devices will refresh with Govee.",
         "default": 15,
-        "minimum": 10,
+        "minimum": 15,
         "maximum": 300
       }
     }
