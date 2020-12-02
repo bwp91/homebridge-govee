@@ -47,7 +47,6 @@
     "@homebridge/plugin-ui-utils": "^0.0.17",
     "axios": "^0.21.0",
     "color-convert": "^2.0.1",
-    "color-temp": "^0.0.2",
-    "interval-promise": "^1.4.0"
+    "color-temp": "^0.0.2"
   }
 }
