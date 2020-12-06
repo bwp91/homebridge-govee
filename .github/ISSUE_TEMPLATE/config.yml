@@ -1,5 +1,9 @@
 blank_issues_enabled: false
 contact_links:
+  - name: 🌍 My Discord
+    url: https://discord.gg/cMGhNtZ3tW
+    about: Join my personal Discord server where you can post messages in the plugin channels or message me directly.
   - name: 🌍 Homebridge Discord
     url: https://discord.gg/7X36mdw
-    about: The Homebridge Discord is a community where you can ask questions and get general help with Homebridge and plugins. You can also message me directly on there - my username is bwp91.
+    about: The Homebridge Discord is a community where you can ask questions and get general help with Homebridge and other plugins.
+    
