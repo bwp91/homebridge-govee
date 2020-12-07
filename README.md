@@ -1,5 +1,5 @@
 <p align="center">
-   <a href="https://github.com/bwp91/homebridge-govee"><img src="https://user-images.githubusercontent.com/43026681/100439416-6f483780-309b-11eb-98b2-5bcb847f4969.png" width="600px"></a>
+   <a href="https://github.com/bwp91/homebridge-govee"><img src="https://user-images.githubusercontent.com/43026681/101324574-5e997d80-3862-11eb-81b0-932330f6e242.png" width="600px"></a>
 </p>
 <span align="center">
   
@@ -45,8 +45,9 @@
 * [Support Request](https://github.com/bwp91/homebridge-govee/issues/new/choose)
 
 ### Credits
-* To the creators/contributors of [Homebridge](https://homebridge.io) who make this plugin possible.
 * To all users who have shared their devices to enable functionality.
+* To the creator of the awesome plugin header logo: [Keryan Belahcene](https://www.instagram.com/keryan.me).
+* To the creators/contributors of [Homebridge](https://homebridge.io) who make this plugin possible.
 
 ### Disclaimer
 * I am in no way affiliated with Govee and this plugin is a personal project that I maintain in my free time.
