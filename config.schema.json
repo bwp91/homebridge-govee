@@ -50,7 +50,6 @@
     {
       "type": "fieldset",
       "title": "Required Settings",
-      "description": "These are the basic settings that are required for this plugin to work.",
       "items": [
         "apiKey"
       ]
@@ -58,8 +57,6 @@
     {
       "type": "fieldset",
       "title": "Optional Settings",
-      "description": "A variety of optional settings for general use of this plugin.",
-      "expandable": true,
       "items": [
         "refreshTime",
         "debug",
