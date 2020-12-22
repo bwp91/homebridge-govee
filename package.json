@@ -45,6 +45,6 @@
   ],
   "dependencies": {
     "@homebridge/plugin-ui-utils": "^0.0.17",
-    "axios": "^0.21.0"
+    "axios": "^0.21.1"
   }
 }
