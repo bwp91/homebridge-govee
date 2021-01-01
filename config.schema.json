@@ -31,11 +31,6 @@
         "type": "boolean",
         "description": "If checked, more information will be added to the log."
       },
-      "debugReqRes": {
-        "title": "Request & Response Logging",
-        "type": "boolean",
-        "description": "If checked, HTTP messages will be added to the log. Not recommended for long-term use."
-      },
       "disablePlugin": {
         "title": "Disable Plugin",
         "type": "boolean",
@@ -57,7 +52,6 @@
       "items": [
         "refreshTime",
         "debug",
-        "debugReqRes",
         "disablePlugin"
       ]
     }
