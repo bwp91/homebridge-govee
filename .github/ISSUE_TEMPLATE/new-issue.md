@@ -9,7 +9,7 @@ assignees: ''
 
 <!-- PLEASE READ BEFORE POSTING A NEW ISSUE
    → Please use this template as well as you can.
-   → Things that may seem unimportant to you are often helpful in finding the cause of the issue.
+   → Things that may seem unimportant are often helpful in finding the cause of the issue.
 -->
 
 ### What issue do you have? Please be as thorough and explicit as possible.
@@ -17,11 +17,15 @@ assignees: ''
 
 
 ### Details of your setup.
-* Do you use Homebridge (with config-ui?) or HOOBS? 
+* Do you use (1) Homebridge (+ config-ui), (2) Homebridge (CLI) or (3) HOOBS? 
 
 
 
 * Which version of Homebridge/HOOBS do you have?
+
+
+
+* Which platform do you run Homebridge/HOOBS on (e.g. Raspberry Pi/Windows/HOOBS Box)? Please also mention your version of Node.js/NPM if known.
 
 
 
@@ -35,12 +39,11 @@ assignees: ''
 
 ### Please paste any relevant logs below.
 <!-- ABOUT LOGS
-   → More thorough logging can be seen by enabling 'Debug Logging' and
-     ...'Request & Response Logging' in the plugin settings.
+   → More logging can enabled with 'Debug Logging' in the plugin settings.
    → If you are posting an error then it is helpful for me to also see
-     ...the previous few lines as this can show the cause of the error.
-   → Please enter the logs between the two ``` lines below so that
-     ...the logs are formatted in a way which is easier to read.
+     the previous few lines as this can show the cause of the error.
+   → Please enter the logs between the two ``` lines below so that the
+     logs are formatted in a way which is easier to read.
 -->
 
 ```
