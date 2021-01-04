@@ -16,7 +16,7 @@
   "main": "lib/index.js",
   "engines": {
     "homebridge": "^1.1.6",
-    "node": "^14.15.3"
+    "node": "^14.15.4"
   },
   "repository": {
     "type": "git",
