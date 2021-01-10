@@ -26,6 +26,11 @@
         "minimum": 15,
         "maximum": 300
       },
+      "ignoredDevices": {
+        "type": "string",
+        "title": "Ignored Devices",
+        "description": "A list of devices to ignore by device id. For example 12:AB:A1:C5:A8:99:D2:17 or multiple separated with a comma."
+      },
       "debug": {
         "title": "Debug Logging",
         "type": "boolean",
@@ -51,6 +56,7 @@
       "title": "Optional Settings",
       "items": [
         "refreshTime",
+        "ignoredDevices",
         "debug",
         "disablePlugin"
       ]
