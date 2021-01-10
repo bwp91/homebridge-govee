@@ -26,11 +26,6 @@
         "minimum": 15,
         "maximum": 300
       },
-      "ignoredDevices": {
-        "type": "string",
-        "title": "Ignored Devices",
-        "description": "A list of devices to ignore by device id. For example 12:AB:A1:C5:A8:99:D2:17 or multiple separated with a comma."
-      },
       "debug": {
         "title": "Debug Logging",
         "type": "boolean",
@@ -40,6 +35,11 @@
         "title": "Disable Plugin",
         "type": "boolean",
         "description": "If checked, the plugin will remove all accessories and not load the plugin on restart."
+      },
+      "ignoredDevices": {
+        "type": "string",
+        "title": "Ignored Devices",
+        "description": "A list of devices to ignore by device id. For example 12:AB:A1:C5:A8:99:D2:17 or multiple separated with a comma."
       }
     }
   },
@@ -56,9 +56,17 @@
       "title": "Optional Settings",
       "items": [
         "refreshTime",
-        "ignoredDevices",
         "debug",
         "disablePlugin"
+      ]
+    },
+    {
+      "type": "fieldset",
+      "title": "Device Specific Settings",
+      "description": "Further optional settings for specific devices.",
+      "expandable": true,
+      "items": [
+        "ignoredDevices"
       ]
     }
   ]
