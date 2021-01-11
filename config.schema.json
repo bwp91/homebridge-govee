@@ -25,6 +25,11 @@
         "minimum": 15,
         "maximum": 300
       },
+      "disableDeviceLogging": {
+        "type": "boolean",
+        "title": "Disable Device Logging",
+        "description": "If checked, device updates will not be added to the log."
+      },
       "debug": {
         "title": "Debug Logging",
         "type": "boolean",
@@ -56,6 +61,7 @@
       "expandable": true,
       "items": [
         "refreshTime",
+        "disableDeviceLogging",
         "debug",
         "disablePlugin"
       ]
