@@ -20,10 +20,9 @@
       "refreshTime": {
         "title": "Refresh Timer",
         "type": "number",
-        "description": "An interval (in seconds) in which your devices will refresh with Govee. Must be between 15 and 300.",
+        "description": "An interval (in seconds) in which your devices will refresh with Govee. Must be 15 or more.",
         "placeholder": 15,
-        "minimum": 15,
-        "maximum": 300
+        "minimum": 15
       },
       "disableDeviceLogging": {
         "type": "boolean",
