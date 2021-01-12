@@ -14,7 +14,8 @@
       },
       "apiKey": {
         "type": "string",
-        "title": "Govee API Key (<a href=\"https://github.com/bwp91/homebridge-govee/wiki/Configuration#obtaining-your-api-key\" target=\"_blank\">?</a>)",
+        "title": "Govee API Key",
+        "description": "You can obtain your API key using <a href=\"https://github.com/bwp91/homebridge-govee/wiki/Configuration#obtaining-your-api-key\" target=\"_blank\">this guide</a>.",
         "required": true
       },
       "refreshTime": {
