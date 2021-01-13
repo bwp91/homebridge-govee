@@ -23,4 +23,3 @@ All notable changes to this homebridge-govee will be documented in this file.
 * Removal of maximum value for `number` types on plugin settings screen
 * Changes to startup log messages
 * Backend code changes
-
