@@ -4,7 +4,7 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 ## BETA
 
-* Expose H5001, H5081 and H7014 as switches
+* Expose H5001, H5081 and H7014 as switches (not lightbulbs)
 * Ensures brightness value is in [0, 100]
 
 ## 2.7.1 (2021-01-13)
