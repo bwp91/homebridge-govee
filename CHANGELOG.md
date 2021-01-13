@@ -4,7 +4,7 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 ## BETA
 
-* Expose H5001 as a switch
+* Expose H5001, H5081 and H7014 as switches
 
 ## 2.7.1 (2021-01-13)
 
