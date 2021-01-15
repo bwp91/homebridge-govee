@@ -2,6 +2,12 @@
 
 All notable changes to this homebridge-govee will be documented in this file.
 
+## BETA
+
+## Changes
+
+* Plugin will log incoming device updates in `debug` mode
+
 ## v2.7.3 (2021-01-14)
 
 ### Changes
