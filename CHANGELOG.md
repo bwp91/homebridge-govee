@@ -2,6 +2,12 @@
 
 All notable changes to this homebridge-govee will be documented in this file.
 
+## BETA
+
+### Changes
+
+* Minimum Homebridge beta needed for Adaptive Lighting bumped to beta-46.
+
 ## v2.8.0 (2021-01-18)
 
 ### Changes
