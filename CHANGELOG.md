@@ -4,7 +4,7 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 ## v2.8.0 (2021-01-18)
 
-## Changes
+### Changes
 
 * Plugin will log incoming device updates in `debug` mode
   * For standard usage I would recommend to have plugin `debug` mode set to OFF/FALSE, as this change will add an update to your log every X seconds depending on your refresh interval (which is 15 seconds by default)
