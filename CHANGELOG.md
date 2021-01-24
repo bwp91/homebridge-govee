@@ -2,6 +2,12 @@
 
 All notable changes to this homebridge-govee will be documented in this file.
 
+## 2.8.3 (2021-01-24)
+
+### Changes
+
+* H6195 brightness fix
+
 ## 2.8.2 (2021-01-24)
 
 ### Changes
