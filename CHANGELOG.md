@@ -2,6 +2,12 @@
 
 All notable changes to this homebridge-govee will be documented in this file.
 
+## 2.8.2 (2021-01-24)
+
+### Changes
+
+* Backend - better handling of errors
+
 ## 2.8.1 (2021-01-21)
 
 ### Changes
