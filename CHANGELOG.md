@@ -2,6 +2,13 @@
 
 All notable changes to this homebridge-govee will be documented in this file.
 
+## BETA
+
+### Changes
+
+* More consistent and clearer error logging
+* Minor code refactors
+
 ## 2.8.3 (2021-01-24)
 
 ### Changes
