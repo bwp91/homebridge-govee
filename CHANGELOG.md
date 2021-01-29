@@ -8,6 +8,7 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 * More consistent and clearer error logging
 * Minor code refactors
+* Updated plugin-ui-utils dep and use new method to get cached accessories
 
 ## 2.8.3 (2021-01-24)
 
