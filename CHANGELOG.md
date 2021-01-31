@@ -2,6 +2,15 @@
 
 All notable changes to this homebridge-govee will be documented in this file.
 
+## BETA
+
+### Changes
+
+* Small delays when controlling devices have been adjusted:
+  * On/Off from 0ms to a random number between 0-400ms
+  * Brightness from 2000ms to a random number between 1200-1600ms
+  * Colour from 1000ms to a random number between 600ms-1000ms
+
 ## 2.8.4 (2021-01-29)
 
 ### Changes
