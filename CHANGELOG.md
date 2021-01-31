@@ -6,6 +6,7 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 ### Changes
 
+* `ignoredDevices` configuration option is now an array not a string
 * Small delays when controlling devices have been adjusted:
   * On/Off from 0ms to a random number between 0-400ms
   * Brightness from 2000ms to a random number between 1200-1600ms
