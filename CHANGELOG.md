@@ -4,13 +4,17 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 ## BETA
 
+### Added
+
+* A queue system for HTTP requests to replace the random delays
+  * Delays between HTTP requests are set to 1.5 seconds which seems to work reliably
+* Configuration checks to highlight any unnecessary settings you have
+
 ### Changes
 
 * `ignoredDevices` configuration option is now an array not a string
-* Small delays when controlling devices have been adjusted:
-  * On/Off from 0ms to a random number between 0-400ms
-  * Brightness from 2000ms to a random number between 1200-1600ms
-  * Colour from 1000ms to a random number between 600ms-1000ms
+* Error messages refactored to show the most useful information
+* [Backend] Major code refactoring
 
 ## 2.8.4 (2021-01-29)
 
