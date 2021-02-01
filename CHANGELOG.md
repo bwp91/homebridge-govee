@@ -12,7 +12,7 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 ### Changes
 
-* `ignoredDevices` configuration option is now an array not a string
+* ⚠️ **Potentially Breaking** `ignoredDevices` configuration option is now an array not a string
 * Error messages refactored to show the most useful information
 * [Backend] Major code refactoring
 
