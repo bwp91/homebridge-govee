@@ -13,7 +13,7 @@ All notable changes to this homebridge-govee will be documented in this file.
 ### Changes
 
 * ⚠️ `ignoredDevices` configuration option is now an array not a string
-* ⚠️ `refreshTime` minimum changed from `15` to `20`
+* ⚠️ `refreshTime` minimum changed from `15` to `30`
 * Error messages refactored to show the most useful information
 * [Backend] Major code refactoring
 
