@@ -7,12 +7,13 @@ All notable changes to this homebridge-govee will be documented in this file.
 ### Added
 
 * A queue system for HTTP requests to replace the random delays
-  * Delays between HTTP requests are set to 1.5 seconds which seems to work reliably
+  * Delays between HTTP requests are set to 5.5 seconds which seems to work reliably
 * Configuration checks to highlight any unnecessary settings you have
 
 ### Changes
 
-* ⚠️ **Potentially Breaking** `ignoredDevices` configuration option is now an array not a string
+* ⚠️ `ignoredDevices` configuration option is now an array not a string
+* ⚠️ `refreshTime` minimum changed from `15` to `20`
 * Error messages refactored to show the most useful information
 * [Backend] Major code refactoring
 
