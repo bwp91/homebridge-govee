@@ -6,8 +6,10 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 ### Added
 
-* A queue system for HTTP requests to replace the random delays
-  * Delays between HTTP requests are set to 5.5 seconds which seems to work reliably
+* This release hopes to bring more reliability when using HomeKit scenes and device groupings, by using:
+  * A queueing system for device updates (HTTP requests) to replace the random delays
+  * Delays between HTTP requests are set to 7.5 seconds which seems to work reliably
+  * The `refreshTime` has been increased to 30 seconds to further space HTTP requests
 * Configuration checks to highlight any unnecessary settings you have
 
 ### Changes
