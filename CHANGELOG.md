@@ -11,6 +11,7 @@ All notable changes to this homebridge-govee will be documented in this file.
   * Delays between HTTP requests are set to 7.5 seconds which seems to work reliably
   * The `refreshTime` has been increased to 30 seconds to further space HTTP requests
 * Configuration checks to highlight any unnecessary or incorrectly formatted settings you have
+* Link to 'Configuration' wiki page in the plugin-ui
 
 ### Changes
 
