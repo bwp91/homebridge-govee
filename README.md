@@ -29,9 +29,9 @@
 ### Setup
 * [Installation (Homebridge)](https://github.com/bwp91/homebridge-govee/wiki/Installation-(Homebridge))
 * [Installation (HOOBS)](https://github.com/bwp91/homebridge-govee/wiki/Installation-(HOOBS))
-* [Configuration](https://github.com/bwp91/homebridge-govee/wiki/Configuration)
 
 ### Features
+* [Configuration](https://github.com/bwp91/homebridge-govee/wiki/Configuration)
 * [Supported Devices](https://github.com/bwp91/homebridge-govee/wiki/Supported-Devices)
 * [Beta Version](https://github.com/bwp91/homebridge-govee/wiki/Beta-Version)
 
