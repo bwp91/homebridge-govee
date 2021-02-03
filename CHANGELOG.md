@@ -18,6 +18,7 @@ All notable changes to this homebridge-govee will be documented in this file.
 * ⚠️ `refreshTime` minimum changed from `15` to `30`
 * Error messages refactored to show the most useful information
 * [Backend] Major code refactoring
+* [Backend] Code comments
 
 ## 2.8.4 (2021-01-29)
 
