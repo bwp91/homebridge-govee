@@ -10,7 +10,7 @@ All notable changes to this homebridge-govee will be documented in this file.
   * A queueing system for device updates (HTTP requests) to replace the random delays
   * Delays between HTTP requests are set to 7.5 seconds which seems to work reliably
   * The `refreshTime` has been increased to 30 seconds to further space HTTP requests
-* Configuration checks to highlight any unnecessary settings you have
+* Configuration checks to highlight any unnecessary or incorrectly formatted settings you have
 
 ### Changes
 
