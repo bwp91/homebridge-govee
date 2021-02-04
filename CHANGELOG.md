@@ -9,14 +9,13 @@ All notable changes to this homebridge-govee will be documented in this file.
 * This release hopes to bring more reliability when using HomeKit scenes and device groupings, by using:
   * A queueing system for device updates (HTTP requests) to replace the random delays
   * Delays between HTTP requests are set to 7.5 seconds which seems to work reliably
-  * The `refreshTime` has been increased to 30 seconds to further space HTTP requests
+  * The refresh interval for device sync will skip whilst device updates are being sent
 * Configuration checks to highlight any unnecessary or incorrectly formatted settings you have
 * Link to 'Configuration' wiki page in the plugin-ui
 
 ### Changes
 
 * ⚠️ `ignoredDevices` configuration option is now an array not a string
-* ⚠️ `refreshTime` minimum changed from `15` to `30`
 * Error messages refactored to show the most useful information
 * [Backend] Major code refactoring
 * [Backend] Code comments
