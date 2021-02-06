@@ -16,6 +16,7 @@ All notable changes to this homebridge-govee will be documented in this file.
 ### Changes
 
 * ⚠️ `ignoredDevices` configuration option is now an array not a string
+* If a device's current status cannot be retrieved then the log message will only be displayed in debug mode
 * Error messages refactored to show the most useful information
 * [Backend] Major code refactoring
 * [Backend] Code comments
