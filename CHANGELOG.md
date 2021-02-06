@@ -2,7 +2,7 @@
 
 All notable changes to this homebridge-govee will be documented in this file.
 
-## BETA
+## 2.9.0 (2021-02-06)
 
 ### Added
 
@@ -17,6 +17,7 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 * ⚠️ `ignoredDevices` configuration option is now an array not a string
 * If a device's current status cannot be retrieved then the log message will only be displayed in debug mode
+* Colour conversation formula changes
 * Error messages refactored to show the most useful information
 * [Backend] Major code refactoring
 * [Backend] Code comments
