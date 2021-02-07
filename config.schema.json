@@ -25,6 +25,13 @@
         "placeholder": 15,
         "minimum": 15
       },
+      "controlInterval": {
+        "title": "Control Interval",
+        "type": "number",
+        "description": "An delay (in milliseconds) between device updates being sent. Must be 500 or more.",
+        "placeholder": 7500,
+        "minimum": 500
+      },
       "disableDeviceLogging": {
         "type": "boolean",
         "title": "Disable Device Logging",
@@ -65,6 +72,7 @@
       "expandable": true,
       "items": [
         "refreshTime",
+        "controlInterval",
         "disableDeviceLogging",
         "debug",
         "disablePlugin"
