@@ -28,7 +28,7 @@
       "controlInterval": {
         "title": "Control Interval",
         "type": "number",
-        "description": "An delay (in milliseconds) between device updates being sent. Must be 500 or more.",
+        "description": "A minimum delay (in milliseconds) between device updates being sent. Must be 500 or more.",
         "placeholder": 7500,
         "minimum": 500
       },
