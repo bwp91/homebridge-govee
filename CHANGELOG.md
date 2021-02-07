@@ -10,6 +10,7 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 ### Changes
 
+* Brightness fix for the H6003
 * Error stack will be hidden when the disabled plugin message appears in the log
 
 ## 2.9.0 (2021-02-06)
