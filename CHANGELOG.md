@@ -2,6 +2,16 @@
 
 All notable changes to this homebridge-govee will be documented in this file.
 
+## BETA
+
+### Added
+
+* Configuration setting `controlInterval` to change the 7500ms delay introduced in v2.9.0
+
+### Changes
+
+* Error stack will be hidden when the disabled plugin message appears in the log
+
 ## 2.9.0 (2021-02-06)
 
 ### Added
