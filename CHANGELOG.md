@@ -2,12 +2,13 @@
 
 All notable changes to this homebridge-govee will be documented in this file.
 
-## BETA
+## 2.10.1 (2021-02-08)
 
 ### Changes
 
 * Improvements to colour temperature conversion
 * Fixed a bug where Adaptive Lighting would not be disabled if the colour was changed from the Govee app
+* Hide the `Config entry [plugin_map] is unused and can be removed` notice for HOOBS users
 
 ## 2.10.0 (2021-02-08)
 
@@ -22,7 +23,6 @@ All notable changes to this homebridge-govee will be documented in this file.
 * Brightness fix for the H6003
 * Error stack will be hidden when the disabled plugin message appears in the log
 * More colour conversation formula changes
-* Hide the `Config entry [plugin_map] is unused and can be removed` notice for HOOBS users
 
 ## 2.9.0 (2021-02-06)
 
