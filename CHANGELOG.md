@@ -22,6 +22,7 @@ All notable changes to this homebridge-govee will be documented in this file.
 * Brightness fix for the H6003
 * Error stack will be hidden when the disabled plugin message appears in the log
 * More colour conversation formula changes
+* Hide the `Config entry [plugin_map] is unused and can be removed` notice for HOOBS users
 
 ## 2.9.0 (2021-02-06)
 
