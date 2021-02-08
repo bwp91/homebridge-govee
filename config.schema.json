@@ -32,13 +32,6 @@
         "placeholder": 500,
         "minimum": 500
       },
-      "adaptiveLightingShift": {
-        "title": "Adaptive Lighting Shift",
-        "type": "number",
-        "description": "An adjustment factor for Adaptive Lighting. The mired value for each update will be increased by this setting, making the light appear warmer. Must be 0 or more.",
-        "placeholder": 0,
-        "minimum": 0
-      },
       "disableDeviceLogging": {
         "type": "boolean",
         "title": "Disable Device Logging",
@@ -53,6 +46,26 @@
         "title": "Disable Plugin",
         "type": "boolean",
         "description": "If checked, the plugin will remove all accessories and not load the plugin on restart."
+      },
+      "lightDevices": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "deviceId": {
+              "title": "Govee Device ID",
+              "type": "string",
+              "description": "Govee Device ID of the device these settings apply to, e.g. 12:AB:A1:C5:A8:99:D2:17."
+            },
+            "adaptiveLightingShift": {
+              "title": "Adaptive Lighting Shift",
+              "type": "number",
+              "description": "An adjustment factor for Adaptive Lighting. The mired value for each update will be increased by this setting, making the light appear warmer. Must be 0 or more.",
+              "placeholder": 0,
+              "minimum": 0
+            }
+          }
+        }
       },
       "ignoredDevices": {
         "title": "Ignored Devices",
@@ -80,11 +93,24 @@
       "items": [
         "refreshTime",
         "controlInterval",
-        "adaptiveLightingShift",
         "disableDeviceLogging",
         "debug",
         "disablePlugin"
       ]
+    },
+    {
+      "key": "lightDevices",
+      "expandable": true,
+      "title": "Light Settings",
+      "add": "Add Another Device",
+      "type": "array",
+      "items": [{
+        "type": "fieldset",
+        "items": [
+          "lightDevices[].deviceId",
+          "lightDevices[].adaptiveLightingShift"
+        ]
+      }]
     },
     {
       "key": "ignoredDevices",
