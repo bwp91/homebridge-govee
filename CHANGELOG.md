@@ -2,16 +2,19 @@
 
 All notable changes to this homebridge-govee will be documented in this file.
 
-## BETA
+## 2.10.0 (2021-02.08)
 
 ### Added
 
 * Configuration setting `controlInterval` to change the 7500ms delay introduced in v2.9.0
+  * This setting is visible in the Homebridge plugin UI screen under 'Optional Settings'
+  * The default value for this setting will be 500ms but if you experience connectivity issues I would suggest increasing this number (by multiples of 500) until you find a value which works well for you
 
 ### Changes
 
 * Brightness fix for the H6003
 * Error stack will be hidden when the disabled plugin message appears in the log
+* More colour conversation formula changes
 
 ## 2.9.0 (2021-02-06)
 
