@@ -9,6 +9,10 @@ All notable changes to this homebridge-govee will be documented in this file.
 * 'Light Devices' config section where you can define settings per device, starting with:
   * New `adaptiveLightingShift` option to offset the Adaptive Lighting values to make the light appear warmer
 
+### Changes
+
+* User inputted Govee device IDs will now be parsed more thoroughly
+
 ## 2.10.1 (2021-02-08)
 
 ### Changes
