@@ -2,6 +2,13 @@
 
 All notable changes to this homebridge-govee will be documented in this file.
 
+## BETA
+
+### Changes
+
+* Adaptations to colour temperature conversion
+
+
 ## 2.10.0 (2021-02-08)
 
 ### Added
