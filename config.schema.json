@@ -32,6 +32,13 @@
         "placeholder": 500,
         "minimum": 500
       },
+      "adaptiveLightingShift": {
+        "title": "Adaptive Lighting Shift",
+        "type": "number",
+        "description": "An adjustment factor for Adaptive Lighting. The mired value for each update will be increased by this setting, making the light appear warmer. Must be 0 or more.",
+        "placeholder": 0,
+        "minimum": 0
+      },
       "disableDeviceLogging": {
         "type": "boolean",
         "title": "Disable Device Logging",
@@ -73,6 +80,7 @@
       "items": [
         "refreshTime",
         "controlInterval",
+        "adaptiveLightingShift",
         "disableDeviceLogging",
         "debug",
         "disablePlugin"
