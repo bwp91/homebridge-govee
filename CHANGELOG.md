@@ -7,6 +7,7 @@ All notable changes to this homebridge-govee will be documented in this file.
 ### Changes
 
 * Adaptations to colour temperature conversion
+* Fixed a bug where Adaptive Lighting would not be disabled if the colour was changed from the Govee app
 
 ## 2.10.0 (2021-02-08)
 
