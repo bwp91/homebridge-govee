@@ -2,6 +2,12 @@
 
 All notable changes to this homebridge-govee will be documented in this file.
 
+## BETA
+
+### Added
+
+* New `adaptiveLightingShift` option to offset the Adaptive Lighting values to make the light appear warmer
+
 ## 2.10.1 (2021-02-08)
 
 ### Changes
