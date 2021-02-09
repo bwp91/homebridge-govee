@@ -133,7 +133,7 @@
         })
         showDeviceInfo = async hbDeviceId => {
           homebridge.showSpinner()
-          const selectedAccessory = cachedAccessories.find(x => x.context.hbDeviceId === hbDeviceId)
+          const selectedAccessory = cachedAccessories.find(x => x.context.gvDeviceId === hbDeviceId)
           
           console.log(selectedAccessory)
           document.getElementById('displayName').innerHTML = selectedAccessory.displayName
