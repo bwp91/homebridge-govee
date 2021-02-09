@@ -2,6 +2,12 @@
 
 All notable changes to this homebridge-govee will be documented in this file.
 
+## BETA
+
+### Changes
+
+* Updated minimum node to v14.15.5
+
 ## 2.11.0 (2021-02-09)
 
 ### Added
