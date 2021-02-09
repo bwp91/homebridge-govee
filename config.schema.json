@@ -42,6 +42,9 @@
         "type": "boolean",
         "description": "If checked, more information will be added to the log."
       },
+      "debugFakegato": {
+        "type": "boolean"
+      },
       "disablePlugin": {
         "title": "Disable Plugin",
         "type": "boolean",
