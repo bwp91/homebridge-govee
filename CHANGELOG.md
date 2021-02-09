@@ -13,6 +13,7 @@ All notable changes to this homebridge-govee will be documented in this file.
 ### Changes
 
 * User inputted Govee device IDs will now be parsed more thoroughly
+* Fixed a bug when trying to select a different device in the Homebridge plugin-ui
 
 ## 2.10.1 (2021-02-08)
 
