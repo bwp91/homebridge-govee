@@ -104,7 +104,7 @@
     {
       "key": "lightDevices",
       "expandable": true,
-      "title": "Light Settings",
+      "title": "Light Devices",
       "add": "Add Another Device",
       "type": "array",
       "items": [{
