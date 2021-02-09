@@ -151,7 +151,7 @@
         }
         deviceSelect.addEventListener('change', event => showDeviceInfo(event.target.value))
         if (cachedAccessories.length > 0) {
-          showDeviceInfo(cachedAccessories[0].context.hbDeviceId)
+          showDeviceInfo(cachedAccessories[0].context.gvDeviceId)
         } else {
           const option = document.createElement('option')
           option.text = 'No Devices'
