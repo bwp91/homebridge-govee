@@ -48,10 +48,5 @@
     "@homebridge/plugin-ui-utils": "^0.0.18",
     "axios": "^0.21.1",
     "p-queue": "^6.6.2"
-  },
-  "standard": {
-    "ignore": [
-      "/lib/fakegato/"
-    ]
   }
 }
