@@ -7,6 +7,7 @@ All notable changes to this homebridge-govee will be documented in this file.
 ### Changes
 
 * Link to 'Uninstall' wiki page in the plugin-ui
+* Removed concurrency limit from http queue as throttling is based on the interval and cap
 
 ## 2.11.1 (2021-02-10)
 
