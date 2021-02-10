@@ -2,6 +2,12 @@
 
 All notable changes to this homebridge-govee will be documented in this file.
 
+## BETA
+
+### Changes
+
+* Link to 'Uninstall' wiki page in the plugin-ui
+
 ## 2.11.1 (2021-02-10)
 
 ### Changes
