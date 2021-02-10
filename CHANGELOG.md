@@ -2,10 +2,11 @@
 
 All notable changes to this homebridge-govee will be documented in this file.
 
-## BETA
+## 2.11.1 (2021-02-10)
 
 ### Changes
 
+* Fixes an issue when initialising switch devices
 * Updated minimum node to v14.15.5
 
 ## 2.11.0 (2021-02-09)
