@@ -63,7 +63,7 @@
             "adaptiveLightingShift": {
               "title": "Adaptive Lighting Shift",
               "type": "number",
-              "description": "An adjustment factor for Adaptive Lighting. The mired value for each update will be increased by this setting, making the light appear warmer. Must be 0 or more.",
+              "description": "An adjustment factor for Adaptive Lighting. The mired value for each update will be increased by this setting, making the light appear warmer. A value in the range 50-200 should be appropriate. Must be 0 or more.",
               "placeholder": 0,
               "minimum": 0
             }
