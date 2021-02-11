@@ -9,6 +9,7 @@ All notable changes to this homebridge-govee will be documented in this file.
 * Link to 'Uninstall' wiki page in the plugin-ui
 * Removed concurrency limit from http queue as throttling is based on the interval and cap
 * Updated minimum Homebridge to v1.1.7
+* Fakegato library formatting and simplification
 
 ## 2.11.1 (2021-02-10)
 
