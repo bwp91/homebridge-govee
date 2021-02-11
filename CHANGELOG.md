@@ -6,7 +6,7 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 ### Changes
 
-* Suitable range for `adaptiveLightingShift` added to descripton
+* Suitable range for `adaptiveLightingShift` added to description
 * Link to 'Uninstall' wiki page in the plugin-ui
 * Removed concurrency limit from http queue as throttling is based on the interval and cap
 * Updated minimum Homebridge to v1.1.7
