@@ -2,6 +2,12 @@
 
 All notable changes to this homebridge-govee will be documented in this file.
 
+## BETA
+
+### Added
+
+* A configurable minimum brightness step per Govee light bulb/strip
+
 ## 2.11.2 (2021-02-11)
 
 ### Changes
