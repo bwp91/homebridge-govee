@@ -7,10 +7,10 @@ All notable changes to this homebridge-govee will be documented in this file.
 ### Added
 
 * A configurable minimum brightness step per Govee light bulb/strip
+* The ability to explicitly enable device logging *per* device if you have `disableDeviceLogging` set to `true`
 
 ### Changes
 
-* `disableDeviceLogging` changed from a global setting to *per* device
 * Show a more user friendly log message on 502 error from Govee
 * Stop subsequent warning messages if a device fails to initialise
 
