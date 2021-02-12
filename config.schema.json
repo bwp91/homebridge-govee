@@ -66,6 +66,9 @@
               "description": "If checked, updates for this device will be added to the log, even if the general 'Disable Device Logging' setting is true."
             }
           }
+        },
+        "condition": {
+          "functionBody": "return model.disableDeviceLogging;"
         }
       },
       "lightDevices": {
@@ -95,7 +98,10 @@
             "overrideDisabledLogging": {
               "type": "boolean",
               "title": "Override Disabled Logging",
-              "description": "If checked, updates for this device will be added to the log, even if the general 'Disable Device Logging' setting is true."
+              "description": "If checked, updates for this device will be added to the log, even if the general 'Disable Device Logging' setting is true.",
+              "condition": {
+                "functionBody": "return model.disableDeviceLogging;"
+              }
             }
           }
         }
