@@ -8,6 +8,10 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 * A configurable minimum brightness step per Govee light bulb/strip
 
+### Changes
+
+* Show a more user friendly log message on 502 error from Govee
+
 ## 2.11.2 (2021-02-11)
 
 ### Changes
