@@ -32,11 +32,6 @@
         "placeholder": 500,
         "minimum": 500
       },
-      "disableDeviceLogging": {
-        "type": "boolean",
-        "title": "Disable Device Logging",
-        "description": "If checked, device updates will not be added to the log."
-      },
       "debug": {
         "title": "Debug Logging",
         "type": "boolean",
@@ -49,6 +44,24 @@
         "title": "Disable Plugin",
         "type": "boolean",
         "description": "If checked, the plugin will remove all accessories and not load the plugin on restart."
+      },
+      "switchDevices": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "deviceId": {
+              "title": "Govee Device ID",
+              "type": "string",
+              "description": "Govee Device ID of the device these settings apply to, e.g. 12:AB:A1:C5:A8:99:D2:17."
+            },
+            "disableDeviceLogging": {
+              "type": "boolean",
+              "title": "Disable Device Logging",
+              "description": "If checked, updates for this device will not be added to the log when it is controlled."
+            }
+          }
+        }
       },
       "lightDevices": {
         "type": "array",
@@ -73,6 +86,11 @@
               "description": "An adjustment factor for Adaptive Lighting. The mired value for each update will be increased by this setting, making the light appear warmer. A value in the range 50-200 should be appropriate. Must be 0 or more.",
               "placeholder": 0,
               "minimum": 0
+            },
+            "disableDeviceLogging": {
+              "type": "boolean",
+              "title": "Disable Device Logging",
+              "description": "If checked, updates for this device will not be added to the log when it is controlled."
             }
           }
         }
@@ -103,10 +121,23 @@
       "items": [
         "refreshTime",
         "controlInterval",
-        "disableDeviceLogging",
         "debug",
         "disablePlugin"
       ]
+    },
+    {
+      "key": "switchDevices",
+      "expandable": true,
+      "title": "Switch Devices",
+      "add": "Add Another Device",
+      "type": "array",
+      "items": [{
+        "type": "fieldset",
+        "items": [
+          "switchDevices[].deviceId",
+          "switchDevices[].disableDeviceLogging"
+        ]
+      }]
     },
     {
       "key": "lightDevices",
@@ -119,7 +150,8 @@
         "items": [
           "lightDevices[].deviceId",
           "lightDevices[].brightnessStep",
-          "lightDevices[].adaptiveLightingShift"
+          "lightDevices[].adaptiveLightingShift",
+          "lightDevices[].disableDeviceLogging"
         ]
       }]
     },
