@@ -63,7 +63,7 @@
             "brightnessStep": {
               "title": "Brightness Step",
               "type": "number",
-              "description": "A minumum step for the brightness slider. Must be 1 or more.",
+              "description": "A minimum step for the brightness slider in the Home app. Must be 1 or more.",
               "placeholder": 1,
               "minimum": 1
             },
