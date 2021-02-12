@@ -60,6 +60,13 @@
               "type": "string",
               "description": "Govee Device ID of the device these settings apply to, e.g. 12:AB:A1:C5:A8:99:D2:17."
             },
+            "brightnessStep": {
+              "title": "Brightness Step",
+              "type": "number",
+              "description": "A minumum step for the brightness slider. Must be 1 or more.",
+              "placeholder": 1,
+              "minimum": 1
+            },
             "adaptiveLightingShift": {
               "title": "Adaptive Lighting Shift",
               "type": "number",
@@ -111,6 +118,7 @@
         "type": "fieldset",
         "items": [
           "lightDevices[].deviceId",
+          "lightDevices[].brightnessStep",
           "lightDevices[].adaptiveLightingShift"
         ]
       }]
