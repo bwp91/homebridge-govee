@@ -32,6 +32,11 @@
         "placeholder": 500,
         "minimum": 500
       },
+      "disableDeviceLogging": {
+        "type": "boolean",
+        "title": "Disable Device Logging",
+        "description": "If checked, updates for all devices will not be added to the log when they are controlled."
+      },
       "debug": {
         "title": "Debug Logging",
         "type": "boolean",
@@ -55,10 +60,10 @@
               "type": "string",
               "description": "Govee Device ID of the device these settings apply to, e.g. 12:AB:A1:C5:A8:99:D2:17."
             },
-            "disableDeviceLogging": {
+            "overrideDisabledLogging": {
               "type": "boolean",
-              "title": "Disable Device Logging",
-              "description": "If checked, updates for this device will not be added to the log when it is controlled."
+              "title": "Override Disabled Logging",
+              "description": "If checked, updates for this device will be added to the log, even if the general 'Disable Device Logging' setting is true."
             }
           }
         }
@@ -87,10 +92,10 @@
               "placeholder": 0,
               "minimum": 0
             },
-            "disableDeviceLogging": {
+            "overrideDisabledLogging": {
               "type": "boolean",
-              "title": "Disable Device Logging",
-              "description": "If checked, updates for this device will not be added to the log when it is controlled."
+              "title": "Override Disabled Logging",
+              "description": "If checked, updates for this device will be added to the log, even if the general 'Disable Device Logging' setting is true."
             }
           }
         }
@@ -121,6 +126,7 @@
       "items": [
         "refreshTime",
         "controlInterval",
+        "disableDeviceLogging",
         "debug",
         "disablePlugin"
       ]
@@ -135,7 +141,7 @@
         "type": "fieldset",
         "items": [
           "switchDevices[].deviceId",
-          "switchDevices[].disableDeviceLogging"
+          "switchDevices[].overrideDisabledLogging"
         ]
       }]
     },
@@ -151,7 +157,7 @@
           "lightDevices[].deviceId",
           "lightDevices[].brightnessStep",
           "lightDevices[].adaptiveLightingShift",
-          "lightDevices[].disableDeviceLogging"
+          "lightDevices[].overrideDisabledLogging"
         ]
       }]
     },
