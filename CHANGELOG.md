@@ -10,6 +10,7 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 ### Changes
 
+* `disableDeviceLogging` changed from a global setting to *per* device
 * Show a more user friendly log message on 502 error from Govee
 * Stop subsequent warning messages if a device fails to initialise
 
