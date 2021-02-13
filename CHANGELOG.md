@@ -13,6 +13,9 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 * Show a more user friendly log message on 502 error from Govee
 * Stop subsequent warning messages if a device fails to initialise
+* Changes to colour conversion:
+  * Lighter colours appear brighter
+  * Solid red is now easier to obtain via the Home app
 
 ## 2.11.2 (2021-02-11)
 
