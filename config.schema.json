@@ -117,8 +117,7 @@
       }
     }
   },
-  "layout": [
-    {
+  "layout": [{
       "type": "fieldset",
       "title": "Required Settings",
       "items": [
