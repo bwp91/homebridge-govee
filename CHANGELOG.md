@@ -1,6 +1,13 @@
 # Change Log
 
 All notable changes to this homebridge-govee will be documented in this file.
+
+## 2.12.2 (2021-02-17)
+
+### Changes
+
+* In debug mode, the plugin will log each device's customised options when initialised
+
 ## 2.12.1 (2021-02-17)
 
 ### Changes
