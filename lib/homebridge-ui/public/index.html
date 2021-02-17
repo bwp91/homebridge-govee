@@ -139,8 +139,8 @@
           console.log(selectedAccessory)
           document.getElementById('displayName').innerHTML = selectedAccessory.displayName
           document.getElementById('reachable').innerHTML = selectedAccessory.context.retrievable
-            ? 'Online'
-            : 'Offline'
+            ? '<i class="fas fa-circle mr-1 green-text"></i> Online'
+            : '<i class="fas fa-circle mr-1 red-text"></i> Offline'
           document.getElementById('controllable').innerHTML = selectedAccessory.context.controllable
             ? 'Yes'
             : 'No'
