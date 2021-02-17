@@ -26,7 +26,8 @@
   "bugs": {
     "url": "https://github.com/bwp91/homebridge-govee/issues"
   },
-  "funding": [{
+  "funding": [
+    {
       "type": "github",
       "url": "https://github.com/sponsors/bwp91"
     },
