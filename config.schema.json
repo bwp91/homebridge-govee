@@ -81,6 +81,10 @@
               "type": "string",
               "description": "Govee Device ID of the device these settings apply to, e.g. 12:AB:A1:C5:A8:99:D2:17."
             },
+            "exposeScenes": {
+              "title": "Expose Scenes",
+              "type": "boolean"
+            },
             "brightnessStep": {
               "title": "Brightness Step",
               "type": "number",
@@ -160,6 +164,7 @@
         "type": "fieldset",
         "items": [
           "lightDevices[].deviceId",
+          "lightDevices[].exposeScenes",
           "lightDevices[].brightnessStep",
           "lightDevices[].adaptiveLightingShift",
           "lightDevices[].overrideDisabledLogging"
