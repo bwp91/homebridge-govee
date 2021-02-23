@@ -6,6 +6,7 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 ### Added
 
+* A `label` setting per device group which has no effect except to help identify the device when editing the configuration
 * Show a red/green icon in the Homebridge plugin-ui to show device reachability
 
 ### Changes
