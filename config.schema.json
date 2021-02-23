@@ -93,7 +93,8 @@
             },
             "exposeScenes": {
               "title": "Expose Scenes",
-              "type": "boolean"
+              "type": "boolean",
+              "description": "This feature is under development and currently has no effect"
             },
             "brightnessStep": {
               "title": "Brightness Step",
