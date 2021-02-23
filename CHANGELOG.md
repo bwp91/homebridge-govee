@@ -8,6 +8,10 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 * Show a red/green icon in the Homebridge plugin-ui to show device reachability
 
+### Changes
+
+* Updated minimum Node to v14.16.0
+
 ## 2.12.2 (2021-02-17)
 
 ### Changes
