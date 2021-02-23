@@ -60,15 +60,20 @@
               "type": "string",
               "description": "Govee Device ID of the device these settings apply to, e.g. 12:AB:A1:C5:A8:99:D2:17."
             },
+            "label": {
+              "title": "Label",
+              "type": "string",
+              "description": "This setting has no effect except to be a helpful label for identifying which device this is when editing the configuration."
+            },
             "overrideDisabledLogging": {
               "type": "boolean",
               "title": "Override Disabled Logging",
-              "description": "If true, updates for this device will be added to the log, even if the general 'Disable Device Logging' setting is true."
+              "description": "If true, updates for this device will be added to the log, even if the general 'Disable Device Logging' setting is true.",
+              "condition": {
+                "functionBody": "return model.disableDeviceLogging;"
+              }
             }
           }
-        },
-        "condition": {
-          "functionBody": "return model.disableDeviceLogging;"
         }
       },
       "lightDevices": {
@@ -80,6 +85,11 @@
               "title": "Govee Device ID",
               "type": "string",
               "description": "Govee Device ID of the device these settings apply to, e.g. 12:AB:A1:C5:A8:99:D2:17."
+            },
+            "label": {
+              "title": "Label",
+              "type": "string",
+              "description": "This setting has no effect except to be a helpful label for identifying which device this is when editing the configuration."
             },
             "exposeScenes": {
               "title": "Expose Scenes",
@@ -150,6 +160,7 @@
         "type": "fieldset",
         "items": [
           "switchDevices[].deviceId",
+          "switchDevices[].label",
           "switchDevices[].overrideDisabledLogging"
         ]
       }]
@@ -164,6 +175,7 @@
         "type": "fieldset",
         "items": [
           "lightDevices[].deviceId",
+          "lightDevices[].label",
           "lightDevices[].exposeScenes",
           "lightDevices[].brightnessStep",
           "lightDevices[].adaptiveLightingShift",
