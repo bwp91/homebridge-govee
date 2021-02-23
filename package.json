@@ -1,7 +1,7 @@
 {
   "name": "homebridge-govee",
   "alias": "Govee",
-  "version": "2.12.3-4",
+  "version": "2.12.3-5",
   "author": "bwp91",
   "description": "Homebridge plugin to control Govee devices that are supported by the official Govee API.",
   "license": "MIT",
