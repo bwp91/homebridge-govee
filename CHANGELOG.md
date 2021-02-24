@@ -8,6 +8,10 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 * A `label` setting per device group which has no effect except to help identify the device when editing the configuration
 * Show a red/green icon in the Homebridge plugin-ui to show device reachability
+* **In Development**
+  * A configuration option to expose four non-working scenes per light device
+  * The idea of this is to experiment with how scenes could work if Govee enable this functionality through the API
+  * The scene buttons that appear have **no** effect except logging what should happen
 
 ### Changes
 
