@@ -135,6 +135,7 @@
   "layout": [{
       "type": "fieldset",
       "title": "Required Settings",
+      "description": "If you are configuring this plugin for the first time, you may want to just fill out this field and save your settings. You can always return later to explore the rest of the options.",
       "items": [
         "apiKey"
       ]
