@@ -15,6 +15,7 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 ### Changes
 
+* Less strict threshold for determining a 'significant' colour change for disabling Adaptive Lighting
 * Updated minimum Node to v14.16.0
 
 ## 2.12.2 (2021-02-17)
