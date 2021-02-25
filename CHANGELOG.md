@@ -16,6 +16,8 @@ All notable changes to this homebridge-govee will be documented in this file.
 ### Changes
 
 * Less strict threshold for determining a 'significant' colour change for disabling Adaptive Lighting
+* Show a more user friendly log message on timeout error from Govee
+* 502 and timeout errors will be hidden from the log if one has already been received during the previous minute
 * Updated minimum Node to v14.16.0
 
 ## 2.12.2 (2021-02-17)
