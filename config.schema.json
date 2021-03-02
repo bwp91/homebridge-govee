@@ -133,10 +133,6 @@
     }
   },
   "layout": [{
-      "type": "help",
-      "helpvalue": "<label class=\"control-label text-primary text-center\">If you are configuring this plugin for the first time, you may want to just fill out the required fields to get the plugin up and running. You can always return later to explore the rest of the options.</label>"
-    },
-    {
       "type": "fieldset",
       "title": "Required Settings",
       "items": [
