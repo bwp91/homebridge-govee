@@ -10,6 +10,7 @@
     "homebridge-plugin",
     "homebridge-govee",
     "hoobs",
+    "hoobs-plugin",
     "homekit",
     "siri",
     "govee"
