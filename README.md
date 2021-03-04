@@ -5,7 +5,7 @@
   
 # homebridge-govee 
 
- Homebridge plugin to control Govee devices that are supported by the official Govee API
+ Homebridge plugin to control Govee devices supported by the official Govee API
  
  [![verified-by-homebridge](https://badgen.net/badge/homebridge/verified/purple)](https://github.com/homebridge/homebridge/wiki/Verified-Plugins)
  [![hoobs-certified](https://badgen.net/badge/HOOBS/Certified/yellow)](https://plugins.hoobs.org/plugin/homebridge-govee)   
