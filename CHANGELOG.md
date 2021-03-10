@@ -2,6 +2,12 @@
 
 All notable changes to this homebridge-govee will be documented in this file.
 
+## BETA
+
+### Changes
+
+* Adaptive Lighting now requires Homebridge 1.3 release
+
 ## 2.13.0 (2021-03-01)
 
 ### Added
