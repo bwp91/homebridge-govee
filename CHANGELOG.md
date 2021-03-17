@@ -2,6 +2,12 @@
 
 All notable changes to this homebridge-govee will be documented in this file.
 
+## 2.13.2 (2021-03-17)
+
+### Changes
+
+* Modified config schema to show titles/descriptions for non Homebridge UI users
+
 ## 2.13.1 (2021-03-14)
 
 ### Changes
