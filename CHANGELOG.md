@@ -2,6 +2,12 @@
 
 All notable changes to this homebridge-govee will be documented in this file.
 
+## 2.14.1 (2021-03-21)
+
+### Changes
+
+* Fixes an issue with online/offline status as certain devices seem to report status as a boolean (not as a string)
+
 ## 2.14.0 (2021-03-21)
 
 ### Added
