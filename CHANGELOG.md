@@ -12,6 +12,7 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 * **Light devices** will now send on/off commands **after** brightness and colour ([#56](https://github.com/bwp91/homebridge-govee/issues/56))
 * More welcome messages
+* Updated `plugin-ui-utils` dependency
 
 ## 2.13.2 (2021-03-17)
 
