@@ -4,6 +4,10 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 ## BETA
 
+### Added
+
+* Device online/offline status logging to make it clearer if a device is connected to wifi
+
 ### Changes
 
 * **Light devices** will now send on/off commands **after** brightness and colour ([#56](https://github.com/bwp91/homebridge-govee/issues/56))
