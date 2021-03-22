@@ -2,6 +2,12 @@
 
 All notable changes to this homebridge-govee will be documented in this file.
 
+## 2.14.2 (2021-03-22)
+
+### Changes
+
+* Updated plugin ui to use reported `online` status for the 'Cloud Status' instead of the reported `controllable` status
+
 ## 2.14.1 (2021-03-21)
 
 ### Changes
