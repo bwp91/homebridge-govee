@@ -15,7 +15,7 @@ All notable changes to this homebridge-govee will be documented in this file.
 ### Changes
 
 * Use the new `.onSet` methods available in Homebridge v1.3
-* Plugin will report 'offline' devices with a 'No Response' message in HomeKit apps when controlled (and this status will be reverted after 10 seconds)
+* Plugin will report 'offline' devices with a 'No Response' message in HomeKit apps when controlled (and this status will be reverted after 5 seconds)
 
 ## 2.14.2 (2021-03-22)
 
