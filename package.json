@@ -48,6 +48,6 @@
   "dependencies": {
     "@homebridge/plugin-ui-utils": "^0.0.19",
     "axios": "^0.21.1",
-    "p-queue": "^6.6.2"
+    "p-queue": "^7.0.0"
   }
 }
