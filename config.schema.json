@@ -96,11 +96,6 @@
               "type": "string",
               "description": "This setting has no effect except to be a helpful label for identifying which device this is when editing the configuration."
             },
-            "exposeScenes": {
-              "title": "Expose Scenes",
-              "type": "boolean",
-              "description": "This feature is under development and currently has no effect"
-            },
             "brightnessStep": {
               "title": "Brightness Step",
               "type": "number",
@@ -182,7 +177,6 @@
         "items": [
           "lightDevices[].deviceId",
           "lightDevices[].label",
-          "lightDevices[].exposeScenes",
           "lightDevices[].brightnessStep",
           "lightDevices[].adaptiveLightingShift",
           "lightDevices[].overrideDisabledLogging"
