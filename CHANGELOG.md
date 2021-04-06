@@ -4,6 +4,10 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 ## BETA
 
+### Added
+
+* `forceUpdates` configuration option for force-sending device updates even if Govee is reporting your devices as offline
+
 ### Changes
 
 * Updated README to reflect minimum supported Homebridge/HOOBS and Node versions
