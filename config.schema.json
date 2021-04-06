@@ -33,6 +33,10 @@
         "placeholder": 500,
         "minimum": 500
       },
+      "forceUpdates": {
+        "title": "Force Updates",
+        "type": "boolean"
+      },
       "disableDeviceLogging": {
         "type": "boolean",
         "title": "Disable Device Logging",
@@ -146,6 +150,7 @@
       "items": [
         "refreshTime",
         "controlInterval",
+        "forceUpdates",
         "disableDeviceLogging",
         "debug",
         "disablePlugin"
