@@ -2,6 +2,12 @@
 
 All notable changes to this homebridge-govee will be documented in this file.
 
+## BETA
+
+### Changes
+
+* Updated README to reflect minimum supported Homebridge/HOOBS and Node versions
+
 ## 3.0.0 (2021-04-03)
 
 ### Requirements
