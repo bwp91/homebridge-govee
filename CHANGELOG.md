@@ -2,7 +2,7 @@
 
 All notable changes to this homebridge-govee will be documented in this file.
 
-## BETA
+## 3.1.0 (2021-04-07)
 
 ### Added
 
@@ -10,6 +10,7 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 ### Changes
 
+* Removed dev code for scene support
 * Updated README to reflect minimum supported Homebridge/HOOBS and Node versions
 * Updated recommended Node to v14.16.1
 
