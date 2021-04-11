@@ -2,6 +2,12 @@
 
 All notable changes to this homebridge-govee will be documented in this file.
 
+## BETA
+
+### Changes
+
+* Updated plugin-ui 'Support' page links to match GitHub readme file
+
 ## 3.1.0 (2021-04-07)
 
 ### Added
