@@ -41,10 +41,11 @@
 * [How to update node](https://github.com/bwp91/homebridge-govee/wiki/How-to-update-node)
 * [How to uninstall correctly](https://github.com/bwp91/homebridge-govee/wiki/How-to-uninstall-correctly)
 
-### About
-* [About Me](https://github.com/sponsors/bwp91)
-* [Changelog](https://github.com/bwp91/homebridge-govee/releases)
+### Help/About
+* [Common Errors](https://github.com/bwp91/homebridge-govee/wiki/Common-Errors)
 * [Support Request](https://github.com/bwp91/homebridge-govee/issues/new/choose)
+* [Changelog](https://github.com/bwp91/homebridge-govee/blob/latest/CHANGELOG.md)
+* [About Me](https://github.com/sponsors/bwp91)
 
 ### Credits
 * To all users who have shared their devices to enable functionality.
