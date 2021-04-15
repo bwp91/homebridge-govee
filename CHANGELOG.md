@@ -2,6 +2,12 @@
 
 All notable changes to this homebridge-govee will be documented in this file.
 
+## BETA
+
+### Changes
+
+* Recover accessories from the cache using the UUID
+
 ## 3.1.1 (2021-04-12)
 
 ### Changes
