@@ -2,7 +2,7 @@
 
 All notable changes to this homebridge-govee will be documented in this file.
 
-## BETA
+## 3.1.2 (2021-04-16)
 
 ### Changes
 
