@@ -28,18 +28,14 @@
 * It is recommended to use the current LTS version of Node, currently v14, however Node v10 and v12 are also supported.
 
 ### Setup
-* [Installation (Homebridge)](https://github.com/bwp91/homebridge-govee/wiki/Installation-(Homebridge))
-* [Installation (HOOBS)](https://github.com/bwp91/homebridge-govee/wiki/Installation-(HOOBS))
+* [Installation](https://github.com/bwp91/homebridge-govee/wiki/Installation)
+* [Configuration](https://github.com/bwp91/homebridge-govee/wiki/Configuration)
+* [Beta Version](https://github.com/bwp91/homebridge-govee/wiki/Beta-Version)
+* [Node Version](https://github.com/bwp91/homebridge-govee/wiki/Node-Version)
+* [Uninstallation](https://github.com/bwp91/homebridge-govee/wiki/Uninstallation)
 
 ### Features
-* [Configuration](https://github.com/bwp91/homebridge-govee/wiki/Configuration)
 * [Supported Devices](https://github.com/bwp91/homebridge-govee/wiki/Supported-Devices)
-* [Beta Version](https://github.com/bwp91/homebridge-govee/wiki/Beta-Version)
-
-### How-to Guides
-* [How to remove an accessory from the cache](https://github.com/bwp91/homebridge-govee/wiki/How-to-remove-an-accessory-from-the-cache)
-* [How to update node](https://github.com/bwp91/homebridge-govee/wiki/How-to-update-node)
-* [How to uninstall correctly](https://github.com/bwp91/homebridge-govee/wiki/How-to-uninstall-correctly)
 
 ### Help/About
 * [Common Errors](https://github.com/bwp91/homebridge-govee/wiki/Common-Errors)
