@@ -7,6 +7,7 @@ All notable changes to this homebridge-govee will be documented in this file.
 ### Changes
 
 * Recover accessories from the cache using the UUID
+* Update wiki links in the Homebridge plugin-ui
 
 ## 3.1.1 (2021-04-12)
 
