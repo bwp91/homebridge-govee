@@ -6,6 +6,7 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 ### Changes
 
+* Fix characteristic NaN warning for `LastActivation`
 * Recover accessories from the cache using the UUID
 * Update wiki links in the Homebridge plugin-ui
 
