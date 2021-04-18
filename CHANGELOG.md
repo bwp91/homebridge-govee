@@ -2,6 +2,12 @@
 
 All notable changes to this homebridge-govee will be documented in this file.
 
+## BETA
+
+### Changes
+
+* Use `colorTem` for colour temperature updates for devices that support this command
+
 ## 3.1.2 (2021-04-16)
 
 ### Changes
