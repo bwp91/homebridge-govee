@@ -7,6 +7,7 @@ All notable changes to this homebridge-govee will be documented in this file.
 ### Changes
 
 * Use `colorTem` for colour temperature updates for devices that support this command
+  * This will use the white LEDs on devices that have them
 
 ## 3.1.2 (2021-04-16)
 
