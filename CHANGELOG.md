@@ -2,6 +2,12 @@
 
 All notable changes to this homebridge-govee will be documented in this file.
 
+## BETA
+
+### Changes
+
+* Backend code changes
+
 ## 3.1.3 (2021-04-24)
 
 ### Changes
