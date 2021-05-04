@@ -6,7 +6,9 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 ### Changes
 
-* Backend code changes
+* Accessory 'identify' function will now add an entry to the log
+* Removal of device 'retrievable' and 'controllable' status as they seem to serve no purpose
+* Backend refactoring, function and variable name changes
 
 ## 3.1.3 (2021-04-24)
 
