@@ -19,6 +19,17 @@
         "description": "You can obtain your API key using <a href=\"https://github.com/bwp91/homebridge-govee/wiki/Configuration#obtaining-your-api-key\" target=\"_blank\">this guide</a>.",
         "required": true
       },
+      "language": {
+        "type": "string",
+        "title": "Language",
+        "description": "If you wish to see the plugin logging in your language and can help translate then let me know!",
+        "default": "en",
+        "oneOf": [{
+            "title": "English",
+            "enum": ["en"]
+          }
+        ]
+      },
       "refreshTime": {
         "title": "Refresh Timer",
         "type": "number",
@@ -149,6 +160,7 @@
       "title": "Optional Settings",
       "expandable": true,
       "items": [
+        "language",
         "refreshTime",
         "controlInterval",
         "forceUpdates",
