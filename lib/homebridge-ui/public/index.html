@@ -38,14 +38,6 @@
           <td id="gvDeviceId"></td>
         </tr>
         <tr>
-          <th scope="row">Retrievable</th>
-          <td id="retrievable"></td>
-        </tr>
-        <tr>
-          <th scope="row">Controllable</th>
-          <td id="controllable"></td>
-        </tr>
-        <tr>
           <th scope="row">Govee Model</th>
           <td id="gvModel"></td>
         </tr>
@@ -146,12 +138,6 @@
           document.getElementById('online').innerHTML = selectedAccessory.context.online
             ? '<i class="fas fa-circle mr-1 green-text"></i> Online'
             : '<i class="fas fa-circle mr-1 red-text"></i> Offline'
-          document.getElementById('retrievable').innerHTML = selectedAccessory.context.retrievable
-            ? 'Yes'
-            : 'No'
-          document.getElementById('controllable').innerHTML = selectedAccessory.context.controllable
-            ? 'Yes'
-            : 'No'
           document.getElementById('gvDeviceId').innerHTML = selectedAccessory.context.gvDeviceId
           document.getElementById('gvModel').innerHTML = selectedAccessory.context.gvModel
           document.getElementById('supportedCmds').innerHTML = (selectedAccessory.context.supportedCmds || []).join(', ')
