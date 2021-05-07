@@ -7,6 +7,7 @@ All notable changes to this homebridge-govee will be documented in this file.
 ### Changes
 
 * Brightness fix for H6052
+* Reinstate check for non-retrievable device when polling
 
 ## 3.1.4 (2021-05-04)
 
