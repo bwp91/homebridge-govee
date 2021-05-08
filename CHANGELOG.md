@@ -7,7 +7,7 @@ All notable changes to this homebridge-govee will be documented in this file.
 ### Changes
 
 * Brightness fix for H6052
-* Reinstate check for non-retrievable device when polling
+* Reinstate check for non-retrievable device when polling (should fix 400 polling error)
 * Ensure user is using at least Homebridge v1.3.0
 
 ## 3.1.4 (2021-05-04)
