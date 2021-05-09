@@ -9,6 +9,7 @@ All notable changes to this homebridge-govee will be documented in this file.
 * Brightness fix for H6052
 * Catch polling '400' error separately and only show in logs when in debug mode
 * Reduce 'No Response' timeout to 2 seconds
+* Update the correct corresponding characteristic after the 'No Response' timeout
 * Ensure user is using at least Homebridge v1.3.0
 
 ## 3.1.4 (2021-05-04)
