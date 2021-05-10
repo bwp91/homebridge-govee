@@ -2,6 +2,12 @@
 
 All notable changes to this homebridge-govee will be documented in this file.
 
+## BETA
+
+### Changes
+
+* Round kelvin value sent to Govee to nearest 100
+
 ## 3.2.2 (2021-05-10)
 
 ### Changes
