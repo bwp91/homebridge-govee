@@ -44,11 +44,6 @@
         "placeholder": 500,
         "minimum": 500
       },
-      "forceUpdates": {
-        "title": "Force Updates",
-        "type": "boolean",
-        "description": "If true, device updates will be sent even if your devices are reported offline. Can be useful in situations when Govee is incorrectly marking your devices as offline."
-      },
       "disableDeviceLogging": {
         "type": "boolean",
         "title": "Disable Device Logging",
@@ -163,7 +158,6 @@
         "language",
         "refreshTime",
         "controlInterval",
-        "forceUpdates",
         "disableDeviceLogging",
         "debug",
         "disablePlugin"
