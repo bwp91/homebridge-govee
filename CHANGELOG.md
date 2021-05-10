@@ -2,6 +2,12 @@
 
 All notable changes to this homebridge-govee will be documented in this file.
 
+## 3.2.1 (2021-05-10)
+
+### Changes
+
+* Removed `forceUpdates` config option - this is now hard-coded to `true`
+
 ## 3.2.0 (2021-05-10)
 
 ### Added
