@@ -45,6 +45,10 @@
           <th scope="row">Supported Commands</th>
           <td id="supportedCmds"></td>
         </tr>
+        <tr>
+          <th scope="row">Kelvin Range</th>
+          <td id="kelvinRange"></td>
+        </tr>
       </tbody>
     </table>
   </div>
@@ -141,6 +145,10 @@
           document.getElementById('gvDeviceId').innerHTML = selectedAccessory.context.gvDeviceId
           document.getElementById('gvModel').innerHTML = selectedAccessory.context.gvModel
           document.getElementById('supportedCmds').innerHTML = (selectedAccessory.context.supportedCmds || []).join(', ')
+          
+          document.getElementById('kelvinRange').innerHTML = selectedAccessory.context.minKelvin
+            ? selectedAccessory.context.minKelvin + ' - ' + selectedAccessory.context.maxKelvin
+            : 'N/A'
           document.getElementById('deviceTable').style.display = 'inline-table'
           homebridge.hideSpinner()
         }
