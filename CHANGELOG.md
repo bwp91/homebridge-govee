@@ -4,6 +4,15 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 ## BETA
 
+### Added
+
+* Support for new outlet devices:
+  * `H5080`
+* Support for new RGB devices:
+  * `H6062` `H6072`
+  * `H611A` `H611B` `H611C` `H611Z` `H6121` `H614C` `H614D` `H615A` `H615B` `H615C` `H615D` `H6154`
+  * `H7006` `H7007` `H7008` `H7012` `H7013` `H7020`
+
 ### Changes
 
 * Brightness fix for H6052
