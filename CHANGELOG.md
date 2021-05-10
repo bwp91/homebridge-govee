@@ -7,6 +7,7 @@ All notable changes to this homebridge-govee will be documented in this file.
 ### Changes
 
 * Round kelvin value sent to Govee to nearest 100
+* Show light as off if brightness set to 0%
 
 ## 3.2.2 (2021-05-10)
 
