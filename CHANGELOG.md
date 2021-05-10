@@ -2,6 +2,12 @@
 
 All notable changes to this homebridge-govee will be documented in this file.
 
+## 3.2.2 (2021-05-10)
+
+### Changes
+
+* Removed `language` config option
+
 ## 3.2.1 (2021-05-10)
 
 ### Changes
