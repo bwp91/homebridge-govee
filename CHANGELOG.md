@@ -12,6 +12,8 @@ All notable changes to this homebridge-govee will be documented in this file.
   * `H6062` `H6072`
   * `H611A` `H611B` `H611C` `H611Z` `H6121` `H614C` `H614D` `H615A` `H615B` `H615C` `H615D` `H6154`
   * `H7006` `H7007` `H7008` `H7012` `H7013` `H7020`
+* Use minimum and maximum kelvin reported per devices for models that support this
+* Show minimum and maximum kelvin values reported by device in plugin-ui
 
 ### Changes
 
