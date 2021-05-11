@@ -2,6 +2,12 @@
 
 All notable changes to this homebridge-govee will be documented in this file.
 
+## BETA
+
+### Changes
+
+* Switch list of 'models to not scale brightness' to a list of 'models **to** scale brightness'
+
 ## 3.2.3 (2021-05-10)
 
 ### Changes
