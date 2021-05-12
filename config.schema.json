@@ -132,24 +132,17 @@
       }
     }
   },
-  "layout": [{
+  "layout": [
+    {
       "type": "fieldset",
       "title": "Required Settings",
-      "items": [
-        "apiKey"
-      ]
+      "items": ["apiKey"]
     },
     {
       "type": "fieldset",
       "title": "Optional Settings",
       "expandable": true,
-      "items": [
-        "refreshTime",
-        "controlInterval",
-        "disableDeviceLogging",
-        "debug",
-        "disablePlugin"
-      ]
+      "items": ["refreshTime", "controlInterval", "disableDeviceLogging", "debug", "disablePlugin"]
     },
     {
       "key": "switchDevices",
@@ -157,14 +150,16 @@
       "title": "Switch Devices",
       "add": "Add Another Device",
       "type": "array",
-      "items": [{
-        "type": "fieldset",
-        "items": [
-          "switchDevices[].deviceId",
-          "switchDevices[].label",
-          "switchDevices[].overrideDisabledLogging"
-        ]
-      }]
+      "items": [
+        {
+          "type": "fieldset",
+          "items": [
+            "switchDevices[].deviceId",
+            "switchDevices[].label",
+            "switchDevices[].overrideDisabledLogging"
+          ]
+        }
+      ]
     },
     {
       "key": "lightDevices",
@@ -172,16 +167,18 @@
       "title": "Light Devices",
       "add": "Add Another Device",
       "type": "array",
-      "items": [{
-        "type": "fieldset",
-        "items": [
-          "lightDevices[].deviceId",
-          "lightDevices[].label",
-          "lightDevices[].brightnessStep",
-          "lightDevices[].adaptiveLightingShift",
-          "lightDevices[].overrideDisabledLogging"
-        ]
-      }]
+      "items": [
+        {
+          "type": "fieldset",
+          "items": [
+            "lightDevices[].deviceId",
+            "lightDevices[].label",
+            "lightDevices[].brightnessStep",
+            "lightDevices[].adaptiveLightingShift",
+            "lightDevices[].overrideDisabledLogging"
+          ]
+        }
+      ]
     },
     {
       "key": "ignoredDevices",
@@ -189,12 +186,12 @@
       "title": "Ignored Devices",
       "add": "Add Another Device",
       "type": "array",
-      "items": [{
-        "type": "fieldset",
-        "items": [
-          "ignoredDevices[]"
-        ]
-      }]
+      "items": [
+        {
+          "type": "fieldset",
+          "items": ["ignoredDevices[]"]
+        }
+      ]
     }
   ]
 }
