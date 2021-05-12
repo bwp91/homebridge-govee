@@ -6,7 +6,9 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 ### Changes
 
-- Switch list of 'models to not scale brightness' to a list of 'models **to** scale brightness'
+- Switch list of 'models to not scale brightness' to a list of 'models **to** scale brightness'## BETA
+- [Backend] Use `standard-prettier` code formatting
+- Recommended node version bump to v14.17.0
 
 ## 3.2.3 (2021-05-10)
 
