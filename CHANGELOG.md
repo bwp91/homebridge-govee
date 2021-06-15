@@ -2,6 +2,12 @@
 
 All notable changes to this homebridge-govee will be documented in this file.
 
+## BETA
+
+### Changes
+
+- Recommended node version bump to v14.17.1
+
 ## 3.2.4 (2021-06-06)
 
 ### Changes
