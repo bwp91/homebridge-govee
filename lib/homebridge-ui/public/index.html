@@ -205,22 +205,21 @@
         })
         showDeviceInfo = async hbDeviceId => {
           homebridge.showSpinner()
-          const selectedAccessory = cachedAccessories.find(x => x.context.gvDeviceId === hbDeviceId)
-
-          console.log(selectedAccessory)
-          document.getElementById('displayName').innerHTML = selectedAccessory.displayName
-          document.getElementById('online').innerHTML = selectedAccessory.context.online
+          const thisAcc = cachedAccessories.find(x => x.context.gvDeviceId === hbDeviceId)
+          const context = thisAcc.context
+          document.getElementById('displayName').innerHTML = thisAcc.displayName
+          document.getElementById('online').innerHTML = context.online
             ? '<i class="fas fa-circle mr-1 green-text"></i> Online'
             : '<i class="fas fa-circle mr-1 red-text"></i> Offline'
-          document.getElementById('gvDeviceId').innerHTML = selectedAccessory.context.gvDeviceId
-          document.getElementById('gvModel').innerHTML = selectedAccessory.context.gvModel
-          document.getElementById('supportedCmds').innerHTML = (
-            selectedAccessory.context.supportedCmds || []
-          ).join(', ')
-
-          document.getElementById('kelvinRange').innerHTML = selectedAccessory.context.minKelvin
-            ? selectedAccessory.context.minKelvin + ' - ' + selectedAccessory.context.maxKelvin
+          document.getElementById('gvDeviceId').innerHTML = context.gvDeviceId || 'N/A'
+          document.getElementById('gvModel').innerHTML = context.gvModel || 'N/A'
+          document.getElementById('supportedCmds').innerHTML = Array.isArray(context.supportedCmds)
+            ? context.supportedCmds.join(', ')
             : 'N/A'
+          document.getElementById('kelvinRange').innerHTML =
+            context.minKelvin && context.maxKelvin
+              ? context.minKelvin + ' - ' + context.maxKelvin
+              : 'N/A'
           document.getElementById('deviceTable').style.display = 'inline-table'
           homebridge.hideSpinner()
         }
