@@ -74,13 +74,13 @@
               "title": "Show As",
               "oneOf": [
                 {
+                  "title": "Outlet",
+                  "enum": ["outlet"]
+                },
+                {
                   "title": "Switch",
                   "enum": ["switch"]
                 },
-                {
-                  "title": "Outlet",
-                  "enum": ["outlet"]
-                }
               ]
             },
             "overrideLogging": {
