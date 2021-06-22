@@ -4,6 +4,21 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 ## BETA
 
+### ⚠️ Breaking Changes
+
+- `overrideDisabledLogging` config option for each accessory type has been removed in favour of a new setting `overrideLogging`
+
+### Added
+
+- **Accessory Logging**
+  - `overrideDisabledLogging` option for each accessory type has been removed in favour of a new setting `overrideLogging`
+  - `overrideLogging` can be set to (and will override the global device logging and debug logging settings):
+    - `"default"` to follow the global device update and debug logging setting for this accessory (default if setting not set)
+    - `"standard"` to enable device update logging but disable debug logging for this accessory
+    - `"debug"` to enable device update and debug logging for this accessory
+    - `"disable"` to disable device update and debug logging for this accessory
+  - The easiest way to manage these settings is through the Homebridge UI or the HOOBS UI
+
 ### Changes
 
 - Small changes to the startup logging
