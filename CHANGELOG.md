@@ -10,6 +10,8 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 ### Added
 
+- **Govee Switches**
+  - Added option to expose a switch device as an outlet
 - **Accessory Logging**
   - `overrideDisabledLogging` option for each accessory type has been removed in favour of a new setting `overrideLogging`
   - `overrideLogging` can be set to (and will override the global device logging and debug logging settings):
