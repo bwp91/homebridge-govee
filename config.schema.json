@@ -69,6 +69,20 @@
               "type": "string",
               "description": "This setting has no effect except to be a helpful label for identifying which device this is when editing the configuration."
             },
+            "showAsType": {
+              "type": "string",
+              "title": "Show As",
+              "oneOf": [
+                {
+                  "title": "Switch",
+                  "enum": ["switch"]
+                },
+                {
+                  "title": "Outlet",
+                  "enum": ["outlet"]
+                }
+              ]
+            },
             "overrideLogging": {
               "type": "string",
               "title": "Override Logging Setting",
@@ -186,6 +200,7 @@
           "items": [
             "switchDevices[].deviceId",
             "switchDevices[].label",
+            "switchDevices[].showAsType",
             "switchDevices[].overrideLogging"
           ]
         }
