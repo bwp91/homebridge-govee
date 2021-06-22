@@ -36,12 +36,12 @@
       "disableDeviceLogging": {
         "type": "boolean",
         "title": "Disable Device Logging",
-        "description": "If true, updates for all devices will not be added to the log when they are controlled."
+        "description": "Global logging setting for accessory status changes. If true then accessory status changes will not be logged. This can also be set per accessory later in the config."
       },
       "debug": {
         "title": "Debug Logging",
         "type": "boolean",
-        "description": "If true, more information will be added to the log."
+        "description": "Global logging setting for the plugin. If true then debug information will be added to the log. This can also be set per accessory later in the config."
       },
       "debugFakegato": {
         "title": "Debug Fakegato",
@@ -69,13 +69,28 @@
               "type": "string",
               "description": "This setting has no effect except to be a helpful label for identifying which device this is when editing the configuration."
             },
-            "overrideDisabledLogging": {
-              "type": "boolean",
-              "title": "Override Disabled Logging",
-              "description": "If true, updates for this device will be added to the log, even if the general 'Disable Device Logging' setting is true.",
-              "condition": {
-                "functionBody": "return model.disableDeviceLogging;"
-              }
+            "overrideLogging": {
+              "type": "string",
+              "title": "Override Logging Setting",
+              "description": "Override global logging setting for this device.",
+              "oneOf": [
+                {
+                  "title": "Default (Use Global Setting)",
+                  "enum": ["default"]
+                },
+                {
+                  "title": "Enable Standard Logging",
+                  "enum": ["standard"]
+                },
+                {
+                  "title": "Enable Debug Logging",
+                  "enum": ["debug"]
+                },
+                {
+                  "title": "Disable All Logging",
+                  "enum": ["disable"]
+                }
+              ]
             }
           }
         }
@@ -110,13 +125,28 @@
               "placeholder": 0,
               "minimum": 0
             },
-            "overrideDisabledLogging": {
-              "type": "boolean",
-              "title": "Override Disabled Logging",
-              "description": "If true, updates for this device will be added to the log, even if the general 'Disable Device Logging' setting is true.",
-              "condition": {
-                "functionBody": "return model.disableDeviceLogging;"
-              }
+            "overrideLogging": {
+              "type": "string",
+              "title": "Override Logging Setting",
+              "description": "Override global logging setting for this device.",
+              "oneOf": [
+                {
+                  "title": "Default (Use Global Setting)",
+                  "enum": ["default"]
+                },
+                {
+                  "title": "Enable Standard Logging",
+                  "enum": ["standard"]
+                },
+                {
+                  "title": "Enable Debug Logging",
+                  "enum": ["debug"]
+                },
+                {
+                  "title": "Disable All Logging",
+                  "enum": ["disable"]
+                }
+              ]
             }
           }
         }
@@ -156,7 +186,7 @@
           "items": [
             "switchDevices[].deviceId",
             "switchDevices[].label",
-            "switchDevices[].overrideDisabledLogging"
+            "switchDevices[].overrideLogging"
           ]
         }
       ]
@@ -175,7 +205,7 @@
             "lightDevices[].label",
             "lightDevices[].brightnessStep",
             "lightDevices[].adaptiveLightingShift",
-            "lightDevices[].overrideDisabledLogging"
+            "lightDevices[].overrideLogging"
           ]
         }
       ]
