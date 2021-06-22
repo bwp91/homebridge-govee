@@ -6,7 +6,7 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 ### ⚠️ Breaking Changes
 
-- `overrideDisabledLogging` config option for each accessory type has been removed in favour of a new setting `overrideLogging`
+- `overrideDisabledLogging` config for each accessory type has been removed in favour of a new setting `overrideLogging`
 
 ### Added
 
