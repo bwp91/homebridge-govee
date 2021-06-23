@@ -7,14 +7,14 @@ All notable changes to this homebridge-govee will be documented in this file.
 ### ⚠️ Breaking Changes
 
 - Govee outlet devices (currently exposed as `Switch`es) will now be exposed as `Outlet`s by default
-- `overrideDisabledLogging` config for each accessory type has been removed in favour of a new setting `overrideLogging`
+- `overrideDisabledLogging` setting for each accessory type has been removed in favour of a new setting `overrideLogging`
 
 ### Added
 
 - **Govee Outlets**
   - Option to expose Govee outlet devices as `Switch`es in HomeKit
 - **Accessory Logging**
-  - `overrideDisabledLogging` option for each accessory type has been removed in favour of a new setting `overrideLogging`
+  - `overrideDisabledLogging` setting for each accessory type has been removed in favour of a new setting `overrideLogging`
   - `overrideLogging` can be set to (and will override the global device logging and debug logging settings):
     - `"default"` to follow the global device update and debug logging setting for this accessory (default if setting not set)
     - `"standard"` to enable device update logging but disable debug logging for this accessory
