@@ -18,15 +18,12 @@ All notable changes to this homebridge-govee will be documented in this file.
 ### Changed
 
 - ⚠️ Govee outlet devices (currently exposed as `Switch`es) will now be exposed as `Outlet`s by default
+- Small changes to the startup logging
+- Recommended node version bump to v14.17.1
 
 ### Removed
 
 - `overrideDisabledLogging` setting for each accessory type
-
-### Changed
-
-- Small changes to the startup logging
-- Recommended node version bump to v14.17.1
 
 ## 3.2.4 (2021-06-06)
 
