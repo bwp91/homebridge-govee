@@ -80,7 +80,7 @@
                 {
                   "title": "Switch",
                   "enum": ["switch"]
-                },
+                }
               ]
             },
             "overrideLogging": {
