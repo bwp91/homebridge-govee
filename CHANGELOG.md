@@ -4,32 +4,33 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 ## BETA
 
-### ⚠️ Breaking Changes
-
-- Govee outlet devices (currently exposed as `Switch`es) will now be exposed as `Outlet`s by default
-- `overrideDisabledLogging` setting for each accessory type has been removed in favour of a new setting `overrideLogging`
-
 ### Added
 
 - **Govee Outlets**
-  - Option to expose Govee outlet devices as `Switch`es in HomeKit
+  - `showAsType` setting to expose Govee outlet devices as `Switch`es in HomeKit
 - **Accessory Logging**
-  - `overrideDisabledLogging` setting for each accessory type has been removed in favour of a new setting `overrideLogging`
-  - `overrideLogging` can be set to (and will override the global device logging and debug logging settings):
+  - `overrideLogging` setting per device type (to replace the removed `overrideDisabledLogging`), which can be set to (and will override the global device logging and debug logging settings):
     - `"default"` to follow the global device update and debug logging setting for this accessory (default if setting not set)
     - `"standard"` to enable device update logging but disable debug logging for this accessory
     - `"debug"` to enable device update and debug logging for this accessory
     - `"disable"` to disable device update and debug logging for this accessory
-  - The easiest way to manage these settings is through the Homebridge UI or the HOOBS UI
 
-### Changes
+### Changed
+
+- ⚠️ Govee outlet devices (currently exposed as `Switch`es) will now be exposed as `Outlet`s by default
+
+### Removed
+
+- `overrideDisabledLogging` setting for each accessory type
+
+### Changed
 
 - Small changes to the startup logging
 - Recommended node version bump to v14.17.1
 
 ## 3.2.4 (2021-06-06)
 
-### Changes
+### Changed
 
 - Switch list of 'models to not scale brightness' to a list of 'models **to** scale brightness'
 - Use `standard-prettier` code formatting
@@ -37,7 +38,7 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 ## 3.2.3 (2021-05-10)
 
-### Changes
+### Changed
 
 - Round kelvin value sent to Govee to nearest 100
 - Skip Adaptive Lighting update if kelvin value is same as previous update
@@ -45,13 +46,13 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 ## 3.2.2 (2021-05-10)
 
-### Changes
+### Removed
 
 - Removed `language` config option
 
 ## 3.2.1 (2021-05-10)
 
-### Changes
+### Removed
 
 - Removed `forceUpdates` config option - this is now hard-coded to `true`
 
@@ -68,42 +69,54 @@ All notable changes to this homebridge-govee will be documented in this file.
 - Use minimum and maximum kelvin reported per devices for models that support this
 - Show minimum and maximum kelvin values reported by device in plugin-ui
 
-### Changes
+### Changed
 
-- Brightness fix for H6052
 - Catch polling '400' error separately and only show in logs when in debug mode
 - Reduce 'No Response' timeout to 2 seconds
-- Update the correct corresponding characteristic after the 'No Response' timeout
 - Ensure user is using at least Homebridge v1.3.0
+
+### Fixed
+
+- Brightness fix for H6052
+- Update the correct corresponding characteristic after the 'No Response' timeout
 
 ## 3.1.4 (2021-05-04)
 
-### Changes
+### Changed
 
 - Accessory 'identify' function will now add an entry to the log
-- Removal of device 'retrievable' and 'controllable' status as they seem to serve no purpose
 - Backend refactoring, function and variable name changes
+
+### Removed
+
+- Removal of device 'retrievable' and 'controllable' status as they seem to serve no purpose
 
 ## 3.1.3 (2021-04-24)
 
-### Changes
+### Changed
 
 - Use `colorTem` for colour temperature updates for devices that support this command
   - This will use the white LEDs on devices that have them
-- Fixes a brightness issue with the H6143 model
 - Include a link in the 'device offline' log message for further details of this issue
+
+### Fixed
+
+- Fixes a brightness issue with the H6143 model
 
 ## 3.1.2 (2021-04-16)
 
-### Changes
+### Changed
 
-- Fix characteristic NaN warning for `LastActivation`
 - Recover accessories from the cache using the UUID
 - Update wiki links in the Homebridge plugin-ui
 
+### Fixed
+
+- Fix characteristic NaN warning for `LastActivation`
+
 ## 3.1.1 (2021-04-12)
 
-### Changes
+### Changed
 
 - Updated plugin-ui 'Support' page links to match GitHub readme file
 
@@ -113,11 +126,14 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 - `forceUpdates` configuration option for force-sending device updates even if Govee is reporting your devices as offline
 
-### Changes
+### Changed
 
-- Removed dev code for scene support
 - Updated README to reflect minimum supported Homebridge/HOOBS and Node versions
 - Updated recommended Node to v14.16.1
+
+### Removed
+
+- Removed development code for scene support
 
 ## 3.0.0 (2021-04-03)
 
@@ -130,20 +146,20 @@ All notable changes to this homebridge-govee will be documented in this file.
 - **HOOBS Users**
   - This plugin has a minimum requirement of HOOBS v3.3.4
 
-### Changes
+### Changed
 
 - Use the new `.onSet` methods available in Homebridge v1.3
 - Plugin will report 'offline' devices with a 'No Response' message in HomeKit apps when controlled (and this status will be reverted after 5 seconds)
 
 ## 2.14.2 (2021-03-22)
 
-### Changes
+### Changed
 
 - Updated plugin ui to use reported `online` status for the 'Cloud Status' instead of the reported `controllable` status
 
 ## 2.14.1 (2021-03-21)
 
-### Changes
+### Fixed
 
 - Fixes an issue with online/offline status as certain devices seem to report status as a boolean (not as a string)
 
@@ -153,7 +169,7 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 - Device online/offline status logging to make it clearer if a device is connected to wifi
 
-### Changes
+### Changed
 
 - **Light devices** will now send on/off commands **after** brightness and colour ([#56](https://github.com/bwp91/homebridge-govee/issues/56))
 - More welcome messages
@@ -161,13 +177,13 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 ## 2.13.2 (2021-03-17)
 
-### Changes
+### Changed
 
 - Modified config schema to show titles/descriptions for non Homebridge UI users
 
 ## 2.13.1 (2021-03-14)
 
-### Changes
+### Changed
 
 - Adaptive Lighting now requires Homebridge 1.3 release
 
@@ -183,7 +199,7 @@ All notable changes to this homebridge-govee will be documented in this file.
   - The idea of this is to experiment with how scenes could work if Govee enable this functionality through the API
   - The scene buttons that appear have **no** effect except logging what should happen
 
-### Changes
+### Changed
 
 - Less strict threshold for determining a 'significant' colour change for disabling Adaptive Lighting
 - Show a more user friendly log message on timeout error from Govee
@@ -192,13 +208,13 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 ## 2.12.2 (2021-02-17)
 
-### Changes
+### Changed
 
 - In debug mode, the plugin will log each device's customised options when initialised
 
 ## 2.12.1 (2021-02-17)
 
-### Changes
+### Changed
 
 - Raised minimum Homebridge beta required for Adaptive Lighting to 1.3.0-beta.58
 
@@ -209,7 +225,7 @@ All notable changes to this homebridge-govee will be documented in this file.
 - A configurable minimum brightness step per Govee light bulb/strip
 - The ability to explicitly enable device logging _per_ device if you have `disableDeviceLogging` set to `true`
 
-### Changes
+### Changed
 
 - Show a more user friendly log message on 502 error from Govee
 - Stop subsequent warning messages if a device fails to initialise
@@ -219,20 +235,26 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 ## 2.11.2 (2021-02-11)
 
-### Changes
+### Changed
 
 - Suitable range for `adaptiveLightingShift` added to description
 - Link to 'Uninstall' wiki page in the plugin-ui
-- Removed concurrency limit from http queue as throttling is based on the interval and cap
 - Updated minimum Homebridge to v1.1.7
 - Fakegato library formatting and simplification
 
+### Removed
+
+- Removed concurrency limit from http queue as throttling is based on the interval and cap
+
 ## 2.11.1 (2021-02-10)
 
-### Changes
+### Changed
+
+- Updated minimum node to v14.15.5
+
+### Fixed
 
 - Fixes an issue when initialising switch devices
-- Updated minimum node to v14.15.5
 
 ## 2.11.0 (2021-02-09)
 
@@ -242,16 +264,22 @@ All notable changes to this homebridge-govee will be documented in this file.
   - New `adaptiveLightingShift` option to offset the Adaptive Lighting values to make the light appear warmer
 - Eve history service for Govee Wi-Fi switches
 
-### Changes
+### Changed
 
 - User inputted Govee device IDs will now be parsed more thoroughly
+
+### Fixed
+
 - Fixed a bug when trying to select a different device in the Homebridge plugin-ui
 
 ## 2.10.1 (2021-02-08)
 
-### Changes
+### Changed
 
 - Improvements to colour temperature conversion
+
+### Fixed
+
 - Fixed a bug where Adaptive Lighting would not be disabled if the colour was changed from the Govee app
 - Hide the `Config entry [plugin_map] is unused and can be removed` notice for HOOBS users
 
@@ -263,11 +291,14 @@ All notable changes to this homebridge-govee will be documented in this file.
   - This setting is visible in the Homebridge plugin UI screen under 'Optional Settings'
   - The default value for this setting will be 500ms but if you experience connectivity issues I would suggest increasing this number (by multiples of 500) until you find a value which works well for you
 
-### Changes
+### Changed
 
-- Brightness fix for the H6003
 - Error stack will be hidden when the disabled plugin message appears in the log
 - More colour conversation formula changes
+
+### Fixed
+
+- Brightness fix for the H6003
 
 ## 2.9.0 (2021-02-06)
 
@@ -280,7 +311,7 @@ All notable changes to this homebridge-govee will be documented in this file.
 - Configuration checks to highlight any unnecessary or incorrectly formatted settings you have
 - Link to 'Configuration' wiki page in the plugin-ui
 
-### Changes
+### Changed
 
 - ⚠️ `ignoredDevices` configuration option is now an array not a string
 - If a device's current status cannot be retrieved then the log message will only be displayed in debug mode
@@ -291,51 +322,60 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 ## 2.8.4 (2021-01-29)
 
-### Changes
+### Changed
 
-- H6109 brightness fix
 - More consistent and clearer error logging
 - Minor code refactors
 - Updated plugin-ui-utils dep and use new method to get cached accessories
 
+### Fixed
+
+- H6109 brightness fix
+
 ## 2.8.3 (2021-01-24)
 
-### Changes
+### Fixed
 
 - H6195 brightness fix
 
 ## 2.8.2 (2021-01-24)
 
-### Changes
+### Changed
 
 - Backend - better handling of errors
 
 ## 2.8.1 (2021-01-21)
 
-### Changes
+### Changed
 
 - Minimum Homebridge beta needed for Adaptive Lighting bumped to beta-46.
 
 ## v2.8.0 (2021-01-18)
 
-### Changes
+### Changed
 
 - Plugin will log incoming device updates in `debug` mode
   - For standard usage I would recommend to have plugin `debug` mode set to OFF/FALSE, as this change will add an update to your log every X seconds depending on your refresh interval (which is 15 seconds by default)
+
+### Fixed
+
 - Brightness fix for `H7022` model
 
 ## v2.7.3 (2021-01-14)
 
-### Changes
+### Changed
 
 - Expose H5001, H5081 and H7014 as switches (not lightbulbs)
 - Ensures brightness value is in [0, 100]
 
 ## 2.7.1 (2021-01-13)
 
-### Changes
+### Changed
 
 - Created CHANGELOG.md
+
+### Fixed
+
 - Brightness fix for H6188
 
 ## 2.7.0 (2021-01-12)
@@ -344,9 +384,12 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 - New configuration option `disableDeviceLogging` to stop device state changes being logged
 
-### Changes
+### Changed
 
 - Improved validation checks and formatting for user inputs
-- Removal of maximum value for `number` types on plugin settings screen
 - Changes to startup log messages
 - Backend code changes
+
+### Removed
+
+- Removal of maximum value for `number` types on plugin settings screen
