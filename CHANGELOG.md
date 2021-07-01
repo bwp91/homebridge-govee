@@ -9,7 +9,7 @@ All notable changes to this homebridge-govee will be documented in this file.
 - **Govee Outlets**
   - `showAsType` setting to expose Govee outlet devices as `Switch`es in HomeKit
 - **Govee Lights**
-  - Remove Adaptive Lighting icon from a device by setting the `adaptiveLightingShift` to `-1`
+  - Remove Adaptive Lighting feature from a device by setting the `adaptiveLightingShift` to `-1`
 - **Accessory Logging**
   - `overrideLogging` setting per device type (to replace the removed `overrideDisabledLogging`), which can be set to (and will override the global device logging and debug logging settings):
     - `"default"` to follow the global device update and debug logging setting for this accessory (default if setting not set)
