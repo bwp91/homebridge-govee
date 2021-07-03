@@ -67,7 +67,10 @@
             "label": {
               "title": "Label",
               "type": "string",
-              "description": "This setting has no effect except to be a helpful label for identifying which device this is when editing the configuration."
+              "description": "This setting has no effect except to be a helpful label for identifying which device this is when editing the configuration.",
+              "condition": {
+                "functionBody": "return (model.switchDevices && model.switchDevices[arrayIndices] && model.switchDevices[arrayIndices].deviceId && model.switchDevices[arrayIndices].deviceId.length > 0);"
+              }
             },
             "showAsType": {
               "type": "string",
@@ -81,7 +84,10 @@
                   "title": "Switch",
                   "enum": ["switch"]
                 }
-              ]
+              ],
+              "condition": {
+                "functionBody": "return (model.switchDevices && model.switchDevices[arrayIndices] && model.switchDevices[arrayIndices].deviceId && model.switchDevices[arrayIndices].deviceId.length > 0);"
+              }
             },
             "overrideLogging": {
               "type": "string",
@@ -104,7 +110,10 @@
                   "title": "Disable All Logging",
                   "enum": ["disable"]
                 }
-              ]
+              ],
+              "condition": {
+                "functionBody": "return (model.switchDevices && model.switchDevices[arrayIndices] && model.switchDevices[arrayIndices].deviceId && model.switchDevices[arrayIndices].deviceId.length > 0);"
+              }
             }
           }
         }
@@ -123,21 +132,30 @@
             "label": {
               "title": "Label",
               "type": "string",
-              "description": "This setting has no effect except to be a helpful label for identifying which device this is when editing the configuration."
+              "description": "This setting has no effect except to be a helpful label for identifying which device this is when editing the configuration.",
+              "condition": {
+                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length > 0);"
+              }
             },
             "brightnessStep": {
               "title": "Brightness Step",
               "type": "number",
               "description": "A minimum step for the brightness slider in the Home app. Must be 1 or more.",
               "placeholder": 1,
-              "minimum": 1
+              "minimum": 1,
+              "condition": {
+                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length > 0);"
+              }
             },
             "adaptiveLightingShift": {
               "title": "Adaptive Lighting Shift",
               "type": "number",
               "description": "The mired for each Adaptive Lighting update will be increased by this value, making the light appear warmer. Set to -1 to remove Adaptive Lighting feature. Must be -1 or more.",
               "placeholder": 0,
-              "minimum": -1
+              "minimum": -1,
+              "condition": {
+                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length > 0);"
+              }
             },
             "overrideLogging": {
               "type": "string",
@@ -160,7 +178,10 @@
                   "title": "Disable All Logging",
                   "enum": ["disable"]
                 }
-              ]
+              ],
+              "condition": {
+                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length > 0);"
+              }
             }
           }
         }
