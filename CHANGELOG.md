@@ -23,7 +23,7 @@ All notable changes to this homebridge-govee will be documented in this file.
 - Light devices will now turn on to the previous brightness (not 100%) when turning on after setting brightness to 0%
 - More interactive Homebridge UI - device configuration will expand once device ID entered
 - Small changes to the startup logging
-- Recommended node version bump to v14.17.2
+- Recommended node version bump to v14.17.3
 
 ### Removed
 
