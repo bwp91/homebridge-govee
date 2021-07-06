@@ -19,7 +19,7 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 ### Changed
 
-- ⚠️ Govee outlet devices (currently exposed as `Switch`es) will now be exposed as `Outlet`s by default
+- ⚠️ Govee outlet devices (currently exposed as a `Switch`) will now be exposed as an `Outlet` by default
 - Light devices will now turn on to the previous brightness (not 100%) when turning on after setting brightness to 0%
 - More interactive Homebridge UI - device configuration will expand once device ID entered
 - Small changes to the startup logging
