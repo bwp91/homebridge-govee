@@ -74,17 +74,21 @@
                 "functionBody": "return (model.switchDevices && model.switchDevices[arrayIndices] && model.switchDevices[arrayIndices].deviceId && model.switchDevices[arrayIndices].deviceId.length === 23);"
               }
             },
-            "showAsType": {
+            "showAs": {
               "type": "string",
               "title": "Show As",
               "oneOf": [
                 {
-                  "title": "Outlet",
-                  "enum": ["outlet"]
+                  "title": "Outlet (Default)",
+                  "enum": ["default"]
                 },
                 {
                   "title": "Switch",
                   "enum": ["switch"]
+                },
+                {
+                  "title": "Air Purifier",
+                  "enum": ["purifier"]
                 }
               ],
               "condition": {
@@ -225,7 +229,7 @@
           "items": [
             "switchDevices[].deviceId",
             "switchDevices[].label",
-            "switchDevices[].showAsType",
+            "switchDevices[].showAs",
             "switchDevices[].overrideLogging"
           ]
         }
