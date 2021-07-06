@@ -54,7 +54,7 @@
         "description": "If true, the plugin will remove all accessories and not load the plugin on restart."
       },
       "switchDevices": {
-        "title": "Switch Devices",
+        "title": "Outlet Devices",
         "type": "array",
         "items": {
           "type": "object",
@@ -220,7 +220,7 @@
     {
       "key": "switchDevices",
       "expandable": true,
-      "title": "Switch Devices",
+      "title": "Outlet Devices",
       "add": "Add Another Device",
       "type": "array",
       "items": [
