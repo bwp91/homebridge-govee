@@ -7,7 +7,7 @@ All notable changes to this homebridge-govee will be documented in this file.
 ### Added
 
 - **Govee Outlets**
-  - `showAsType` setting to expose Govee outlet devices as `Switch`es in HomeKit
+  - `showAs` setting to expose Govee outlet devices as a `Switch` or `AirPurifier` accessory in HomeKit
 - **Govee Lights**
   - Remove Adaptive Lighting feature from a device by setting the `adaptiveLightingShift` to `-1`
 - **Accessory Logging**
