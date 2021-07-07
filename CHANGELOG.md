@@ -2,6 +2,12 @@
 
 All notable changes to this homebridge-govee will be documented in this file.
 
+## BETA
+
+## Fixed
+
+- Brightness issue for H6054
+
 ## 3.3.0 (2021-07-06)
 
 ### Added
