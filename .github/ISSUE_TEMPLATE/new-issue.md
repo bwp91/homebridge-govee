@@ -17,7 +17,7 @@ assignees: ''
 
 
 ### Details of your setup.
-* Do you use (1) Homebridge (+ config-ui), (2) Homebridge (CLI) or (3) HOOBS? 
+* Do you use (1) Homebridge UI-X (2) Homebridge CLI or (3) HOOBS? 
 
 
 
