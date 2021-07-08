@@ -2,6 +2,12 @@
 
 All notable changes to this homebridge-govee will be documented in this file.
 
+## 3.3.2 (2021-07-08)
+
+### Changes
+
+- Revert node version bump to v14.17.3 (back to v14.17.2)
+
 ## 3.3.1 (2021-07-07)
 
 ## Fixed
