@@ -65,7 +65,7 @@
               "description": "This setting has no effect except to help identify this device."
             },
             "deviceId": {
-              "title": "Govee Device ID",
+              "title": "Device ID",
               "type": "string",
               "description": "Enter the 23 digit Govee Device ID to begin (e.g. 12:AB:A1:C5:A8:99:D2:17).",
               "minLength": 23,
@@ -141,7 +141,7 @@
               "description": "This setting has no effect except to help identify this device."
             },
             "deviceId": {
-              "title": "Govee Device ID",
+              "title": "Device ID",
               "type": "string",
               "description": "Enter the 23 digit Govee Device ID to begin (e.g. 12:AB:A1:C5:A8:99:D2:17).",
               "minLength": 23,
@@ -209,7 +209,7 @@
         "type": "array",
         "items": {
           "type": "string",
-          "title": "Govee Device ID",
+          "title": "Device ID",
           "description": "Govee Device ID of the device you wish to ignore, e.g. 12:AB:A1:C5:A8:99:D2:17."
         }
       }
