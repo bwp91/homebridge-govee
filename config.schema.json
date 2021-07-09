@@ -59,6 +59,11 @@
         "items": {
           "type": "object",
           "properties": {
+            "label": {
+              "title": "Label",
+              "type": "string",
+              "description": "This setting has no effect except to help identify this device."
+            },
             "deviceId": {
               "title": "Govee Device ID",
               "type": "string",
@@ -66,10 +71,10 @@
               "minLength": 23,
               "maxLength": 23
             },
-            "label": {
-              "title": "Label",
-              "type": "string",
-              "description": "This setting has no effect except to help identify this device.",
+            "ignoreDevice": {
+              "type": "boolean",
+              "title": "Hide From HomeKit",
+              "description": "If true, this accessory will be removed and ignored from HomeKit.",
               "condition": {
                 "functionBody": "return (model.switchDevices && model.switchDevices[arrayIndices] && model.switchDevices[arrayIndices].deviceId && model.switchDevices[arrayIndices].deviceId.length === 23);"
               }
@@ -92,7 +97,7 @@
                 }
               ],
               "condition": {
-                "functionBody": "return (model.switchDevices && model.switchDevices[arrayIndices] && model.switchDevices[arrayIndices].deviceId && model.switchDevices[arrayIndices].deviceId.length === 23);"
+                "functionBody": "return (model.switchDevices && model.switchDevices[arrayIndices] && model.switchDevices[arrayIndices].deviceId && model.switchDevices[arrayIndices].deviceId.length === 23 && !model.switchDevices[arrayIndices].ignoreDevice);"
               }
             },
             "overrideLogging": {
@@ -118,7 +123,7 @@
                 }
               ],
               "condition": {
-                "functionBody": "return (model.switchDevices && model.switchDevices[arrayIndices] && model.switchDevices[arrayIndices].deviceId && model.switchDevices[arrayIndices].deviceId.length === 23);"
+                "functionBody": "return (model.switchDevices && model.switchDevices[arrayIndices] && model.switchDevices[arrayIndices].deviceId && model.switchDevices[arrayIndices].deviceId.length === 23 && !model.switchDevices[arrayIndices].ignoreDevice);"
               }
             }
           }
@@ -130,6 +135,11 @@
         "items": {
           "type": "object",
           "properties": {
+            "label": {
+              "title": "Label",
+              "type": "string",
+              "description": "This setting has no effect except to help identify this device."
+            },
             "deviceId": {
               "title": "Govee Device ID",
               "type": "string",
@@ -137,10 +147,10 @@
               "minLength": 23,
               "maxLength": 23
             },
-            "label": {
-              "title": "Label",
-              "type": "string",
-              "description": "This setting has no effect except to help identify this device.",
+            "ignoreDevice": {
+              "type": "boolean",
+              "title": "Hide From HomeKit",
+              "description": "If true, this accessory will be removed and ignored from HomeKit.",
               "condition": {
                 "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23);"
               }
@@ -152,7 +162,7 @@
               "placeholder": 1,
               "minimum": 1,
               "condition": {
-                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23);"
+                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice);"
               }
             },
             "adaptiveLightingShift": {
@@ -162,7 +172,7 @@
               "placeholder": 0,
               "minimum": -1,
               "condition": {
-                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23);"
+                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice);"
               }
             },
             "overrideLogging": {
@@ -188,7 +198,7 @@
                 }
               ],
               "condition": {
-                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23);"
+                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice);"
               }
             }
           }
@@ -227,8 +237,9 @@
         {
           "type": "fieldset",
           "items": [
-            "switchDevices[].deviceId",
             "switchDevices[].label",
+            "switchDevices[].deviceId",
+            "switchDevices[].ignoreDevice",
             "switchDevices[].showAs",
             "switchDevices[].overrideLogging"
           ]
@@ -245,8 +256,9 @@
         {
           "type": "fieldset",
           "items": [
-            "lightDevices[].deviceId",
             "lightDevices[].label",
+            "lightDevices[].deviceId",
+            "lightDevices[].ignoreDevice",
             "lightDevices[].brightnessStep",
             "lightDevices[].adaptiveLightingShift",
             "lightDevices[].overrideLogging"
