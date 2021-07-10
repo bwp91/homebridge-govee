@@ -4,6 +4,12 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 ## BETA
 
+### Added
+
+- Support for Bluetooth control for ON/OFF for supported devices
+  - Currently for only existing API supported models
+  - More installation instructions may be required - see [docs](https://github.com/abandonware/noble#installation)
+
 ### Changed
 
 - **Homebridge UI**
