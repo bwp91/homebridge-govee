@@ -16,16 +16,17 @@
       "apiKey": {
         "type": "string",
         "title": "Govee API Key",
-        "description": "You can obtain your API key using <a href=\"https://github.com/bwp91/homebridge-govee/wiki/Configuration#obtaining-your-api-key\" target=\"_blank\">this guide</a>.",
-        "required": true
+        "description": "Required in most circumstances. You can obtain your API key using <a href=\"https://github.com/bwp91/homebridge-govee/wiki/Configuration#obtaining-your-api-key\" target=\"_blank\">this guide</a>."
       },
       "username": {
         "type": "string",
-        "title": "Govee Username"
+        "title": "Govee Username",
+        "description": "Required when wanting to control devices via Bluetooth"
       },
       "password": {
         "type": "string",
-        "title": "Govee Password"
+        "title": "Govee Password",
+        "description": "Required when wanting to control devices via Bluetooth"
       },
       "refreshTime": {
         "title": "Refresh Interval",
@@ -168,7 +169,7 @@
               "type": "boolean",
               "description": "If true, the plugin will try and control this device via Bluetooth.",
               "condition": {
-                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice);"
+                "functionBody": "return (model.username && model.password && model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice);"
               }
             },
             "brightnessStep": {
@@ -235,15 +236,13 @@
     {
       "type": "fieldset",
       "title": "Required Settings",
-      "items": ["apiKey"]
+      "items": ["apiKey", "username", "password"]
     },
     {
       "type": "fieldset",
       "title": "Optional Settings",
       "expandable": true,
       "items": [
-        "username",
-        "password",
         "refreshTime",
         "controlInterval",
         "disableDeviceLogging",
