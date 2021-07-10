@@ -58,6 +58,10 @@
           <td id="online"></td>
         </tr>
         <tr>
+          <th scope="row">Bluetooth Status</th>
+          <td id="onlineBT"></td>
+        </tr>
+        <tr>
           <th scope="row">Govee Device ID</th>
           <td id="gvDeviceId"></td>
         </tr>
@@ -70,8 +74,23 @@
           <td id="supportedCmds"></td>
         </tr>
         <tr>
+          <th scope="row">Firmware Version</th>
+          <td id="firmware"></td>
+        </tr>
+        <tr>
+          <th scope="row">Hardware Version</th>
+          <td id="hardware"></td>
+        </tr>
+        <tr>
+          <th scope="row">Bluetooth Compatible</th>
+          <td id="bluetooth"></td>
+        </tr>
+        <tr>
           <th scope="row">Kelvin Range</th>
           <td id="kelvinRange"></td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: center" id="image"></td>
         </tr>
       </tbody>
     </table>
@@ -211,15 +230,32 @@
           document.getElementById('online').innerHTML = context.online
             ? '<i class="fas fa-circle mr-1 green-text"></i> Online'
             : '<i class="fas fa-circle mr-1 red-text"></i> Offline'
+          document.getElementById('onlineBT').innerHTML = context.onlineBT
+            ? '<i class="fas fa-circle mr-1 green-text"></i> Online'
+            : '<i class="fas fa-circle mr-1 red-text"></i> Offline'
           document.getElementById('gvDeviceId').innerHTML = context.gvDeviceId || 'N/A'
           document.getElementById('gvModel').innerHTML = context.gvModel || 'N/A'
           document.getElementById('supportedCmds').innerHTML = Array.isArray(context.supportedCmds)
             ? context.supportedCmds.join(', ')
             : 'N/A'
+          document.getElementById('firmware').innerHTML = context.firmware
+            ? context.firmware
+            : 'N/A'
+          document.getElementById('hardware').innerHTML = context.hardware
+            ? context.hardware
+            : 'N/A'
+          document.getElementById('bluetooth').innerHTML = context.bluetooth
+            ? context.isBluetooth
+              ? 'Yes'
+              : 'No'
+            : 'N/A'
           document.getElementById('kelvinRange').innerHTML =
             context.minKelvin && context.maxKelvin
               ? context.minKelvin + ' - ' + context.maxKelvin
               : 'N/A'
+          document.getElementById('image').innerHTML = context.image
+            ? '<img src="' + context.image + '" style="width: 150px;">'
+            : ''
           document.getElementById('deviceTable').style.display = 'inline-table'
           homebridge.hideSpinner()
         }

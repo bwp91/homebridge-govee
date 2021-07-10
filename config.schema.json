@@ -19,6 +19,14 @@
         "description": "You can obtain your API key using <a href=\"https://github.com/bwp91/homebridge-govee/wiki/Configuration#obtaining-your-api-key\" target=\"_blank\">this guide</a>.",
         "required": true
       },
+      "username": {
+        "type": "string",
+        "title": "Govee Username"
+      },
+      "password": {
+        "type": "string",
+        "title": "Govee Password"
+      },
       "refreshTime": {
         "title": "Refresh Interval",
         "type": "integer",
@@ -155,6 +163,14 @@
                 "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23);"
               }
             },
+            "enableBT": {
+              "title": "Enable Bluetooth Control",
+              "type": "boolean",
+              "description": "If true, the plugin will try and control this device via Bluetooth.",
+              "condition": {
+                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice);"
+              }
+            },
             "brightnessStep": {
               "title": "Brightness Step",
               "type": "integer",
@@ -225,7 +241,15 @@
       "type": "fieldset",
       "title": "Optional Settings",
       "expandable": true,
-      "items": ["refreshTime", "controlInterval", "disableDeviceLogging", "debug", "disablePlugin"]
+      "items": [
+        "username",
+        "password",
+        "refreshTime",
+        "controlInterval",
+        "disableDeviceLogging",
+        "debug",
+        "disablePlugin"
+      ]
     },
     {
       "key": "switchDevices",
@@ -259,6 +283,7 @@
             "lightDevices[].label",
             "lightDevices[].deviceId",
             "lightDevices[].ignoreDevice",
+            "lightDevices[].enableBT",
             "lightDevices[].brightnessStep",
             "lightDevices[].adaptiveLightingShift",
             "lightDevices[].overrideLogging"
