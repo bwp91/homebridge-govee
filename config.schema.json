@@ -16,17 +16,17 @@
       "apiKey": {
         "type": "string",
         "title": "Govee API Key",
-        "description": "Required in most circumstances. You can obtain your API key using <a href=\"https://github.com/bwp91/homebridge-govee/wiki/Configuration#obtaining-your-api-key\" target=\"_blank\">this guide</a>."
+        "description": "Required to enable support for cloud devices. You can obtain your API key using <a href=\"https://github.com/bwp91/homebridge-govee/wiki/Configuration#obtaining-your-api-key\" target=\"_blank\">this guide</a>."
       },
       "username": {
         "type": "string",
         "title": "Govee Username",
-        "description": "Required when wanting to control devices via bluetooth."
+        "description": "Required to enable support for bluetooth devices."
       },
       "password": {
         "type": "string",
         "title": "Govee Password",
-        "description": "Required when wanting to control devices via bluetooth."
+        "description": "Required to enable support for bluetooth devices."
       },
       "refreshTime": {
         "title": "Refresh Interval",
