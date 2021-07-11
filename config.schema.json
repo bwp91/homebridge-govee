@@ -21,12 +21,12 @@
       "username": {
         "type": "string",
         "title": "Govee Username",
-        "description": "Required when wanting to control devices via Bluetooth."
+        "description": "Required when wanting to control devices via bluetooth."
       },
       "password": {
         "type": "string",
         "title": "Govee Password",
-        "description": "Required when wanting to control devices via Bluetooth."
+        "description": "Required when wanting to control devices via bluetooth."
       },
       "refreshTime": {
         "title": "Refresh Interval",
@@ -167,7 +167,7 @@
             "enableBT": {
               "title": "Enable Bluetooth Control",
               "type": "boolean",
-              "description": "If true, the plugin will try and control this device via Bluetooth.",
+              "description": "If true, the plugin will try and control this device via bluetooth.",
               "condition": {
                 "functionBody": "return (model.username && model.password && model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice);"
               }
