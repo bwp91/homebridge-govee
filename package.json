@@ -3,7 +3,7 @@
   "alias": "Govee",
   "version": "3.3.3-beta.15",
   "author": "bwp91",
-  "description": "Homebridge plugin to control Govee devices supported by the official Govee API.",
+  "description": "Homebridge plugin to control certain Govee devices.",
   "license": "MIT",
   "keywords": [
     "homebridge",
