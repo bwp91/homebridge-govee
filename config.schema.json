@@ -21,12 +21,12 @@
       "username": {
         "type": "string",
         "title": "Govee Username",
-        "description": "Required when wanting to control devices via Bluetooth"
+        "description": "Required when wanting to control devices via Bluetooth."
       },
       "password": {
         "type": "string",
         "title": "Govee Password",
-        "description": "Required when wanting to control devices via Bluetooth"
+        "description": "Required when wanting to control devices via Bluetooth."
       },
       "refreshTime": {
         "title": "Refresh Interval",
