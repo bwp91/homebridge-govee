@@ -220,15 +220,6 @@
             }
           }
         }
-      },
-      "ignoredDevices": {
-        "title": "Ignored Devices",
-        "type": "array",
-        "items": {
-          "type": "string",
-          "title": "Device ID",
-          "description": "Govee Device ID of the device you wish to ignore, e.g. 12:AB:A1:C5:A8:99:D2:17."
-        }
       }
     }
   },
@@ -281,19 +272,6 @@
             "switchDevices[].showAs",
             "switchDevices[].overrideLogging"
           ]
-        }
-      ]
-    },
-    {
-      "key": "ignoredDevices",
-      "expandable": true,
-      "title": "Ignored Devices",
-      "add": "Add Another Device",
-      "type": "array",
-      "items": [
-        {
-          "type": "fieldset",
-          "items": ["ignoredDevices[]"]
         }
       ]
     }
