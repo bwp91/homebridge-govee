@@ -21,8 +21,8 @@ Homebridge plugin to control certain Govee devices
 ### Plugin Information
 
 - This plugin allows you to view and control your Govee devices within HomeKit. The plugin:
-  - requires an [API key](https://github.com/bwp91/homebridge-govee/wiki/Configuration#obtaining-your-api-key) linked to your Govee account to function
-  - uses the official [Govee API (v1.2)](https://govee-public.s3.amazonaws.com/developer-docs/GoveeAPIReference.pdf) so please [check](https://github.com/bwp91/homebridge-govee/wiki/Supported-Devices) that your Govee model is supported
+  - requires your Govee username and password to enable support for bluetooth devices
+  - requires an [API key](https://github.com/bwp91/homebridge-govee/wiki/Configuration#obtaining-your-api-key) to enable support for cloud (API) devices
 
 ### Prerequisites
 
