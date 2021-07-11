@@ -51,6 +51,7 @@ Homebridge plugin to control certain Govee devices
 ### Credits
 
 - To all users who have shared their devices to enable functionality.
+- To the creator/owner of the [govee-led-client](https://www.npmjs.com/package/govee-led-client) library which made Bluetooth connection possible.
 - To the creator of the awesome plugin header logo: [Keryan Belahcene](https://www.instagram.com/keryan.me).
 - To the creators/contributors of [Homebridge](https://homebridge.io) who make this plugin possible.
 
