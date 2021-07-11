@@ -242,13 +242,7 @@
       "type": "fieldset",
       "title": "Optional Settings",
       "expandable": true,
-      "items": [
-        "refreshTime",
-        "controlInterval",
-        "disableDeviceLogging",
-        "debug",
-        "disablePlugin"
-      ]
+      "items": ["refreshTime", "controlInterval", "disableDeviceLogging", "debug", "disablePlugin"]
     },
     {
       "key": "switchDevices",
