@@ -6,9 +6,10 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 ### Added
 
-- Support for Bluetooth control for ON/OFF for supported devices
-  - Currently for only existing API supported models
+- Support for Bluetooth control for power/brightness/colour for supported devices
   - More installation instructions may be required - see [docs](https://github.com/abandonware/noble#installation)
+  - Enter your Govee username and password in the config
+  - Create an entry for your light in the 'Light Devices' section and check 'Enable Bluetooth Control'
 
 ### Changed
 
