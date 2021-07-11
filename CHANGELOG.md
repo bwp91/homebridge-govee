@@ -7,7 +7,7 @@ All notable changes to this homebridge-govee will be documented in this file.
 ### Added
 
 - Support for Bluetooth control for power/brightness/colour for supported devices
-  - More installation instructions may be required - see [docs](https://github.com/abandonware/noble#installation)
+  - Extra packages may need to be installed on your system - [see wiki](https://github.com/bwp91/homebridge-govee/wiki/Installation#1-install-bluetooth-packages)
   - Enter your Govee username and password in the config
   - Create an entry for your light in the 'Light Devices' section and check 'Enable Bluetooth Control'
 
@@ -16,6 +16,10 @@ All notable changes to this homebridge-govee will be documented in this file.
 - **Homebridge UI**
   - `label` field now appears first in the device configuration sections
   - A device can now be ignored/removed from Homebridge by the `ignoreDevice` setting in the device configuration sections
+
+### Removed
+
+- `ignoredDevices` configuration option (see alternate way of ignore a device above)
 
 ## 3.3.2 (2021-07-08)
 
