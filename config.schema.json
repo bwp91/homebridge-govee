@@ -13,11 +13,6 @@
         "type": "string",
         "default": "Govee"
       },
-      "apiKey": {
-        "type": "string",
-        "title": "Govee API Key",
-        "description": "Required to enable support for cloud devices. You can obtain your API key using <a href=\"https://github.com/bwp91/homebridge-govee/wiki/Configuration#obtaining-your-api-key\" target=\"_blank\">this guide</a>."
-      },
       "username": {
         "type": "string",
         "title": "Govee Username",
@@ -28,17 +23,22 @@
         "title": "Govee Password",
         "description": "Required to enable support for bluetooth devices."
       },
+      "apiKey": {
+        "type": "string",
+        "title": "Govee API Key",
+        "description": "Required to enable support for cloud devices. You can obtain your API key using <a href=\"https://github.com/bwp91/homebridge-govee/wiki/Configuration#obtaining-your-api-key\" target=\"_blank\">this guide</a>."
+      },
       "refreshTime": {
         "title": "Refresh Interval",
         "type": "integer",
-        "description": "An interval (in seconds) in which your devices will refresh with Govee. Must be 15 or more.",
+        "description": "An interval (in seconds) in which your cloud devices will refresh with Govee. Must be 15 or more.",
         "placeholder": 15,
         "minimum": 15
       },
       "controlInterval": {
         "title": "Control Interval",
         "type": "integer",
-        "description": "A minimum delay (in milliseconds) between device updates being sent. Increasing this may help if you find device updates are not working or if you use HomeKit scenes/groupings. Must be 500 or more.",
+        "description": "A minimum delay (in milliseconds) between cloud device updates being sent. Increasing this may help if you find device updates are not working or if you use HomeKit scenes/groupings. Must be 500 or more.",
         "placeholder": 500,
         "minimum": 500
       },
@@ -61,82 +61,6 @@
         "title": "Disable Plugin",
         "type": "boolean",
         "description": "If true, the plugin will remove all accessories and not load the plugin on restart."
-      },
-      "switchDevices": {
-        "title": "Outlet Devices",
-        "type": "array",
-        "items": {
-          "type": "object",
-          "properties": {
-            "label": {
-              "title": "Label",
-              "type": "string",
-              "description": "This setting has no effect except to help identify this device."
-            },
-            "deviceId": {
-              "title": "Device ID",
-              "type": "string",
-              "description": "Enter the 23 digit Govee Device ID to begin (e.g. 12:AB:A1:C5:A8:99:D2:17).",
-              "minLength": 23,
-              "maxLength": 23
-            },
-            "ignoreDevice": {
-              "type": "boolean",
-              "title": "Hide From HomeKit",
-              "description": "If true, this accessory will be removed and ignored from HomeKit.",
-              "condition": {
-                "functionBody": "return (model.switchDevices && model.switchDevices[arrayIndices] && model.switchDevices[arrayIndices].deviceId && model.switchDevices[arrayIndices].deviceId.length === 23);"
-              }
-            },
-            "showAs": {
-              "type": "string",
-              "title": "Show As",
-              "oneOf": [
-                {
-                  "title": "Outlet (Default)",
-                  "enum": ["default"]
-                },
-                {
-                  "title": "Switch",
-                  "enum": ["switch"]
-                },
-                {
-                  "title": "Air Purifier",
-                  "enum": ["purifier"]
-                }
-              ],
-              "condition": {
-                "functionBody": "return (model.switchDevices && model.switchDevices[arrayIndices] && model.switchDevices[arrayIndices].deviceId && model.switchDevices[arrayIndices].deviceId.length === 23 && !model.switchDevices[arrayIndices].ignoreDevice);"
-              }
-            },
-            "overrideLogging": {
-              "type": "string",
-              "title": "Override Logging Setting",
-              "description": "Override global logging setting for this device.",
-              "oneOf": [
-                {
-                  "title": "Default (Use Global Setting)",
-                  "enum": ["default"]
-                },
-                {
-                  "title": "Enable Standard Logging",
-                  "enum": ["standard"]
-                },
-                {
-                  "title": "Enable Debug Logging",
-                  "enum": ["debug"]
-                },
-                {
-                  "title": "Disable All Logging",
-                  "enum": ["disable"]
-                }
-              ],
-              "condition": {
-                "functionBody": "return (model.switchDevices && model.switchDevices[arrayIndices] && model.switchDevices[arrayIndices].deviceId && model.switchDevices[arrayIndices].deviceId.length === 23 && !model.switchDevices[arrayIndices].ignoreDevice);"
-              }
-            }
-          }
-        }
       },
       "lightDevices": {
         "title": "Light Devices",
@@ -221,6 +145,82 @@
           }
         }
       },
+      "switchDevices": {
+        "title": "Outlet Devices",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "title": "Label",
+              "type": "string",
+              "description": "This setting has no effect except to help identify this device."
+            },
+            "deviceId": {
+              "title": "Device ID",
+              "type": "string",
+              "description": "Enter the 23 digit Govee Device ID to begin (e.g. 12:AB:A1:C5:A8:99:D2:17).",
+              "minLength": 23,
+              "maxLength": 23
+            },
+            "ignoreDevice": {
+              "type": "boolean",
+              "title": "Hide From HomeKit",
+              "description": "If true, this accessory will be removed and ignored from HomeKit.",
+              "condition": {
+                "functionBody": "return (model.switchDevices && model.switchDevices[arrayIndices] && model.switchDevices[arrayIndices].deviceId && model.switchDevices[arrayIndices].deviceId.length === 23);"
+              }
+            },
+            "showAs": {
+              "type": "string",
+              "title": "Show As",
+              "oneOf": [
+                {
+                  "title": "Outlet (Default)",
+                  "enum": ["default"]
+                },
+                {
+                  "title": "Switch",
+                  "enum": ["switch"]
+                },
+                {
+                  "title": "Air Purifier",
+                  "enum": ["purifier"]
+                }
+              ],
+              "condition": {
+                "functionBody": "return (model.switchDevices && model.switchDevices[arrayIndices] && model.switchDevices[arrayIndices].deviceId && model.switchDevices[arrayIndices].deviceId.length === 23 && !model.switchDevices[arrayIndices].ignoreDevice);"
+              }
+            },
+            "overrideLogging": {
+              "type": "string",
+              "title": "Override Logging Setting",
+              "description": "Override global logging setting for this device.",
+              "oneOf": [
+                {
+                  "title": "Default (Use Global Setting)",
+                  "enum": ["default"]
+                },
+                {
+                  "title": "Enable Standard Logging",
+                  "enum": ["standard"]
+                },
+                {
+                  "title": "Enable Debug Logging",
+                  "enum": ["debug"]
+                },
+                {
+                  "title": "Disable All Logging",
+                  "enum": ["disable"]
+                }
+              ],
+              "condition": {
+                "functionBody": "return (model.switchDevices && model.switchDevices[arrayIndices] && model.switchDevices[arrayIndices].deviceId && model.switchDevices[arrayIndices].deviceId.length === 23 && !model.switchDevices[arrayIndices].ignoreDevice);"
+              }
+            }
+          }
+        }
+      },
       "ignoredDevices": {
         "title": "Ignored Devices",
         "type": "array",
@@ -236,32 +236,13 @@
     {
       "type": "fieldset",
       "title": "Required Settings",
-      "items": ["apiKey", "username", "password"]
+      "items": ["username", "password", "apiKey"]
     },
     {
       "type": "fieldset",
       "title": "Optional Settings",
       "expandable": true,
       "items": ["refreshTime", "controlInterval", "disableDeviceLogging", "debug", "disablePlugin"]
-    },
-    {
-      "key": "switchDevices",
-      "expandable": true,
-      "title": "Outlet Devices",
-      "add": "Add Another Device",
-      "type": "array",
-      "items": [
-        {
-          "type": "fieldset",
-          "items": [
-            "switchDevices[].label",
-            "switchDevices[].deviceId",
-            "switchDevices[].ignoreDevice",
-            "switchDevices[].showAs",
-            "switchDevices[].overrideLogging"
-          ]
-        }
-      ]
     },
     {
       "key": "lightDevices",
@@ -280,6 +261,25 @@
             "lightDevices[].brightnessStep",
             "lightDevices[].adaptiveLightingShift",
             "lightDevices[].overrideLogging"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "switchDevices",
+      "expandable": true,
+      "title": "Outlet Devices",
+      "add": "Add Another Device",
+      "type": "array",
+      "items": [
+        {
+          "type": "fieldset",
+          "items": [
+            "switchDevices[].label",
+            "switchDevices[].deviceId",
+            "switchDevices[].ignoreDevice",
+            "switchDevices[].showAs",
+            "switchDevices[].overrideLogging"
           ]
         }
       ]
