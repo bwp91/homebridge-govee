@@ -7,7 +7,7 @@ All notable changes to this homebridge-govee will be documented in this file.
 ### Added
 
 - Support for Bluetooth control for power/brightness/colour for supported devices
-  - Extra packages may need to be installed on your system - [see wiki](https://github.com/bwp91/homebridge-govee/wiki/Installation#1-install-bluetooth-packages)
+  - Extra packages may need to be installed on your system - [see wiki](https://github.com/bwp91/homebridge-govee/wiki/Bluetooth-Control)
   - Enter your Govee username and password in the config
   - Create an entry for your light in the 'Light Devices' section and check 'Enable Bluetooth Control'
 
