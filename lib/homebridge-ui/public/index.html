@@ -82,10 +82,6 @@
           <td id="hardware"></td>
         </tr>
         <tr>
-          <th scope="row">Bluetooth Compatible</th>
-          <td id="bluetooth"></td>
-        </tr>
-        <tr>
           <th scope="row">Kelvin Range</th>
           <td id="kelvinRange"></td>
         </tr>
@@ -245,9 +241,11 @@
           document.getElementById('online').innerHTML = context.online
             ? '<i class="fas fa-circle mr-1 green-text"></i> Online'
             : '<i class="fas fa-circle mr-1 red-text"></i> Offline'
-          document.getElementById('onlineBT').innerHTML = context.onlineBT
-            ? '<i class="fas fa-circle mr-1 green-text"></i> Online'
-            : '<i class="fas fa-circle mr-1 red-text"></i> Offline'
+          document.getElementById('onlineBT').innerHTML = context.bluetooth
+            ? context.onlineBT
+              ? '<i class="fas fa-circle mr-1 green-text"></i> Discovered'
+              : '<i class="fas fa-circle mr-1 red-text"></i> Not Discovered'
+            : '<i class="fas fa-circle mr-1 red-text"></i> N/A'
           document.getElementById('gvDeviceId').innerHTML = context.gvDeviceId || 'N/A'
           document.getElementById('gvModel').innerHTML = context.gvModel || 'N/A'
           document.getElementById('supportedCmds').innerHTML = Array.isArray(context.supportedCmds)
@@ -258,11 +256,6 @@
             : 'N/A'
           document.getElementById('hardware').innerHTML = context.hardware
             ? context.hardware
-            : 'N/A'
-          document.getElementById('bluetooth').innerHTML = context.bluetooth
-            ? context.isBluetooth
-              ? 'Yes'
-              : 'No'
             : 'N/A'
           document.getElementById('kelvinRange').innerHTML =
             context.minKelvin && context.maxKelvin
