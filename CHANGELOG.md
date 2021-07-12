@@ -2,6 +2,17 @@
 
 All notable changes to this homebridge-govee will be documented in this file.
 
+## 3.4.1 (2021-07-12)
+
+### Changed
+
+- Try sending colour temperature over bluetooth for models with cold/warm leds
+- Small changes to logging, makes it clearer when updates are sent/received over bluetooth or cloud
+
+### Fixed
+
+- An issue where brightness would be repeatedly logged if the received value is more than `100`
+
 ## 3.4.0 (2021-07-12)
 
 ### Added
