@@ -46,10 +46,12 @@
     }
   ],
   "dependencies": {
-    "@abandonware/noble": "^1.9.2-14",
     "@homebridge/plugin-ui-utils": "^0.0.19",
     "axios": "^0.21.1",
     "p-queue": "^6.6.2"
+  },
+  "optionalDependencies": {
+    "@abandonware/noble": "^1.9.2-14"
   },
   "prettier": {
     "printWidth": 100
