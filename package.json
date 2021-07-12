@@ -48,7 +48,8 @@
   "dependencies": {
     "@homebridge/plugin-ui-utils": "^0.0.19",
     "axios": "^0.21.1",
-    "p-queue": "^6.6.2"
+    "p-queue": "^6.6.2",
+    "p-timeout": "^4.1.0"
   },
   "optionalDependencies": {
     "@abandonware/noble": "^1.9.2-14"
