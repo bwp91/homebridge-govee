@@ -2,6 +2,14 @@
 
 All notable changes to this homebridge-govee will be documented in this file.
 
+## 3.4.4 (2021-07-13)
+## 3.4.3 (2021-07-13)
+## 3.4.2 (2021-07-13)
+
+### Changed
+
+- Continued refactoring and testing of bluetooth implementation
+
 ## 3.4.1 (2021-07-12)
 
 ### Changed
