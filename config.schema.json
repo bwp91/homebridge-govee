@@ -96,6 +96,14 @@
                 "functionBody": "return (model.username && model.password && model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice);"
               }
             },
+            "enableAWS": {
+              "title": "Enable AWS-IOT Control",
+              "type": "boolean",
+              "description": "If true, the plugin will try and control this device via AWS.",
+              "condition": {
+                "functionBody": "return (model.username && model.password && model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice);"
+              }
+            },
             "brightnessStep": {
               "title": "Brightness Step",
               "type": "integer",
@@ -249,6 +257,7 @@
             "lightDevices[].deviceId",
             "lightDevices[].ignoreDevice",
             "lightDevices[].enableBT",
+            "lightDevices[].enableAWS",
             "lightDevices[].brightnessStep",
             "lightDevices[].adaptiveLightingShift",
             "lightDevices[].overrideLogging"
