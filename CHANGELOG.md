@@ -11,6 +11,7 @@ All notable changes to this homebridge-govee will be documented in this file.
 ### Fixed
 
 - A bug preventing accessories being added to Homebridge
+- A characteristic warning when an out of range brightness is received from Govee
 
 ## 3.5.0 (2021-07-14)
 
