@@ -2,6 +2,16 @@
 
 All notable changes to this homebridge-govee will be documented in this file.
 
+## 3.5.1 (2021-07-14)
+
+### Changed
+
+- Bluetooth device disconnection log message only shown in debug mode
+
+### Fixed
+
+- A bug preventing accessories being added to Homebridge
+
 ## 3.5.0 (2021-07-14)
 
 ### Notes
