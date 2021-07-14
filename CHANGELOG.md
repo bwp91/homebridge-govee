@@ -4,6 +4,12 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 ## 3.5.1 (2021-07-14)
 
+### Notes
+
+- The yellow text in the log showing your devices when the plugin starts is not an error!
+- AWS control and bluetooth control are still experimental
+  - These features will only be taken advantage of if explicitly enabled via the config
+
 ### Changed
 
 - Bluetooth device disconnection log message only shown in debug mode
@@ -14,11 +20,6 @@ All notable changes to this homebridge-govee will be documented in this file.
 - A characteristic warning when an out of range brightness is received from Govee
 
 ## 3.5.0 (2021-07-14)
-
-### Notes
-
-- AWS control and bluetooth control are still experimental
-  - These features will only be taken advantage of if explicitly enabled via the config
 
 ### Added
 
