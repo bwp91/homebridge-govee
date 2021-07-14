@@ -238,11 +238,11 @@
           const thisAcc = cachedAccessories.find(x => x.context.gvDeviceId === hbDeviceId)
           const context = thisAcc.context
           document.getElementById('displayName').innerHTML = thisAcc.displayName
-          document.getElementById('online').innerHTML = context.online
+          document.getElementById('online').innerHTML = context.isAPIOnline
             ? '<i class="fas fa-circle mr-1 green-text"></i> Online'
             : '<i class="fas fa-circle mr-1 red-text"></i> Offline'
-          document.getElementById('bluetooth').innerHTML = context.isBLEDevice
-            ? context.btControl
+          document.getElementById('bluetooth').innerHTML = context.hasBLEControl
+            ? context.useBLEControl
               ? '<i class="fas fa-circle mr-1 green-text"></i> Yes'
               : '<i class="fas fa-circle mr-1 red-text"></i> No'
             : 'N/A'
