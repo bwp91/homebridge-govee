@@ -2,6 +2,26 @@
 
 All notable changes to this homebridge-govee will be documented in this file.
 
+## 3.5.0 (2021-07-14)
+
+### Notes
+
+- AWS control and bluetooth control are still experimental
+  - These features will only be taken advantage of if explicitly enabled via the config
+
+### Added
+
+- Support for AWS control of certain devices
+- Structure for supporting Govee leak sensors
+
+### Changed
+
+- Continued bluetooth control changes
+
+### Fixed
+
+- An issue where bluetooth control wasn't adhering to the configuration
+
 ## 3.4.4 (2021-07-13)
 
 ## 3.4.3 (2021-07-13)
