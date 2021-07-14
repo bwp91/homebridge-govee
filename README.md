@@ -42,6 +42,7 @@ Homebridge plugin to control certain Govee devices
 
 - [Supported Devices](https://github.com/bwp91/homebridge-govee/wiki/Supported-Devices)
 - [API Control](https://github.com/bwp91/homebridge-govee/wiki/API-Control)
+- [AWS Control](https://github.com/bwp91/homebridge-govee/wiki/AWS-Control)
 - [Bluetooth Control](https://github.com/bwp91/homebridge-govee/wiki/Bluetooth-Control)
 
 ### Help/About
