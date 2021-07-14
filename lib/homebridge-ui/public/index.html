@@ -54,20 +54,48 @@
       </thead>
       <tbody>
         <tr>
-          <th scope="row">Cloud Status</th>
-          <td id="online"></td>
-        </tr>
-        <tr>
           <th scope="row">Govee Device ID</th>
-          <td id="gvDeviceId"></td>
+          <td id="deviceId"></td>
         </tr>
         <tr>
           <th scope="row">Govee Model</th>
-          <td id="gvModel"></td>
+          <td id="model"></td>
+        </tr>
+        <tr>
+          <th scope="row">API Supported</th>
+          <td id="api_supported"></td>
+        </tr>
+        <tr id="row_api_enabled" style="display: none;">
+          <th scope="row">API Enabled</th>
+          <td id="api_enabled"></td>
+        </tr>
+        <tr id="row_api_status" style="display: none;">
+          <th scope="row">API Status</th>
+          <td id="api_status"></td>
+        </tr>
+        <tr>
+          <th scope="row">AWS Supported</th>
+          <td id="aws_supported"></td>
+        </tr>
+        <tr id="row_aws_enabled" style="display: none;">
+          <th scope="row">AWS Enabled</th>
+          <td id="aws_enabled"></td>
+        </tr>
+        <tr>
+          <th scope="row">Bluetooth Supported</th>
+          <td id="ble_supported"></td>
+        </tr>
+        <tr id="row_ble_enabled" style="display: none;">
+          <th scope="row">Bluetooth Enabled</th>
+          <td id="ble_enabled"></td>
+        </tr>
+        <tr id="row_ble_address" style="display: none;">
+          <th scope="row">Bluetooth Address</th>
+          <td id="ble_address"></td>
         </tr>
         <tr>
           <th scope="row">Supported Commands</th>
-          <td id="supportedCmds"></td>
+          <td id="supported_cmds"></td>
         </tr>
         <tr>
           <th scope="row">Firmware Version</th>
@@ -77,13 +105,9 @@
           <th scope="row">Hardware Version</th>
           <td id="hardware"></td>
         </tr>
-        <tr>
-          <th scope="row">Bluetooth Enabled</th>
-          <td id="bluetooth"></td>
-        </tr>
-        <tr>
+        <tr id="row_kelvin_range" style="display: none;">
           <th scope="row">Kelvin Range</th>
-          <td id="kelvinRange"></td>
+          <td id="kelvin_range"></td>
         </tr>
         <tr>
           <td colspan="2" style="text-align: center" id="image"></td>
@@ -238,17 +262,36 @@
           const thisAcc = cachedAccessories.find(x => x.context.gvDeviceId === hbDeviceId)
           const context = thisAcc.context
           document.getElementById('displayName').innerHTML = thisAcc.displayName
-          document.getElementById('online').innerHTML = context.isAPIOnline
-            ? '<i class="fas fa-circle mr-1 green-text"></i> Online'
-            : '<i class="fas fa-circle mr-1 red-text"></i> Offline'
-          document.getElementById('bluetooth').innerHTML = context.hasBLEControl
-            ? context.useBLEControl
-              ? '<i class="fas fa-circle mr-1 green-text"></i> Yes'
-              : '<i class="fas fa-circle mr-1 red-text"></i> No'
-            : 'N/A'
-          document.getElementById('gvDeviceId').innerHTML = context.gvDeviceId || 'N/A'
-          document.getElementById('gvModel').innerHTML = context.gvModel || 'N/A'
-          document.getElementById('supportedCmds').innerHTML = Array.isArray(context.supportedCmds)
+          document.getElementById('deviceId').innerHTML = context.gvDeviceId || 'N/A'
+          document.getElementById('model').innerHTML = context.gvModel || 'N/A'
+          if (context.hasAPIControl) {
+            document.getElementById('api_supported').innerHTML = 'Yes'
+            document.getElementById('api_enabled').innerHTML = context.useAPIControl ? 'Yes' : 'No'
+            document.getElementById('api_status').innerHTML = context.isAPIOnline
+              ? '<i class="fas fa-circle mr-1 green-text"></i> Online'
+              : '<i class="fas fa-circle mr-1 red-text"></i> Offline'
+            document.getElementById('row_api_enabled').style.display = 'table-row'
+            document.getElementById('row_api_status').style.display = 'table-row'
+          } else {
+            document.getElementById('api_supported').innerHTML = 'No'
+          }
+          if (context.hasAWSControl) {
+            document.getElementById('aws_supported').innerHTML = 'Yes'
+            document.getElementById('aws_enabled').innerHTML = context.useAWSControl ? 'Yes' : 'No'
+            document.getElementById('row_aws_enabled').style.display = 'table-row'
+          } else {
+            document.getElementById('aws_supported').innerHTML = 'No'
+          }
+          if (context.hasBLEControl) {
+            document.getElementById('ble_supported').innerHTML = 'Yes'
+            document.getElementById('ble_enabled').innerHTML = context.useBLEControl ? 'Yes' : 'No'
+            document.getElementById('ble_address').innerHTML = context.bleAddress
+            document.getElementById('row_ble_enabled').style.display = 'table-row'
+            document.getElementById('row_ble_address').style.display = 'table-row'
+          } else {
+            document.getElementById('ble_supported').innerHTML = 'No'
+          }
+          document.getElementById('supported_cmds').innerHTML = Array.isArray(context.supportedCmds)
             ? context.supportedCmds.join(', ')
             : 'N/A'
           document.getElementById('firmware').innerHTML = context.firmware
@@ -257,10 +300,11 @@
           document.getElementById('hardware').innerHTML = context.hardware
             ? context.hardware
             : 'N/A'
-          document.getElementById('kelvinRange').innerHTML =
-            context.minKelvin && context.maxKelvin
-              ? context.minKelvin + ' - ' + context.maxKelvin
-              : 'N/A'
+          if (context.minKelvin && context.maxKelvin) {
+            document.getElementById('kelvin_range').innerHTML =
+              context.minKelvin + ' - ' + context.maxKelvin
+            document.getElementById('row_kelvin_range').style.display = 'table-row'
+          }
           document.getElementById('image').innerHTML = context.image
             ? '<img src="' + context.image + '" style="width: 150px;">'
             : ''
