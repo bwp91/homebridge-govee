@@ -91,15 +91,15 @@
             "enableBT": {
               "title": "Enable BLE Control",
               "type": "boolean",
-              "description": "If true, the plugin will try and control this device via bluetooth.",
+              "description": "[Experimental!] If true, the plugin will try and control this device via bluetooth.",
               "condition": {
                 "functionBody": "return (model.username && model.password && model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice);"
               }
             },
             "enableAWS": {
-              "title": "Enable AWS-IOT Control",
+              "title": "Enable AWS Control",
               "type": "boolean",
-              "description": "If true, the plugin will try and control this device via AWS.",
+              "description": "[Experimental!] If true, the plugin will try and control this device via AWS.",
               "condition": {
                 "functionBody": "return (model.username && model.password && model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice);"
               }
@@ -179,6 +179,14 @@
                 "functionBody": "return (model.switchDevices && model.switchDevices[arrayIndices] && model.switchDevices[arrayIndices].deviceId && model.switchDevices[arrayIndices].deviceId.length === 23);"
               }
             },
+            "enableAWS": {
+              "title": "Enable AWS Control",
+              "type": "boolean",
+              "description": "[Experimental!] If true, the plugin will try and control this device via AWS.",
+              "condition": {
+                "functionBody": "return (model.username && model.password && model.switchDevices && model.switchDevices[arrayIndices] && model.switchDevices[arrayIndices].deviceId && model.switchDevices[arrayIndices].deviceId.length === 23 && !model.switchDevices[arrayIndices].ignoreDevice);"
+              }
+            },
             "showAs": {
               "type": "string",
               "title": "Show As",
@@ -253,6 +261,14 @@
               "description": "If true, this accessory will be removed and ignored from HomeKit.",
               "condition": {
                 "functionBody": "return (model.leakDevices && model.leakDevices[arrayIndices] && model.leakDevices[arrayIndices].deviceId && model.leakDevices[arrayIndices].deviceId.length === 23);"
+              }
+            },
+            "enableAWS": {
+              "title": "Enable AWS Control",
+              "type": "boolean",
+              "description": "[Experimental!] If true, the plugin will try and control this device via AWS.",
+              "condition": {
+                "functionBody": "return (model.username && model.password && model.leakDevices && model.leakDevices[arrayIndices] && model.leakDevices[arrayIndices].deviceId && model.leakDevices[arrayIndices].deviceId.length === 23 && !model.leakDevices[arrayIndices].ignoreDevice);"
               }
             },
             "overrideLogging": {
@@ -333,6 +349,7 @@
             "switchDevices[].label",
             "switchDevices[].deviceId",
             "switchDevices[].ignoreDevice",
+            "switchDevices[].enableAWS",
             "switchDevices[].showAs",
             "switchDevices[].overrideLogging"
           ]
@@ -349,10 +366,11 @@
         {
           "type": "fieldset",
           "items": [
-            "switchDevices[].label",
-            "switchDevices[].deviceId",
-            "switchDevices[].ignoreDevice",
-            "switchDevices[].overrideLogging"
+            "leakDevices[].label",
+            "leakDevices[].deviceId",
+            "leakDevices[].ignoreDevice",
+            "leakDevices[].enableAWS",
+            "leakDevices[].overrideLogging"
           ]
         }
       ]
