@@ -41,9 +41,11 @@ Homebridge plugin to control certain Govee devices
 ### Features
 
 - [Supported Devices](https://github.com/bwp91/homebridge-govee/wiki/Supported-Devices)
-- [API Control](https://github.com/bwp91/homebridge-govee/wiki/API-Control)
-- [AWS Control](https://github.com/bwp91/homebridge-govee/wiki/AWS-Control)
-- [Bluetooth Control](https://github.com/bwp91/homebridge-govee/wiki/Bluetooth-Control)
+- [Connection Methods](https://github.com/bwp91/homebridge-govee/wiki/Connection-Methods)
+  - [API Control](https://github.com/bwp91/homebridge-govee/wiki/API-Control)
+  - [AWS Control](https://github.com/bwp91/homebridge-govee/wiki/AWS-Control)
+  - [Bluetooth Control](https://github.com/bwp91/homebridge-govee/wiki/Bluetooth-Control)
+- [Scene, Music, DIY Modes](https://github.com/bwp91/homebridge-govee/wiki/Scene%2C-Music%2C-DIY-Modes)
 
 ### Help/About
 
