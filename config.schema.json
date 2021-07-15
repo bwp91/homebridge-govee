@@ -127,7 +127,7 @@
             "scene": {
               "title": "Scene",
               "type": "string",
-              "description": "Enter the AWS code for a custom scene named 'Scene'.",
+              "description": "[Experimental!] Enter the code shown in the logs to create a button named 'Scene' (in Eve app).",
               "condition": {
                 "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].enableAWS);"
               }
@@ -135,7 +135,7 @@
             "sceneTwo": {
               "title": "Scene 2",
               "type": "string",
-              "description": "Enter the AWS code for a custom scene named 'Scene 2'.",
+              "description": "[Experimental!] Enter the code shown in the logs to create a button named 'Scene 2' (in Eve app).",
               "condition": {
                 "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].enableAWS);"
               }
@@ -143,7 +143,7 @@
             "musicMode": {
               "title": "Music Mode",
               "type": "string",
-              "description": "Enter the AWS code for a custom scene named 'Music Mode'.",
+              "description": "[Experimental!] Enter the code shown in the logs to create a button named 'Music Mode' (in Eve app).",
               "condition": {
                 "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].enableAWS);"
               }
@@ -151,7 +151,7 @@
             "musicModeTwo": {
               "title": "Music Mode 2",
               "type": "string",
-              "description": "Enter the AWS code for a custom scene named 'Music Mode 2'.",
+              "description": "[Experimental!] Enter the code shown in the logs to create a button named 'Music Mode 2' (in Eve app).",
               "condition": {
                 "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].enableAWS);"
               }
@@ -159,7 +159,7 @@
             "diyMode": {
               "title": "DIY Mode",
               "type": "string",
-              "description": "Enter the AWS code for a custom scene named 'DIY Mode'.",
+              "description": "[Experimental!] Enter the code shown in the logs to create a button named 'DIY Mode' (in Eve app).",
               "condition": {
                 "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].enableAWS);"
               }
@@ -167,7 +167,7 @@
             "diyModeTwo": {
               "title": "DIY Mode 2",
               "type": "string",
-              "description": "Enter the AWS code for a custom scene named 'DIY Mode 2'.",
+              "description": "[Experimental!] Enter the code shown in the logs to create a button named 'DIY Mode 2' (in Eve app).",
               "condition": {
                 "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].enableAWS);"
               }
