@@ -127,49 +127,49 @@
             "scene": {
               "title": "Scene",
               "type": "string",
-              "description": "[Experimental!] Enter the code shown in the logs to create a button named 'Scene' (in Eve app).",
+              "description": "[Experimental!] Enter an AWS code (from logs) or a bluetooth code to create a button named 'Scene' (in Eve app).",
               "condition": {
-                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].enableAWS);"
+                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice && (model.lightDevices[arrayIndices].enableAWS || model.lightDevices[arrayIndices].enableBT));"
               }
             },
             "sceneTwo": {
               "title": "Scene 2",
               "type": "string",
-              "description": "[Experimental!] Enter the code shown in the logs to create a button named 'Scene 2' (in Eve app).",
+              "description": "[Experimental!] Enter an AWS code (from logs) or a bluetooth code to create a button named 'Scene 2' (in Eve app).",
               "condition": {
-                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].enableAWS);"
+                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice && (model.lightDevices[arrayIndices].enableAWS || model.lightDevices[arrayIndices].enableBT));"
               }
             },
             "musicMode": {
               "title": "Music Mode",
               "type": "string",
-              "description": "[Experimental!] Enter the code shown in the logs to create a button named 'Music Mode' (in Eve app).",
+              "description": "[Experimental!] Enter an AWS code (from logs) or a bluetooth code to create a button named 'Music Mode' (in Eve app).",
               "condition": {
-                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].enableAWS);"
+                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice && (model.lightDevices[arrayIndices].enableAWS || model.lightDevices[arrayIndices].enableBT));"
               }
             },
             "musicModeTwo": {
               "title": "Music Mode 2",
               "type": "string",
-              "description": "[Experimental!] Enter the code shown in the logs to create a button named 'Music Mode 2' (in Eve app).",
+              "description": "[Experimental!] Enter an AWS code (from logs) or a bluetooth code to create a button named 'Music Mode 2' (in Eve app).",
               "condition": {
-                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].enableAWS);"
+                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice && (model.lightDevices[arrayIndices].enableAWS || model.lightDevices[arrayIndices].enableBT));"
               }
             },
             "diyMode": {
               "title": "DIY Mode",
               "type": "string",
-              "description": "[Experimental!] Enter the code shown in the logs to create a button named 'DIY Mode' (in Eve app).",
+              "description": "[Experimental!] Enter an AWS code (from logs) or a bluetooth code to create a button named 'DIY Mode' (in Eve app).",
               "condition": {
-                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].enableAWS);"
+                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice && (model.lightDevices[arrayIndices].enableAWS || model.lightDevices[arrayIndices].enableBT));"
               }
             },
             "diyModeTwo": {
               "title": "DIY Mode 2",
               "type": "string",
-              "description": "[Experimental!] Enter the code shown in the logs to create a button named 'DIY Mode 2' (in Eve app).",
+              "description": "[Experimental!] Enter an AWS code (from logs) or a bluetooth code to create a button named 'DIY Mode 2' (in Eve app).",
               "condition": {
-                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].enableAWS);"
+                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice && (model.lightDevices[arrayIndices].enableAWS || model.lightDevices[arrayIndices].enableBT));"
               }
             },
             "overrideLogging": {
@@ -386,7 +386,7 @@
               "items": [
                 {
                   "type": "help",
-                  "helpvalue": "<label class=\"control-label text-warning\">These options are only available if 'Enable AWS Control' is selected.</label>"
+                  "helpvalue": "<label class=\"control-label text-warning\">These options are only available if 'Enable AWS Control' or 'Enable BLE Control' is selected.</label>"
                 },
                 "lightDevices[].scene",
                 "lightDevices[].sceneTwo",
