@@ -124,10 +124,26 @@
                 "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice);"
               }
             },
-            "musicModeOne": {
-              "title": "Music Mode 1",
+            "scene": {
+              "title": "Scene",
               "type": "string",
-              "description": "Enter the AWS code for a custom scene named 'Music Mode 1'.",
+              "description": "Enter the AWS code for a custom scene named 'Scene'.",
+              "condition": {
+                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].enableAWS);"
+              }
+            },
+            "sceneTwo": {
+              "title": "Scene 2",
+              "type": "string",
+              "description": "Enter the AWS code for a custom scene named 'Scene 2'.",
+              "condition": {
+                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].enableAWS);"
+              }
+            },
+            "musicMode": {
+              "title": "Music Mode",
+              "type": "string",
+              "description": "Enter the AWS code for a custom scene named 'Music Mode'.",
               "condition": {
                 "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].enableAWS);"
               }
@@ -136,6 +152,22 @@
               "title": "Music Mode 2",
               "type": "string",
               "description": "Enter the AWS code for a custom scene named 'Music Mode 2'.",
+              "condition": {
+                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].enableAWS);"
+              }
+            },
+            "diyMode": {
+              "title": "DIY Mode",
+              "type": "string",
+              "description": "Enter the AWS code for a custom scene named 'DIY Mode'.",
+              "condition": {
+                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].enableAWS);"
+              }
+            },
+            "diyModeTwo": {
+              "title": "DIY Mode 2",
+              "type": "string",
+              "description": "Enter the AWS code for a custom scene named 'DIY Mode 2'.",
               "condition": {
                 "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].enableAWS);"
               }
@@ -356,8 +388,12 @@
                   "type": "help",
                   "helpvalue": "<label class=\"control-label text-warning\">These options are only available if 'Enable AWS Control' is selected.</label>"
                 },
-                "lightDevices[].musicModeOne",
-                "lightDevices[].musicModeTwo"
+                "lightDevices[].scene",
+                "lightDevices[].sceneTwo",
+                "lightDevices[].musicMode",
+                "lightDevices[].musicModeTwo",
+                "lightDevices[].diyMode",
+                "lightDevices[].diyModeTwo"
               ]
             },
             "lightDevices[].overrideLogging"
