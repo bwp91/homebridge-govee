@@ -124,6 +124,22 @@
                 "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice);"
               }
             },
+            "musicModeOne": {
+              "title": "Music Mode 1",
+              "type": "string",
+              "description": "Enter the AWS code for a custom scene named 'Music Mode 1'.",
+              "condition": {
+                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].enableAWS);"
+              }
+            },
+            "musicModeTwo": {
+              "title": "Music Mode 2",
+              "type": "string",
+              "description": "Enter the AWS code for a custom scene named 'Music Mode 2'.",
+              "condition": {
+                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].enableAWS);"
+              }
+            },
             "overrideLogging": {
               "type": "string",
               "title": "Override Logging Setting",
@@ -331,6 +347,19 @@
             "lightDevices[].enableAWS",
             "lightDevices[].brightnessStep",
             "lightDevices[].adaptiveLightingShift",
+            {
+              "expandable": true,
+              "title": "Custom Scenes/Modes",
+              "type": "fieldset",
+              "items": [
+                {
+                  "type": "help",
+                  "helpvalue": "<label class=\"control-label text-warning\">These options are only available if 'Enable AWS Control' is selected.</label>"
+                },
+                "lightDevices[].musicModeOne",
+                "lightDevices[].musicModeTwo"
+              ]
+            },
             "lightDevices[].overrideLogging"
           ]
         }
