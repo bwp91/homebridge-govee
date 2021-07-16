@@ -311,6 +311,16 @@
                 "functionBody": "return (model.leakDevices && model.leakDevices[arrayIndices] && model.leakDevices[arrayIndices].deviceId && model.leakDevices[arrayIndices].deviceId.length === 18);"
               }
             },
+            "lowBattThreshold": {
+              "type": "integer",
+              "title": "Low Battery Threshold",
+              "description": "HomeKit will set the low battery status for this device when the battery reaches this percentage level. Must be 1 or more.",
+              "placeholder": 20,
+              "minimum": 1,
+              "condition": {
+                "functionBody": "return (model.leakDevices && model.leakDevices[arrayIndices] && model.leakDevices[arrayIndices].deviceId && model.leakDevices[arrayIndices].deviceId.length === 18 && !model.leakDevices[arrayIndices].ignoreDevice);"
+              }
+            },
             "overrideLogging": {
               "type": "string",
               "title": "Override Logging Setting",
@@ -425,6 +435,7 @@
           "items": [
             "leakDevices[].label",
             "leakDevices[].deviceId",
+            "leakDevices[].lowBattThreshold",
             "leakDevices[].ignoreDevice",
             "leakDevices[].overrideLogging"
           ]
