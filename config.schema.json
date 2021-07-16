@@ -349,6 +349,71 @@
             }
           }
         }
+      },
+      "thermoDevices": {
+        "title": "Thermo Sensor Devices",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "title": "Label",
+              "type": "string",
+              "description": "This setting has no effect except to help identify this device."
+            },
+            "deviceId": {
+              "title": "Device ID",
+              "type": "string",
+              "description": "Enter the 18 digit Govee Device ID to begin (e.g. 12AB34CD56EF78009F).",
+              "minLength": 18,
+              "maxLength": 18
+            },
+            "ignoreDevice": {
+              "type": "boolean",
+              "title": "Hide From HomeKit",
+              "description": "If true, this accessory will be removed and ignored from HomeKit.",
+              "condition": {
+                "functionBody": "return (model.thermoDevices && model.thermoDevices[arrayIndices] && model.thermoDevices[arrayIndices].deviceId && model.thermoDevices[arrayIndices].deviceId.length === 18);"
+              }
+            },
+            "lowBattThreshold": {
+              "type": "integer",
+              "title": "Low Battery Threshold",
+              "description": "HomeKit will set the low battery status for this device when the battery reaches this percentage level. Must be 1 or more.",
+              "placeholder": 20,
+              "minimum": 1,
+              "condition": {
+                "functionBody": "return (model.thermoDevices && model.thermoDevices[arrayIndices] && model.thermoDevices[arrayIndices].deviceId && model.thermoDevices[arrayIndices].deviceId.length === 18 && !model.thermoDevices[arrayIndices].ignoreDevice);"
+              }
+            },
+            "overrideLogging": {
+              "type": "string",
+              "title": "Override Logging Setting",
+              "description": "Override global logging setting for this device.",
+              "oneOf": [
+                {
+                  "title": "Default (Use Global Setting)",
+                  "enum": ["default"]
+                },
+                {
+                  "title": "Enable Standard Logging",
+                  "enum": ["standard"]
+                },
+                {
+                  "title": "Enable Debug Logging",
+                  "enum": ["debug"]
+                },
+                {
+                  "title": "Disable All Logging",
+                  "enum": ["disable"]
+                }
+              ],
+              "condition": {
+                "functionBody": "return (model.thermoDevices && model.thermoDevices[arrayIndices] && model.thermoDevices[arrayIndices].deviceId && model.thermoDevices[arrayIndices].deviceId.length === 18 && !model.thermoDevices[arrayIndices].ignoreDevice);"
+              }
+            }
+          }
+        }
       }
     }
   },
@@ -438,6 +503,24 @@
             "leakDevices[].lowBattThreshold",
             "leakDevices[].ignoreDevice",
             "leakDevices[].overrideLogging"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "thermoDevices",
+      "expandable": true,
+      "title": "Thermo Sensor Devices",
+      "add": "Add Another Device",
+      "type": "array",
+      "items": [
+        {
+          "type": "fieldset",
+          "items": [
+            "thermoDevices[].label",
+            "thermoDevices[].deviceId",
+            "thermoDevices[].ignoreDevice",
+            "thermoDevices[].overrideLogging"
           ]
         }
       ]
