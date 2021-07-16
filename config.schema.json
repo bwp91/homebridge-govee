@@ -299,24 +299,16 @@
             "deviceId": {
               "title": "Device ID",
               "type": "string",
-              "description": "Enter the 23 digit Govee Device ID to begin (e.g. 12:AB:A1:C5:A8:99:D2:17).",
-              "minLength": 23,
-              "maxLength": 23
+              "description": "Enter the 18 digit Govee Device ID to begin (e.g. 12AB34CD56EF78009F).",
+              "minLength": 18,
+              "maxLength": 18
             },
             "ignoreDevice": {
               "type": "boolean",
               "title": "Hide From HomeKit",
               "description": "If true, this accessory will be removed and ignored from HomeKit.",
               "condition": {
-                "functionBody": "return (model.leakDevices && model.leakDevices[arrayIndices] && model.leakDevices[arrayIndices].deviceId && model.leakDevices[arrayIndices].deviceId.length === 23);"
-              }
-            },
-            "enableAWS": {
-              "title": "Enable AWS Control",
-              "type": "boolean",
-              "description": "[Experimental!] If true, the plugin will try and control this device via AWS.",
-              "condition": {
-                "functionBody": "return (model.username && model.password && model.leakDevices && model.leakDevices[arrayIndices] && model.leakDevices[arrayIndices].deviceId && model.leakDevices[arrayIndices].deviceId.length === 23 && !model.leakDevices[arrayIndices].ignoreDevice);"
+                "functionBody": "return (model.leakDevices && model.leakDevices[arrayIndices] && model.leakDevices[arrayIndices].deviceId && model.leakDevices[arrayIndices].deviceId.length === 18);"
               }
             },
             "overrideLogging": {
@@ -342,7 +334,7 @@
                 }
               ],
               "condition": {
-                "functionBody": "return (model.leakDevices && model.leakDevices[arrayIndices] && model.leakDevices[arrayIndices].deviceId && model.leakDevices[arrayIndices].deviceId.length === 23 && !model.leakDevices[arrayIndices].ignoreDevice);"
+                "functionBody": "return (model.leakDevices && model.leakDevices[arrayIndices] && model.leakDevices[arrayIndices].deviceId && model.leakDevices[arrayIndices].deviceId.length === 18 && !model.leakDevices[arrayIndices].ignoreDevice);"
               }
             }
           }
@@ -434,7 +426,6 @@
             "leakDevices[].label",
             "leakDevices[].deviceId",
             "leakDevices[].ignoreDevice",
-            "leakDevices[].enableAWS",
             "leakDevices[].overrideLogging"
           ]
         }
