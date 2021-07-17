@@ -2,13 +2,13 @@
 
 All notable changes to this homebridge-govee will be documented in this file.
 
+## BETA
+
+### Added
+
+### Changed
+
 ## 3.5.1 (2021-07-14)
-
-### Notes
-
-- The yellow text in the log showing your devices when the plugin starts is not an error!
-- AWS control and bluetooth control are still experimental
-  - These features will only be taken advantage of if explicitly enabled via the config
 
 ### Changed
 
