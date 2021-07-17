@@ -93,7 +93,7 @@
           <th scope="row">Bluetooth Address</th>
           <td id="ble_address"></td>
         </tr>
-        <tr>
+        <tr id="row_supported_cmds" style="display: none;">
           <th scope="row">Supported Commands</th>
           <td id="supported_cmds"></td>
         </tr>
@@ -305,6 +305,8 @@
             document.getElementById('row_api_status').style.display = 'table-row'
           } else {
             document.getElementById('api_supported').innerHTML = 'No'
+            document.getElementById('row_api_enabled').style.display = 'none'
+            document.getElementById('row_api_status').style.display = 'none'
           }
           if (context.hasAWSControl) {
             document.getElementById('aws_supported').innerHTML = 'Yes'
@@ -312,19 +314,25 @@
             document.getElementById('row_aws_enabled').style.display = 'table-row'
           } else {
             document.getElementById('aws_supported').innerHTML = 'No'
+            document.getElementById('row_aws_enabled').style.display = 'none'
           }
           if (context.hasBLEControl) {
             document.getElementById('ble_supported').innerHTML = 'Yes'
             document.getElementById('ble_enabled').innerHTML = context.useBLEControl ? 'Yes' : 'No'
             document.getElementById('ble_address').innerHTML = context.bleAddress
             document.getElementById('row_ble_enabled').style.display = 'table-row'
-            document.getElementById('row_ble_address').style.display = 'table-row'
+            document.getElementById('row_ble_address').style.display = 'none'
           } else {
             document.getElementById('ble_supported').innerHTML = 'No'
+            document.getElementById('row_ble_enabled').style.display = 'table-row'
+            document.getElementById('row_ble_address').style.display = 'none'
           }
-          document.getElementById('supported_cmds').innerHTML = Array.isArray(context.supportedCmds)
-            ? context.supportedCmds.join(', ')
-            : 'N/A'
+          if (context.supportedCmds && Array.isArray(context.supportedCmds)) {
+            document.getElementById('supported_cmds').innerHTML = context.supportedCmds.join(', ')
+            document.getElementById('row_supported_cmds').style.display = 'table-row'
+          } else {
+            document.getElementById('row_supported_cmds').style.display = 'none'
+          }
           document.getElementById('firmware').innerHTML = context.firmware
             ? context.firmware
             : 'N/A'
@@ -335,6 +343,8 @@
             document.getElementById('kelvin_range').innerHTML =
               context.minKelvin + ' - ' + context.maxKelvin
             document.getElementById('row_kelvin_range').style.display = 'table-row'
+          } else {
+            document.getElementById('row_kelvin_range').style.display = 'none'
           }
           document.getElementById('image').innerHTML = context.image
             ? '<img src="' + context.image + '" style="width: 150px;">'
