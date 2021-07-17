@@ -450,7 +450,7 @@
               "expandable": true,
               "title": "Custom Scenes/Modes",
               "type": "fieldset",
-              "description": "Use these settings to start creating HomeKit scenes with your Govee scenes, music mode and DIY modes. These options are only available if 'Enable AWS Control' or 'Enable BLE Control' is selected above.",
+              "description": "Use these settings to start creating HomeKit scenes with your Govee scenes, music mode and DIY modes. These options are only available if 'Enable AWS Control' or 'Enable BLE Control' is selected above. <a href=\"https://github.com/bwp91/homebridge-govee/wiki/Scene%2C-Music%2C-DIY-Modes\" target=\"\">Read more →</a>",
               "items": [
                 "lightDevices[].scene",
                 "lightDevices[].sceneTwo",
