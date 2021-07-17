@@ -109,6 +109,14 @@
           <th scope="row">Kelvin Range</th>
           <td id="kelvin_range"></td>
         </tr>
+        <tr id="row_temp_range" style="display: none;">
+          <th scope="row">Temperature Range</th>
+          <td id="temp_range"></td>
+        </tr>
+        <tr id="row_humi_range" style="display: none;">
+          <th scope="row">Humidity Range</th>
+          <td id="humi_range"></td>
+        </tr>
         <tr>
           <td colspan="2" style="text-align: center" id="image"></td>
         </tr>
@@ -339,12 +347,26 @@
           document.getElementById('hardware').innerHTML = context.hardware
             ? context.hardware
             : 'N/A'
-          if (context.minKelvin && context.maxKelvin) {
+          if (context.maxKelvin) {
             document.getElementById('kelvin_range').innerHTML =
-              context.minKelvin + ' - ' + context.maxKelvin
+              context.minKelvin + 'K - ' + context.maxKelvin + 'K'
             document.getElementById('row_kelvin_range').style.display = 'table-row'
           } else {
             document.getElementById('row_kelvin_range').style.display = 'none'
+          }
+          if (context.maxTemp) {
+            document.getElementById('temp_range').innerHTML =
+              context.minTemp + '°C - ' + context.maxTemp + '°C'
+            document.getElementById('row_temp_range').style.display = 'table-row'
+          } else {
+            document.getElementById('row_temp_range').style.display = 'none'
+          }
+          if (context.maxHumi) {
+            document.getElementById('humi_range').innerHTML =
+              context.minHumi + '% - ' + context.maxHumi + '%'
+            document.getElementById('row_humi_range').style.display = 'table-row'
+          } else {
+            document.getElementById('row_humi_range').style.display = 'none'
           }
           document.getElementById('image').innerHTML = context.image
             ? '<img src="' + context.image + '" style="width: 150px;">'
