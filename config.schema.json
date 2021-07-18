@@ -88,22 +88,22 @@
                 "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23);"
               }
             },
-            "enableBT": {
-              "title": "Enable BLE Control",
-              "type": "boolean",
-              "description": "[Experimental!] If true, the plugin will try and control this device via bluetooth.",
-              "condition": {
-                "functionBody": "return (model.username && model.password && model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice);"
-              }
-            },
             "enableAWS": {
               "title": "Enable AWS Control",
               "type": "boolean",
-              "description": "[Experimental!] If true, the plugin will try and control this device via AWS.",
+              "description": "[Experimental!] If true, the plugin will try and control this device via AWS if available.",
               "condition": {
                 "functionBody": "return (model.username && model.password && model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice);"
               }
-            },
+            },,
+            "enableBT": {
+              "title": "Enable BLE Control",
+              "type": "boolean",
+              "description": "[Experimental!] If true, the plugin will try and control this device via bluetooth if available.",
+              "condition": {
+                "functionBody": "return (model.username && model.password && model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice);"
+              }
+            }
             "brightnessStep": {
               "title": "Brightness Step",
               "type": "integer",
@@ -460,8 +460,8 @@
             "lightDevices[].label",
             "lightDevices[].deviceId",
             "lightDevices[].ignoreDevice",
-            "lightDevices[].enableBT",
             "lightDevices[].enableAWS",
+            "lightDevices[].enableBT",
             "lightDevices[].brightnessStep",
             "lightDevices[].adaptiveLightingShift",
             {
