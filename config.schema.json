@@ -95,7 +95,7 @@
               "condition": {
                 "functionBody": "return (model.username && model.password && model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice);"
               }
-            },,
+            },
             "enableBT": {
               "title": "Enable BLE Control",
               "type": "boolean",
@@ -103,7 +103,7 @@
               "condition": {
                 "functionBody": "return (model.username && model.password && model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice);"
               }
-            }
+            },
             "brightnessStep": {
               "title": "Brightness Step",
               "type": "integer",
