@@ -386,24 +386,6 @@
                 "functionBody": "return (model.thermoDevices && model.thermoDevices[arrayIndices] && model.thermoDevices[arrayIndices].deviceId && model.thermoDevices[arrayIndices].deviceId.length === 23 && !model.thermoDevices[arrayIndices].ignoreDevice);"
               }
             },
-            "offset": {
-              "type": "number",
-              "title": "Temperature Offset",
-              "description": "You can offset the temperature that the sensor reads. An offset of 2 means 2 degrees will be added to the recorded temperature. Can be positive or negative and can include a decimal point '.'.",
-              "placeholder": 0,
-              "condition": {
-                "functionBody": "return (model.thermoDevices && model.thermoDevices[arrayIndices] && model.thermoDevices[arrayIndices].deviceId && model.thermoDevices[arrayIndices].deviceId.length === 23 && !model.thermoDevices[arrayIndices].ignoreDevice);"
-              }
-            },
-            "humidityOffset": {
-              "type": "number",
-              "title": "Humidity Offset",
-              "description": "You can offset the humidity that the sensor reads. An offset of 2 means 2% will be added to the recorded relative humidity. Can be positive or negative.",
-              "placeholder": 0,
-              "condition": {
-                "functionBody": "return (model.thermoDevices && model.thermoDevices[arrayIndices] && model.thermoDevices[arrayIndices].deviceId && model.thermoDevices[arrayIndices].deviceId.length === 23 && !model.thermoDevices[arrayIndices].ignoreDevice);"
-              }
-            },
             "overrideLogging": {
               "type": "string",
               "title": "Override Logging Setting",
@@ -536,8 +518,6 @@
             "thermoDevices[].deviceId",
             "thermoDevices[].ignoreDevice",
             "thermoDevices[].lowBattThreshold",
-            "thermoDevices[].offset",
-            "thermoDevices[].humidityOffset",
             "thermoDevices[].overrideLogging"
           ]
         }
