@@ -61,6 +61,10 @@
           <th scope="row">Govee Model</th>
           <td id="model"></td>
         </tr>
+        <tr id="row_cloud_status" style="display: none;">
+          <th scope="row">Cloud Status</th>
+          <td id="cloud_status"></td>
+        </tr>
         <tr>
           <th scope="row">API Supported</th>
           <td id="api_supported"></td>
@@ -68,10 +72,6 @@
         <tr id="row_api_enabled" style="display: none;">
           <th scope="row">API Enabled</th>
           <td id="api_enabled"></td>
-        </tr>
-        <tr id="row_api_status" style="display: none;">
-          <th scope="row">API Status</th>
-          <td id="api_status"></td>
         </tr>
         <tr>
           <th scope="row">AWS Supported</th>
@@ -303,18 +303,23 @@
           document.getElementById('displayName').innerHTML = thisAcc.displayName
           document.getElementById('deviceId').innerHTML = context.gvDeviceId || 'N/A'
           document.getElementById('model').innerHTML = context.gvModel || 'N/A'
+          if (context.isOnline) {
+            // Reports 'yes' or 'no'
+            document.getElementById('cloud_status').innerHTML =
+              context.isOnline === 'yes'
+                ? '<i class="fas fa-circle mr-1 green-text"></i> Online'
+                : '<i class="fas fa-circle mr-1 red-text"></i> Offline'
+            document.getElementById('row_cloud_status').style.display = 'table-row'
+          } else {
+            document.getElementById('row_cloud_status').style.display = 'none'
+          }
           if (context.hasAPIControl) {
             document.getElementById('api_supported').innerHTML = 'Yes'
             document.getElementById('api_enabled').innerHTML = context.useAPIControl ? 'Yes' : 'No'
-            document.getElementById('api_status').innerHTML = context.isAPIOnline
-              ? '<i class="fas fa-circle mr-1 green-text"></i> Online'
-              : '<i class="fas fa-circle mr-1 red-text"></i> Offline'
             document.getElementById('row_api_enabled').style.display = 'table-row'
-            document.getElementById('row_api_status').style.display = 'table-row'
           } else {
             document.getElementById('api_supported').innerHTML = 'No'
             document.getElementById('row_api_enabled').style.display = 'none'
-            document.getElementById('row_api_status').style.display = 'none'
           }
           if (context.hasAWSControl) {
             document.getElementById('aws_supported').innerHTML = 'Yes'
