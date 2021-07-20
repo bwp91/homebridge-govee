@@ -2,6 +2,13 @@
 
 All notable changes to this homebridge-govee will be documented in this file.
 
+## BETA
+
+### Added
+
+- **New Devices**
+  - Support for the H5075 Thermo-Hygrometer via wifi connection
+
 ## 3.6.0 (2021-07-20)
 
 ### Added
