@@ -16,12 +16,12 @@
       "username": {
         "type": "string",
         "title": "Govee Username",
-        "description": "Required to enable support for BLE (bluetooth) devices and leak sensors."
+        "description": "Required for most device models and for AWS/BLE connections. <a href=\"https://github.com/bwp91/homebridge-govee/wiki/Supported-Devices\" target=\"_blank\">Read more →</a>"
       },
       "password": {
         "type": "string",
         "title": "Govee Password",
-        "description": "Required to enable support for BLE (bluetooth) devices and leak sensors."
+        "description": "Required for certain light models. <a href=\"https://github.com/bwp91/homebridge-govee/wiki/Supported-Devices\" target=\"_blank\">Read more →</a>"
       },
       "apiKey": {
         "type": "string",
