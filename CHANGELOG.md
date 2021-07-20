@@ -18,7 +18,6 @@ All notable changes to this homebridge-govee will be documented in this file.
   - Experimental support for the H5054 Leak Sensor via wifi connection
   - The plugin will now log extra information for devices that are not currently supported to be included in a Github issue to see whether support can be enabled for more models in the future
 
-
 ### Changed
 
 - A bluetooth connection will no longer disconnect and reconnect to the same lights if the connection still exists from a previous update
