@@ -2,11 +2,32 @@
 
 All notable changes to this homebridge-govee will be documented in this file.
 
-## BETA
+## 3.6.0 (2021-07-20)
 
 ### Added
 
+- **Experimental AWS Control**
+  - This release includes a new connection method for certain Govee Light models - AWS control - which can improve response times when controlling lights (AWS control is a real-time persistent connection)
+  - As with the bluetooth connection, this is still experimental and will only be enabled if explicitly enabled in the plugin settings
+  - You can check whether your model supports this connection method in the Homebridge plugin settings UI on the 'My Devices' tab
+  - The different connection methods work with each other so it is possible to enable both AWS and bluetooth control for your lights
+- **Scenes/Music/DIY Modes**
+  - If you Govee Lights support AWS or bluetooth connection, you can use the plugin settings and the Eve app to setup HomeKit scenes for your Govee scenes, music mode and DIY modes that you have created in the Govee app. Check the wiki for more information.
+- **New Devices**
+  - Support for the H5179 Thermo-Hygrometer via wifi connection
+  - Experimental support for the H5054 Leak Sensor via wifi connection
+  - The plugin will now log extra information for devices that are not currently supported to be included in a Github issue to see whether support can be enabled for more models in the future
+
+
 ### Changed
+
+- A bluetooth connection will no longer disconnect and reconnect to the same lights if the connection still exists from a previous update
+- Certain bluetooth (noble) warnings will now only appear in the log when the plugin is in debug mode
+
+### Fixed
+
+- A number of bugs/problems concerning the bluetooth packages and connection
+- An issue preventing Govee Outlets from initialising into Homebridge
 
 ## 3.5.1 (2021-07-14)
 
