@@ -27,8 +27,8 @@
 
 ### Please paste any relevant logs below.
 <!-- ABOUT LOGS
-  → More thorough logging can be seen by enabling 'Debug Logging' and
-   ...'Request & Response Logging' in the plugin settings.
+  → More thorough logging can be seen by enabling 'Debug Logging' in
+   ...in the plugin settings.
   → If you are posting an error then it is helpful for me to also see
    ...the previous few lines as this can show the cause of the error.
   → Please enter the logs between the two ``` lines below so that
