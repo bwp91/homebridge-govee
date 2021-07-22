@@ -2,13 +2,23 @@
 
 All notable changes to this homebridge-govee will be documented in this file.
 
-## BETA
+## 3.7.0 (2021-07-22)
 
 ### Added
 
 - **New Devices**
   - Support for the H5075 Thermo-Hygrometer via wifi connection
     - Readings may not be reliable. Recommended to use homebridge-plugin-govee to connect over bluetooth.
+- **Govee Lights**
+  - Added support for colour temperature control over AWS connection
+  - Plugin will apply 'ignore timeout' for incoming API updates if incoming update received over AWS
+
+### Changed
+
+- **Govee Lights**
+
+  - Plugin now uses a fix list of kelvin to RGB calculations (not a formula) which are the values that Govee uses
+  - Reduced 'ignore timeout' from 2 minutes to 1 minute as Govee API reaction times seem to have improved
 
 ## 3.6.0 (2021-07-20)
 
