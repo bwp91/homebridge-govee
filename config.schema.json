@@ -64,6 +64,7 @@
       },
       "lightDevices": {
         "title": "Light Devices",
+        "description": "Optional settings for Govee Light devices.",
         "type": "array",
         "items": {
           "type": "object",
@@ -203,6 +204,7 @@
       },
       "switchDevices": {
         "title": "Outlet Devices",
+        "description": "Optional settings for Govee Outlet devices.",
         "type": "array",
         "items": {
           "type": "object",
@@ -287,6 +289,7 @@
       },
       "leakDevices": {
         "title": "Leak Sensor Devices",
+        "description": "Optional settings for Govee Leak Sensor devices.",
         "type": "array",
         "items": {
           "type": "object",
@@ -352,6 +355,7 @@
       },
       "thermoDevices": {
         "title": "Thermo Sensor Devices",
+        "description": "Optional settings for Govee Thermo-Hygrometer devices.",
         "type": "array",
         "items": {
           "type": "object",
@@ -433,6 +437,7 @@
       "key": "lightDevices",
       "expandable": true,
       "title": "Light Devices",
+      "description": "Optional settings for Govee Light devices.",
       "add": "Add Another Device",
       "type": "array",
       "items": [
@@ -469,6 +474,7 @@
       "key": "switchDevices",
       "expandable": true,
       "title": "Outlet Devices",
+      "description": "Optional settings for Govee Outlet devices.",
       "add": "Add Another Device",
       "type": "array",
       "items": [
@@ -489,6 +495,7 @@
       "key": "leakDevices",
       "expandable": true,
       "title": "Leak Sensor Devices",
+      "description": "Optional settings for Govee Leak Sensor devices.",
       "add": "Add Another Device",
       "type": "array",
       "items": [
@@ -508,6 +515,7 @@
       "key": "thermoDevices",
       "expandable": true,
       "title": "Thermo Sensor Devices",
+      "description": "Optional settings for Govee Thermo-Hygrometer devices.",
       "add": "Add Another Device",
       "type": "array",
       "items": [
