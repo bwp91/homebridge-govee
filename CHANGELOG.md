@@ -8,6 +8,7 @@ All notable changes to this homebridge-govee will be documented in this file.
 
 - **New Devices**
   - Support for the H5075 Thermo-Hygrometer via wifi connection
+    - Readings may not be reliable. Recommended to use homebridge-plugin-govee to connect over bluetooth.
 
 ## 3.6.0 (2021-07-20)
 
