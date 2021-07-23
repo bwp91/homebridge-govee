@@ -2,6 +2,12 @@
 
 All notable changes to this homebridge-govee will be documented in this file.
 
+## BETA
+
+### Added
+
+- Optionally use a base64 encoded version of your Govee password in the configuration
+
 ## 3.7.0 (2021-07-22)
 
 ### Added
