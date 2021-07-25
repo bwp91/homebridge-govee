@@ -1,6 +1,6 @@
 # Change Log
 
-All notable changes to this homebridge-govee will be documented in this file.
+All notable changes to homebridge-govee will be documented in this file.
 
 ## BETA
 
