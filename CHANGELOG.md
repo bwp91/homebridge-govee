@@ -6,7 +6,7 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ### Added
 
-- H6053 light model to bluetooth-only supported list
+- `H6053` and `H6141` light models to bluetooth-only supported list
 - Optionally use a base64 encoded version of your Govee password in the configuration
 
 ## 3.7.0 (2021-07-22)
