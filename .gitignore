@@ -2,3 +2,4 @@
 .nova
 .npm
 node_modules/
+.idea/
