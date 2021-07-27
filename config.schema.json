@@ -133,9 +133,9 @@
                 "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice);"
               }
             },
-            "rgbicAWSScenes": {
-              "title": "Predefined RGBIC Scenes",
-              "description": "Select predefined scenes to include with this light.",
+            "lightEffects": {
+              "title": "Light Effects",
+              "description": "Select predefined light effects to include with this light.",
               "type": "object",
               "properties": {
                 "sunrise": {
