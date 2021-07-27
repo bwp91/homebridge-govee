@@ -81,6 +81,14 @@
               "minLength": 23,
               "maxLength": 23
             },
+            "isRGBIC": {
+              "title": "Is RGBIC model?",
+              "type": "boolean",
+              "description": "Is this light individually addressable or solid color only?",
+              "condition": {
+                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23);"
+              }
+            },
             "ignoreDevice": {
               "type": "boolean",
               "title": "Hide From HomeKit",
