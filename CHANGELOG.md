@@ -2,6 +2,12 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## BETA
+
+### Fixed
+
+- Removed `H6141` from bluetooth only model list as is in fact wifi too
+
 ## 3.8.0 (2021-07-27)
 
 ### Added
