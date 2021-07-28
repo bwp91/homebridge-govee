@@ -4,6 +4,10 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ## BETA
 
+### Added
+
+- Added `H6171` to the bluetooth only model list
+
 ### Fixed
 
 - Removed `H6141` from bluetooth only model list as is in fact wifi too
