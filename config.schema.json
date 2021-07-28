@@ -133,144 +133,135 @@
                 "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice);"
               }
             },
-            "lightEffects": {
-              "title": "Light Effects",
-              "description": "Select predefined light effects to include with this light.",
-              "type": "object",
-              "properties": {
-                "sunrise": {
-                  "title": "Sunrise",
-                  "type": "boolean"
-                },
-                "sunset": {
-                  "title": "Sunset",
-                  "type": "boolean"
-                },
-                "forest": {
-                  "title": "forest",
-                  "type": "boolean"
-                },
-                "rustlingLeaves": {
-                  "title": "Rustling Leaves",
-                  "type": "boolean"
-                },
-                "universe": {
-                  "title": "Universe",
-                  "type": "boolean"
-                },
-                "meteor": {
-                  "title": "Meteor",
-                  "type": "boolean"
-                },
-                "meteorShower": {
-                  "title": "Meteor Shower",
-                  "type": "boolean"
-                },
-                "aurora": {
-                  "title": "Aurora",
-                  "type": "boolean"
-                },
-                "starrySky": {
-                  "title": "Starry Sky",
-                  "type": "boolean"
-                },
-                "star": {
-                  "title": "Star",
-                  "type": "boolean"
-                },
-                "snowFlake": {
-                  "title": "Snow Flake",
-                  "type": "boolean"
-                },
-                "spring": {
-                  "title": "Spring",
-                  "type": "boolean"
-                },
-                "summer": {
-                  "title": "Summer",
-                  "type": "boolean"
-                },
-                "winter": {
-                  "title": "Winter",
-                  "type": "boolean"
-                },
-                "rainbow": {
-                  "title": "Rainbow",
-                  "type": "boolean"
-                },
-                "Ripple": {
-                  "title": "Ripple",
-                  "type": "boolean"
-                },
-                "surge": {
-                  "title": "Surge",
-                  "type": "boolean"
-                },
-                "deepSea": {
-                  "title": "Deep Sea",
-                  "type": "boolean"
-                },
-                "newYears": {
-                  "title": "New Years",
-                  "type": "boolean"
-                },
-                "christmas": {
-                  "title": "Christmas",
-                  "type": "boolean"
-                },
-                "halloween": {
-                  "title": "Halloween",
-                  "type": "boolean"
-                },
-                "valentinesDay": {
-                  "title": "Valentine's Day",
-                  "type": "boolean"
-                },
-                "candlelight": {
-                  "title": "Candlelight",
-                  "type": "boolean"
-                },
-                "birthday": {
-                  "title": "Birthday",
-                  "type": "boolean"
-                },
-                "fireworks": {
-                  "title": "Fireworks",
-                  "type": "boolean"
-                },
-                "ghost": {
-                  "title": "Ghost",
-                  "type": "boolean"
-                },
-                "party": {
-                  "title": "Party",
-                  "type": "boolean"
-                },
-                "danceParty": {
-                  "title": "Dance Party",
-                  "type": "boolean"
-                },
-                "disco": {
-                  "title": "Disco",
-                  "type": "boolean"
-                },
-                "carnival": {
-                  "title": "Carnival",
-                  "type": "boolean"
-                },
-                "mothersDay": {
-                  "title": "Mother's Day",
-                  "type": "boolean"
-                },
-                "fathersDay": {
-                  "title": "Father's Day",
-                  "type": "boolean"
-                }
-              },
-              "condition": {
-                "functionBody": "return (model.username && model.password && model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].enableAWS && model.lightDevices[arrayIndices].isRGBIC);"
-              }
+            "sunrise": {
+              "title": "Sunrise",
+              "type": "boolean"
             },
+            "sunset": {
+              "title": "Sunset",
+              "type": "boolean"
+            },
+            "forest": {
+              "title": "forest",
+              "type": "boolean"
+            },
+            "rustlingLeaves": {
+              "title": "Rustling Leaves",
+              "type": "boolean"
+            },
+            "universe": {
+              "title": "Universe",
+              "type": "boolean"
+            },
+            "meteor": {
+              "title": "Meteor",
+              "type": "boolean"
+            },
+            "meteorShower": {
+              "title": "Meteor Shower",
+              "type": "boolean"
+            },
+            "aurora": {
+              "title": "Aurora",
+              "type": "boolean"
+            },
+            "starrySky": {
+              "title": "Starry Sky",
+              "type": "boolean"
+            },
+            "star": {
+              "title": "Star",
+              "type": "boolean"
+            },
+            "snowFlake": {
+              "title": "Snow Flake",
+              "type": "boolean"
+            },
+            "spring": {
+              "title": "Spring",
+              "type": "boolean"
+            },
+            "summer": {
+              "title": "Summer",
+              "type": "boolean"
+            },
+            "winter": {
+              "title": "Winter",
+              "type": "boolean"
+            },
+            "rainbow": {
+              "title": "Rainbow",
+              "type": "boolean"
+            },
+            "Ripple": {
+              "title": "Ripple",
+              "type": "boolean"
+            },
+            "surge": {
+              "title": "Surge",
+              "type": "boolean"
+            },
+            "deepSea": {
+              "title": "Deep Sea",
+              "type": "boolean"
+            },
+            "newYears": {
+              "title": "New Years",
+              "type": "boolean"
+            },
+            "christmas": {
+              "title": "Christmas",
+              "type": "boolean"
+            },
+            "halloween": {
+              "title": "Halloween",
+              "type": "boolean"
+            },
+            "valentinesDay": {
+              "title": "Valentine's Day",
+              "type": "boolean"
+            },
+            "candlelight": {
+              "title": "Candlelight",
+              "type": "boolean"
+            },
+            "birthday": {
+              "title": "Birthday",
+              "type": "boolean"
+            },
+            "fireworks": {
+              "title": "Fireworks",
+              "type": "boolean"
+            },
+            "ghost": {
+              "title": "Ghost",
+              "type": "boolean"
+            },
+            "party": {
+              "title": "Party",
+              "type": "boolean"
+            },
+            "danceParty": {
+              "title": "Dance Party",
+              "type": "boolean"
+            },
+            "disco": {
+              "title": "Disco",
+              "type": "boolean"
+            },
+            "carnival": {
+              "title": "Carnival",
+              "type": "boolean"
+            },
+            "mothersDay": {
+              "title": "Mother's Day",
+              "type": "boolean"
+            },
+            "fathersDay": {
+              "title": "Father's Day",
+              "type": "boolean"
+            }
+          },
             "scene": {
               "title": "Scene",
               "type": "string",
@@ -593,6 +584,7 @@
           "items": [
             "lightDevices[].label",
             "lightDevices[].deviceId",
+            "lightDevices[].isRGBIC",
             "lightDevices[].ignoreDevice",
             "lightDevices[].enableAWS",
             "lightDevices[].enableBT",
@@ -604,6 +596,38 @@
               "type": "fieldset",
               "description": "Use these settings to start creating HomeKit scenes with your Govee scenes, music mode and DIY modes. These options are only available if 'Enable AWS Control' or 'Enable BLE Control' is selected above. <a href=\"https://github.com/bwp91/homebridge-govee/wiki/Scene%2C-Music%2C-DIY-Modes\" target=\"_blank\">Read more →</a>",
               "items": [
+                "lightDevices[].sunrise",
+                "lightDevices[].sunset",
+                "lightDevices[].forest",
+                "lightDevices[].rustlingLeaves",
+                "lightDevices[].universe",
+                "lightDevices[].meteor",
+                "lightDevices[].meteorShower",
+                "lightDevices[].aurora",
+                "lightDevices[].starrySky",
+                "lightDevices[].star",
+                "lightDevices[].snowFlake",
+                "lightDevices[].spring",
+                "lightDevices[].summer",
+                "lightDevices[].winter",
+                "lightDevices[].rainbow",
+                "lightDevices[].ripple",
+                "lightDevices[].surge",
+                "lightDevices[].deepSea",
+                "lightDevices[].newYears",
+                "lightDevices[].christmas",
+                "lightDevices[].halloween",
+                "lightDevices[].valentinesDay",
+                "lightDevices[].candlelight",
+                "lightDevices[].birthday",
+                "lightDevices[].fireworks",
+                "lightDevices[].ghost",
+                "lightDevices[].party",
+                "lightDevices[].danceParty",
+                "lightDevices[].disco",
+                "lightDevices[].carnival",
+                "lightDevices[].mothersDay",
+                "lightDevices[].fathersDay",
                 "lightDevices[].scene",
                 "lightDevices[].sceneTwo",
                 "lightDevices[].musicMode",
