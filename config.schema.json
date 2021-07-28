@@ -260,8 +260,7 @@
             "fathersDay": {
               "title": "Father's Day",
               "type": "boolean"
-            }
-          },
+            },
             "scene": {
               "title": "Scene",
               "type": "string",
