@@ -193,7 +193,7 @@
               "title": "Rainbow",
               "type": "boolean"
             },
-            "Ripple": {
+            "ripple": {
               "title": "Ripple",
               "type": "boolean"
             },
