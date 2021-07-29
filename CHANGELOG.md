@@ -11,13 +11,13 @@ All notable changes to homebridge-govee will be documented in this file.
   - Added `H6171` to the bluetooth only model list
 - **Configuration**
   - Plugin will now check for duplicate device ID entries in the config and ignore them
-  
+
 ### Changed
 
 - ⚠️ **Platform Versions**
   - Recommended node version bumped to v14.17.4
   - Recommended homebridge version bumped to v1.3.4
-  
+
 - ⚠️ **AWS Control**
   - AWS connection is now **enabled** by default for Govee Lights that support this mode
     - If for any reason you want to disable this then there is a new 'Disable AWS Control' setting
