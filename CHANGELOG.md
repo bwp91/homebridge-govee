@@ -21,6 +21,7 @@ All notable changes to homebridge-govee will be documented in this file.
 ### Changed
 
 - ⚠️ **Platform Versions**
+
   - Recommended node version bumped to v14.17.4
   - Recommended homebridge version bumped to v1.3.4
 
