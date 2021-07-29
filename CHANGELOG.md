@@ -6,10 +6,13 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ### Added
 
+- Added `H6127` to the bluetooth only model list
 - Added `H6171` to the bluetooth only model list
 
 ### Fixed
 
+- Older models may supply device id in a format without colons and in lowercase (plugin reformats)
+- Use device ble address that Govee supplies rather than calculating from existing device id
 - Removed `H6141` from bluetooth only model list as is in fact wifi too
 
 ## 3.8.0 (2021-07-27)
