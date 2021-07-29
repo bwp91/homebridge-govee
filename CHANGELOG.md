@@ -2,6 +2,12 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## 4.0.1 (2021-07-29)
+
+### Fixed
+
+- An issue where custom scenes weren't visible in Eve app
+
 ## 4.0.0 (2021-07-29)
 
 ### Added
