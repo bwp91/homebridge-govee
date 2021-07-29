@@ -6,14 +6,26 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ### Added
 
-- Added `H6127` to the bluetooth only model list
-- Added `H6171` to the bluetooth only model list
+- **New Devices**
+  - Added `H6127` to the bluetooth only model list
+  - Added `H6171` to the bluetooth only model list
+
+### Changed
+
+- ⚠️ **AWS Control**
+  - AWS connection is now **enabled** by default for Govee Lights that support this mode
+    - If for any reason you want to disable this then there is a new 'Disable AWS Control' setting
 
 ### Fixed
 
 - Older models may supply device id in a format without colons and in lowercase (plugin reformats)
-- Use device ble address that Govee supplies rather than calculating from existing device id
+- Use device ble address that Govee sometimes supplies rather than calculating from existing device id
 - Removed `H6141` from bluetooth only model list as is in fact wifi too
+
+### Removed
+
+- 'Experimental' labels have been removed from AWS control, BLE control and scene mode settings
+  - Whilst maybe not perfect(!), a lot of users have had success with both connection methods
 
 ## 3.8.0 (2021-07-27)
 
