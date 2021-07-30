@@ -26,7 +26,7 @@ Homebridge plugin to control certain Govee devices
 
 ### Prerequisites
 
-- To use this plugin, you will need to already have [Homebridge](https://homebridge.io) (at least v1.3.3) or [HOOBS](https://hoobs.org) (at least v3.3.4) installed. Please refer to the links for more information and installation instructions.
+- To use this plugin, you will need to already have [Homebridge](https://homebridge.io) (at least v1.3.4) or [HOOBS](https://hoobs.org) (at least v4) installed. Refer to the links for more information and installation instructions.
 - For bluetooth connectivity, it may be necessary to install extra packages on your system, see [Installation](https://github.com/bwp91/homebridge-govee/wiki/Installation).
 - It is recommended to use the current LTS version of Node, currently v14, however Node v12 is also supported.
 
