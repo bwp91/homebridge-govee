@@ -2,6 +2,16 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## 4.0.2 (2021-07-30)
+
+### Changed
+
+- A log warning for certain models which use a different data format for scenes
+
+### Fixed
+
+- Adaptive Lighting will now be turned off when using the Govee app to use a scene for these certain models
+
 ## 4.0.1 (2021-07-29)
 
 ### Fixed
