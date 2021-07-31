@@ -2,6 +2,13 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## BETA
+
+### Added
+
+- **Govee Lights**
+  - Support for two more custom scene codes and two mode custom diy mode codes
+
 ## 4.0.2 (2021-07-30)
 
 ### Changed
