@@ -8,6 +8,8 @@ All notable changes to homebridge-govee will be documented in this file.
 
 - **Govee Lights**
   - Support for two more custom scene codes and two mode custom diy mode codes
+- **New Devices**
+  - Added `H6125` to bluetooth-only supported list
 
 ## 4.0.2 (2021-07-30)
 
