@@ -11,6 +11,12 @@ All notable changes to homebridge-govee will be documented in this file.
 - **New Devices**
   - Added `H6125` to bluetooth-only supported list
 
+### Fixed
+
+- **Logging**
+  - Certain common errors made easier to read
+  - Stringify new device objects so they appear in HOOBS log
+
 ## 4.0.2 (2021-07-30)
 
 ### Changed
