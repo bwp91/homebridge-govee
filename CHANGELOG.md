@@ -9,6 +9,10 @@ All notable changes to homebridge-govee will be documented in this file.
 - **New Devices**
   - Added `H6126` to bluetooth-only supported list
 
+### Fixed
+
+- Fixes an issue where AWS was not being enabled for non-configured light strips
+
 ## 4.1.0 (2021-08-04)
 
 ### Added
