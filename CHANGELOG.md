@@ -2,17 +2,32 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## 4.3.0 (2021-08-05)
+
+### Added
+
+- **New Devices**
+  - Added `H5101` to temp/humidity sensor supported list
+
+### Changed
+
+- **AWS Codes**
+  - ⚠️ The format of the code that the plugin needs has changed
+    - You will need to re-obtain your AWS codes using the same method as before and save them into the configuration
+
+### Fixed
+
+- Fixes an issue preventing outlet devices from initialising
+
 ## 4.2.0 (2021-08-04)
 
 ### Added
 
 - **New Devices**
   - Added `H6126` to bluetooth-only supported list
-  - Added `H5101` to temp/humidity sensor supported list
 
 ### Fixed
 
-- Fixes an issue preventing outlet devices from initialising
 - Fixes an issue where AWS was not being enabled for non-configured light strips
 
 ## 4.1.0 (2021-08-04)
