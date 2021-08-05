@@ -8,6 +8,7 @@ All notable changes to homebridge-govee will be documented in this file.
 
 - **New Devices**
   - Added `H6126` to bluetooth-only supported list
+  - Added `H5101` to temp/humidity sensor supported list
 
 ### Fixed
 
