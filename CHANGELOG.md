@@ -2,14 +2,20 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
-## 4.3.0 (2021-08-05)
+## 4.4.0 (2021-08-09)
 
 ### Added
 
 - **New Devices**
   - Added `H5051` to temp/humidity sensor supported list
+  - Added new API models: `H7050` `H6051` `H6056` `H6061` `H6058` `H6073` `H6076` `H619A` `H619C` `H618A` `H618C` `H6008` `H6071` `H6075` `H614A` `H614B` `H614E` `H618E` `H619E`
+
+## 4.3.0 (2021-08-05)
+
+### Added
+
+- **New Devices**
   - Added `H5101` to temp/humidity sensor supported list
-  - Added new API models: `H7050` `H6051` `H6056` `H6061` `H6058` `H6073` `H6076` `H619A` `H619C` `H618A` `H618C` `H6008` `H6071` `H6075`  `H614A` `H614B` `H614E` `H618E` `H619E`
 
 ### Changed
 
