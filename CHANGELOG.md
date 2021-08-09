@@ -7,6 +7,7 @@ All notable changes to homebridge-govee will be documented in this file.
 ### Added
 
 - **New Devices**
+  - Added `H5051` to temp/humidity sensor supported list
   - Added `H5101` to temp/humidity sensor supported list
 
 ### Changed
