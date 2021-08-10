@@ -2,6 +2,12 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## BETA
+
+### Fixed
+
+- Removed H6144 from 'scale brightness' list, fixes [#99](https://github.com/bwp91/homebridge-govee/issues/99)
+
 ## 4.4.0 (2021-08-09)
 
 ### Added
