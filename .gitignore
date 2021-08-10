@@ -1,4 +1,6 @@
 .DS_Store
 .nova
 .npm
-node_modules/
+node_modules
+.np-config.json
+.prettierignore
