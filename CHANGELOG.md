@@ -2,6 +2,17 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## BETA
+
+### Changed
+
+- **Platform Versions**
+  - Recommended node version bumped to v14.17.5
+
+### Fixed
+
+- Attempt to fix a situation when `node-machine-id` fails to obtain the machine uuid
+
 ## 4.4.1 (2021-08-10)
 
 ### Fixed
