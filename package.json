@@ -53,6 +53,7 @@
     "p-queue": "^6.6.2"
   },
   "optionalDependencies": {
+    "@abandonware/bluetooth-hci-socket": "^0.5.3-7",
     "@abandonware/noble": "^1.9.2-14"
   },
   "prettier": {
