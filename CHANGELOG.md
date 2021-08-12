@@ -4,6 +4,11 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ## BETA
 
+### Added
+
+- **New Devices**
+  - Added `H6001` to bluetooth-only supported list
+
 ### Changed
 
 - **Platform Versions**
@@ -12,6 +17,7 @@ All notable changes to homebridge-govee will be documented in this file.
 ### Fixed
 
 - Attempt to fix a situation when `node-machine-id` fails to obtain the machine uuid
+- Attempt to fix a situation when the plugin would crash Homebridge in a loop if running on a non-macOS platform with no bluetooth module
 
 ## 4.4.1 (2021-08-10)
 
