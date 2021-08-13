@@ -7,7 +7,7 @@ All notable changes to homebridge-govee will be documented in this file.
 ### Added
 
 - **New Devices**
-  - Added `H6001` to bluetooth-only supported list
+  - Added `H6001` and `H6138` to bluetooth-only supported list
 
 ### Changed
 
