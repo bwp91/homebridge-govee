@@ -47,7 +47,7 @@
   ],
   "dependencies": {
     "@homebridge/plugin-ui-utils": "^0.0.19",
-    "aws-iot-device-sdk": "^2.2.10",
+    "aws-iot-device-sdk": "^2.2.11",
     "axios": "^0.21.1",
     "node-machine-id": "^1.1.12",
     "p-queue": "^6.6.2"
