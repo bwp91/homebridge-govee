@@ -7,15 +7,20 @@ All notable changes to homebridge-govee will be documented in this file.
 ### Added
 
 - **New Devices**
-  - Added `H6001` and `H6138` to bluetooth-only supported list
+  - Added `H6138` to bluetooth-only supported list
+  - Added `H6001` to not-supported list (model must use undocumented bluetooth commands)
 
 ### Changed
 
+- **Unsupported Devices**
+  - Plugin will remove existing accessories whose model is unsupported
 - **Platform Versions**
   - Recommended node version bumped to v14.17.5
 
 ### Fixed
 
+- More specific-case logging when device updates fail (eg not displaying reverting to API if not unsupported API model)
+- Plugin will ignore incoming AWS updates when controlling colour temperature as can sometimes incorrectly disable adaptive lighting
 - Attempt to fix a situation when `node-machine-id` fails to obtain the machine uuid
 - Attempt to fix a situation when the plugin would crash Homebridge in a loop if running on a non-macOS platform with no bluetooth module
 
