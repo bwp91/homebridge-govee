@@ -105,6 +105,17 @@
                 "functionBody": "return (model.username && model.password && model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice);"
               }
             },
+            "customAddress": {
+              "title": "Custom Bluetooth Address",
+              "type": "string",
+              "placeholder": "a1:b2:c3:d4:e5:f6",
+              "description": "The plugin may not be able to determine the bluetooth address of some older models.",
+              "minLength": 17,
+              "maxLength": 17,
+              "condition": {
+                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].enableBT);"
+              }
+            },
             "brightnessStep": {
               "title": "Brightness Step",
               "type": "integer",
@@ -474,6 +485,7 @@
             "lightDevices[].ignoreDevice",
             "lightDevices[].disableAWS",
             "lightDevices[].enableBT",
+            "lightDevices[].customAddress",
             "lightDevices[].brightnessStep",
             "lightDevices[].adaptiveLightingShift",
             {
