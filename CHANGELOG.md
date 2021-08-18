@@ -2,6 +2,13 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## BETA
+
+### Added
+
+- **New Devices**
+  - Added `H6179` to bluetooth-only supported list
+
 ## 4.5.0 (2021-08-16)
 
 ### Added
