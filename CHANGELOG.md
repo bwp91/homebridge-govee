@@ -2,6 +2,12 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## BETA
+
+### Added
+
+- Added `H5072` to not-supported list
+
 ## 4.7.0 (2021-08-26)
 
 ### Added
