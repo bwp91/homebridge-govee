@@ -8,6 +8,10 @@ All notable changes to homebridge-govee will be documented in this file.
 
 - Added `H5072` to not-supported list
 
+### Changed
+
+- Remove `node-machine-id` in favour of generating a client id based on Govee username
+
 ## 4.7.0 (2021-08-26)
 
 ### Added
