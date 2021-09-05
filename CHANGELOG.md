@@ -2,6 +2,13 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## UPCOMING
+
+### Changed
+
+- Recommended node version bumped to v14.17.6
+- Bump `axios` to v0.21.3
+
 ## 4.8.0 (2021-08-30)
 
 ### Added
