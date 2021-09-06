@@ -2,6 +2,13 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## BETA
+
+### Added
+
+- **New Devices**
+  - Added `H5053` to temperature/humidity sensors supported list
+
 ## 4.9.0 (2021-09-05)
 
 ### Added
