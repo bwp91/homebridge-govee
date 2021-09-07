@@ -2,12 +2,16 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
-## BETA
+## UPCOMING
 
 ### Added
 
 - **New Devices**
   - Added `H5053` to temperature/humidity sensors supported list
+
+### Changed
+
+- Bump `axios` to v0.21.4
 
 ## 4.9.0 (2021-09-05)
 
