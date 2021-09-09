@@ -2,7 +2,7 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
-## UPCOMING
+## 4.10.0 (2021-09-09)
 
 ### Added
 
@@ -11,6 +11,7 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ### Changed
 
+- `configureAccessory` function simplified to reduce chance of accessory cache retrieval failing
 - Bump `axios` to v0.21.4
 
 ## 4.9.0 (2021-09-05)
