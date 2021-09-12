@@ -2,6 +2,18 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## BETA
+
+### Added
+
+- **New Devices**
+ - Added `H5082` to dual outlet devices
+- New `offlineAsOff` setting to show offline devices as OFF in HomeKit
+
+### Fixed
+
+- Disable colour commands via AWS/BLE for `H6199` as seems not supported
+
 ## 4.10.0 (2021-09-09)
 
 ### Added
