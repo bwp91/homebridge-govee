@@ -42,6 +42,11 @@
         "placeholder": 500,
         "minimum": 500
       },
+      "offlineAsOff": {
+        "type": "boolean",
+        "title": "Offline As Off",
+        "description": "If true then devices that are reported as offline will be shown as off in HomeKit."
+      },
       "disableDeviceLogging": {
         "type": "boolean",
         "title": "Disable Device Logging",
@@ -467,7 +472,14 @@
       "title": "Optional Settings",
       "description": "Optional settings for the plugin, including refreshing and global logging settings.",
       "expandable": true,
-      "items": ["refreshTime", "controlInterval", "disableDeviceLogging", "debug", "disablePlugin"]
+      "items": [
+        "refreshTime",
+        "controlInterval",
+        "offlineAsOff",
+        "disableDeviceLogging",
+        "debug",
+        "disablePlugin"
+      ]
     },
     {
       "key": "lightDevices",
