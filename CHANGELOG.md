@@ -7,7 +7,7 @@ All notable changes to homebridge-govee will be documented in this file.
 ### Added
 
 - **New Devices**
- - Added `H5082` to dual outlet devices
+  - Added `H5082` to dual outlet devices
 - New `offlineAsOff` setting to show offline devices as OFF in HomeKit
 
 ### Fixed
