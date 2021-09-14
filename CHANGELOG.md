@@ -2,7 +2,7 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
-## BETA
+## 4.11.0 (2021-09-14)
 
 ### Added
 
@@ -12,6 +12,7 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ### Fixed
 
+- Don't throw error when **only** AWS update is used
 - Disable colour commands via AWS/BLE for `H6199` as seems not supported
 
 ## 4.10.0 (2021-09-09)
