@@ -221,6 +221,38 @@
                 "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice && (!model.lightDevices[arrayIndices].disableAWS || model.lightDevices[arrayIndices].enableBT));"
               }
             },
+            "segmented": {
+              "title": "Segmented",
+              "type": "string",
+              "description": "Enter an AWS code (from logs) or a bluetooth code to create a button named 'Segmented' (in Eve app).",
+              "condition": {
+                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice && (!model.lightDevices[arrayIndices].disableAWS || model.lightDevices[arrayIndices].enableBT));"
+              }
+            },
+            "segmentedTwo": {
+              "title": "Segmented 2",
+              "type": "string",
+              "description": "Enter an AWS code (from logs) or a bluetooth code to create a button named 'Segmented 2' (in Eve app).",
+              "condition": {
+                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice && (!model.lightDevices[arrayIndices].disableAWS || model.lightDevices[arrayIndices].enableBT));"
+              }
+            },
+            "segmentedThree": {
+              "title": "Segmented 3",
+              "type": "string",
+              "description": "Enter an AWS code (from logs) or a bluetooth code to create a button named 'Segmented 3' (in Eve app).",
+              "condition": {
+                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice && (!model.lightDevices[arrayIndices].disableAWS || model.lightDevices[arrayIndices].enableBT));"
+              }
+            },
+            "segmentedFour": {
+              "title": "Segmented 4",
+              "type": "string",
+              "description": "Enter an AWS code (from logs) or a bluetooth code to create a button named 'Segmented 4' (in Eve app).",
+              "condition": {
+                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice && (!model.lightDevices[arrayIndices].disableAWS || model.lightDevices[arrayIndices].enableBT));"
+              }
+            },
             "overrideLogging": {
               "type": "string",
               "title": "Override Logging Setting",
@@ -515,7 +547,11 @@
                 "lightDevices[].diyMode",
                 "lightDevices[].diyModeTwo",
                 "lightDevices[].diyModeThree",
-                "lightDevices[].diyModeFour"
+                "lightDevices[].diyModeFour",
+                "lightDevices[].segmented",
+                "lightDevices[].segmentedTwo",
+                "lightDevices[].segmentedThree",
+                "lightDevices[].segmentedFour"
               ]
             },
             "lightDevices[].overrideLogging"
