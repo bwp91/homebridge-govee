@@ -2,6 +2,13 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## 4.12.0 (2021-09-21)
+
+### Added
+
+- Added four more custom scene options called 'Segmented' for segmented light scenes
+- Added the option to use an AWS code using the `bulb` AWS command property
+
 ## 4.11.0 (2021-09-14)
 
 ### Added
