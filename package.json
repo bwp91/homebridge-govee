@@ -55,6 +55,9 @@
     "@abandonware/bluetooth-hci-socket": "^0.5.3-7",
     "@abandonware/noble": "^1.9.2-14"
   },
+  "scripts": {
+    "postinstall": "cp lib/patch/hci.js node_modules/@abandonware/noble/lib/hci-socket"
+  },
   "prettier": {
     "printWidth": 100
   }
