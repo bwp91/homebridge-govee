@@ -60,5 +60,10 @@
   },
   "prettier": {
     "printWidth": 100
+  },
+  "standard": {
+    "ignore": [
+      "/lib/patch/"
+    ]
   }
 }
