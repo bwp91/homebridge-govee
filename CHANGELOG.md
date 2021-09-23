@@ -2,6 +2,12 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## BETA
+
+### Fixed
+
+- Attempt to fix a situation where `noble` can crash the system (see [issue](https://github.com/abandonware/noble/issues/217))
+
 ## 4.12.0 (2021-09-21)
 
 ### Added
