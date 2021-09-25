@@ -2,6 +2,12 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## 4.12.2 (2021-09-25)
+
+### Fixed
+
+- 'Segmented' scenes not being added correctly
+
 ## 4.12.1 (2021-09-25)
 
 ### Changed
