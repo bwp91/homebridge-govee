@@ -2,6 +2,12 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## 4.12.3 (2021-09-30)
+
+### Changed
+
+- Recommended node versions bumped to v14.18.0 or v16.10.0
+
 ## 4.12.2 (2021-09-25)
 
 ### Fixed
