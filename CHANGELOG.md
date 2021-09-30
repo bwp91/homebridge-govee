@@ -2,6 +2,13 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## BETA
+
+### Added
+
+- **New Devices**
+  - Govee Heater H7130 implementation in progress
+
 ## 4.12.3 (2021-09-30)
 
 ### Changed
