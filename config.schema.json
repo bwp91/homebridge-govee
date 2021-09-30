@@ -490,6 +490,62 @@
             }
           }
         }
+      },
+      "heaterDevices": {
+        "title": "Thermo Sensor Devices",
+        "description": "Optional settings for Govee Heater devices.",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "title": "Label",
+              "type": "string",
+              "description": "This setting has no effect except to help identify this device."
+            },
+            "deviceId": {
+              "title": "Device ID",
+              "type": "string",
+              "description": "Enter the 23 digit Govee Device ID to begin (e.g. 12:AB:A1:C5:A8:99:D2:17).",
+              "minLength": 23,
+              "maxLength": 23
+            },
+            "ignoreDevice": {
+              "type": "boolean",
+              "title": "Hide From HomeKit",
+              "description": "If true, this accessory will be removed and ignored from HomeKit.",
+              "condition": {
+                "functionBody": "return (model.heaterDevices && model.heaterDevices[arrayIndices] && model.heaterDevices[arrayIndices].deviceId && model.heaterDevices[arrayIndices].deviceId.length === 23);"
+              }
+            },
+            "overrideLogging": {
+              "type": "string",
+              "title": "Override Logging Setting",
+              "description": "Override global logging setting for this device.",
+              "oneOf": [
+                {
+                  "title": "Default (Use Global Setting)",
+                  "enum": ["default"]
+                },
+                {
+                  "title": "Enable Standard Logging",
+                  "enum": ["standard"]
+                },
+                {
+                  "title": "Enable Debug Logging",
+                  "enum": ["debug"]
+                },
+                {
+                  "title": "Disable All Logging",
+                  "enum": ["disable"]
+                }
+              ],
+              "condition": {
+                "functionBody": "return (model.heaterDevices && model.heaterDevices[arrayIndices] && model.heaterDevices[arrayIndices].deviceId && model.heaterDevices[arrayIndices].deviceId.length === 23 && !model.heaterDevices[arrayIndices].ignoreDevice);"
+              }
+            }
+          }
+        }
       }
     }
   },
@@ -615,6 +671,25 @@
             "thermoDevices[].ignoreDevice",
             "thermoDevices[].lowBattThreshold",
             "thermoDevices[].overrideLogging"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "heaterDevices",
+      "expandable": true,
+      "title": "Heater Devices",
+      "description": "Optional settings for Govee Heater devices.",
+      "add": "Add Another Device",
+      "type": "array",
+      "items": [
+        {
+          "type": "fieldset",
+          "items": [
+            "heaterDevices[].label",
+            "heaterDevices[].deviceId",
+            "heaterDevices[].ignoreDevice",
+            "heaterDevices[].overrideLogging"
           ]
         }
       ]
