@@ -9,6 +9,10 @@ All notable changes to homebridge-govee will be documented in this file.
 - **New Devices**
   - Govee Heater H7130 implementation in progress
 
+### Changed
+
+- Bump `axios` to v0.22.0
+
 ## 4.12.3 (2021-09-30)
 
 ### Changed
