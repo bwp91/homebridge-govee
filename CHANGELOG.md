@@ -2,11 +2,12 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
-## BETA
+## 4.13.0 (2021-10-03)
 
 ### Added
 
 - **New Devices**
+  - Added H6170 to bluetooth only light strips
   - Govee Heater H7130 implementation in progress
 
 ### Changed
