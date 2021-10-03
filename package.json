@@ -52,8 +52,8 @@
     "p-queue": "^6.6.2"
   },
   "optionalDependencies": {
-    "@homebridge/bluetooth-hci-socket": "^0.5.3",
-    "@homebridge/noble": "^1.9.3"
+    "@abandonware/bluetooth-hci-socket": "^0.5.3-8",
+    "@homebridge/noble": "^1.9.4-1"
   },
   "prettier": {
     "printWidth": 100
