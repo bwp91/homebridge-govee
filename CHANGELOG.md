@@ -2,6 +2,12 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## 4.13.1 (2021-10-03)
+
+### Changed
+
+- Updated bluetooth dependencies
+
 ## 4.13.0 (2021-10-03)
 
 ### Added
