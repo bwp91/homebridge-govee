@@ -9,6 +9,14 @@ All notable changes to homebridge-govee will be documented in this file.
 - **New Devices**
   - Added H613C to bluetooth only light strips
 
+### Changed
+
+- Recommended Homebridge bumped to v1.3.5
+
+### Fixed
+
+- H6072 brightness and colour commands don't work with AWS
+
 ## 4.13.1 (2021-10-03)
 
 ### Changed
