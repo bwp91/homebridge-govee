@@ -3,7 +3,7 @@
   "alias": "Govee",
   "version": "4.13.2-beta.1",
   "author": "bwp91",
-  "description": "Homebridge plugin to control Govee devices.",
+  "description": "Homebridge plugin to integrate Govee devices into HomeKit.",
   "license": "MIT",
   "keywords": [
     "homebridge",
@@ -17,7 +17,7 @@
   ],
   "main": "lib/index.js",
   "engines": {
-    "homebridge": "^1.3.4",
+    "homebridge": "^1.3.5",
     "node": "^14.18.0 || ^16.10.0"
   },
   "repository": {
