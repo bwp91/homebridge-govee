@@ -28,7 +28,7 @@ Homebridge plugin to integrate Govee devices into HomeKit
 
 - To use this plugin, you will need to already have [Homebridge](https://homebridge.io) (at least v1.3.5) or [HOOBS](https://hoobs.org) (at least v4) installed. Refer to the links for more information and installation instructions.
 - For bluetooth connectivity, it may be necessary to install extra packages on your system, see [Bluetooth Control](https://github.com/bwp91/homebridge-govee/wiki/Bluetooth-Control).
-- It is recommended to use the current LTS version of Node, currently v14, however Node v12 is also supported.
+- It is recommended to use [Node](https://nodejs.org/en/) v14, however v12 and v16 are also supported.
 
 ### Setup
 
