@@ -7,6 +7,7 @@ All notable changes to homebridge-govee will be documented in this file.
 ### Added
 
 - **New Devices**
+  - Added H5074 to temperature/humidity sensors
   - Added H613C to bluetooth only light strips
 
 ### Changed
