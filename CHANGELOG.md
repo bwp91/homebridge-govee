@@ -2,6 +2,13 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## BETA
+
+### Added
+
+- **New Devices**
+  - Added H5102 to temperature/humidity sensors
+
 ## 4.14.0 (2021-10-16)
 
 ### Added
