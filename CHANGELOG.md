@@ -2,14 +2,27 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## BETA
+
+### Added
+
+- **New Devices**
+  - Govee Heater H7130 implementation in progress
+  - Govee Humidifier H7141 implementation in progress
+- **Logging**
+  - AWS account topic and device topic will no longer be visible in the log
+
+### Changed
+
+- Recommended node versions bumped to v14.18.1 or v16.12.0
+- Bump `axios` to v0.24.0
+
 ## 4.15.0 (2021-10-20)
 
 ### Added
 
 - **New Devices**
   - Added H5102 to temperature/humidity sensors
-  - Govee Heater H7130 implementation in progress
-  - Govee Humidifier H7141 implementation in progress
 
 ### Changed
 
