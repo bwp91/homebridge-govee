@@ -10,7 +10,7 @@ All notable changes to homebridge-govee will be documented in this file.
   - Govee Heater H7130 implementation in progress
   - Govee Humidifier H7141 implementation in progress
 - **Logging**
-  - AWS account topic and device topic will no longer be visible in the log
+  - AWS account topic and device topics will now be redacted from the Homebridge log
 
 ### Changed
 
