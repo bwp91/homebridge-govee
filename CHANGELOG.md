@@ -7,6 +7,7 @@ All notable changes to homebridge-govee will be documented in this file.
 ### Added
 
 - **New Devices**
+  - Added H613A to bluetooth only light strips
   - Added H613C to bluetooth only light strips
   - Added H61A0 to bluetooth only light strips
   - Govee Heater H7130 implementation in progress
