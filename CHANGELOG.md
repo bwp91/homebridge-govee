@@ -2,6 +2,13 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## BETA
+
+- **New Devices**
+  - Added H617C to bluetooth only light strips
+  - Govee Heater H7130 implementation in progress
+  - Govee Humidifier H7141 implementation in progress
+
 ## 4.16.0 (2021-10-31)
 
 ### Added
@@ -10,8 +17,6 @@ All notable changes to homebridge-govee will be documented in this file.
   - Added H613A to bluetooth only light strips
   - Added H613C to bluetooth only light strips
   - Added H61A0 to bluetooth only light strips
-  - Govee Heater H7130 implementation in progress
-  - Govee Humidifier H7141 implementation in progress
 - **Logging**
   - AWS account topic and device topics will now be redacted from the Homebridge log
 
