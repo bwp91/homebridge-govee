@@ -15,7 +15,7 @@
       },
       "username": {
         "type": "string",
-        "title": "Govee Username",
+        "title": "Govee Email",
         "description": "Required for most device models and for AWS/BLE connections. <a href=\"https://github.com/bwp91/homebridge-govee/wiki/Supported-Devices\" target=\"_blank\">Read more →</a>"
       },
       "password": {
