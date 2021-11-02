@@ -56,7 +56,7 @@
   },
   "optionalDependencies": {
     "@abandonware/bluetooth-hci-socket": "^0.5.3-8",
-    "@homebridge/noble": "^1.9.4-1"
+    "@abandonware/noble": "^1.9.2-15"
   },
   "prettier": {
     "printWidth": 100

@@ -14,6 +14,7 @@ All notable changes to homebridge-govee will be documented in this file.
 ### Changed
 
 - Configuration text label from `username` to `email` for clarification
+- Revert back from `@homebridge/noble` to `@abandonware/noble`
 
 ## 4.16.0 (2021-10-31)
 
