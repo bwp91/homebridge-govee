@@ -8,8 +8,8 @@ All notable changes to homebridge-govee will be documented in this file.
 
 - **New Devices**
   - Added H617C to bluetooth only light strips
-  - Govee Heater H7130 implementation in progress
-  - Govee Humidifier H7141 implementation in progress
+  - Govee Heater H7130 partial implementation
+  - Govee Humidifier H7141 partial implementation
 
 ### Changed
 
