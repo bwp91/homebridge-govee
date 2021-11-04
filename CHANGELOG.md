@@ -2,6 +2,12 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## BETA
+
+### Fixed
+
+- AWS brightness fix for H6062
+
 ## 4.17.0 (2021-11-03)
 
 ### Added
