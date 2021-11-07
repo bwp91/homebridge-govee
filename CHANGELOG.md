@@ -4,6 +4,10 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ## BETA
 
+### Added
+
+- Added H5177 to thermo-hygrometer devices
+
 ### Fixed
 
 - AWS brightness fix for H6008 and H6062
