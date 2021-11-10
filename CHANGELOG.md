@@ -6,7 +6,9 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ### Added
 
-- Added H5177 to thermo-hygrometer devices
+**New Devices**
+  - Added H613D to bluetooth only light strips
+  - Added H5177 to thermo-hygrometer devices
 
 ### Fixed
 
