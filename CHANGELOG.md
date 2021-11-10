@@ -7,11 +7,10 @@ All notable changes to homebridge-govee will be documented in this file.
 ### Added
 
 **New Devices**
-
-- Added H613D to bluetooth only light strips
-- Added H5177 to thermo-hygrometer devices
-- Added H605B, H6087, H6172, H619B, H619D, H619Z, H610A, H6059, H7028, H6198 and H6049 to API enabled models
-- Added H61A0 and H7060 to API enabled models and removed from BLE-only models
+  - Added H613D to bluetooth only light strips
+  - Added H5177 to thermo-hygrometer devices
+  - Added H605B, H6087, H6172, H619B, H619D, H619Z, H610A, H6059, H7028, H6198 and H6049 to API enabled models
+  - Added H61A0 and H7060 to API enabled models and removed from BLE-only models
 
 ### Fixed
 
