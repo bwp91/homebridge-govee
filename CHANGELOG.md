@@ -18,7 +18,8 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ### Fixed
 
-- AWS brightness fix for H6008 and H6062
+- AWS brightness fix for H6003, H6008 and H6062
+- AWS colour fix for H6003
 
 ## 4.17.0 (2021-11-03)
 
