@@ -7,7 +7,8 @@ All notable changes to homebridge-govee will be documented in this file.
 ### Added
 
 - **New Devices**
-  - On/Off capability for the H7121 Govee Purifier
+  - On/Off capability for Govee Purifiers H7121 and H7122
+  - Support for Govee Humidifier H7142
 
 ### Changed
 
