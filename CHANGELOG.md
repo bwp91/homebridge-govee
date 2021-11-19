@@ -2,7 +2,16 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
-## UPCOMING
+## BETA
+
+### Added
+
+- **New Devices**
+  - On/Off capability for the H7121 Govee Purifier
+
+### Changed
+
+- Recommended Homebridge bumped to v1.3.6
 
 ### Fixed
 
