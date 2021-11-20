@@ -19,6 +19,10 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ### Fixed
 
+- Avoid repeated logging for state changes of certain accessories
+
+### Fixed
+
 - Properly remove ignored accessories from the Homebridge cache
 
 ## 4.18.0 (2021-11-18)
