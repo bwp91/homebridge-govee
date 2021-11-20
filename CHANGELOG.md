@@ -9,6 +9,7 @@ All notable changes to homebridge-govee will be documented in this file.
 - **New Devices**
   - On/Off capability for Govee Purifiers H7121 and H7122
   - Support for Govee Humidifier H7142
+  - Added H7090 to bluetooth only light strips
 
 ### Changed
 
