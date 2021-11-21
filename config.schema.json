@@ -324,6 +324,14 @@
                 {
                   "title": "Air Purifier",
                   "enum": ["purifier"]
+                },
+                {
+                  "title": "Tap/Faucet",
+                  "enum": ["tap"]
+                },
+                {
+                  "title": "Valve",
+                  "enum": ["valve"]
                 }
               ],
               "condition": {
