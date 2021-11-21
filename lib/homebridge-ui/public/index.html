@@ -93,6 +93,10 @@
           <th scope="row">Bluetooth Address</th>
           <td id="ble_address"></td>
         </tr>
+        <tr id="row_ble_name" style="display: none;">
+          <th scope="row">Bluetooth Name</th>
+          <td id="ble_name"></td>
+        </tr>
         <tr id="row_supported_cmds" style="display: none;">
           <th scope="row">Supported Commands</th>
           <td id="supported_cmds"></td>
@@ -333,12 +337,15 @@
             document.getElementById('ble_supported').innerHTML = 'Yes'
             document.getElementById('ble_enabled').innerHTML = context.useBLEControl ? 'Yes' : 'No'
             document.getElementById('ble_address').innerHTML = context.bleAddress
+            document.getElementById('ble_name').innerHTML = context.bleName
             document.getElementById('row_ble_enabled').style.display = 'table-row'
-            document.getElementById('row_ble_address').style.display = 'none'
+            document.getElementById('row_ble_address').style.display = 'table-row'
+            document.getElementById('row_ble_name').style.display = 'table-row'
           } else {
             document.getElementById('ble_supported').innerHTML = 'No'
-            document.getElementById('row_ble_enabled').style.display = 'table-row'
+            document.getElementById('row_ble_enabled').style.display = 'none'
             document.getElementById('row_ble_address').style.display = 'none'
+            document.getElementById('row_ble_name').style.display = 'none'
           }
           if (context.supportedCmds && Array.isArray(context.supportedCmds)) {
             document.getElementById('supported_cmds').innerHTML = context.supportedCmds.join(', ')
