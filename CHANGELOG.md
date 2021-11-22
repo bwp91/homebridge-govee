@@ -11,7 +11,7 @@ All notable changes to homebridge-govee will be documented in this file.
   - Support for Govee Humidifier H7142
   - Added H7090 to bluetooth only light strips
 - **Simulations**
-  - Expose a single switch as a `Tap/Faucet` or `Valve` HomeKit accessory type
+  - Expose a single switch as an `Audio Receiver`, `Set Top Box`, `Streaming Stick`, `Tap/Faucet`, or `Valve` HomeKit accessory type
 
 ### Changed
 

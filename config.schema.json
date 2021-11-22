@@ -332,6 +332,18 @@
                 {
                   "title": "Valve",
                   "enum": ["valve"]
+                },
+                {
+                  "title": "Audio Receiver (External Accessory)",
+                  "enum": ["audio"]
+                },
+                {
+                  "title": "Set Top Box (External Accessory)",
+                  "enum": ["box"]
+                },
+                {
+                  "title": "Streaming Stick (External Accessory)",
+                  "enum": ["stick"]
                 }
               ],
               "condition": {
