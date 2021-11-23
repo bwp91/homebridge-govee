@@ -17,7 +17,7 @@ All notable changes to homebridge-govee will be documented in this file.
 
 - In debug mode, the plugin will log all bluetooth devices discovered when trying to control a light
   - This can help identify whether bluetooth is working and to find the address of a light strip if the plugin cannot automatically determine it
-- Recommended Homebridge bumped to v1.3.6
+- Recommended Homebridge bumped to v1.3.8
 
 ### Fixed
 
