@@ -261,6 +261,22 @@
               "title": "Father's Day",
               "type": "boolean"
             },
+            "spooky": {
+              "title": "Spooky",
+              "type": "boolean"
+            },
+            "independence_day": {
+              "title": "Independence Day",
+              "type": "boolean"
+            },
+            "chill": {
+              "title": "Chill",
+              "type": "boolean"
+            },
+            "aurora_custom": {
+              "title": "Aurora (Custom)",
+              "type": "boolean"
+            },
             "scene": {
               "title": "Scene",
               "type": "string",
