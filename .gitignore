@@ -1,5 +1,7 @@
 .DS_Store
 .nova
 .npm
+node_modules
+.prettierignore
 node_modules/
 .idea/

@@ -6,7 +6,338 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ### Added
 
-- H6053 light model to bluetooth-only supported list
+- **New Devices**
+  - On/Off capability for Govee Purifiers H7121 and H7122
+  - Support for Govee Humidifier H7142
+  - Added H6145, H6146 and H7090 to bluetooth only light strips
+- **Simulations**
+  - Expose a single switch as an `Audio Receiver`, `Set Top Box`, `Streaming Stick`, `Tap/Faucet`, or `Valve` HomeKit accessory type
+
+### Changed
+
+- In debug mode, the plugin will log all bluetooth devices discovered when trying to control a light
+  - This can help identify whether bluetooth is working and to find the address of a light strip if the plugin cannot automatically determine it
+- Recommended Homebridge bumped to v1.3.8
+
+### Fixed
+
+- Avoid repeated logging for state changes of certain accessories
+
+### Fixed
+
+- Properly remove ignored accessories from the Homebridge cache
+
+## 4.18.0 (2021-11-18)
+
+### Added
+
+- **New Devices**
+  - Added H613D to bluetooth only light strips
+  - Added H5177 to thermo-hygrometer devices
+  - Added H605B, H6087, H6172, H619B, H619D, H619Z, H610A, H6059, H7028, H6198 and H6049 to API enabled models
+  - Added H61A0 and H7060 to API enabled models and removed from BLE-only models
+
+### Fixed
+
+- AWS brightness fix for H6003, H6008 and H6062
+- AWS colour fix for H6003
+
+## 4.17.0 (2021-11-03)
+
+### Added
+
+- **New Devices**
+  - Added H5100 to thermo-hygrometer devices
+  - Added H617C to bluetooth only light strips
+  - Govee Heater H7130 partial implementation
+  - Govee Humidifier H7141 partial implementation
+
+### Changed
+
+- Configuration text label from `username` to `email` for clarification
+- Revert back from `@homebridge/noble` to `@abandonware/noble`
+
+## 4.16.0 (2021-10-31)
+
+### Added
+
+- **New Devices**
+  - Added H613A to bluetooth only light strips
+  - Added H613C to bluetooth only light strips
+  - Added H61A0 to bluetooth only light strips
+- **Logging**
+  - AWS account topic and device topics will now be redacted from the Homebridge log
+
+### Changed
+
+- Bump `node` recommended versions to v14.18.1 or v16.13.0
+- Bump `axios` to v0.24.0
+
+## 4.15.0 (2021-10-20)
+
+### Added
+
+- **New Devices**
+  - Added H5102 to temperature/humidity sensors
+
+### Changed
+
+- Some small changes to Fakegato debug logging
+
+## 4.14.0 (2021-10-16)
+
+### Added
+
+- **New Devices**
+  - Added H5074 to temperature/humidity sensors
+  - Added H613C to bluetooth only light strips
+
+### Changed
+
+- Recommended node versions bumped to v14.18.1 or v16.11.1
+- Recommended Homebridge bumped to v1.3.5
+- Bump `axios` to v0.23.0
+
+### Fixed
+
+- H6072 brightness and colour commands don't work with AWS
+
+## 4.13.1 (2021-10-03)
+
+### Changed
+
+- Updated bluetooth dependencies
+
+## 4.13.0 (2021-10-03)
+
+### Added
+
+- **New Devices**
+  - Added H6170 to bluetooth only light strips
+
+### Changed
+
+- Bump `axios` to v0.22.0
+
+## 4.12.3 (2021-09-30)
+
+### Changed
+
+- Recommended node versions bumped to v14.18.0 or v16.10.0
+
+## 4.12.2 (2021-09-25)
+
+### Fixed
+
+- 'Segmented' scenes not being added correctly
+
+## 4.12.1 (2021-09-25)
+
+### Changed
+
+- Use `@homebridge/noble` repo to fix noble `EALREADY` crash
+
+## 4.12.0 (2021-09-21)
+
+### Added
+
+- Added four more custom scene options called 'Segmented' for segmented light scenes
+- Added the option to use an AWS code using the `bulb` AWS command property
+
+## 4.11.0 (2021-09-14)
+
+### Added
+
+- **New Devices**
+  - Added `H5082` to dual outlet devices
+- New `offlineAsOff` setting to show offline devices as OFF in HomeKit
+
+### Fixed
+
+- Don't throw error when **only** AWS update is used
+- Disable colour commands via AWS/BLE for `H6199` as seems not supported
+
+## 4.10.0 (2021-09-09)
+
+### Added
+
+- **New Devices**
+  - Added `H5053` to temperature/humidity sensors supported list
+
+### Changed
+
+- `configureAccessory` function simplified to reduce chance of accessory cache retrieval failing
+- Bump `axios` to v0.21.4
+
+## 4.9.0 (2021-09-05)
+
+### Added
+
+- **New Devices**
+  - Added `H6147` to bluetooth-only supported list
+
+### Changed
+
+- Recommended node version bumped to v14.17.6
+- Bump `axios` to v0.21.3
+
+## 4.8.0 (2021-08-30)
+
+### Added
+
+- Added `H5072` to not-supported list
+
+### Changed
+
+- Remove `node-machine-id` in favour of generating a client id based on Govee username
+- AWS client id is now unique per device
+
+## 4.7.0 (2021-08-26)
+
+### Added
+
+- **New Devices**
+  - Added `H6102` to bluetooth-only supported list
+
+## 4.6.0 (2021-08-22)
+
+### Added
+
+- **New Devices**
+  - Added `H6179` to bluetooth-only supported list
+
+## 4.5.0 (2021-08-16)
+
+### Added
+
+- **New Devices**
+  - Added `H6138` to bluetooth-only supported list
+  - Added `H6001` to not-supported list (model must use undocumented bluetooth commands)
+
+### Changed
+
+- **Unsupported Devices**
+  - Plugin will remove existing accessories whose model is unsupported
+- **Platform Versions**
+  - Recommended node version bumped to v14.17.5
+
+### Fixed
+
+- More specific-case logging when device updates fail (eg not displaying reverting to API if not unsupported API model)
+- Plugin will ignore incoming AWS updates when controlling colour temperature as can sometimes incorrectly disable adaptive lighting
+- Attempt to fix a situation when `node-machine-id` fails to obtain the machine uuid
+- Attempt to fix a situation when the plugin would crash Homebridge in a loop if running on a non-macOS platform with no bluetooth module
+
+## 4.4.1 (2021-08-10)
+
+### Fixed
+
+- Removed H6144 from 'scale brightness' list, fixes [#99](https://github.com/bwp91/homebridge-govee/issues/99)
+
+## 4.4.0 (2021-08-09)
+
+### Added
+
+- **New Devices**
+  - Added `H5051` to temp/humidity sensor supported list
+  - Added new API models: `H7050` `H6051` `H6056` `H6061` `H6058` `H6073` `H6076` `H619A` `H619C` `H618A` `H618C` `H6008` `H6071` `H6075` `H614A` `H614B` `H614E` `H618E` `H619E`
+
+## 4.3.0 (2021-08-05)
+
+### Added
+
+- **New Devices**
+  - Added `H5101` to temp/humidity sensor supported list
+
+### Changed
+
+- **AWS Codes**
+  - ⚠️ The format of the code that the plugin needs has changed
+    - You will need to re-obtain your AWS codes using the same method as before and save them into the configuration
+
+### Fixed
+
+- Fixes an issue preventing outlet devices from initialising
+
+## 4.2.0 (2021-08-04)
+
+### Added
+
+- **New Devices**
+  - Added `H6126` to bluetooth-only supported list
+
+### Fixed
+
+- Fixes an issue where AWS was not being enabled for non-configured light strips
+
+## 4.1.0 (2021-08-04)
+
+### Added
+
+- **Govee Lights**
+  - Support for two more custom scene codes and two mode custom diy mode codes
+- **New Devices**
+  - Added `H6125` to bluetooth-only supported list
+
+### Fixed
+
+- **Logging**
+  - Certain common errors made easier to read
+  - Stringify new device objects so they appear in HOOBS log
+
+## 4.0.2 (2021-07-30)
+
+### Changed
+
+- A log warning for certain models which use a different data format for scenes
+
+### Fixed
+
+- Adaptive Lighting will now be turned off when using the Govee app to use a scene for these certain models
+
+## 4.0.1 (2021-07-29)
+
+### Fixed
+
+- An issue where custom scenes weren't visible in Eve app
+
+## 4.0.0 (2021-07-29)
+
+### Added
+
+- **New Devices**
+  - Added `H6127` to the bluetooth only model list
+  - Added `H6171` to the bluetooth only model list
+- **Configuration**
+  - Plugin will now check for duplicate device ID entries in the config and ignore them
+
+### Changed
+
+- ⚠️ **Platform Versions**
+
+  - Recommended node version bumped to v14.17.4
+  - Recommended homebridge version bumped to v1.3.4
+
+- ⚠️ **AWS Control**
+  - AWS connection is now **enabled** by default for Govee Lights that support this mode
+    - If for any reason you want to disable this then there is a new 'Disable AWS Control' setting
+
+### Fixed
+
+- Older models may supply device id in a format without colons and in lowercase (plugin reformats)
+- Use device ble address that Govee sometimes supplies rather than calculating from existing device id
+- Removed `H6141` from bluetooth only model list as is in fact wifi too
+
+### Removed
+
+- 'Experimental' labels have been removed from AWS control, BLE control and scene mode settings
+  - Whilst maybe not perfect(!), a lot of users have had success with both connection methods
+
+## 3.8.0 (2021-07-27)
+
+### Added
+
+- `H6053` and `H6141` light models to bluetooth-only supported list
 - Optionally use a base64 encoded version of your Govee password in the configuration
 
 ## 3.7.0 (2021-07-22)

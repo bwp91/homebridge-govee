@@ -1,6 +1,4 @@
-.DS_Store
-.nova
 .github
+.nova
 .npm
 .prettierignore
-node_modules/
