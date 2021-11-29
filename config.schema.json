@@ -848,7 +848,7 @@
     {
       "key": "purifierDevices",
       "expandable": true,
-      "title": "Humidifier Devices",
+      "title": "Purifier Devices",
       "description": "Optional settings for Govee Purifier devices.",
       "add": "Add Another Device",
       "type": "array",
