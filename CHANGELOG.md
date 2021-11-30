@@ -9,7 +9,7 @@ All notable changes to homebridge-govee will be documented in this file.
 - **New Devices**
   - On/Off capability for Govee Purifiers H7121 and H7122
   - Support for Govee Humidifier H7142
-  - Added H6145, H6146, H7010, H7011 and H7090 to bluetooth only light strips
+  - Added H6055, H6145, H6146, H7010, H7001, H7002, H7011, H7015, H7016, H7023, H7024 and H7090 to bluetooth only light strips
 - **Simulations**
   - Expose a single switch as an `Audio Receiver`, `Set Top Box`, `Streaming Stick`, `Tap/Faucet`, or `Valve` HomeKit accessory type
 
