@@ -114,7 +114,7 @@
               "title": "Custom Bluetooth Address",
               "type": "string",
               "placeholder": "a1:b2:c3:d4:e5:f6",
-              "description": "The plugin may not be able to determine the bluetooth address of some older models.",
+              "description": "The plugin may not be able to determine the bluetooth address of some older models. <a href=\"https://github.com/bwp91/homebridge-govee/wiki/Bluetooth-Control#finding-the-bluetooth-address\" target=\"_blank\">Read more →</a>",
               "minLength": 17,
               "maxLength": 17,
               "condition": {
