@@ -9,6 +9,10 @@ All notable changes to homebridge-govee will be documented in this file.
 - **New Devices**
   - Added H5174 to thermo-hygrometer devices (although not properly supported since BLE-only)
 
+### Changed
+
+- Only use the (promise) queue for API updates, ie, don't use the queue for AWS and BLE updates
+
 ## 4.19.0 (2021-12-08)
 
 ### Added
