@@ -358,7 +358,7 @@
             "temperatureSource": {
               "type": "string",
               "title": "Temperature Sensor ID",
-              "description": "Enter a Govee or eWeLink device ID which provides a current temperature reading.",
+              "description": "Enter a Govee, eWeLink or Meross device ID which provides a current temperature reading.",
               "condition": {
                 "functionBody": "return (model.switchDevices && model.switchDevices[arrayIndices] && model.switchDevices[arrayIndices].deviceId && model.switchDevices[arrayIndices].deviceId.length === 23 && ['heater', 'cooler'].includes(model.switchDevices[arrayIndices].showAs) && !model.switchDevices[arrayIndices].ignoreDevice);"
               }
