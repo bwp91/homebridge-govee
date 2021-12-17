@@ -314,40 +314,56 @@
               "title": "Show As",
               "oneOf": [
                 {
-                  "title": "Outlet (Default)",
+                  "title": "1 Outlet (Default)",
                   "enum": ["default"]
                 },
                 {
-                  "title": "Switch",
+                  "title": "1 Switch",
                   "enum": ["switch"]
                 },
                 {
-                  "title": "Air Purifier",
+                  "title": "1 Air Purifier",
                   "enum": ["purifier"]
                 },
                 {
-                  "title": "Tap/Faucet",
+                  "title": "1 Heater",
+                  "enum": ["heater"]
+                },
+                {
+                  "title": "1 Cooler",
+                  "enum": ["cooler"]
+                },
+                {
+                  "title": "1 Tap/Faucet",
                   "enum": ["tap"]
                 },
                 {
-                  "title": "Valve",
+                  "title": "1 Valve",
                   "enum": ["valve"]
                 },
                 {
-                  "title": "Audio Receiver (External Accessory)",
+                  "title": "1 Audio Receiver (External Accessory)",
                   "enum": ["audio"]
                 },
                 {
-                  "title": "Set Top Box (External Accessory)",
+                  "title": "1 Set Top Box (External Accessory)",
                   "enum": ["box"]
                 },
                 {
-                  "title": "Streaming Stick (External Accessory)",
+                  "title": "1 Streaming Stick (External Accessory)",
                   "enum": ["stick"]
                 }
               ],
               "condition": {
                 "functionBody": "return (model.switchDevices && model.switchDevices[arrayIndices] && model.switchDevices[arrayIndices].deviceId && model.switchDevices[arrayIndices].deviceId.length === 23 && !model.switchDevices[arrayIndices].ignoreDevice);"
+              }
+            },
+            "temperatureSource": {
+              "type": "string",
+              "title": "Temperature Sensor ID",
+              "description": "Enter a eWeLink or Govee device ID which provides a current temperature reading.",
+              "condition": {
+                "functionBody": "return (model.switchDevices && model.switchDevices[arrayIndices] && model.switchDevices[arrayIndices].deviceId && model.switchDevices[arrayIndices].deviceId.length === 23 && ['heater', 'cooler'].includes(model.switchDevices[arrayIndices].showAs) && !model.switchDevices[arrayIndices].ignoreDevice);"
               }
             },
             "overrideLogging": {
@@ -692,12 +708,7 @@
       "title": "Advanced Settings",
       "description": "Advanced settings for the plugin, including interval options.",
       "expandable": true,
-      "items": [
-        "disableDeviceLogging",
-        "refreshTime",
-        "controlInterval",
-        "offlineAsOff"
-      ]
+      "items": ["disableDeviceLogging", "refreshTime", "controlInterval", "offlineAsOff"]
     },
     {
       "key": "lightDevices",
@@ -760,6 +771,7 @@
             "switchDevices[].deviceId",
             "switchDevices[].ignoreDevice",
             "switchDevices[].showAs",
+            "switchDevices[].temperatureSource",
             "switchDevices[].overrideLogging"
           ]
         }
