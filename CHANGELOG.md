@@ -11,6 +11,7 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ### Changed
 
+- Some config options rearranged for easier access
 - Only use the (promise) queue for API updates, ie, don't use the queue for AWS and BLE updates
 
 ## 4.19.0 (2021-12-08)

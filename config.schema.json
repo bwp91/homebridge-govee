@@ -28,6 +28,21 @@
         "title": "Govee API Key",
         "description": "Required to enable support for API devices. You can obtain your API key using <a href=\"https://github.com/bwp91/homebridge-govee/wiki/Configuration#obtaining-your-api-key\" target=\"_blank\">this guide</a>."
       },
+      "debug": {
+        "title": "Debug Logging",
+        "type": "boolean",
+        "description": "Global logging setting for the plugin. If true then debug information will be added to the log. This can also be set per accessory later in the config."
+      },
+      "debugFakegato": {
+        "title": "Debug Fakegato",
+        "type": "boolean",
+        "description": "If true, the included Fakegato library will debug to the log."
+      },
+      "disablePlugin": {
+        "title": "Disable Plugin",
+        "type": "boolean",
+        "description": "If true, the plugin will remove all accessories and not load the plugin on restart."
+      },
       "refreshTime": {
         "title": "Refresh Interval",
         "type": "integer",
@@ -51,21 +66,6 @@
         "type": "boolean",
         "title": "Disable Device Logging",
         "description": "Global logging setting for accessory status changes. If true then accessory status changes will not be logged. This can also be set per accessory later in the config."
-      },
-      "debug": {
-        "title": "Debug Logging",
-        "type": "boolean",
-        "description": "Global logging setting for the plugin. If true then debug information will be added to the log. This can also be set per accessory later in the config."
-      },
-      "debugFakegato": {
-        "title": "Debug Fakegato",
-        "type": "boolean",
-        "description": "If true, the included Fakegato library will debug to the log."
-      },
-      "disablePlugin": {
-        "title": "Disable Plugin",
-        "type": "boolean",
-        "description": "If true, the plugin will remove all accessories and not load the plugin on restart."
       },
       "lightDevices": {
         "title": "Light Devices",
@@ -685,20 +685,18 @@
     {
       "type": "fieldset",
       "title": "Required Settings",
-      "items": ["username", "password", "apiKey"]
+      "items": ["username", "password", "apiKey", "debug", "disablePlugin"]
     },
     {
       "type": "fieldset",
-      "title": "Optional Settings",
-      "description": "Optional settings for the plugin, including refreshing and global logging settings.",
+      "title": "Advanced Settings",
+      "description": "Advanced settings for the plugin, including interval options.",
       "expandable": true,
       "items": [
+        "disableDeviceLogging",
         "refreshTime",
         "controlInterval",
-        "offlineAsOff",
-        "disableDeviceLogging",
-        "debug",
-        "disablePlugin"
+        "offlineAsOff"
       ]
     },
     {
