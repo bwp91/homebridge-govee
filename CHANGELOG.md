@@ -7,6 +7,7 @@ All notable changes to homebridge-govee will be documented in this file.
 ### Added
 
 - **New Devices**
+  - Added H613E to bluetooth only light strips
   - Added H5174 to thermo-hygrometer devices (although not properly supported since BLE-only)
 - **Accessory Types**
   - Expose an outlet device as a `Heater` or `Cooler` accessory type, using the current temperature value from another Govee, eWeLink or Meross sensor
