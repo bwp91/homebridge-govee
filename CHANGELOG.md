@@ -6,6 +6,7 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ### Fixed
 
+- Sending colour updates via BLE was sometimes incorrectly marked as not supported
 - AWS brightness fix for H6059
 
 ## 4.20.0 (2021-12-21)
