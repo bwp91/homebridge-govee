@@ -2,6 +2,12 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## 4.20.2 (2021-12-26)
+
+### Fixed
+
+- Hide error stack info for more known warnings on plugin startup
+
 ## 4.20.1 (2021-12-24)
 
 ### Fixed
