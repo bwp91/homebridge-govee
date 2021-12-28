@@ -2,6 +2,12 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## BETA
+
+### Fixed
+
+- [test] Use `colorwc` AWS command for H6059 for colour
+
 ## 4.20.2 (2021-12-26)
 
 ### Fixed
