@@ -43,7 +43,7 @@
       "refreshTime": {
         "title": "Refresh Interval",
         "type": "integer",
-        "description": "An interval (in seconds) in which your API devices will refresh with Govee. Must be 15 or more.",
+        "description": "An interval (in seconds) in which your HTTP/API devices will refresh with Govee. Must be 15 or more.",
         "placeholder": 15,
         "minimum": 15
       },
@@ -57,7 +57,7 @@
       "offlineAsOff": {
         "type": "boolean",
         "title": "Offline As Off",
-        "description": "If true then devices that are reported as offline will be shown as off in HomeKit."
+        "description": "If true then devices that are reported as offline will be shown as off in HomeKit. Can be useful for lights that are powered by a television."
       },
       "disableDeviceLogging": {
         "type": "boolean",
