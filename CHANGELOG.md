@@ -4,9 +4,21 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ## BETA
 
+See ⚠️ for potentially-breaking changes
+
+### Added
+
+- **New Devices**
+  - Added H5071 to thermo-hygrometer devices
+
 ### Changed
 
 - Bump `homebridge` recommended version to v1.3.9
+
+### Removed
+
+- ⚠️ Remove support for bluetooth-only thermo-hygrometer devices
+  - The plugin will log a recommendation to use `homebridge-plugin-govee`
 
 ## 4.21.0 (2021-12-30)
 
