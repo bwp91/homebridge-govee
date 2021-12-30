@@ -4,6 +4,12 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ## BETA
 
+### Changed
+
+- Bump `homebridge` recommended version to v1.3.9
+
+## 4.21.0 (2021-12-30)
+
 ### Added
 
 - **New Devices**
@@ -15,7 +21,6 @@ All notable changes to homebridge-govee will be documented in this file.
 
 - Improved support for colour temperature for devices that support `colorwc` AWS command
 - Plugin will log HAPNodeJS version on startup
-- Bump `homebridge` recommended version to v1.3.9
 
 ## 4.20.3 (2021-12-29)
 
