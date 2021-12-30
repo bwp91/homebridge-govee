@@ -4,6 +4,11 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ## BETA
 
+### Added
+
+- **New Devices**
+  - Added H6196 to bluetooth only light strips
+
 ### Changed
 
 - Plugin will log HAPNodeJS version on startup
