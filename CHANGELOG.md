@@ -8,9 +8,12 @@ All notable changes to homebridge-govee will be documented in this file.
 
 - **New Devices**
   - Added H6196 to bluetooth only light strips
+- **Logging**
+  - Plugin will log if it notices your device supports the `colorwc` AWS command, asking to let me know on Github
 
 ### Changed
 
+- Improved support for colour temperature for devices that support `colorwc` AWS command
 - Plugin will log HAPNodeJS version on startup
 - Bump `homebridge` recommended version to v1.3.9
 
