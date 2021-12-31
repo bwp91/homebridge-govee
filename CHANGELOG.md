@@ -9,6 +9,7 @@ See ⚠️ for potentially-breaking changes
 ### Added
 
 - **New Devices**
+  - Added H6005 to bluetooth only light strips
   - Added H5071 to thermo-hygrometer devices
 
 ### Changed
