@@ -2,9 +2,9 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
-## BETA
+## 4.22.0 (2021-12-31)
 
-See ⚠️ for potentially-breaking changes
+See ⚠️ for potentially-breaking changes.
 
 ### Added
 
@@ -15,6 +15,10 @@ See ⚠️ for potentially-breaking changes
 ### Changed
 
 - Bump `homebridge` recommended version to v1.3.9
+
+### Fixed
+
+- Fixed sending and receiving colour temperature values with `colorwc` AWS command
 
 ### Removed
 
