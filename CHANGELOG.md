@@ -2,6 +2,10 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## Fixed
+
+- Colour and colour temperature fixes for the H6086
+
 ## 4.22.0 (2021-12-31)
 
 See ⚠️ for potentially-breaking changes.
