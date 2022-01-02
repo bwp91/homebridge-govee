@@ -2,7 +2,9 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
-## Fixed
+## BETA
+
+### Fixed
 
 - Colour and colour temperature fixes for the H6086
 
