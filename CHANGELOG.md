@@ -4,6 +4,11 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ## BETA
 
+### Added
+
+- **Logging**
+  - Plugin will log if it notices your device supports the `color/rgb` AWS command, asking to let me know on Github
+
 ### Fixed
 
 - Colour and colour temperature fixes for the H6086
