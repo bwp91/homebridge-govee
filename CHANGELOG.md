@@ -2,6 +2,12 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## BETA
+
+### Fixed
+
+- Improved AWS support for H6003
+
 ## 4.23.1 (2021-01-05)
 
 ### Fixed
