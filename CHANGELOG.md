@@ -6,7 +6,7 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ### Fixed
 
-- Improved AWS support for H6003
+- Improved AWS support for H6003, H6199
 - Plugin crash for older versions of Homebridge
 
 ## 4.23.1 (2021-01-05)
