@@ -4,6 +4,10 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ## BETA
 
+### Added
+
+- Reinstate support for H6001
+
 ### Fixed
 
 - Improved AWS support for H6062
