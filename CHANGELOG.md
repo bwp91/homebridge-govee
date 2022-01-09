@@ -2,6 +2,12 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## BETA
+
+### Added
+
+- Added two custom scene options called 'Video Mode' for video mode scenes
+
 ## 4.24.0 (2022-01-08)
 
 ### Added

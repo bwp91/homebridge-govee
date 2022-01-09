@@ -186,6 +186,22 @@
                 "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice && (!model.lightDevices[arrayIndices].disableAWS || model.lightDevices[arrayIndices].enableBT));"
               }
             },
+            "videoMode": {
+              "title": "Video Mode",
+              "type": "string",
+              "description": "Enter an AWS code (from logs) or a bluetooth code to create a button named 'Video Mode' (in Eve app).",
+              "condition": {
+                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice && (!model.lightDevices[arrayIndices].disableAWS || model.lightDevices[arrayIndices].enableBT));"
+              }
+            },
+            "videoModeTwo": {
+              "title": "Video Mode 2",
+              "type": "string",
+              "description": "Enter an AWS code (from logs) or a bluetooth code to create a button named 'Video Mode 2' (in Eve app).",
+              "condition": {
+                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice && (!model.lightDevices[arrayIndices].disableAWS || model.lightDevices[arrayIndices].enableBT));"
+              }
+            },
             "diyMode": {
               "title": "DIY Mode",
               "type": "string",
@@ -738,6 +754,8 @@
                 "lightDevices[].sceneFour",
                 "lightDevices[].musicMode",
                 "lightDevices[].musicModeTwo",
+                "lightDevices[].videoMode",
+                "lightDevices[].videoModeTwo",
                 "lightDevices[].diyMode",
                 "lightDevices[].diyModeTwo",
                 "lightDevices[].diyModeThree",
