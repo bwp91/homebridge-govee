@@ -10,6 +10,8 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ### Fixed
 
+- Properly display a certain error from `bluetooth-hci-socket`
+- Properly throw an error if bluetooth fails and is the only connection method
 - Missing RGB data for selecting 5600K colour temperature
 
 ## 4.24.0 (2022-01-08)
