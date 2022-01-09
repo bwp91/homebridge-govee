@@ -8,6 +8,10 @@ All notable changes to homebridge-govee will be documented in this file.
 
 - Added two custom scene options called 'Video Mode' for video mode scenes
 
+### Fixed
+
+- Missing RGB data for selecting 5600K colour temperature
+
 ## 4.24.0 (2022-01-08)
 
 ### Added
