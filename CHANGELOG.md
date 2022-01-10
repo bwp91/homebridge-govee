@@ -4,6 +4,10 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ## BETA
 
+### Added
+
+- Speed control for Govee Purifiers
+
 ### Changed
 
 - Plugin startup logs will include the model in the device listing
