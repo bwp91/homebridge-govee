@@ -8,6 +8,10 @@ All notable changes to homebridge-govee will be documented in this file.
 
 - Plugin startup logs will include the model in the device listing
 
+### Fixed
+
+- Incorrectly marking AWS-only devices as command failed when it was in fact sent
+
 ## 4.25.0 (2022-01-09)
 
 ### Added
