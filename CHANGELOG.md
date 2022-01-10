@@ -7,6 +7,7 @@ All notable changes to homebridge-govee will be documented in this file.
 ### Changed
 
 - Plugin startup logs will include the model in the device listing
+- Purifier, Heater and Humidifier will no longer debug log (was hard-coded for development)
 
 ### Fixed
 
