@@ -2,7 +2,7 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
-## BETA
+## 4.26.0 (2022-01-13)
 
 ### Added
 
@@ -16,6 +16,7 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ### Fixed
 
+- Improved AWS support for H6141
 - Incorrectly marking AWS-only devices as command failed when it was in fact sent
 
 ## 4.25.0 (2022-01-09)
