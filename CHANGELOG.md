@@ -9,6 +9,10 @@ All notable changes to homebridge-govee will be documented in this file.
 - Added H6178 and H617A to bluetooth only light strips
 - Added lock control and display light control to Govee Purifiers
 
+## Fixed
+
+- Improved AWS support for H6058
+
 ## 4.26.0 (2022-01-13)
 
 ### Added
