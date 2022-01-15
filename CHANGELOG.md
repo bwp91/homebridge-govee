@@ -2,7 +2,7 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
-## BETA
+## 4.27.0 (2022-01-15)
 
 ### Added
 
@@ -11,7 +11,7 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ## Fixed
 
-- Improved AWS support for H6058
+- Improved AWS support for H6058 and H605B
 
 ## 4.26.0 (2022-01-13)
 
