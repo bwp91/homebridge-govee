@@ -2,6 +2,12 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## BETA
+
+### Changed
+
+- Bump `axios` to v0.25.0
+
 ## 4.27.0 (2022-01-15)
 
 ### Added
