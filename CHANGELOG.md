@@ -12,6 +12,7 @@ All notable changes to homebridge-govee will be documented in this file.
 ### Fixed
 
 - Brightness fix for H6050
+- Improved AWS support for H6072 and H6141
 
 ## 4.27.0 (2022-01-15)
 
