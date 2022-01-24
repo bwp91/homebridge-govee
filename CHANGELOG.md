@@ -6,6 +6,7 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ### Changed
 
+- Bump `homebridge` recommended version to v1.4.0
 - Bump `axios` to v0.25.0
 
 ### Fixed
