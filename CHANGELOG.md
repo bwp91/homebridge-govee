@@ -4,6 +4,10 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ## BETA
 
+### Added
+
+- Oscillation support for Govee Heater (via `RotationDirection` feature)
+
 ### Changed
 
 - Bump `homebridge` recommended version to v1.4.0
