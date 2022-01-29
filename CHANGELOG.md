@@ -6,7 +6,8 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ### Added
 
-- Oscillation support for Govee Heater (via `RotationDirection` feature)
+- Initial support for Govee Fans H7101 and H7111
+- Heating speed and oscillation support for Govee Heater (via `RotationDirection` feature)
 
 ### Changed
 
