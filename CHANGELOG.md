@@ -8,6 +8,10 @@ All notable changes to homebridge-govee will be documented in this file.
 
 - Added H613B to bluetooth only light strips
 
+### Changed
+
+- Bump `node` recommended versions to v14.19.0 or v16.14.0
+
 ### Fixed
 
 - Improved AWS support for H6172 and H61A0
