@@ -11,6 +11,7 @@ All notable changes to homebridge-govee will be documented in this file.
 ### Changed
 
 - Bump `node` recommended versions to v14.19.0 or v16.14.0
+- Bump `axios` to v0.26.0
 
 ### Fixed
 
