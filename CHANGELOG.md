@@ -6,7 +6,7 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ### Added
 
-- Added H613B to bluetooth only light strips
+- Added H604A and H613B to bluetooth only light strips
 
 ### Changed
 
