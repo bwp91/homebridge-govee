@@ -2,6 +2,12 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## BETA
+
+### Added
+
+- Added H6116 to bluetooth only light strips
+
 ## 4.29.0 (2022-02-27)
 
 ### Added
