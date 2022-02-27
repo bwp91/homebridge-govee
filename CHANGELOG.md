@@ -2,7 +2,7 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
-## BETA
+## 4.29.0 (2022-02-27)
 
 ### Added
 
@@ -16,7 +16,8 @@ All notable changes to homebridge-govee will be documented in this file.
 ### Fixed
 
 - Colour support for H613B and H613D via bluetooth, thanks @jbheuschen
-- Improved AWS support for H610A, H6144, H6159, H6172 and H61A0
+- Improved AWS support for H610A, H6144, H6159, H6172, H61A0, H619C and H619E
+- Improved AWS support for H6052 thanks @DuckMasterAl
 
 ## 4.28.0 (2022-02-02)
 
