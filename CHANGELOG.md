@@ -8,6 +8,10 @@ All notable changes to homebridge-govee will be documented in this file.
 
 - Added H6101, H6116 to bluetooth only light strips
 
+### Changed
+
+- Bump `axios` to v0.26.1
+
 ## 4.29.0 (2022-02-27)
 
 ### Added
