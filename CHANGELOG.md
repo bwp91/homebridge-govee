@@ -2,15 +2,18 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
-## BETA
+## 4.30.0 (2022-03-20)
 
 ### Added
 
+- Support new models via Govee API v1.5:
+  - H6009, H604A, H604B, H605D, H6066, H6067, H6091, H615E, H6173, H618F, H61A1, H61A2, H61B2, H7031, H7032, H7041, H7042, H7051, H7061, H7062
 - Added H6101, H6116 to bluetooth only light strips
 
 ### Changed
 
 - Bump `axios` to v0.26.1
+- Bump `node` recommended versions to v14.19.1 or v16.14.2
 
 ## 4.29.0 (2022-02-27)
 
