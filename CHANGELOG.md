@@ -2,12 +2,12 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
-## BETA
+## 4.30.1 (202)
 
 ### Changed
 
 - Bump `aws-iot-device-sdk` to v2.2.12
-- Improve AWS support for H604A, H6056 and H6073
+- Improve AWS support for H6008, H604A, H6056 and H6073
 
 ## 4.30.0 (2022-03-20)
 
