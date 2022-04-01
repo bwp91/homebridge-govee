@@ -2,7 +2,7 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
-## 4.30.1 (202)
+## 4.30.1 (2023-04-01)
 
 ### Changed
 
