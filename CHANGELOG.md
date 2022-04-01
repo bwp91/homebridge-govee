@@ -2,6 +2,12 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## BETA
+
+### Changed
+
+- Bump `aws-iot-device-sdk` to v2.2.12
+
 ## 4.30.0 (2022-03-20)
 
 ### Added
