@@ -2,6 +2,12 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## 4.30.3 (2022-04-10)
+
+### Fixed
+
+- An issue updating colour for certain RGB models
+
 ## 4.30.2 (2022-04-03)
 
 ### Changed
