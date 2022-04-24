@@ -49,15 +49,13 @@
     }
   ],
   "dependencies": {
+    "@abandonware/bluetooth-hci-socket": "^0.5.3-8",
+    "@abandonware/noble": "abandonware/noble#master",
     "@homebridge/plugin-ui-utils": "^0.0.19",
     "aws-iot-device-sdk": "^2.2.12",
     "axios": "^0.26.1",
     "node-persist": "^3.1.0",
     "p-queue": "^6.6.2"
-  },
-  "optionalDependencies": {
-    "@abandonware/bluetooth-hci-socket": "^0.5.3-8",
-    "@abandonware/noble": "abandonware/noble#master"
   },
   "prettier": {
     "printWidth": 100
