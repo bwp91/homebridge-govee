@@ -2,6 +2,20 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## BETA
+
+### Potentially Breaking Changes
+
+⚠️ The minimum required version of Homebridge is now v1.4.0
+⚠️ The minimum required version of Node is now v14
+
+### Changed
+
+- Device polling based on number of devices and new Govee limitations
+- Bluetooth-only devices no longer need to be configured to explicitly enable bluetooth
+- Changed to ESM package
+- Bump `node` recommended versions to v14.19.3 or v16.15.0
+
 ## 4.30.3 (2022-04-10)
 
 ### Fixed

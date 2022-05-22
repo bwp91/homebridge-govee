@@ -2,4 +2,4 @@
 .nova
 .npm
 node_modules
-.prettierignore
+.idea
