@@ -2,6 +2,13 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## 5.0.1 (2022-05-28)
+
+### Changed
+
+- Try BLE-only device connection for 8 seconds and 4 seconds for API/AWS models
+- More fixes and refactoring
+
 ## 5.0.0 (2022-05-28)
 
 ### Potentially Breaking Changes
