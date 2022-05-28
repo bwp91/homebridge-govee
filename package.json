@@ -57,16 +57,17 @@
     "@homebridge/plugin-ui-utils": "^0.0.19",
     "aws-iot-device-sdk": "^2.2.12",
     "axios": "^0.27.2",
-    "node-persist": "^3.1.0"
+    "node-persist": "^3.1.0",
+    "p-queue": "^7.2.0"
   },
   "optionalDependencies": {
     "@abandonware/bluetooth-hci-socket": "^0.5.3-8",
     "@abandonware/noble": "1.9.2-15"
   },
   "devDependencies": {
+    "eslint": "^8.16.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-sort-exports": "^0.6.0",
-    "eslint": "^8.16.0"
+    "eslint-plugin-sort-exports": "^0.6.0"
   }
 }
