@@ -2,6 +2,14 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## BETA
+
+### Added
+
+- **New Devices**
+  - H7123 Air Purifier
+  - H7160 Humidifier
+
 ## 5.0.1 (2022-05-28)
 
 ### Changed
