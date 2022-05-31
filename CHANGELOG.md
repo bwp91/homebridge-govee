@@ -10,6 +10,10 @@ All notable changes to homebridge-govee will be documented in this file.
   - H7123 Air Purifier
   - H7160 Humidifier
 
+### Fixed
+
+- AWS improvements for H618E
+
 ## 5.0.1 (2022-05-28)
 
 ### Changed
