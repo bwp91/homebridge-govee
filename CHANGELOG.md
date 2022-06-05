@@ -10,6 +10,10 @@ All notable changes to homebridge-govee will be documented in this file.
   - H7123 Air Purifier
   - H7160 Humidifier
 
+### Changed
+
+- Bump `node` recommended versions to v14.19.3 or v16.15.1
+
 ### Fixed
 
 - AWS improvements for H618E
