@@ -2,7 +2,7 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
-## BETA
+## 5.1.0 (2022-06-08)
 
 ### Added
 
@@ -16,6 +16,7 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ### Fixed
 
+- A potential issue showing errors in the logs
 - AWS improvements for H618E
 
 ## 5.0.1 (2022-05-28)
