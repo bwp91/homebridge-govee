@@ -2,6 +2,13 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## 5.2.0 (2022-06-13)
+
+### Added
+
+- **New Devices** via Govee Developer API v1.8
+  - H601A, H6046, H6047, H604C, H6057, H605C, H6065, H610B, H61A3, H61E1, H7055, H705A, H705B, H7065
+
 ## 5.1.0 (2022-06-08)
 
 ### Added
