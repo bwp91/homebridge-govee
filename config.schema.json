@@ -834,7 +834,8 @@
             "thermoDevices[].deviceId",
             "thermoDevices[].ignoreDevice",
             "thermoDevices[].lowBattThreshold",
-            "thermoDevices[].overrideLogging"
+            "thermoDevices[].overrideLogging",
+            "thermoDevices[].acEndpoint"
           ]
         }
       ]
