@@ -500,6 +500,11 @@
               "minLength": 23,
               "maxLength": 23
             },
+            "acEndpoint": {
+              "title": "Endpoint of your AC device",
+              "type": "string",
+              "description": "Here you place the url where your AC device is listening on. (eg: http://127.0.0.1)"
+            },
             "ignoreDevice": {
               "type": "boolean",
               "title": "Hide From HomeKit",
