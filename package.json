@@ -1,5 +1,5 @@
 {
-  "name": "homebridge-govee-dev",
+  "name": "homebridge-govee",
   "alias": "Govee",
   "version": "5.2.0",
   "author": {
