@@ -2,6 +2,13 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## BETA
+
+### Added
+
+- **New Devices**
+  - H617E bluetooth light strip
+
 ## 5.2.0 (2022-06-13)
 
 ### Added
