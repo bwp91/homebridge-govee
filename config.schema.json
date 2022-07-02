@@ -500,11 +500,6 @@
               "minLength": 23,
               "maxLength": 23
             },
-            "acEndpoint": {
-              "title": "Endpoint of your AC device",
-              "type": "string",
-              "description": "Here you place the url where your AC device is listening on. (eg: http://127.0.0.1)"
-            },
             "ignoreDevice": {
               "type": "boolean",
               "title": "Hide From HomeKit",
@@ -519,6 +514,15 @@
               "description": "HomeKit will set the low battery status for this device when the battery reaches this percentage level. Must be 1 or more.",
               "placeholder": 20,
               "minimum": 1,
+              "condition": {
+                "functionBody": "return (model.thermoDevices && model.thermoDevices[arrayIndices] && model.thermoDevices[arrayIndices].deviceId && model.thermoDevices[arrayIndices].deviceId.length === 23 && !model.thermoDevices[arrayIndices].ignoreDevice);"
+              }
+            },
+            "acEndpoint": {
+              "title": "Endpoint of your AC device",
+              "type": "string",
+              "placeholder": "http://127.0.0.1",
+              "description": "Here you place the url where your AC device is listening on.",
               "condition": {
                 "functionBody": "return (model.thermoDevices && model.thermoDevices[arrayIndices] && model.thermoDevices[arrayIndices].deviceId && model.thermoDevices[arrayIndices].deviceId.length === 23 && !model.thermoDevices[arrayIndices].ignoreDevice);"
               }
@@ -839,8 +843,8 @@
             "thermoDevices[].deviceId",
             "thermoDevices[].ignoreDevice",
             "thermoDevices[].lowBattThreshold",
-            "thermoDevices[].overrideLogging",
-            "thermoDevices[].acEndpoint"
+            "thermoDevices[].acEndpoint",
+            "thermoDevices[].overrideLogging"
           ]
         }
       ]
