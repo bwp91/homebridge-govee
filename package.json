@@ -1,7 +1,7 @@
 {
   "name": "homebridge-govee",
   "alias": "Govee",
-  "version": "5.2.2",
+  "version": "5.2.1-beta.3",
   "author": {
     "name": "bwp91",
     "email": "bwp91@icloud.com"
@@ -65,9 +65,10 @@
     "@abandonware/noble": "1.9.2-15"
   },
   "devDependencies": {
-    "eslint": "^8.17.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-sort-exports": "^0.6.0"
+    "eslint-plugin-import-newlines": "^1.2.2",
+    "eslint-plugin-sort-exports": "^0.6.0",
+    "eslint": "^8.19.0"
   }
 }
