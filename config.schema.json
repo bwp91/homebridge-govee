@@ -61,6 +61,27 @@
         "placeholder": 500,
         "minimum": 500
       },
+      "lanControlInterval": {
+        "title": "LAN Control Interval",
+        "type": "integer",
+        "description": "A minimum delay (in milliseconds) between device updates being sent. Since LAN updates are handled faster than API or AWS, a lower number might improve responsiveness. Must be 10 or more.",
+        "placeholder": 10,
+        "minimum": 10
+      },
+      "lanScanInterval": {
+        "title": "LAN Scan Period",
+        "type": "integer",
+        "description": "A period (in seconds) after which a scan command will be sent to request devices to be discovered. Must be 2 or more.",
+        "placeholder": 5,
+        "minimum": 2
+      },
+      "lanStateUpdateInterval": {
+        "title": "LAN Devices Status Period",
+        "type": "integer",
+        "description": "A period (in seconds) after which the status of all discovered devices will be requested. Must be 2 or more.",
+        "placeholder": 5,
+        "minimum": 2
+      },
       "offlineAsOff": {
         "type": "boolean",
         "title": "Offline As Off",
@@ -280,19 +301,27 @@
               "oneOf": [
                 {
                   "title": "Default (Use Global Setting)",
-                  "enum": ["default"]
+                  "enum": [
+                    "default"
+                  ]
                 },
                 {
                   "title": "Enable Standard Logging",
-                  "enum": ["standard"]
+                  "enum": [
+                    "standard"
+                  ]
                 },
                 {
                   "title": "Enable Debug Logging",
-                  "enum": ["debug"]
+                  "enum": [
+                    "debug"
+                  ]
                 },
                 {
                   "title": "Disable All Logging",
-                  "enum": ["disable"]
+                  "enum": [
+                    "disable"
+                  ]
                 }
               ],
               "condition": {
@@ -335,43 +364,63 @@
               "oneOf": [
                 {
                   "title": "1 Outlet (Default)",
-                  "enum": ["default"]
+                  "enum": [
+                    "default"
+                  ]
                 },
                 {
                   "title": "1 Switch",
-                  "enum": ["switch"]
+                  "enum": [
+                    "switch"
+                  ]
                 },
                 {
                   "title": "1 Air Purifier",
-                  "enum": ["purifier"]
+                  "enum": [
+                    "purifier"
+                  ]
                 },
                 {
                   "title": "1 Heater",
-                  "enum": ["heater"]
+                  "enum": [
+                    "heater"
+                  ]
                 },
                 {
                   "title": "1 Cooler",
-                  "enum": ["cooler"]
+                  "enum": [
+                    "cooler"
+                  ]
                 },
                 {
                   "title": "1 Tap/Faucet",
-                  "enum": ["tap"]
+                  "enum": [
+                    "tap"
+                  ]
                 },
                 {
                   "title": "1 Valve",
-                  "enum": ["valve"]
+                  "enum": [
+                    "valve"
+                  ]
                 },
                 {
                   "title": "1 Audio Receiver (External Accessory)",
-                  "enum": ["audio"]
+                  "enum": [
+                    "audio"
+                  ]
                 },
                 {
                   "title": "1 Set Top Box (External Accessory)",
-                  "enum": ["box"]
+                  "enum": [
+                    "box"
+                  ]
                 },
                 {
                   "title": "1 Streaming Stick (External Accessory)",
-                  "enum": ["stick"]
+                  "enum": [
+                    "stick"
+                  ]
                 }
               ],
               "condition": {
@@ -393,19 +442,27 @@
               "oneOf": [
                 {
                   "title": "Default (Use Global Setting)",
-                  "enum": ["default"]
+                  "enum": [
+                    "default"
+                  ]
                 },
                 {
                   "title": "Enable Standard Logging",
-                  "enum": ["standard"]
+                  "enum": [
+                    "standard"
+                  ]
                 },
                 {
                   "title": "Enable Debug Logging",
-                  "enum": ["debug"]
+                  "enum": [
+                    "debug"
+                  ]
                 },
                 {
                   "title": "Disable All Logging",
-                  "enum": ["disable"]
+                  "enum": [
+                    "disable"
+                  ]
                 }
               ],
               "condition": {
@@ -459,19 +516,27 @@
               "oneOf": [
                 {
                   "title": "Default (Use Global Setting)",
-                  "enum": ["default"]
+                  "enum": [
+                    "default"
+                  ]
                 },
                 {
                   "title": "Enable Standard Logging",
-                  "enum": ["standard"]
+                  "enum": [
+                    "standard"
+                  ]
                 },
                 {
                   "title": "Enable Debug Logging",
-                  "enum": ["debug"]
+                  "enum": [
+                    "debug"
+                  ]
                 },
                 {
                   "title": "Disable All Logging",
-                  "enum": ["disable"]
+                  "enum": [
+                    "disable"
+                  ]
                 }
               ],
               "condition": {
@@ -525,19 +590,27 @@
               "oneOf": [
                 {
                   "title": "Default (Use Global Setting)",
-                  "enum": ["default"]
+                  "enum": [
+                    "default"
+                  ]
                 },
                 {
                   "title": "Enable Standard Logging",
-                  "enum": ["standard"]
+                  "enum": [
+                    "standard"
+                  ]
                 },
                 {
                   "title": "Enable Debug Logging",
-                  "enum": ["debug"]
+                  "enum": [
+                    "debug"
+                  ]
                 },
                 {
                   "title": "Disable All Logging",
-                  "enum": ["disable"]
+                  "enum": [
+                    "disable"
+                  ]
                 }
               ],
               "condition": {
@@ -581,19 +654,27 @@
               "oneOf": [
                 {
                   "title": "Default (Use Global Setting)",
-                  "enum": ["default"]
+                  "enum": [
+                    "default"
+                  ]
                 },
                 {
                   "title": "Enable Standard Logging",
-                  "enum": ["standard"]
+                  "enum": [
+                    "standard"
+                  ]
                 },
                 {
                   "title": "Enable Debug Logging",
-                  "enum": ["debug"]
+                  "enum": [
+                    "debug"
+                  ]
                 },
                 {
                   "title": "Disable All Logging",
-                  "enum": ["disable"]
+                  "enum": [
+                    "disable"
+                  ]
                 }
               ],
               "condition": {
@@ -637,19 +718,27 @@
               "oneOf": [
                 {
                   "title": "Default (Use Global Setting)",
-                  "enum": ["default"]
+                  "enum": [
+                    "default"
+                  ]
                 },
                 {
                   "title": "Enable Standard Logging",
-                  "enum": ["standard"]
+                  "enum": [
+                    "standard"
+                  ]
                 },
                 {
                   "title": "Enable Debug Logging",
-                  "enum": ["debug"]
+                  "enum": [
+                    "debug"
+                  ]
                 },
                 {
                   "title": "Disable All Logging",
-                  "enum": ["disable"]
+                  "enum": [
+                    "disable"
+                  ]
                 }
               ],
               "condition": {
@@ -693,19 +782,27 @@
               "oneOf": [
                 {
                   "title": "Default (Use Global Setting)",
-                  "enum": ["default"]
+                  "enum": [
+                    "default"
+                  ]
                 },
                 {
                   "title": "Enable Standard Logging",
-                  "enum": ["standard"]
+                  "enum": [
+                    "standard"
+                  ]
                 },
                 {
                   "title": "Enable Debug Logging",
-                  "enum": ["debug"]
+                  "enum": [
+                    "debug"
+                  ]
                 },
                 {
                   "title": "Disable All Logging",
-                  "enum": ["disable"]
+                  "enum": [
+                    "disable"
+                  ]
                 }
               ],
               "condition": {
@@ -721,14 +818,29 @@
     {
       "type": "fieldset",
       "title": "Required Settings",
-      "items": ["username", "password", "apiKey", "apiWhitelist", "debug", "disablePlugin"]
+      "items": [
+        "username",
+        "password",
+        "apiKey",
+        "apiWhitelist",
+        "debug",
+        "disablePlugin"
+      ]
     },
     {
       "type": "fieldset",
       "title": "Advanced Settings",
       "description": "Advanced settings for the plugin, including interval options.",
       "expandable": true,
-      "items": ["disableDeviceLogging", "refreshTime", "controlInterval", "offlineAsOff"]
+      "items": [
+        "disableDeviceLogging",
+        "refreshTime",
+        "controlInterval",
+        "lanControlInterval",
+        "lanScanInterval",
+        "lanStateUpdateInterval",
+        "offlineAsOff"
+      ]
     },
     {
       "key": "lightDevices",
