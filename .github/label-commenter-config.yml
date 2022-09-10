@@ -1,5 +1,0 @@
-labels:
-  - name: complete
-    labeled:
-      issue:
-        body: This issue has been marked as complete as I believe the original query has been fixed/answered or will not be actioned. The issue will be closed in three days. If you feel the issue requires further attention then please let me know. Thanks!
