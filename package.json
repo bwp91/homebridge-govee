@@ -69,6 +69,6 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-import-newlines": "^1.2.3",
     "eslint-plugin-sort-exports": "^0.7.0",
-    "eslint": "^8.23.0"
+    "eslint": "^8.23.1"
   }
 }
