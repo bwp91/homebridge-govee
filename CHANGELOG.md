@@ -6,6 +6,7 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ### Added
 
+- LAN mode! (thanks [@alboiuvlad29](https://github.com/alboiuvlad29)!)
 - **New Devices**
   - H617E bluetooth light strip
   - H7170 kettle (ability just to switch on)
@@ -13,8 +14,12 @@ All notable changes to homebridge-govee will be documented in this file.
 ### Changed
 
 - **Revert:** Bluetooth-only devices no longer need to be configured to explicitly enable bluetooth
-- Bump `node` recommended versions to v14.20.0 or v16.16.0
 - AWS improvements for H615D
+- AWS improvements for H7050/H7051 (thanks [@alboiuvlad29](https://github.com/alboiuvlad29)!)
+- Correct parameters for `updatePlatformAccessories()`
+- Bump `node` recommended versions to v14.20.1 or v16.17.1
+- Bump `homebridge` recommended version to v1.5.0
+- Updated dev dependencies
 
 ## 5.2.0 (2022-06-13)
 
