@@ -97,6 +97,14 @@
           <th scope="row">Bluetooth Name</th>
           <td id="ble_name"></td>
         </tr>
+        <tr>
+          <th scope="row">LAN Supported</th>
+          <td id="lan_supported"></td>
+        </tr>
+        <tr id="row_lan_enabled" style="display: none;">
+          <th scope="row">LAN Enabled</th>
+          <td id="lan_enabled"></td>
+        </tr>
         <tr id="row_supported_cmds" style="display: none;">
           <th scope="row">Supported Commands</th>
           <td id="supported_cmds"></td>
@@ -346,6 +354,14 @@
             document.getElementById('row_ble_enabled').style.display = 'none'
             document.getElementById('row_ble_address').style.display = 'none'
             document.getElementById('row_ble_name').style.display = 'none'
+          }
+          if (context.hasLANControl) {
+            document.getElementById('lan_supported').innerHTML = 'Yes'
+            document.getElementById('lan_enabled').innerHTML = context.useLANControl ? 'Yes' : 'No'
+            document.getElementById('row_lan_enabled').style.display = 'table-row'
+          } else {
+            document.getElementById('lan_supported').innerHTML = 'No'
+            document.getElementById('row_lan_enabled').style.display = 'none'
           }
           if (context.supportedCmds && Array.isArray(context.supportedCmds)) {
             document.getElementById('supported_cmds').innerHTML = context.supportedCmds.join(', ')
