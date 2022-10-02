@@ -8,13 +8,22 @@ All notable changes to homebridge-govee will be documented in this file.
 
 - LAN mode! (thanks [@alboiuvlad29](https://github.com/alboiuvlad29)!)
 - **New Devices**
-  - H617E bluetooth light strip
-  - H7170 kettle (ability just to switch on)
-  - H7132 heater
+  - Via Govee Developer API v2.0:
+    - **Lights**: H61A5, H6078, H604D, H6168, H6601, H70B1, H61A8 
+    - **Fans:** H7101, H7111
+    - **Heaters:** H7130, H7131, H7132
+    - **Dehumidifiers:** H7150
+    - **Humidifiers:** H7141, H7142, H7160
+    - **Purifiers:** H7120, H7121, H7122, H7123
+  - Via AWS Connection:
+    - **Kettles:** H7170 (ability just to switch on)
+  - Via Bluetooth:
+    - **Lights:** H617E bluetooth light strip
 
 ### Changed
 
 - **Revert:** Bluetooth-only devices no longer need to be configured to explicitly enable bluetooth
+- Less bluetooth logging when not in debug mode
 - AWS improvements for H615D
 - AWS improvements for H7050/H7051 (thanks [@alboiuvlad29](https://github.com/alboiuvlad29)!)
 - Correct parameters for `updatePlatformAccessories()`
