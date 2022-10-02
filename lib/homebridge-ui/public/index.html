@@ -378,9 +378,9 @@
           document.getElementById('hardware').innerHTML = context.hardware
             ? context.hardware
             : 'N/A'
-          if (context.maxKelvin) {
+          if (context?.supportedCmdsOpts?.colorTem?.range?.min) {
             document.getElementById('kelvin_range').innerHTML =
-              context.minKelvin + 'K - ' + context.maxKelvin + 'K'
+              context.supportedCmdsOpts.colorTem.range.min + 'K - ' + context.supportedCmdsOpts.colorTem.range.max + 'K'
             document.getElementById('row_kelvin_range').style.display = 'table-row'
           } else {
             document.getElementById('row_kelvin_range').style.display = 'none'
