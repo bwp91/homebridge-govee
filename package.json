@@ -1,7 +1,7 @@
 {
   "name": "homebridge-govee",
   "alias": "Govee",
-  "version": "6.0.0-beta.6",
+  "version": "6.0.0-beta.7",
   "author": {
     "name": "bwp91",
     "email": "bwp91@icloud.com"
