@@ -10,6 +10,7 @@ All notable changes to homebridge-govee will be documented in this file.
 - **New Devices**
   - H617E bluetooth light strip
   - H7170 kettle (ability just to switch on)
+  - H7132 heater
 
 ### Changed
 
