@@ -61,13 +61,6 @@
         "placeholder": 500,
         "minimum": 500
       },
-      "lanControlInterval": {
-        "title": "LAN Control Interval",
-        "type": "integer",
-        "description": "A minimum delay (in milliseconds) between device updates being sent. Since LAN updates are handled faster than API or AWS, a lower number might improve responsiveness. Must be 10 or more.",
-        "placeholder": 10,
-        "minimum": 10
-      },
       "lanScanInterval": {
         "title": "LAN Scan Period",
         "type": "integer",
@@ -900,7 +893,6 @@
         "disableDeviceLogging",
         "refreshTime",
         "controlInterval",
-        "lanControlInterval",
         "lanScanInterval",
         "lanStateUpdateInterval",
         "offlineAsOff"
