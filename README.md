@@ -57,8 +57,9 @@ Homebridge plugin to integrate Govee devices into HomeKit
 ### Credits
 
 - To all users who have shared their devices to enable functionality.
-- To the creator/owner of the [govee-led-client](https://www.npmjs.com/package/govee-led-client) library which made the bluetooth connection possible.
+- To the creator/owner of the [govee-led-client](https://www.npmjs.com/package/govee-led-client) library which made the BLE connection possible.
 - To the creator/owner of the [govee_api](https://github.com/towlerj/govee_api) library which made the AWS connection possible.
+- To [@alboiuvlad29](https://github.com/alboiuvlad29) who made the LAN connection possible.
 - To [@JeremyDunn](https://github.com/JeremyDunn) for his code from [homebridge-govee-water-detectors](https://github.com/JeremyDunn/homebridge-govee-water-detectors) for leak sensor support.
 - To the creator of the awesome plugin header logo: [Keryan Belahcene](https://www.instagram.com/keryan.me).
 - To the creators/contributors of [Homebridge](https://homebridge.io) who make this plugin possible.
