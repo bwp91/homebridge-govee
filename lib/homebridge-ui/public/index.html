@@ -105,6 +105,10 @@
           <th scope="row">LAN Enabled</th>
           <td id="lan_enabled"></td>
         </tr>
+        <tr id="row_ip_address" style="display: none;">
+          <th scope="row">IP Address</th>
+          <td id="ip_address"></td>
+        </tr>
         <tr id="row_supported_cmds" style="display: none;">
           <th scope="row">Supported Commands</th>
           <td id="supported_cmds"></td>
@@ -362,9 +366,16 @@
             document.getElementById('lan_supported').innerHTML = 'Yes'
             document.getElementById('lan_enabled').innerHTML = context.useLANControl ? 'Yes' : 'No'
             document.getElementById('row_lan_enabled').style.display = 'table-row'
+            if (context.useLANControl && context.ipAddress) {
+              document.getElementById('ip_address').innerHTML = context.ipAddress
+              document.getElementById('row_ip_address').style.display = 'table-row'
+            } else {
+              document.getElementById('row_ip_address').style.display = 'none'
+            }
           } else {
             document.getElementById('lan_supported').innerHTML = 'No'
             document.getElementById('row_lan_enabled').style.display = 'none'
+            document.getElementById('row_ip_address').style.display = 'none'
           }
           if (context.supportedCmds && Array.isArray(context.supportedCmds)) {
             document.getElementById('supported_cmds').innerHTML = context.supportedCmds.join(', ')

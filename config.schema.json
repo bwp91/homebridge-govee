@@ -139,6 +139,16 @@
                 "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].enableBT);"
               }
             },
+            "customIPAddress": {
+              "title": "Custom IP Address",
+              "type": "string",
+              "placeholder": "192.168.1.15",
+              "description": "A fixed IP address for LAN mode, if the plugin cannot auto-discover this device.",
+              "minLength": 7,
+              "condition": {
+                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice);"
+              }
+            },
             "brightnessStep": {
               "title": "Brightness Step",
               "type": "integer",
@@ -915,6 +925,7 @@
             "lightDevices[].disableAWS",
             "lightDevices[].enableBT",
             "lightDevices[].customAddress",
+            "lightDevices[].customIPAddress",
             "lightDevices[].brightnessStep",
             "lightDevices[].adaptiveLightingShift",
             {
