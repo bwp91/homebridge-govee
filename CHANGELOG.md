@@ -7,6 +7,12 @@ All notable changes to homebridge-govee will be documented in this file.
 ### Added
 
 - LAN mode! (thanks [@alboiuvlad29](https://github.com/alboiuvlad29)!)
+  - See [the homebridge-govee wiki](https://github.com/bwp91/homebridge-govee/wiki/Supported-Devices) for supported devices
+  - The plugin will scan your local network for supported Govee lights
+  - You can also specify the IP address of your Govee light in the config
+  - The plugin will match any discovered devices to your existing accessories from cloud usage
+  - Supported LAN controls are on/off, brightness, colour and colour temperature
+  - The plugin will initially attempt LAN control, if this fails then it will fall back to cloud control
 - **New Devices**
   - Via Govee Developer API v2.0:
     - **Lights**: H61A5, H6078, H604D, H6168, H6601, H70B1, H61A8 
