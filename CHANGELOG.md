@@ -2,11 +2,11 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
-## BETA
+## 6.0.0 (2022-10-05)
 
 ### Added
 
-- LAN mode! (thanks [@alboiuvlad29](https://github.com/alboiuvlad29)!)
+- 🎉 LAN mode! 🎉 (thanks [@alboiuvlad29](https://github.com/alboiuvlad29)!)
   - See [the homebridge-govee wiki](https://github.com/bwp91/homebridge-govee/wiki/Supported-Devices) for supported devices
   - The plugin will scan your local network for supported Govee lights
   - You can also specify the IP address of your Govee light in the config
