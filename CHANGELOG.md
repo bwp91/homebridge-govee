@@ -28,8 +28,15 @@ All notable changes to homebridge-govee will be documented in this file.
 - AWS improvements for H7050/H7051 (thanks [@alboiuvlad29](https://github.com/alboiuvlad29)!)
 - Correct parameters for `updatePlatformAccessories()`
 - Bump `node` recommended versions to v14.20.1 or v16.17.1
+- Allow for `node` v18.10.0
 - Bump `homebridge` recommended version to v1.5.0
+- Bump `axios` to v1.0.0
 - Updated dev dependencies
+
+### Removed
+
+- Removed the `disableAWS` option for lights
+  - *This option was implemented when AWS was introduced as a way to disable it for lights that didn't work with it, but now that it's been tested on more lights, it's no longer needed*
 
 ## 5.2.0 (2022-06-13)
 
