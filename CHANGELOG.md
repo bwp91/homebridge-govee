@@ -39,6 +39,10 @@ All notable changes to homebridge-govee will be documented in this file.
 - Bump `axios` to v1.0.0
 - Updated dev dependencies
 
+### Fixed
+
+- Fixed H5054 leak sensor status reporting
+
 ### Removed
 
 - Removed the `disableAWS` option for lights
