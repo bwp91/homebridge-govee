@@ -23,6 +23,7 @@ Homebridge plugin to integrate Govee devices into HomeKit
 - This plugin allows you to view and control your Govee devices within HomeKit. The plugin:
   - requires your Govee credentials for most device models and AWS/BLE connections
   - requires your Govee [API key](https://github.com/bwp91/homebridge-govee/wiki/Configuration#obtaining-your-api-key) for certain light models
+  - can control certain models locally via LAN control without any Govee credentials
 
 ### Prerequisites
 
@@ -42,9 +43,10 @@ Homebridge plugin to integrate Govee devices into HomeKit
 
 - [Supported Devices](https://github.com/bwp91/homebridge-govee/wiki/Supported-Devices)
 - [Connection Methods](https://github.com/bwp91/homebridge-govee/wiki/Connection-Methods)
+  - [LAN Control](https://github.com/bwp91/homebridge-govee/wiki/LAN-Control)
   - [API Control](https://github.com/bwp91/homebridge-govee/wiki/API-Control)
   - [AWS Control](https://github.com/bwp91/homebridge-govee/wiki/AWS-Control)
-  - [Bluetooth Control](https://github.com/bwp91/homebridge-govee/wiki/Bluetooth-Control)
+  - [BLE Control](https://github.com/bwp91/homebridge-govee/wiki/Bluetooth-Control)
 - [Scene, Music, DIY Modes](https://github.com/bwp91/homebridge-govee/wiki/Scene%2C-Music%2C-DIY-Modes)
 
 ### Help/About

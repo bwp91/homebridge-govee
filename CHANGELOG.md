@@ -2,6 +2,12 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## 6.0.1 (2022-10-06)
+
+### Fixed
+
+- A couple of small fixes for when using a custom IP address for LAN control
+
 ## 6.0.0 (2022-10-05)
 
 ### Added
