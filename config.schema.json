@@ -48,14 +48,14 @@
         "type": "boolean"
       },
       "refreshTime": {
-        "title": "Refresh Interval",
+        "title": "API/HTTP Refresh Interval",
         "type": "integer",
         "description": "An interval (in seconds) in which your HTTP/API devices will refresh with Govee. Must be 15 or more.",
         "placeholder": 15,
         "minimum": 15
       },
       "controlInterval": {
-        "title": "Control Interval",
+        "title": "API/BLE Control Interval",
         "type": "integer",
         "description": "A minimum delay (in milliseconds) between device updates being sent. Increasing this may help if you find device updates are not working or if you use HomeKit scenes/groupings. Must be 500 or more.",
         "placeholder": 500,
@@ -95,7 +95,7 @@
             "label": {
               "title": "Label",
               "type": "string",
-              "description": "This setting has no effect except to help identify this device."
+              "description": "This setting is only used for naming LAN-only accessories and config identification."
             },
             "deviceId": {
               "title": "Device ID",
@@ -336,7 +336,7 @@
             "label": {
               "title": "Label",
               "type": "string",
-              "description": "This setting has no effect except to help identify this device."
+              "description": "This setting is only used for config identification."
             },
             "deviceId": {
               "title": "Device ID",
@@ -477,7 +477,7 @@
             "label": {
               "title": "Label",
               "type": "string",
-              "description": "This setting has no effect except to help identify this device."
+              "description": "This setting is only used for config identification."
             },
             "deviceId": {
               "title": "Device ID",
@@ -551,7 +551,7 @@
             "label": {
               "title": "Label",
               "type": "string",
-              "description": "This setting has no effect except to help identify this device."
+              "description": "This setting is only used for config identification."
             },
             "deviceId": {
               "title": "Device ID",
@@ -625,7 +625,7 @@
             "label": {
               "title": "Label",
               "type": "string",
-              "description": "This setting has no effect except to help identify this device."
+              "description": "This setting is only used for config identification."
             },
             "deviceId": {
               "title": "Device ID",
@@ -689,7 +689,7 @@
             "label": {
               "title": "Label",
               "type": "string",
-              "description": "This setting has no effect except to help identify this device."
+              "description": "This setting is only used for config identification."
             },
             "deviceId": {
               "title": "Device ID",
@@ -753,7 +753,7 @@
             "label": {
               "title": "Label",
               "type": "string",
-              "description": "This setting has no effect except to help identify this device."
+              "description": "This setting is only used for config identification."
             },
             "deviceId": {
               "title": "Device ID",
@@ -817,7 +817,7 @@
             "label": {
               "title": "Label",
               "type": "string",
-              "description": "This setting has no effect except to help identify this device."
+              "description": "This setting is only used for config identification."
             },
             "deviceId": {
               "title": "Device ID",

@@ -2,6 +2,12 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## 6.0.3 (2022-10-06)
+
+### Changed
+
+- Use configured `label` for accessory name for LAN-only models
+
 ## 6.0.2 (2022-10-06)
 
 ### Fixed
