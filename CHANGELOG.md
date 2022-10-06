@@ -2,6 +2,13 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## 6.0.2 (2022-10-06)
+
+### Fixed
+
+- Ignore `offlineAsOff` for LAN-only devices
+- Remove scene characteristics from LAN-only devices as unsupported
+
 ## 6.0.1 (2022-10-06)
 
 ### Fixed

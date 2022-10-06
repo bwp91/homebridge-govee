@@ -78,7 +78,7 @@
       "offlineAsOff": {
         "type": "boolean",
         "title": "Offline As Off",
-        "description": "If true then devices that are reported as offline will be shown as off in HomeKit. Can be useful for lights that are powered by a television."
+        "description": "If true then devices that are reported as offline will be shown as off in HomeKit. Can be useful for lights that are powered by a television. This option has no effect for LAN-only devices."
       },
       "disableDeviceLogging": {
         "type": "boolean",
