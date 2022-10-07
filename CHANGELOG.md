@@ -2,6 +2,13 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## 6.0.4 (2022-10-07)
+
+### Changed
+
+- Small timeout to ignore incoming LAN updates when controlled, workaround for incorrect status updates when controlling via LAN
+- Bump `axios` to v1.1.2
+
 ## 6.0.3 (2022-10-06)
 
 ### Changed
