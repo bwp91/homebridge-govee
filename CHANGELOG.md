@@ -6,6 +6,7 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ### Added
 
+- Support for H5103 temperature/humidity sensor
 - Expose a Govee Heater and a Govee/eWeLink/Meross temperature sensor as a HomeKit HeaterCooler accessory
 
 ### Changed
