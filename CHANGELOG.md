@@ -6,7 +6,7 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ### Added
 
-- Support for H5103 temperature/humidity sensor
+- Support for H5103 and H5106 temperature/humidity sensors
 - Expose a Govee Heater and a Govee/eWeLink/Meross temperature sensor as a HomeKit HeaterCooler accessory
 - Use [govee-bt-client](https://www.npmjs.com/package/govee-bt-client) to connect to certain Govee sensor models via BLE
 
