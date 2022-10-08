@@ -62,13 +62,14 @@
   },
   "optionalDependencies": {
     "@abandonware/bluetooth-hci-socket": "^0.5.3-8",
-    "@abandonware/noble": "^1.9.2-15"
+    "@abandonware/noble": "^1.9.2-15",
+    "govee-bt-client": "^1.0.15"
   },
   "devDependencies": {
+    "eslint": "^8.24.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-import-newlines": "^1.2.3",
-    "eslint-plugin-sort-exports": "^0.7.0",
-    "eslint": "^8.24.0"
+    "eslint-plugin-sort-exports": "^0.7.0"
   }
 }
