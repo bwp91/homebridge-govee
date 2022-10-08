@@ -2,6 +2,21 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+### BETA
+
+### Added
+
+- Expose a Govee Heater and a Govee/eWeLink/Meross temperature sensor as a HomeKit HeaterCooler accessory
+
+### Changed
+
+- Plugin no longer sends API command if AWS command was successful
+- Plugin no longer requests device state via LAN immediately after sending a command
+
+### Fixed
+
+- Fixes an incorrect error when changing speed of appliances like heaters and humidifiers
+
 ## 6.0.4 (2022-10-07)
 
 ### Changed
