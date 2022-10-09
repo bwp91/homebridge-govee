@@ -36,6 +36,7 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ### Fixed
 
+- Fixes H5054 leak sensor status reporting (again)
 - Fixes an incorrect error when changing speed of appliances like heaters and humidifiers
 
 ## 6.0.4 (2022-10-07)
