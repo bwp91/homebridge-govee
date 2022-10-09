@@ -2,7 +2,26 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
-### BETA
+## BETA
+
+### ⚠️ Config Changes
+
+#### New
+- `httpRefreshTime`
+  - Default `30`, minimum `30`
+- `bleRefreshTime`
+  - Default `300`, minimum `60`
+
+#### Changed
+- `refreshTime` has been renamed to `apiRefreshTime`
+  - Minimum increased from `15` to `30`
+- `lanStateUpdateInterval` has been renamed to `lanRefreshTime`
+  - Default increased from `5` to `30`, minimum increased from `2` to `10`
+- `lanScanInterval`
+  - Default increased from `5` to `60`, minimum increased from `2` to `30`
+- `controlInterval` has been renamed to `apiBleControlInterval`
+  - Unit changed from `milliseconds` to `seconds`
+
 
 ### Added
 
