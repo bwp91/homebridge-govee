@@ -7,12 +7,14 @@ All notable changes to homebridge-govee will be documented in this file.
 ### ⚠️ Config Changes
 
 #### New
+
 - `httpRefreshTime`
   - Default `30`, minimum `30`
 - `bleRefreshTime`
   - Default `300`, minimum `60`
 
 #### Changed
+
 - `refreshTime` has been renamed to `apiRefreshTime`
   - Minimum increased from `15` to `30`
 - `lanStateUpdateInterval` has been renamed to `lanRefreshTime`
@@ -22,17 +24,19 @@ All notable changes to homebridge-govee will be documented in this file.
 - `controlInterval` has been renamed to `apiBleControlInterval`
   - Unit changed from `milliseconds` to `seconds`
 
-
 ### Added
 
-- Support for H5103 and H5106 temperature/humidity sensors
-- Expose a Govee Heater and a Govee/eWeLink/Meross temperature sensor as a HomeKit HeaterCooler accessory
-- Use [govee-bt-client](https://www.npmjs.com/package/govee-bt-client) to connect to certain Govee sensor models via BLE
+- Support for H5103 and H5106 temperature/humidity sensors (work in progress)
+- Expose a Govee Heater and a Govee/eWeLink/Meross temperature sensor as a HomeKit HeaterCooler accessory (work in progress)
+- Support for BLE-only thermo-hygrometers (integration of homebridge-plugin-govee plugin)
+  - Use [govee-bt-client](https://www.npmjs.com/package/govee-bt-client) to connect to certain Govee sensor models via BLE
 
 ### Changed
 
 - Plugin no longer sends API command if AWS command was successful
 - Plugin no longer requests device state via LAN immediately after sending a command
+- Bump `axios` to v1.1.3
+- Bump `node` recommended versions to v14.20.1 or v16.18.0 or v18.11.0
 
 ### Fixed
 
