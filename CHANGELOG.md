@@ -10,6 +10,10 @@ All notable changes to homebridge-govee will be documented in this file.
 
 - `httpRefreshTime`
   - Default `30`, minimum `30`
+- `lanDisable`
+  - Default `false`
+- `bleDisable`
+  - Default `false`
 - `bleRefreshTime`
   - Default `300`, minimum `60`
 
@@ -23,6 +27,7 @@ All notable changes to homebridge-govee will be documented in this file.
   - Default increased from `5` to `60`, minimum increased from `2` to `30`
 - `controlInterval` has been renamed to `apiBleControlInterval`
   - Unit changed from `milliseconds` to `seconds`
+  - Plugin will try to be backward compatible, dividing any existing values >=500 appropriately
 
 ### Added
 
