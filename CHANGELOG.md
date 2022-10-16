@@ -31,7 +31,7 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ### Added
 
-- Support for H5160 3-channel outlet device (work in progress)
+- Support for H5160 3-channel outlet device
 - Support for H5103 and H5106 temperature/humidity sensors (work in progress)
 - Expose a Govee Heater and a Govee/eWeLink/Meross temperature sensor as a HomeKit HeaterCooler accessory (work in progress)
 - Support for BLE-only thermo-hygrometers (integration of homebridge-plugin-govee plugin)
