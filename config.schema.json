@@ -61,6 +61,13 @@
         "placeholder": 30,
         "minimum": 30
       },
+      "awsRefreshTime": {
+        "title": "AWS Refresh Interval",
+        "type": "integer",
+        "description": "An interval (in seconds) in which your AWS devices will refresh with the plugin. Must be 30 or more.",
+        "placeholder": 30,
+        "minimum": 30
+      },
       "bleDisable": {
         "title": "Disable BLE",
         "type": "boolean",
@@ -928,6 +935,7 @@
         "disableDeviceLogging",
         "apiRefreshTime",
         "httpRefreshTime",
+        "awsRefreshTime",
         "bleDisable",
         "bleRefreshTime",
         "lanDisable",
