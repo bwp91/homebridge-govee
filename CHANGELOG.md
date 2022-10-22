@@ -2,6 +2,10 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## 7.0.1 (2022-10-22)
+
+Hotfixes
+
 ## 7.0.0 (2022-10-20)
 
 ### ⚠️ Config Changes
