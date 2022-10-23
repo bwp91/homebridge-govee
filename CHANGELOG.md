@@ -16,6 +16,7 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ### Fixed
 
+- Improved AWS support for H6182
 - An issue parsing incoming API updates for lights
 - An issue when brightness was not scaled properly for certain incoming AWS updates
 
