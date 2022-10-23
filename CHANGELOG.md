@@ -2,9 +2,28 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## BETA
+
+### Added
+
+- A `colourSafeMode` setting which will not add `ColorTemperature` to light devices
+  - This should help users with old iOS devices in which the`ColorTemperature` cannot be used with `Hue` and `Saturation`
+
+### Changed
+
+- More features to the Govee Heater implementation
+- General refactoring and code improvements
+
+### Fixed
+
+- An issue parsing incoming API updates for lights
+- An issue when brightness was not scaled properly for certain incoming AWS updates
+
 ## 7.0.1 (2022-10-22)
 
-Hotfixes
+- More features to the Govee Heater implementation
+- Fixed an issue with incoming AWS updates for accessories not in Homebridge
+- Log all scene codes received for a device (for debugging, this is not permanent)
 
 ## 7.0.0 (2022-10-20)
 
