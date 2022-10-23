@@ -120,6 +120,11 @@
         "title": "Offline As Off",
         "description": "If true then devices that are reported as offline will be shown as off in HomeKit. Can be useful for lights that are powered by a television. This option has no effect for LAN-only devices."
       },
+      "colourSafeMode": {
+        "type": "boolean",
+        "title": "Colour Safe Mode",
+        "description": "If true then the plugin will not add colour temperature characteristic to lights."
+      },
       "disableDeviceLogging": {
         "type": "boolean",
         "title": "Disable Device Logging",
@@ -942,7 +947,8 @@
         "lanRefreshTime",
         "lanScanInterval",
         "apiBleControlInterval",
-        "offlineAsOff"
+        "offlineAsOff",
+        "colourSafeMode"
       ]
     },
     {
