@@ -2,17 +2,21 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
-## BETA
+## 7.1.0 (2022-10-25)
 
 ### Added
 
+- Store and use account access token locally if possible to avoid re-authenticating on every restart
+  - Should reduce cases of 24-hour account suspensions from logging in too many times
 - A `colourSafeMode` setting which will not add `ColorTemperature` to light devices
   - This should help users with old iOS devices in which the`ColorTemperature` cannot be used with `Hue` and `Saturation`
 
 ### Changed
 
 - More features to the Govee Heater implementation
+- Scene codes will now log only in debug mode
 - General refactoring and code improvements
+- Plugin will override and use debug logging mode if a beta version is installed
 
 ### Fixed
 
