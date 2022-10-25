@@ -2,6 +2,13 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## 7.1.1 (2022-10-25)
+
+### Fixed
+
+- Properly catch errors when parsing notifications with invalid JSON
+- AWS brightness scale for H6182
+
 ## 7.1.0 (2022-10-25)
 
 ### Added
