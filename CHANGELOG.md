@@ -2,6 +2,16 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## BETA
+
+### Changed
+
+- Completely disable BLE for Mac devices as not supported (by noble)
+
+### Fixed
+
+- [test] AWS Control for H6159
+
 ## 7.1.1 (2022-10-25)
 
 ### Fixed
