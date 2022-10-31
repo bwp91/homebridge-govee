@@ -2,15 +2,17 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
-## BETA
+## 7.1.2 (2022-10-31) 🎃
 
 ### Changed
 
-- Completely disable BLE for Mac devices as not supported (by noble)
+- Disable BLE for Mac devices as not supported (by noble)
+- Cap out of range colour temperatures from Govee
 
 ### Fixed
 
-- [test] AWS Control for H6159
+- AWS control for H6159
+- AWS fixes for H6051 and H6056
 
 ## 7.1.1 (2022-10-25)
 
