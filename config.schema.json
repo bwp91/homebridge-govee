@@ -701,6 +701,14 @@
                 "functionBody": "return (model.heaterDevices && model.heaterDevices[arrayIndices] && model.heaterDevices[arrayIndices].deviceId && model.heaterDevices[arrayIndices].deviceId.length === 23);"
               }
             },
+            "tempReporting": {
+              "type": "boolean",
+              "title": "Temperature Reporting",
+              "description": "Enable this if your H7130 device reports ambient temperature.",
+              "condition": {
+                "functionBody": "return (model.heaterDevices && model.heaterDevices[arrayIndices] && model.heaterDevices[arrayIndices].deviceId && model.heaterDevices[arrayIndices].deviceId.length === 23);"
+              }
+            },
             "overrideLogging": {
               "type": "string",
               "title": "Override Logging Setting",
@@ -1110,6 +1118,7 @@
             "heaterDevices[].label",
             "heaterDevices[].deviceId",
             "heaterDevices[].awsDebug",
+            "heaterDevices[].tempReporting",
             "heaterDevices[].ignoreDevice",
             "heaterDevices[].overrideLogging"
           ]
