@@ -4,17 +4,17 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ⚠️ Note that Node 14 will no longer be supported after April 2023
 
-## BETA
+## 7.1.3 (2022-11-13)
 
 ### Changed
 
-- Improvements to fan accessories [WIP]
+- Improvements to fan accessories (still a work-in-progress)
 - Bump `node` recommended versions to v14.21.1 or v16.18.1 or v18.12.1
 
 ### Fixed
 
 - Issue with using improperly saved access token
-- AWS fixes for H6009
+- AWS fixes for H6009 and H7041
 
 ## 7.1.2 (2022-10-31) 🎃
 
