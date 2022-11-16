@@ -4,6 +4,14 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ⚠️ Note that Node 14 will no longer be supported after April 2023
 
+## 7.1.5 (2021-11-16)
+
+### Fixed
+
+- AWS commands for H6054
+- Bluetooth commands for H6102 - similar models may use these commands, please create an issue if you have a bluetooth model and brightness/colour do not work
+  - Thanks to [@bitfl0wer](https://github.com/bitfl0wer) for figuring out the commands
+
 ## 7.1.4 (2022-11-15)
 
 ### Fixed
