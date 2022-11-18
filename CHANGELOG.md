@@ -4,7 +4,13 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ⚠️ Note that Node 14 will no longer be supported after April 2023
 
-## 7.1.5 (2021-11-16)
+## 7.1.6 (2022-11-18)
+
+### Fixed
+
+- Colour control for some bluetooth-only models
+
+## 7.1.5 (2022-11-16)
 
 ### Fixed
 
