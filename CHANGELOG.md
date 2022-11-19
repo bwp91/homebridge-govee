@@ -4,6 +4,17 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ⚠️ Note that Node 14 will no longer be supported after April 2023
 
+## 7.1.7 (2022-11-19)
+
+### Changed
+
+- Updated dev dependencies
+
+### Fixed
+
+- AWS fixes for H619C
+- Fixes an issue sending colour temperature updates for certain models
+
 ## 7.1.6 (2022-11-18)
 
 ### Fixed
