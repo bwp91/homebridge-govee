@@ -4,6 +4,17 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ⚠️ Note that Node 14 will no longer be supported after April 2023
 
+## 7.1.8 (2022-11-23)
+
+### Changed
+
+- More improvements to heater devices H7131 and H7132 (fan speed selection mapping to Govee modes)
+
+### Fixed
+
+- AWS commands for H5080 outlet
+- AWS fixes for H7050
+
 ## 7.1.7 (2022-11-19)
 
 ### Changed
