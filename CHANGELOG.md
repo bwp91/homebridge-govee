@@ -4,6 +4,16 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ⚠️ Note that Node 14 will no longer be supported after April 2023
 
+## 7.1.9 (2022-11-23)
+
+### Changed
+
+- Added (forgotten) `awsDebug` option for switch devices
+
+### Fixed
+
+- AWS commands for H5080 outlet (for simulations)
+
 ## 7.1.8 (2022-11-23)
 
 ### Changed
