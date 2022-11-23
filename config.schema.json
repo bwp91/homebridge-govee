@@ -405,6 +405,13 @@
                 "functionBody": "return (model.switchDevices && model.switchDevices[arrayIndices] && model.switchDevices[arrayIndices].deviceId && model.switchDevices[arrayIndices].deviceId.length === 23);"
               }
             },
+            "awsDebug": {
+              "type": "boolean",
+              "title": "AWS Debug",
+              "condition": {
+                "functionBody": "return (model.switchDevices && model.switchDevices[arrayIndices] && model.switchDevices[arrayIndices].deviceId && model.switchDevices[arrayIndices].deviceId.length === 23);"
+              }
+            },
             "showAs": {
               "type": "string",
               "title": "Show As",
@@ -1057,6 +1064,7 @@
             "switchDevices[].label",
             "switchDevices[].deviceId",
             "switchDevices[].ignoreDevice",
+            "switchDevices[].awsDebug",
             "switchDevices[].showAs",
             "switchDevices[].temperatureSource",
             "switchDevices[].overrideLogging"
