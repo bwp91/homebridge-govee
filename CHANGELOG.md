@@ -4,6 +4,24 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ⚠️ Note that Node 14 will no longer be supported after April 2023
 
+## 7.2.0 (2022-11-27)
+
+### Added
+
+- Added support for the Govee outlet H5083
+- Configuration section for Govee fan devices
+
+### Changed
+
+- **Fan Devices**
+  - Rotation speeds reduced to multiples of 11% to allow a new 99% setting to access 'Auto' mode if your device is linked to a sensor
+  - Otherwise, 99% will have the same effect as 88% (the highest speed available on the device)
+- AWS codes will no longer be logged unless the `awsDebug` option is enabled for a specific device
+
+### Fixed
+
+- Plugin will now correctly enable LAN mode for devices discovered **after** the initial scan, with extra debug logging
+
 ## 7.1.9 (2022-11-23)
 
 ### Changed
