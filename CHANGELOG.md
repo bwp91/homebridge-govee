@@ -12,7 +12,7 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ### Fixed
 
-- AWS commands for H6142
+- AWS commands for H6142 and H615B
 
 ## 7.2.0 (2022-11-27)
 
