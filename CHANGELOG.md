@@ -4,6 +4,12 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ⚠️ Note that Node 14 will no longer be supported after April 2023
 
+## BETA
+
+### Fixed
+
+- AWS commands for H6142
+
 ## 7.2.0 (2022-11-27)
 
 ### Added
