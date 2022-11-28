@@ -6,6 +6,10 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ## BETA
 
+### Added
+
+- Configuration section for Govee kettle devices
+
 ### Fixed
 
 - AWS commands for H6142

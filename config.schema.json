@@ -1036,6 +1036,77 @@
             }
           }
         }
+      },
+      "kettleDevices": {
+        "title": "Kettle Devices",
+        "description": "Optional settings for Govee Kettle devices.",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "title": "Label",
+              "type": "string",
+              "description": "This setting is only used for config identification."
+            },
+            "deviceId": {
+              "title": "Device ID",
+              "type": "string",
+              "description": "Enter the 23 digit Govee Device ID to begin (e.g. 12:AB:A1:C5:A8:99:D2:17).",
+              "minLength": 23,
+              "maxLength": 23
+            },
+            "ignoreDevice": {
+              "type": "boolean",
+              "title": "Hide From HomeKit",
+              "description": "If true, this accessory will be removed and ignored from HomeKit.",
+              "condition": {
+                "functionBody": "return (model.kettleDevices && model.kettleDevices[arrayIndices] && model.kettleDevices[arrayIndices].deviceId && model.kettleDevices[arrayIndices].deviceId.length === 23);"
+              }
+            },
+            "awsDebug": {
+              "type": "boolean",
+              "title": "AWS Debug",
+              "condition": {
+                "functionBody": "return (model.kettleDevices && model.kettleDevices[arrayIndices] && model.kettleDevices[arrayIndices].deviceId && model.kettleDevices[arrayIndices].deviceId.length === 23);"
+              }
+            },
+            "overrideLogging": {
+              "type": "string",
+              "title": "Override Logging Setting",
+              "description": "Override global logging setting for this device.",
+              "oneOf": [
+                {
+                  "title": "Default (Use Global Setting)",
+                  "enum": [
+                    "default"
+                  ]
+                },
+                {
+                  "title": "Enable Standard Logging",
+                  "enum": [
+                    "standard"
+                  ]
+                },
+                {
+                  "title": "Enable Debug Logging",
+                  "enum": [
+                    "debug"
+                  ]
+                },
+                {
+                  "title": "Disable All Logging",
+                  "enum": [
+                    "disable"
+                  ]
+                }
+              ],
+              "condition": {
+                "functionBody": "return (model.kettleDevices && model.kettleDevices[arrayIndices] && model.kettleDevices[arrayIndices].deviceId && model.kettleDevices[arrayIndices].deviceId.length === 23 && !model.kettleDevices[arrayIndices].ignoreDevice);"
+              }
+            }
+          }
+        }
       }
     }
   },
@@ -1280,6 +1351,26 @@
             "purifierDevices[].awsDebug",
             "purifierDevices[].ignoreDevice",
             "purifierDevices[].overrideLogging"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "kettleDevices",
+      "expandable": true,
+      "title": "Fan Devices",
+      "description": "Optional settings for Govee Kettle devices.",
+      "add": "Add Another Device",
+      "type": "array",
+      "items": [
+        {
+          "type": "fieldset",
+          "items": [
+            "kettleDevices[].label",
+            "kettleDevices[].deviceId",
+            "kettleDevices[].awsDebug",
+            "kettleDevices[].ignoreDevice",
+            "kettleDevices[].overrideLogging"
           ]
         }
       ]
