@@ -4,6 +4,12 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ⚠️ Note that Node 14 will no longer be supported after April 2023
 
+## BETA
+
+### Fixed
+
+- BLE colour commands for H6053, H6072 and H6199
+
 ## 7.3.2 (2021-12-01)
 
 ### Changed
