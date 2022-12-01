@@ -1295,7 +1295,7 @@
     {
       "key": "kettleDevices",
       "expandable": true,
-      "title": "Fan Devices",
+      "title": "Kettle Devices",
       "description": "Optional settings for Govee Kettle devices.",
       "add": "Add Another Device",
       "type": "array",
