@@ -4,15 +4,23 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ⚠️ Note that Node 14 will no longer be supported after April 2023
 
-## BETA
+## 7.3.0 (2022-01-12)
 
 ### Added
 
 - Configuration section for Govee kettle devices
 
+### Changed
+
+- Log temperature from sensors in fahrenheit too
+- Remove `awsDebug` option as impossible to implement for the moment
+- Allow for homebridge 2.0 beta
+
 ### Fixed
 
+- AWS connection
 - AWS commands for H6142 and H615B
+- Fix bluetooth status in Homebridge UI for sensors
 
 ## 7.2.0 (2022-11-27)
 
@@ -237,7 +245,7 @@ All notable changes to homebridge-govee will be documented in this file.
   - The plugin will initially attempt LAN control, if this fails then it will fall back to cloud control
 - **New Devices**
   - Via Govee Developer API v2.0:
-    - **Lights**: H61A5, H6078, H604D, H6168, H6601, H70B1, H61A8 
+    - **Lights**: H61A5, H6078, H604D, H6168, H6601, H70B1, H61A8
     - **Fans:** H7101, H7111
     - **Heaters:** H7130, H7131, H7132
     - **Dehumidifiers:** H7150
