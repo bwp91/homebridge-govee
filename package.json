@@ -58,7 +58,8 @@
     "aws-iot-device-sdk": "^2.2.12",
     "axios": "^1.2.0",
     "node-persist": "^3.1.0",
-    "p-queue": "^7.3.0"
+    "p-queue": "^7.3.0",
+    "pfx-to-pem": "^1.0.2"
   },
   "optionalDependencies": {
     "@abandonware/bluetooth-hci-socket": "^0.5.3-8",

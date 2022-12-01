@@ -157,13 +157,6 @@
                 "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23);"
               }
             },
-            "awsDebug": {
-              "type": "boolean",
-              "title": "AWS Debug",
-              "condition": {
-                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23);"
-              }
-            },
             "enableBT": {
               "title": "Enable BLE Control",
               "type": "boolean",
@@ -401,13 +394,6 @@
               "type": "boolean",
               "title": "Hide From HomeKit",
               "description": "If true, this accessory will be removed and ignored from HomeKit.",
-              "condition": {
-                "functionBody": "return (model.switchDevices && model.switchDevices[arrayIndices] && model.switchDevices[arrayIndices].deviceId && model.switchDevices[arrayIndices].deviceId.length === 23);"
-              }
-            },
-            "awsDebug": {
-              "type": "boolean",
-              "title": "AWS Debug",
               "condition": {
                 "functionBody": "return (model.switchDevices && model.switchDevices[arrayIndices] && model.switchDevices[arrayIndices].deviceId && model.switchDevices[arrayIndices].deviceId.length === 23);"
               }
@@ -701,13 +687,6 @@
                 "functionBody": "return (model.fanDevices && model.fanDevices[arrayIndices] && model.fanDevices[arrayIndices].deviceId && model.fanDevices[arrayIndices].deviceId.length === 23);"
               }
             },
-            "awsDebug": {
-              "type": "boolean",
-              "title": "AWS Debug",
-              "condition": {
-                "functionBody": "return (model.fanDevices && model.fanDevices[arrayIndices] && model.fanDevices[arrayIndices].deviceId && model.fanDevices[arrayIndices].deviceId.length === 23);"
-              }
-            },
             "overrideLogging": {
               "type": "string",
               "title": "Override Logging Setting",
@@ -768,13 +747,6 @@
               "type": "boolean",
               "title": "Hide From HomeKit",
               "description": "If true, this accessory will be removed and ignored from HomeKit.",
-              "condition": {
-                "functionBody": "return (model.heaterDevices && model.heaterDevices[arrayIndices] && model.heaterDevices[arrayIndices].deviceId && model.heaterDevices[arrayIndices].deviceId.length === 23);"
-              }
-            },
-            "awsDebug": {
-              "type": "boolean",
-              "title": "AWS Debug",
               "condition": {
                 "functionBody": "return (model.heaterDevices && model.heaterDevices[arrayIndices] && model.heaterDevices[arrayIndices].deviceId && model.heaterDevices[arrayIndices].deviceId.length === 23);"
               }
@@ -851,13 +823,6 @@
                 "functionBody": "return (model.humidifierDevices && model.humidifierDevices[arrayIndices] && model.humidifierDevices[arrayIndices].deviceId && model.humidifierDevices[arrayIndices].deviceId.length === 23);"
               }
             },
-            "awsDebug": {
-              "type": "boolean",
-              "title": "AWS Debug",
-              "condition": {
-                "functionBody": "return (model.humidifierDevices && model.humidifierDevices[arrayIndices] && model.humidifierDevices[arrayIndices].deviceId && model.humidifierDevices[arrayIndices].deviceId.length === 23);"
-              }
-            },
             "overrideLogging": {
               "type": "string",
               "title": "Override Logging Setting",
@@ -918,13 +883,6 @@
               "type": "boolean",
               "title": "Hide From HomeKit",
               "description": "If true, this accessory will be removed and ignored from HomeKit.",
-              "condition": {
-                "functionBody": "return (model.dehumidifierDevices && model.dehumidifierDevices[arrayIndices] && model.dehumidifierDevices[arrayIndices].deviceId && model.dehumidifierDevices[arrayIndices].deviceId.length === 23);"
-              }
-            },
-            "awsDebug": {
-              "type": "boolean",
-              "title": "AWS Debug",
               "condition": {
                 "functionBody": "return (model.dehumidifierDevices && model.dehumidifierDevices[arrayIndices] && model.dehumidifierDevices[arrayIndices].deviceId && model.dehumidifierDevices[arrayIndices].deviceId.length === 23);"
               }
@@ -993,13 +951,6 @@
                 "functionBody": "return (model.purifierDevices && model.purifierDevices[arrayIndices] && model.purifierDevices[arrayIndices].deviceId && model.purifierDevices[arrayIndices].deviceId.length === 23);"
               }
             },
-            "awsDebug": {
-              "type": "boolean",
-              "title": "AWS Debug",
-              "condition": {
-                "functionBody": "return (model.purifierDevices && model.purifierDevices[arrayIndices] && model.purifierDevices[arrayIndices].deviceId && model.purifierDevices[arrayIndices].deviceId.length === 23);"
-              }
-            },
             "overrideLogging": {
               "type": "string",
               "title": "Override Logging Setting",
@@ -1060,13 +1011,6 @@
               "type": "boolean",
               "title": "Hide From HomeKit",
               "description": "If true, this accessory will be removed and ignored from HomeKit.",
-              "condition": {
-                "functionBody": "return (model.kettleDevices && model.kettleDevices[arrayIndices] && model.kettleDevices[arrayIndices].deviceId && model.kettleDevices[arrayIndices].deviceId.length === 23);"
-              }
-            },
-            "awsDebug": {
-              "type": "boolean",
-              "title": "AWS Debug",
               "condition": {
                 "functionBody": "return (model.kettleDevices && model.kettleDevices[arrayIndices] && model.kettleDevices[arrayIndices].deviceId && model.kettleDevices[arrayIndices].deviceId.length === 23);"
               }
@@ -1157,7 +1101,6 @@
             "lightDevices[].label",
             "lightDevices[].deviceId",
             "lightDevices[].ignoreDevice",
-            "lightDevices[].awsDebug",
             "lightDevices[].enableBT",
             "lightDevices[].customAddress",
             "lightDevices[].customIPAddress",
@@ -1206,7 +1149,6 @@
             "switchDevices[].label",
             "switchDevices[].deviceId",
             "switchDevices[].ignoreDevice",
-            "switchDevices[].awsDebug",
             "switchDevices[].showAs",
             "switchDevices[].temperatureSource",
             "switchDevices[].overrideLogging"
@@ -1267,7 +1209,6 @@
           "items": [
             "fanDevices[].label",
             "fanDevices[].deviceId",
-            "fanDevices[].awsDebug",
             "fanDevices[].ignoreDevice",
             "fanDevices[].overrideLogging"
           ]
@@ -1287,7 +1228,6 @@
           "items": [
             "heaterDevices[].label",
             "heaterDevices[].deviceId",
-            "heaterDevices[].awsDebug",
             "heaterDevices[].tempReporting",
             "heaterDevices[].ignoreDevice",
             "heaterDevices[].overrideLogging"
@@ -1308,7 +1248,6 @@
           "items": [
             "humidifierDevices[].label",
             "humidifierDevices[].deviceId",
-            "humidifierDevices[].awsDebug",
             "humidifierDevices[].ignoreDevice",
             "humidifierDevices[].overrideLogging"
           ]
@@ -1328,7 +1267,6 @@
           "items": [
             "dehumidifierDevices[].label",
             "dehumidifierDevices[].deviceId",
-            "dehumidifierDevices[].awsDebug",
             "dehumidifierDevices[].ignoreDevice",
             "dehumidifierDevices[].overrideLogging"
           ]
@@ -1348,7 +1286,6 @@
           "items": [
             "purifierDevices[].label",
             "purifierDevices[].deviceId",
-            "purifierDevices[].awsDebug",
             "purifierDevices[].ignoreDevice",
             "purifierDevices[].overrideLogging"
           ]
@@ -1368,7 +1305,6 @@
           "items": [
             "kettleDevices[].label",
             "kettleDevices[].deviceId",
-            "kettleDevices[].awsDebug",
             "kettleDevices[].ignoreDevice",
             "kettleDevices[].overrideLogging"
           ]
