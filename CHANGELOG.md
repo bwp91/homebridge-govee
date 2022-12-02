@@ -4,6 +4,12 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ⚠️ Note that Node 14 will no longer be supported after April 2023
 
+## BETA
+
+### Fixed
+
+- Fixed oscillation command for H7131 and H7132 heaters
+
 ## 7.4.0 (2022-12-02)
 
 ### Added
