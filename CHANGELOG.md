@@ -4,7 +4,18 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ⚠️ Note that Node 14 will no longer be supported after April 2023
 
-## BETA
+## 7.4.0 (2022-12-02)
+
+### Added
+
+- Better handling of custom light scenes
+  - All codes are now 40 characters long, starting with the digits `33`
+  - For devices with AWS connection, these codes will be clearly shown in the log (no need for debug mode)
+    - To find a scene code, switch to this mode in the Govee app (remember to disable bluetooth on your phone)
+    - If the code does not straight away, force close the Govee app then open the device page again
+  - The same code is used for AWS and BLE connection, so for devices with both methods, if AWS is unavailable then BLE will be attempted
+  - Unfortunately all existing scene codes are no longer valid - you will need to recreate your scenes
+  - There _may_ be some older models which this method does not work for - if you have one of these, please open an issue
 
 ### Fixed
 
