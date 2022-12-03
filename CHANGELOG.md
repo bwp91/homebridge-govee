@@ -6,9 +6,15 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ## BETA
 
+### Changed
+
+- Eve scene buttons are now stateful, showing the current scene that the device is in
+
 ### Fixed
 
 - Fixed oscillation command for H7131 and H7132 heaters
+- AWS commands for H7020
+- BLE commands for H6052 and H6058
 
 ## 7.4.0 (2022-12-02)
 
