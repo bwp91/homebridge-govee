@@ -4,6 +4,17 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ⚠️ Note that Node 14 will no longer be supported after April 2023
 
+## BETA
+
+### Added
+
+- Control appliances (Heaters, Fans, Humidifiers, Dehumidifiers and Purifiers) via BLE when AWS is unavailable
+  - Note this is experimental
+  - This is not meant to be a replacement for AWS - the plugin does not query state via BLE
+  - This is meant to be a fallback for the case that AWS is unavailable
+- Config option to enable BLE for these appliances
+- Config option to disable AWS
+
 ## 7.4.2 (2022-12-04)
 
 ### Fixed
