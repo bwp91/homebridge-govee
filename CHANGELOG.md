@@ -4,7 +4,7 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ⚠️ Note that Node 14 will no longer be supported after April 2023
 
-## BETA
+## 7.4.2 (2022-12-04)
 
 ### Fixed
 
