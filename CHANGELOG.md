@@ -4,7 +4,7 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ⚠️ Note that Node 14 will no longer be supported after April 2023
 
-## BETA
+## 7.4.1 (2022-12-04)
 
 ### Changed
 
@@ -12,6 +12,7 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ### Fixed
 
+- Fix for systems running OpenSSL v3
 - Fixed oscillation command for H7131 and H7132 heaters
 - AWS commands for H7020
 - BLE commands for H6052 and H6058
