@@ -4,6 +4,13 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ⚠️ Note that Node 14 will no longer be supported after April 2023
 
+## BETA
+
+### Fixed
+
+- Hide scene logging when device is not switched on
+- AWS commands for H6159
+
 ## 7.4.1 (2022-12-04)
 
 ### Changed
