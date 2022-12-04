@@ -60,7 +60,7 @@
     "node-persist": "^3.1.0",
     "node-rsa": "^1.1.1",
     "p-queue": "^7.3.0",
-    "pem": "^1.14.6"
+    "pem": "https://github.com/Dexus/pem.git"
   },
   "optionalDependencies": {
     "@abandonware/bluetooth-hci-socket": "^0.5.3-8",
