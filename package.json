@@ -54,13 +54,13 @@
     }
   ],
   "dependencies": {
+    "@bwp91/pem": "^1.14.6",
     "@homebridge/plugin-ui-utils": "^0.0.19",
     "aws-iot-device-sdk": "^2.2.12",
     "axios": "^1.2.0",
     "node-persist": "^3.1.0",
     "node-rsa": "^1.1.1",
-    "p-queue": "^7.3.0",
-    "pem": "https://github.com/Dexus/pem.git"
+    "p-queue": "^7.3.0"
   },
   "optionalDependencies": {
     "@abandonware/bluetooth-hci-socket": "^0.5.3-8",
