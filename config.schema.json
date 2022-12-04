@@ -61,12 +61,20 @@
         "placeholder": 30,
         "minimum": 30
       },
+      "awsDisable": {
+        "title": "Disable AWS",
+        "type": "boolean",
+        "description": "If enabled, the plugin will not set up AWS discovery and control."
+      },
       "awsRefreshTime": {
         "title": "AWS Refresh Interval",
         "type": "integer",
         "description": "An interval (in seconds) in which your AWS devices will refresh with the plugin. Must be 30 or more.",
         "placeholder": 30,
-        "minimum": 30
+        "minimum": 30,
+        "condition": {
+          "functionBody": "return (!model.awsDisable);"
+        }
       },
       "bleDisable": {
         "title": "Disable BLE",
@@ -719,6 +727,14 @@
                 "functionBody": "return (model.fanDevices && model.fanDevices[arrayIndices] && model.fanDevices[arrayIndices].deviceId && model.fanDevices[arrayIndices].deviceId.length === 23);"
               }
             },
+            "enableBT": {
+              "title": "Enable BLE Control",
+              "type": "boolean",
+              "description": "If true, the plugin will try and control this device via bluetooth if available.",
+              "condition": {
+                "functionBody": "return (!model.bleDisable && model.username && model.password && model.fanDevices && model.fanDevices[arrayIndices] && model.fanDevices[arrayIndices].deviceId && model.fanDevices[arrayIndices].deviceId.length === 23 && !model.fanDevices[arrayIndices].ignoreDevice);"
+              }
+            },
             "overrideLogging": {
               "type": "string",
               "title": "Override Logging Setting",
@@ -781,6 +797,14 @@
               "description": "If true, this accessory will be removed and ignored from HomeKit.",
               "condition": {
                 "functionBody": "return (model.heaterDevices && model.heaterDevices[arrayIndices] && model.heaterDevices[arrayIndices].deviceId && model.heaterDevices[arrayIndices].deviceId.length === 23);"
+              }
+            },
+            "enableBT": {
+              "title": "Enable BLE Control",
+              "type": "boolean",
+              "description": "If true, the plugin will try and control this device via bluetooth if available.",
+              "condition": {
+                "functionBody": "return (!model.bleDisable && model.username && model.password && model.heaterDevices && model.heaterDevices[arrayIndices] && model.heaterDevices[arrayIndices].deviceId && model.heaterDevices[arrayIndices].deviceId.length === 23 && !model.heaterDevices[arrayIndices].ignoreDevice);"
               }
             },
             "tempReporting": {
@@ -855,6 +879,14 @@
                 "functionBody": "return (model.humidifierDevices && model.humidifierDevices[arrayIndices] && model.humidifierDevices[arrayIndices].deviceId && model.humidifierDevices[arrayIndices].deviceId.length === 23);"
               }
             },
+            "enableBT": {
+              "title": "Enable BLE Control",
+              "type": "boolean",
+              "description": "If true, the plugin will try and control this device via bluetooth if available.",
+              "condition": {
+                "functionBody": "return (!model.bleDisable && model.username && model.password && model.humidifierDevices && model.humidifierDevices[arrayIndices] && model.humidifierDevices[arrayIndices].deviceId && model.humidifierDevices[arrayIndices].deviceId.length === 23 && !model.humidifierDevices[arrayIndices].ignoreDevice);"
+              }
+            },
             "overrideLogging": {
               "type": "string",
               "title": "Override Logging Setting",
@@ -919,6 +951,14 @@
                 "functionBody": "return (model.dehumidifierDevices && model.dehumidifierDevices[arrayIndices] && model.dehumidifierDevices[arrayIndices].deviceId && model.dehumidifierDevices[arrayIndices].deviceId.length === 23);"
               }
             },
+            "enableBT": {
+              "title": "Enable BLE Control",
+              "type": "boolean",
+              "description": "If true, the plugin will try and control this device via bluetooth if available.",
+              "condition": {
+                "functionBody": "return (!model.bleDisable && model.username && model.password && model.dehumidifierDevices && model.dehumidifierDevices[arrayIndices] && model.dehumidifierDevices[arrayIndices].deviceId && model.dehumidifierDevices[arrayIndices].deviceId.length === 23 && !model.dehumidifierDevices[arrayIndices].ignoreDevice);"
+              }
+            },
             "overrideLogging": {
               "type": "string",
               "title": "Override Logging Setting",
@@ -981,6 +1021,14 @@
               "description": "If true, this accessory will be removed and ignored from HomeKit.",
               "condition": {
                 "functionBody": "return (model.purifierDevices && model.purifierDevices[arrayIndices] && model.purifierDevices[arrayIndices].deviceId && model.purifierDevices[arrayIndices].deviceId.length === 23);"
+              }
+            },
+            "enableBT": {
+              "title": "Enable BLE Control",
+              "type": "boolean",
+              "description": "If true, the plugin will try and control this device via bluetooth if available.",
+              "condition": {
+                "functionBody": "return (!model.bleDisable && model.username && model.password && model.purifierDevices && model.purifierDevices[arrayIndices] && model.purifierDevices[arrayIndices].deviceId && model.purifierDevices[arrayIndices].deviceId.length === 23 && !model.purifierDevices[arrayIndices].ignoreDevice);"
               }
             },
             "overrideLogging": {
@@ -1108,6 +1156,7 @@
         "disableDeviceLogging",
         "apiRefreshTime",
         "httpRefreshTime",
+        "awsDisable",
         "awsRefreshTime",
         "bleDisable",
         "bleRefreshTime",
@@ -1242,6 +1291,7 @@
             "fanDevices[].label",
             "fanDevices[].deviceId",
             "fanDevices[].ignoreDevice",
+            "fanDevices[].enableBT",
             "fanDevices[].overrideLogging"
           ]
         }
@@ -1260,8 +1310,9 @@
           "items": [
             "heaterDevices[].label",
             "heaterDevices[].deviceId",
-            "heaterDevices[].tempReporting",
             "heaterDevices[].ignoreDevice",
+            "heaterDevices[].enableBT",
+            "heaterDevices[].tempReporting",
             "heaterDevices[].overrideLogging"
           ]
         }
@@ -1281,6 +1332,7 @@
             "humidifierDevices[].label",
             "humidifierDevices[].deviceId",
             "humidifierDevices[].ignoreDevice",
+            "humidifierDevices[].enableBT",
             "humidifierDevices[].overrideLogging"
           ]
         }
@@ -1300,6 +1352,7 @@
             "dehumidifierDevices[].label",
             "dehumidifierDevices[].deviceId",
             "dehumidifierDevices[].ignoreDevice",
+            "deheaterDevices[].enableBT",
             "dehumidifierDevices[].overrideLogging"
           ]
         }
@@ -1319,6 +1372,7 @@
             "purifierDevices[].label",
             "purifierDevices[].deviceId",
             "purifierDevices[].ignoreDevice",
+            "purifierDevices[].enableBT",
             "purifierDevices[].overrideLogging"
           ]
         }
