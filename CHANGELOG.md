@@ -14,6 +14,8 @@ All notable changes to homebridge-govee will be documented in this file.
   - This is meant to be a fallback for the case that AWS is unavailable
 - Config option to enable BLE for these appliances
 - Config option to disable AWS
+- BLE will now be enabled by default for all devices
+  - BLE can be globally disabled via the config
 
 ## 7.4.2 (2022-12-04)
 
