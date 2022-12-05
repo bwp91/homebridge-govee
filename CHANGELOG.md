@@ -8,6 +8,8 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ### Added
 
+- LAN support for models:
+  - `H6051`, `H6059`, `H6073`, `H6109`, `H6142`, `H6154`, `H615B`, `H615C`, `H6160`, `H6182`, `H618F`, `H6195` and `H7020`
 - Control appliances (Heaters, Fans, Humidifiers, Dehumidifiers and Purifiers) via BLE when AWS is unavailable
   - Note this is experimental
   - This is not meant to be a replacement for AWS - the plugin does not query state via BLE
