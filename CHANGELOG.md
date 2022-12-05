@@ -19,6 +19,10 @@ All notable changes to homebridge-govee will be documented in this file.
 - BLE will now be enabled by default for all devices
   - BLE can be globally disabled via the config
 
+### Fixed
+
+- AWS commands for H619A
+
 ## 7.4.2 (2022-12-04)
 
 ### Fixed
