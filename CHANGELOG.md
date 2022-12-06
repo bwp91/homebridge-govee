@@ -4,17 +4,14 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ⚠️ Note that Node 14 will no longer be supported after April 2023
 
-## BETA
+## 7.5.0 (2022-12-06)
 
 ### Added
 
-- LAN support for models:
+- LAN support for models (pending Govee support):
   - `H6051`, `H6059`, `H6073`, `H6109`, `H6142`, `H6154`, `H615B`, `H615C`, `H6160`, `H6182`, `H618F`, `H6195` and `H7020`
 - Control appliances (Heaters, Fans, Humidifiers, Dehumidifiers and Purifiers) via BLE when AWS is unavailable
-  - Note this is experimental
-  - This is not meant to be a replacement for AWS - the plugin does not query state via BLE
-  - This is meant to be a fallback for the case that AWS is unavailable
-- Config option to enable BLE for these appliances
+  - Experimental! This is not meant to be a replacement for AWS - more a fallback for the case that AWS is unavailable
 - Config option to disable AWS
 - BLE will now be enabled by default for all devices
   - BLE can be globally disabled via the config
