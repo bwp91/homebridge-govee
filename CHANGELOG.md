@@ -4,11 +4,20 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ⚠️ Note that Node 14 will no longer be supported after April 2023
 
-## BETA
+## 7.6.0
 
 ### Added
 
 - Config option to expose a Govee light device as a HomeKit `Switch` accessory
+
+### Changed
+
+- Updated BLE dependencies
+
+### Fixed
+
+- AWS commands for H5082 and H6054
+- Avoid Homebridge characteristic warning for `ColourMode`
 
 ## 7.5.1 (2022-12-09)
 
