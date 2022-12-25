@@ -4,7 +4,24 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ⚠️ Note that Node 14 will no longer be supported after April 2023
 
-## 7.6.0
+## 7.7.0 (2022-12-25) 🎄
+
+### Added
+
+- Temperature sensor to Govee Kettle (device is still a WIP)
+- Added support for Govee Air Quality Monitor H5106
+
+### Changed
+
+- Improvements to Govee Air Purifier H7122
+- Bump `node` recommended versions to v14.21.2 or v16.19.0 or v18.12.1
+
+### Fixed
+
+- Downgrade (and fix) bluetooth package versions
+- Updated LAN model list
+
+## 7.6.0 (2022-12-18)
 
 ### Added
 
