@@ -9,11 +9,11 @@ All notable changes to homebridge-govee will be documented in this file.
 ### Added
 
 - Temperature sensor to Govee Kettle (device is still a WIP)
-- Added support for Govee Air Quality Monitor H5106
+- Added support for Govee Air Quality Monitor H5106 (credit and thanks to [@rmaes4](https://github.com/rmaes4))
 
 ### Changed
 
-- Improvements to Govee Air Purifier H7122
+- Improvements to Govee Air Purifier H7122 (credit and thanks to [@rmaes4](https://github.com/rmaes4))
 - Bump `node` recommended versions to v14.21.2 or v16.19.0 or v18.12.1
 
 ### Fixed
