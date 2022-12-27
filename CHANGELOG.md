@@ -4,6 +4,14 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ⚠️ Note that Node 14 will no longer be supported after April 2023
 
+## 7.7.1 (2022-12-27)
+
+### Changed
+
+- Improvements to Govee Humidifiers (H7141 and H7142)
+  - If anyone has a H7143 or H7160 please get in contact!
+- Other fixes for purifiers and dehumidifiers
+
 ## 7.7.0 (2022-12-25) 🎄
 
 ### Added
