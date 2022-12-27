@@ -1068,6 +1068,49 @@
                 "functionBody": "return (model.kettleDevices && model.kettleDevices[arrayIndices] && model.kettleDevices[arrayIndices].deviceId && model.kettleDevices[arrayIndices].deviceId.length === 23);"
               }
             },
+            "hideModeGreenTea": {
+              "type": "boolean",
+              "title": "Hide Green Tea Mode",
+              "description": "If true, the Green Tea mode switch will be hidden in HomeKit.",
+              "condition": {
+                "functionBody": "return (model.kettleDevices && model.kettleDevices[arrayIndices] && model.kettleDevices[arrayIndices].deviceId && model.kettleDevices[arrayIndices].deviceId.length === 23 && !model.kettleDevices[arrayIndices].ignoreDevice);"
+              }
+            },
+            "hideModeOolongTea": {
+              "type": "boolean",
+              "title": "Hide Oolong Tea Mode",
+              "description": "If true, the Oolong Tea mode switch will be hidden in HomeKit.",
+              "condition": {
+                "functionBody": "return (model.kettleDevices && model.kettleDevices[arrayIndices] && model.kettleDevices[arrayIndices].deviceId && model.kettleDevices[arrayIndices].deviceId.length === 23 && !model.kettleDevices[arrayIndices].ignoreDevice);"
+              }
+            },
+            "hideModeCoffee": {
+              "type": "boolean",
+              "title": "Hide Coffee Mode",
+              "description": "If true, the Coffee mode switch will be hidden in HomeKit.",
+              "condition": {
+                "functionBody": "return (model.kettleDevices && model.kettleDevices[arrayIndices] && model.kettleDevices[arrayIndices].deviceId && model.kettleDevices[arrayIndices].deviceId.length === 23 && !model.kettleDevices[arrayIndices].ignoreDevice);"
+              }
+            },
+            "hideModeBlackTea": {
+              "type": "boolean",
+              "title": "Hide Back Tea/Boil Mode",
+              "description": "If true, the Black Tea/Boil mode switch will be hidden in HomeKit.",
+              "condition": {
+                "functionBody": "return (model.kettleDevices && model.kettleDevices[arrayIndices] && model.kettleDevices[arrayIndices].deviceId && model.kettleDevices[arrayIndices].deviceId.length === 23 && !model.kettleDevices[arrayIndices].ignoreDevice);"
+              }
+            },
+            "showCustomMode": {
+              "title": "Custom Mode",
+              "type": "string",
+              "minLength": 40,
+              "maxLength": 40,
+              "description": "Enter a scene code from the logs to create a switch for Custom Mode.",
+              "placeholder": "aa050001010000000000000000000000000000af",
+              "condition": {
+                "functionBody": "return (model.kettleDevices && model.kettleDevices[arrayIndices] && model.kettleDevices[arrayIndices].deviceId && model.kettleDevices[arrayIndices].deviceId.length === 23 && !model.kettleDevices[arrayIndices].ignoreDevice);"
+              }
+            },
             "overrideLogging": {
               "type": "string",
               "title": "Override Logging Setting",
@@ -1309,7 +1352,7 @@
       ]
     },
     {
-      "key": "deumidifierDevices",
+      "key": "dehumidifierDevices",
       "expandable": true,
       "title": "Dehumidifier Devices",
       "description": "Optional settings for Govee Dehumidifier devices.",
@@ -1360,6 +1403,11 @@
             "kettleDevices[].label",
             "kettleDevices[].deviceId",
             "kettleDevices[].ignoreDevice",
+            "kettleDevices[].hideModeGreenTea",
+            "kettleDevices[].hideModeOolongTea",
+            "kettleDevices[].hideModeCoffee",
+            "kettleDevices[].hideModeBlackTea",
+            "kettleDevices[].showCustomMode",
             "kettleDevices[].overrideLogging"
           ]
         }
