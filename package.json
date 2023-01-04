@@ -63,7 +63,7 @@
     "p-queue": "^7.3.0"
   },
   "optionalDependencies": {
-    "@abandonware/bluetooth-hci-socket": "0.5.3-9",
+    "@abandonware/bluetooth-hci-socket": "0.5.3-10",
     "@abandonware/noble": "1.9.2-15",
     "govee-bt-client": "^1.0.15"
   },
