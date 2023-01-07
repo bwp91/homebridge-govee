@@ -25,8 +25,8 @@
     "rebuild": "rm -rf package-lock.json && rm -rf node_modules && npm install"
   },
   "engines": {
-    "homebridge": "^1.5.0 || 2.0.0-beta.0",
-    "node": "^14.21.2 || ^16.19.0 || ^18.12.1"
+    "homebridge": "^1.6.0 || 2.0.0-beta.0",
+    "node": "^14.21.2 || ^16.19.0 || ^18.13.0"
   },
   "repository": {
     "type": "git",
@@ -63,8 +63,8 @@
     "p-queue": "^7.3.0"
   },
   "optionalDependencies": {
-    "@abandonware/bluetooth-hci-socket": "0.5.3-9",
-    "@abandonware/noble": "1.9.2-15",
+    "@abandonware/bluetooth-hci-socket": "0.5.3-10",
+    "@abandonware/noble": "1.9.2-19",
     "govee-bt-client": "^1.0.15"
   },
   "devDependencies": {
