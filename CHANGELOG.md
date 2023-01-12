@@ -4,6 +4,24 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ⚠️ Note that Node 14 will no longer be supported after April 2023
 
+## 7.8.0 (2023-01-12)
+
+**Kettle Users**
+Unfortunately this update will break your kettle. This is something I am working on and will hopefully be fixed soon.
+
+### Changes
+
+- General fixes
+- Bump `node` recommended versions to v14.21.2 or v16.19.0 or v18.13.0
+
+### Fixed
+
+- AWS control for H6071, H6076, H615C, H61A2, H619B and H6182
+
+### Removed
+
+- AWS connection method polling - it is unnecessary as changes are provided to the plugin in realtime anyway
+
 ## 7.7.1 (2022-12-27)
 
 ### Changed

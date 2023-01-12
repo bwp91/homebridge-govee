@@ -66,16 +66,6 @@
         "type": "boolean",
         "description": "If enabled, the plugin will not set up AWS discovery and control."
       },
-      "awsRefreshTime": {
-        "title": "AWS Refresh Interval",
-        "type": "integer",
-        "description": "An interval (in seconds) in which your AWS devices will refresh with the plugin. Must be 30 or more.",
-        "placeholder": 30,
-        "minimum": 30,
-        "condition": {
-          "functionBody": "return (!model.awsDisable);"
-        }
-      },
       "bleDisable": {
         "title": "Disable BLE",
         "type": "boolean",
@@ -1173,7 +1163,6 @@
         "apiRefreshTime",
         "httpRefreshTime",
         "awsDisable",
-        "awsRefreshTime",
         "bleDisable",
         "bleRefreshTime",
         "lanDisable",
