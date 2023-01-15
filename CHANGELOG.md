@@ -4,6 +4,16 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ⚠️ Note that Node 14 will no longer be supported after April 2023
 
+## BETA
+
+### Added
+
+- Configuration items for kettle devices to switch to two custom modes
+
+### Fixed
+
+- Kettle commands
+
 ## 7.8.0 (2023-01-12)
 
 **Kettle Users**
