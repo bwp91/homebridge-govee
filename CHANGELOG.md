@@ -4,7 +4,7 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ⚠️ Note that Node 14 will no longer be supported after April 2023
 
-## BETA
+## 7.9.0 (2023-01-20)
 
 ### Added
 
@@ -13,6 +13,7 @@ All notable changes to homebridge-govee will be documented in this file.
 ### Fixed
 
 - Kettle commands
+- AWS commands for H615E and H6195
 
 ## 7.8.0 (2023-01-12)
 
