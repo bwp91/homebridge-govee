@@ -4,6 +4,18 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ⚠️ Note that Node 14 will no longer be supported after April 2023
 
+## 7.9.1 (2023-01-28)
+
+### Changed
+
+- For users with old AWS scene codes ending in `||ptReal`, you can now change this to `||raw` and the command should work as before
+- For devices with AWS connection (with real-time updates), API polling will be disabled
+- Improved AWS connectivity for older models
+
+### Fixed
+
+- AWS commands for H6054
+
 ## 7.9.0 (2023-01-20)
 
 ### Added
