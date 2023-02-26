@@ -1124,6 +1124,70 @@
             }
           }
         }
+      },
+      "iceMakerDevices": {
+        "title": "Ice Maker Devices",
+        "description": "Optional settings for Govee Ice Maker devices.",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "title": "Label",
+              "type": "string",
+              "description": "This setting is only used for config identification."
+            },
+            "deviceId": {
+              "title": "Device ID",
+              "type": "string",
+              "description": "Enter the 23 digit Govee Device ID to begin (e.g. 12:AB:A1:C5:A8:99:D2:17).",
+              "minLength": 23,
+              "maxLength": 23
+            },
+            "ignoreDevice": {
+              "type": "boolean",
+              "title": "Hide From HomeKit",
+              "description": "If true, this accessory will be removed and ignored from HomeKit.",
+              "condition": {
+                "functionBody": "return (model.iceMakerDevices && model.iceMakerDevices[arrayIndices] && model.iceMakerDevices[arrayIndices].deviceId && model.iceMakerDevices[arrayIndices].deviceId.length === 23);"
+              }
+            },
+            "overrideLogging": {
+              "type": "string",
+              "title": "Override Logging Setting",
+              "description": "Override global logging setting for this device.",
+              "oneOf": [
+                {
+                  "title": "Default (Use Global Setting)",
+                  "enum": [
+                    "default"
+                  ]
+                },
+                {
+                  "title": "Enable Standard Logging",
+                  "enum": [
+                    "standard"
+                  ]
+                },
+                {
+                  "title": "Enable Debug Logging",
+                  "enum": [
+                    "debug"
+                  ]
+                },
+                {
+                  "title": "Disable All Logging",
+                  "enum": [
+                    "disable"
+                  ]
+                }
+              ],
+              "condition": {
+                "functionBody": "return (model.iceMakerDevices && model.iceMakerDevices[arrayIndices] && model.iceMakerDevices[arrayIndices].deviceId && model.iceMakerDevices[arrayIndices].deviceId.length === 23 && !model.iceMakerDevices[arrayIndices].ignoreDevice);"
+              }
+            }
+          }
+        }
       }
     }
   },
@@ -1386,6 +1450,25 @@
             "kettleDevices[].showCustomMode1",
             "kettleDevices[].showCustomMode2",
             "kettleDevices[].overrideLogging"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "iceMakerDevices",
+      "expandable": true,
+      "title": "Ice Maker Devices",
+      "description": "Optional settings for Govee Ice Maker devices.",
+      "add": "Add Another Device",
+      "type": "array",
+      "items": [
+        {
+          "type": "fieldset",
+          "items": [
+            "iceMakerDevices[].label",
+            "iceMakerDevices[].deviceId",
+            "iceMakerDevices[].ignoreDevice",
+            "iceMakerDevices[].overrideLogging"
           ]
         }
       ]
