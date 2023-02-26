@@ -4,6 +4,17 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ⚠️ Note that Node 14 will no longer be supported after April 2023
 
+## 7.9.2 (2023-03-26)
+
+### Changed
+
+- Updated dependencies
+- Bump `node` recommended versions to v14.21.2 or v16.19.1 or v18.14.2
+
+### Fixed
+
+- AWS commands for H6003, H6009 and H601A
+
 ## 7.9.1 (2023-01-28)
 
 ### Changed

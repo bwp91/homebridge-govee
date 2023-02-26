@@ -26,7 +26,7 @@
   },
   "engines": {
     "homebridge": "^1.6.0 || 2.0.0-beta.0",
-    "node": "^14.21.2 || ^16.19.0 || ^18.13.0"
+    "node": "^14.21.3 || ^16.19.1 || ^18.14.1"
   },
   "repository": {
     "type": "git",
@@ -57,21 +57,21 @@
     "@bwp91/pem": "^1.14.6",
     "@homebridge/plugin-ui-utils": "^0.0.19",
     "aws-iot-device-sdk": "^2.2.12",
-    "axios": "^1.3.2",
-    "node-persist": "^3.1.0",
+    "axios": "^1.3.4",
+    "node-persist": "^3.1.3",
     "node-rsa": "^1.1.1",
     "p-queue": "^7.3.4"
   },
   "optionalDependencies": {
     "@abandonware/bluetooth-hci-socket": "0.5.3-10",
-    "@abandonware/noble": "1.9.2-19",
+    "@abandonware/noble": "1.9.2-20",
     "govee-bt-client": "^1.0.15"
   },
   "devDependencies": {
-    "eslint": "^8.33.0",
+    "eslint": "^8.35.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-import-newlines": "^1.3.0",
+    "eslint-plugin-import-newlines": "^1.3.1",
     "eslint-plugin-sort-exports": "^0.8.0"
   }
 }
