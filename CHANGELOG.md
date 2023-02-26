@@ -4,7 +4,13 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ⚠️ Note that Node 14 will no longer be supported after April 2023
 
-## 7.9.2 (2023-03-26)
+## 7.9.3 (2023-02-26)
+
+### Changed
+
+- Remove JSON logging for all API appliances as no more devices needed
+
+## 7.9.2 (2023-02-26)
 
 ### Changed
 
