@@ -2,7 +2,24 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
-⚠️ Note that Node 14 will no longer be supported after April 2023
+## BETA
+
+### Breaking
+
+- Remove official support for Node 14
+- Remove option to disable plugin - this is now available in the Homebridge UI
+- Remove option for debug logging - this will be enabled when using a beta version of the plugin
+- Remove individual accessory logging options to simplify the config
+
+### Added
+
+- Support for Kettle device `H7171`
+
+### Changed
+
+- Bump `homebridge` recommended version to v1.6.0 or v2.0.0-beta
+- Bump `node` recommended versions to v16.19.1 or v18.14.2
+- Updated dependencies
 
 ## 7.9.3 (2023-02-26)
 

@@ -35,18 +35,6 @@
           "functionBody": "return (model.apiKey && model.apiKey.length === 36);"
         }
       },
-      "debug": {
-        "title": "Debug Logging",
-        "type": "boolean"
-      },
-      "debugFakegato": {
-        "title": "Debug Fakegato",
-        "type": "boolean"
-      },
-      "disablePlugin": {
-        "title": "Disable Plugin",
-        "type": "boolean"
-      },
       "apiRefreshTime": {
         "title": "API Refresh Interval",
         "type": "integer",
@@ -360,40 +348,6 @@
               "condition": {
                 "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && model.lightDevices[arrayIndices].showAs !== 'switch' && !model.lightDevices[arrayIndices].ignoreDevice);"
               }
-            },
-            "overrideLogging": {
-              "type": "string",
-              "title": "Override Logging Setting",
-              "description": "Override global logging setting for this device.",
-              "oneOf": [
-                {
-                  "title": "Default (Use Global Setting)",
-                  "enum": [
-                    "default"
-                  ]
-                },
-                {
-                  "title": "Enable Standard Logging",
-                  "enum": [
-                    "standard"
-                  ]
-                },
-                {
-                  "title": "Enable Debug Logging",
-                  "enum": [
-                    "debug"
-                  ]
-                },
-                {
-                  "title": "Disable All Logging",
-                  "enum": [
-                    "disable"
-                  ]
-                }
-              ],
-              "condition": {
-                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !model.lightDevices[arrayIndices].ignoreDevice);"
-              }
             }
           }
         }
@@ -501,40 +455,6 @@
               "condition": {
                 "functionBody": "return (model.switchDevices && model.switchDevices[arrayIndices] && model.switchDevices[arrayIndices].deviceId && model.switchDevices[arrayIndices].deviceId.length === 23 && ['heater', 'cooler'].includes(model.switchDevices[arrayIndices].showAs) && !model.switchDevices[arrayIndices].ignoreDevice);"
               }
-            },
-            "overrideLogging": {
-              "type": "string",
-              "title": "Override Logging Setting",
-              "description": "Override global logging setting for this device.",
-              "oneOf": [
-                {
-                  "title": "Default (Use Global Setting)",
-                  "enum": [
-                    "default"
-                  ]
-                },
-                {
-                  "title": "Enable Standard Logging",
-                  "enum": [
-                    "standard"
-                  ]
-                },
-                {
-                  "title": "Enable Debug Logging",
-                  "enum": [
-                    "debug"
-                  ]
-                },
-                {
-                  "title": "Disable All Logging",
-                  "enum": [
-                    "disable"
-                  ]
-                }
-              ],
-              "condition": {
-                "functionBody": "return (model.switchDevices && model.switchDevices[arrayIndices] && model.switchDevices[arrayIndices].deviceId && model.switchDevices[arrayIndices].deviceId.length === 23 && !model.switchDevices[arrayIndices].ignoreDevice);"
-              }
             }
           }
         }
@@ -572,40 +492,6 @@
               "description": "HomeKit will set the low battery status for this device when the battery reaches this percentage level. Must be 1 or more.",
               "placeholder": 20,
               "minimum": 1,
-              "condition": {
-                "functionBody": "return (model.leakDevices && model.leakDevices[arrayIndices] && model.leakDevices[arrayIndices].deviceId && model.leakDevices[arrayIndices].deviceId.length === 18 && !model.leakDevices[arrayIndices].ignoreDevice);"
-              }
-            },
-            "overrideLogging": {
-              "type": "string",
-              "title": "Override Logging Setting",
-              "description": "Override global logging setting for this device.",
-              "oneOf": [
-                {
-                  "title": "Default (Use Global Setting)",
-                  "enum": [
-                    "default"
-                  ]
-                },
-                {
-                  "title": "Enable Standard Logging",
-                  "enum": [
-                    "standard"
-                  ]
-                },
-                {
-                  "title": "Enable Debug Logging",
-                  "enum": [
-                    "debug"
-                  ]
-                },
-                {
-                  "title": "Disable All Logging",
-                  "enum": [
-                    "disable"
-                  ]
-                }
-              ],
               "condition": {
                 "functionBody": "return (model.leakDevices && model.leakDevices[arrayIndices] && model.leakDevices[arrayIndices].deviceId && model.leakDevices[arrayIndices].deviceId.length === 18 && !model.leakDevices[arrayIndices].ignoreDevice);"
               }
@@ -649,40 +535,6 @@
               "condition": {
                 "functionBody": "return (model.thermoDevices && model.thermoDevices[arrayIndices] && model.thermoDevices[arrayIndices].deviceId && model.thermoDevices[arrayIndices].deviceId.length === 23 && !model.thermoDevices[arrayIndices].ignoreDevice);"
               }
-            },
-            "overrideLogging": {
-              "type": "string",
-              "title": "Override Logging Setting",
-              "description": "Override global logging setting for this device.",
-              "oneOf": [
-                {
-                  "title": "Default (Use Global Setting)",
-                  "enum": [
-                    "default"
-                  ]
-                },
-                {
-                  "title": "Enable Standard Logging",
-                  "enum": [
-                    "standard"
-                  ]
-                },
-                {
-                  "title": "Enable Debug Logging",
-                  "enum": [
-                    "debug"
-                  ]
-                },
-                {
-                  "title": "Disable All Logging",
-                  "enum": [
-                    "disable"
-                  ]
-                }
-              ],
-              "condition": {
-                "functionBody": "return (model.thermoDevices && model.thermoDevices[arrayIndices] && model.thermoDevices[arrayIndices].deviceId && model.thermoDevices[arrayIndices].deviceId.length === 23 && !model.thermoDevices[arrayIndices].ignoreDevice);"
-              }
             }
           }
         }
@@ -712,40 +564,6 @@
               "description": "If true, this accessory will be removed and ignored from HomeKit.",
               "condition": {
                 "functionBody": "return (model.fanDevices && model.fanDevices[arrayIndices] && model.fanDevices[arrayIndices].deviceId && model.fanDevices[arrayIndices].deviceId.length === 23);"
-              }
-            },
-            "overrideLogging": {
-              "type": "string",
-              "title": "Override Logging Setting",
-              "description": "Override global logging setting for this device.",
-              "oneOf": [
-                {
-                  "title": "Default (Use Global Setting)",
-                  "enum": [
-                    "default"
-                  ]
-                },
-                {
-                  "title": "Enable Standard Logging",
-                  "enum": [
-                    "standard"
-                  ]
-                },
-                {
-                  "title": "Enable Debug Logging",
-                  "enum": [
-                    "debug"
-                  ]
-                },
-                {
-                  "title": "Disable All Logging",
-                  "enum": [
-                    "disable"
-                  ]
-                }
-              ],
-              "condition": {
-                "functionBody": "return (model.fanDevices && model.fanDevices[arrayIndices] && model.fanDevices[arrayIndices].deviceId && model.fanDevices[arrayIndices].deviceId.length === 23 && !model.fanDevices[arrayIndices].ignoreDevice);"
               }
             }
           }
@@ -785,40 +603,6 @@
               "condition": {
                 "functionBody": "return (model.heaterDevices && model.heaterDevices[arrayIndices] && model.heaterDevices[arrayIndices].deviceId && model.heaterDevices[arrayIndices].deviceId.length === 23);"
               }
-            },
-            "overrideLogging": {
-              "type": "string",
-              "title": "Override Logging Setting",
-              "description": "Override global logging setting for this device.",
-              "oneOf": [
-                {
-                  "title": "Default (Use Global Setting)",
-                  "enum": [
-                    "default"
-                  ]
-                },
-                {
-                  "title": "Enable Standard Logging",
-                  "enum": [
-                    "standard"
-                  ]
-                },
-                {
-                  "title": "Enable Debug Logging",
-                  "enum": [
-                    "debug"
-                  ]
-                },
-                {
-                  "title": "Disable All Logging",
-                  "enum": [
-                    "disable"
-                  ]
-                }
-              ],
-              "condition": {
-                "functionBody": "return (model.heaterDevices && model.heaterDevices[arrayIndices] && model.heaterDevices[arrayIndices].deviceId && model.heaterDevices[arrayIndices].deviceId.length === 23 && !model.heaterDevices[arrayIndices].ignoreDevice);"
-              }
             }
           }
         }
@@ -848,40 +632,6 @@
               "description": "If true, this accessory will be removed and ignored from HomeKit.",
               "condition": {
                 "functionBody": "return (model.humidifierDevices && model.humidifierDevices[arrayIndices] && model.humidifierDevices[arrayIndices].deviceId && model.humidifierDevices[arrayIndices].deviceId.length === 23);"
-              }
-            },
-            "overrideLogging": {
-              "type": "string",
-              "title": "Override Logging Setting",
-              "description": "Override global logging setting for this device.",
-              "oneOf": [
-                {
-                  "title": "Default (Use Global Setting)",
-                  "enum": [
-                    "default"
-                  ]
-                },
-                {
-                  "title": "Enable Standard Logging",
-                  "enum": [
-                    "standard"
-                  ]
-                },
-                {
-                  "title": "Enable Debug Logging",
-                  "enum": [
-                    "debug"
-                  ]
-                },
-                {
-                  "title": "Disable All Logging",
-                  "enum": [
-                    "disable"
-                  ]
-                }
-              ],
-              "condition": {
-                "functionBody": "return (model.humidifierDevices && model.humidifierDevices[arrayIndices] && model.humidifierDevices[arrayIndices].deviceId && model.humidifierDevices[arrayIndices].deviceId.length === 23 && !model.humidifierDevices[arrayIndices].ignoreDevice);"
               }
             }
           }
@@ -913,40 +663,6 @@
               "condition": {
                 "functionBody": "return (model.dehumidifierDevices && model.dehumidifierDevices[arrayIndices] && model.dehumidifierDevices[arrayIndices].deviceId && model.dehumidifierDevices[arrayIndices].deviceId.length === 23);"
               }
-            },
-            "overrideLogging": {
-              "type": "string",
-              "title": "Override Logging Setting",
-              "description": "Override global logging setting for this device.",
-              "oneOf": [
-                {
-                  "title": "Default (Use Global Setting)",
-                  "enum": [
-                    "default"
-                  ]
-                },
-                {
-                  "title": "Enable Standard Logging",
-                  "enum": [
-                    "standard"
-                  ]
-                },
-                {
-                  "title": "Enable Debug Logging",
-                  "enum": [
-                    "debug"
-                  ]
-                },
-                {
-                  "title": "Disable All Logging",
-                  "enum": [
-                    "disable"
-                  ]
-                }
-              ],
-              "condition": {
-                "functionBody": "return (model.dehumidifierDevices && model.dehumidifierDevices[arrayIndices] && model.dehumidifierDevices[arrayIndices].deviceId && model.dehumidifierDevices[arrayIndices].deviceId.length === 23 && !model.dehumidifierDevices[arrayIndices].ignoreDevice);"
-              }
             }
           }
         }
@@ -976,40 +692,6 @@
               "description": "If true, this accessory will be removed and ignored from HomeKit.",
               "condition": {
                 "functionBody": "return (model.purifierDevices && model.purifierDevices[arrayIndices] && model.purifierDevices[arrayIndices].deviceId && model.purifierDevices[arrayIndices].deviceId.length === 23);"
-              }
-            },
-            "overrideLogging": {
-              "type": "string",
-              "title": "Override Logging Setting",
-              "description": "Override global logging setting for this device.",
-              "oneOf": [
-                {
-                  "title": "Default (Use Global Setting)",
-                  "enum": [
-                    "default"
-                  ]
-                },
-                {
-                  "title": "Enable Standard Logging",
-                  "enum": [
-                    "standard"
-                  ]
-                },
-                {
-                  "title": "Enable Debug Logging",
-                  "enum": [
-                    "debug"
-                  ]
-                },
-                {
-                  "title": "Disable All Logging",
-                  "enum": [
-                    "disable"
-                  ]
-                }
-              ],
-              "condition": {
-                "functionBody": "return (model.purifierDevices && model.purifierDevices[arrayIndices] && model.purifierDevices[arrayIndices].deviceId && model.purifierDevices[arrayIndices].deviceId.length === 23 && !model.purifierDevices[arrayIndices].ignoreDevice);"
               }
             }
           }
@@ -1087,40 +769,6 @@
               "condition": {
                 "functionBody": "return (model.kettleDevices && model.kettleDevices[arrayIndices] && model.kettleDevices[arrayIndices].deviceId && model.kettleDevices[arrayIndices].deviceId.length === 23 && !model.kettleDevices[arrayIndices].ignoreDevice);"
               }
-            },
-            "overrideLogging": {
-              "type": "string",
-              "title": "Override Logging Setting",
-              "description": "Override global logging setting for this device.",
-              "oneOf": [
-                {
-                  "title": "Default (Use Global Setting)",
-                  "enum": [
-                    "default"
-                  ]
-                },
-                {
-                  "title": "Enable Standard Logging",
-                  "enum": [
-                    "standard"
-                  ]
-                },
-                {
-                  "title": "Enable Debug Logging",
-                  "enum": [
-                    "debug"
-                  ]
-                },
-                {
-                  "title": "Disable All Logging",
-                  "enum": [
-                    "disable"
-                  ]
-                }
-              ],
-              "condition": {
-                "functionBody": "return (model.kettleDevices && model.kettleDevices[arrayIndices] && model.kettleDevices[arrayIndices].deviceId && model.kettleDevices[arrayIndices].deviceId.length === 23 && !model.kettleDevices[arrayIndices].ignoreDevice);"
-              }
             }
           }
         }
@@ -1151,40 +799,6 @@
               "condition": {
                 "functionBody": "return (model.iceMakerDevices && model.iceMakerDevices[arrayIndices] && model.iceMakerDevices[arrayIndices].deviceId && model.iceMakerDevices[arrayIndices].deviceId.length === 23);"
               }
-            },
-            "overrideLogging": {
-              "type": "string",
-              "title": "Override Logging Setting",
-              "description": "Override global logging setting for this device.",
-              "oneOf": [
-                {
-                  "title": "Default (Use Global Setting)",
-                  "enum": [
-                    "default"
-                  ]
-                },
-                {
-                  "title": "Enable Standard Logging",
-                  "enum": [
-                    "standard"
-                  ]
-                },
-                {
-                  "title": "Enable Debug Logging",
-                  "enum": [
-                    "debug"
-                  ]
-                },
-                {
-                  "title": "Disable All Logging",
-                  "enum": [
-                    "disable"
-                  ]
-                }
-              ],
-              "condition": {
-                "functionBody": "return (model.iceMakerDevices && model.iceMakerDevices[arrayIndices] && model.iceMakerDevices[arrayIndices].deviceId && model.iceMakerDevices[arrayIndices].deviceId.length === 23 && !model.iceMakerDevices[arrayIndices].ignoreDevice);"
-              }
             }
           }
         }
@@ -1199,9 +813,7 @@
         "username",
         "password",
         "apiKey",
-        "apiWhitelist",
-        "debug",
-        "disablePlugin"
+        "apiWhitelist"
       ]
     },
     {
@@ -1266,8 +878,7 @@
                 "lightDevices[].segmentedThree",
                 "lightDevices[].segmentedFour"
               ]
-            },
-            "lightDevices[].overrideLogging"
+            }
           ]
         }
       ]
@@ -1287,8 +898,7 @@
             "switchDevices[].deviceId",
             "switchDevices[].ignoreDevice",
             "switchDevices[].showAs",
-            "switchDevices[].temperatureSource",
-            "switchDevices[].overrideLogging"
+            "switchDevices[].temperatureSource"
           ]
         }
       ]
@@ -1307,8 +917,7 @@
             "leakDevices[].label",
             "leakDevices[].deviceId",
             "leakDevices[].lowBattThreshold",
-            "leakDevices[].ignoreDevice",
-            "leakDevices[].overrideLogging"
+            "leakDevices[].ignoreDevice"
           ]
         }
       ]
@@ -1327,8 +936,7 @@
             "thermoDevices[].label",
             "thermoDevices[].deviceId",
             "thermoDevices[].ignoreDevice",
-            "thermoDevices[].lowBattThreshold",
-            "thermoDevices[].overrideLogging"
+            "thermoDevices[].lowBattThreshold"
           ]
         }
       ]
@@ -1346,8 +954,7 @@
           "items": [
             "fanDevices[].label",
             "fanDevices[].deviceId",
-            "fanDevices[].ignoreDevice",
-            "fanDevices[].overrideLogging"
+            "fanDevices[].ignoreDevice"
           ]
         }
       ]
@@ -1366,8 +973,7 @@
             "heaterDevices[].label",
             "heaterDevices[].deviceId",
             "heaterDevices[].ignoreDevice",
-            "heaterDevices[].tempReporting",
-            "heaterDevices[].overrideLogging"
+            "heaterDevices[].tempReporting"
           ]
         }
       ]
@@ -1385,8 +991,7 @@
           "items": [
             "humidifierDevices[].label",
             "humidifierDevices[].deviceId",
-            "humidifierDevices[].ignoreDevice",
-            "humidifierDevices[].overrideLogging"
+            "humidifierDevices[].ignoreDevice"
           ]
         }
       ]
@@ -1404,8 +1009,7 @@
           "items": [
             "dehumidifierDevices[].label",
             "dehumidifierDevices[].deviceId",
-            "dehumidifierDevices[].ignoreDevice",
-            "dehumidifierDevices[].overrideLogging"
+            "dehumidifierDevices[].ignoreDevice"
           ]
         }
       ]
@@ -1423,8 +1027,7 @@
           "items": [
             "purifierDevices[].label",
             "purifierDevices[].deviceId",
-            "purifierDevices[].ignoreDevice",
-            "purifierDevices[].overrideLogging"
+            "purifierDevices[].ignoreDevice"
           ]
         }
       ]
@@ -1448,8 +1051,7 @@
             "kettleDevices[].hideModeCoffee",
             "kettleDevices[].hideModeBlackTea",
             "kettleDevices[].showCustomMode1",
-            "kettleDevices[].showCustomMode2",
-            "kettleDevices[].overrideLogging"
+            "kettleDevices[].showCustomMode2"
           ]
         }
       ]
@@ -1467,8 +1069,7 @@
           "items": [
             "iceMakerDevices[].label",
             "iceMakerDevices[].deviceId",
-            "iceMakerDevices[].ignoreDevice",
-            "iceMakerDevices[].overrideLogging"
+            "iceMakerDevices[].ignoreDevice"
           ]
         }
       ]
