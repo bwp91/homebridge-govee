@@ -27,8 +27,8 @@ Homebridge plugin to integrate Govee devices into HomeKit
 
 ### Prerequisites
 
-- To use this plugin, you will need to already have [Homebridge](https://homebridge.io) (at least v1.4) or [HOOBS](https://hoobs.org) (at least v4.2) installed. Refer to the links for more information and installation instructions.
-- The plugin supports [Node](https://nodejs.org/en/) v14, v16 (recommended) and v18 as per the [Homebridge plugin guidelines](https://github.com/homebridge/homebridge/wiki/How-To-Update-Node.js).
+- [Homebridge](https://homebridge.io): v1.6 or [HOOBS](https://hoobs.org): v4.3 installed - refer to the links for more information and installation instructions.
+- Node: latest version of v16 or v18 - any other major version is not supported.
 - For bluetooth connectivity, it may be necessary to install extra packages on your system, see [Bluetooth Control](https://github.com/bwp91/homebridge-govee/wiki/Bluetooth-Control). Bluetooth works best when using a Raspberry Pi, not been tested on Windows, and Mac devices are unsupported.
 
 ### Setup
@@ -37,7 +37,6 @@ Homebridge plugin to integrate Govee devices into HomeKit
 - [Configuration](https://github.com/bwp91/homebridge-govee/wiki/Configuration)
 - [Beta Version](https://github.com/bwp91/homebridge-govee/wiki/Beta-Version)
 - [Node Version](https://github.com/bwp91/homebridge-govee/wiki/Node-Version)
-- [Uninstallation](https://github.com/bwp91/homebridge-govee/wiki/Uninstallation)
 
 ### Features
 
@@ -47,7 +46,6 @@ Homebridge plugin to integrate Govee devices into HomeKit
   - [API Control](https://github.com/bwp91/homebridge-govee/wiki/API-Control)
   - [AWS Control](https://github.com/bwp91/homebridge-govee/wiki/AWS-Control)
   - [BLE Control](https://github.com/bwp91/homebridge-govee/wiki/Bluetooth-Control)
-- [Scene, Music, DIY Modes](https://github.com/bwp91/homebridge-govee/wiki/Scene%2C-Music%2C-DIY-Modes)
 
 ### Help/About
 
