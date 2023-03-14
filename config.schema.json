@@ -148,7 +148,7 @@
               "title": "Show As",
               "oneOf": [
                 {
-                  "title": "1 Outlet (Default)",
+                  "title": "1 Light (Default)",
                   "enum": [
                     "default"
                   ]
@@ -192,7 +192,7 @@
               "placeholder": 1,
               "minimum": 1,
               "condition": {
-                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && model.lightDevices[arrayIndices].showAs !== 'switch' && !model.lightDevices[arrayIndices].ignoreDevice);"
+                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch', 'outlet'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
               }
             },
             "adaptiveLightingShift": {
@@ -202,151 +202,282 @@
               "placeholder": 0,
               "minimum": -1,
               "condition": {
-                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && model.lightDevices[arrayIndices].showAs !== 'switch' && !model.lightDevices[arrayIndices].ignoreDevice);"
+                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch', 'outlet'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+              }
+            },
+            "awsBrightnessNoScale": {
+              "type": "boolean",
+              "title": "AWS Brightness No Scale",
+              "description": "If true, the brightness value sent to/from via AWS will not be scaled to 0-100.",
+              "condition": {
+                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch', 'outlet'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+              }
+            },
+            "awsColourMode": {
+              "type": "string",
+              "title": "AWS Colour Mode",
+              "oneOf": [
+                {
+                  "title": "colorwc (Default)",
+                  "enum": [
+                    "default"
+                  ]
+                },
+                {
+                  "title": "{r, g, b}",
+                  "enum": [
+                    "rgb"
+                  ]
+                },
+                {
+                  "title": "{red, green, blue}",
+                  "enum": [
+                    "redgreenblue"
+                  ]
+                }
+              ],
+              "condition": {
+                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch', 'outlet'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
               }
             },
             "scene": {
               "title": "Scene",
-              "type": "string",
-              "minLength": 40,
-              "description": "Enter a scene code from the logs to create a button named 'Scene' (in Eve app).",
-              "condition": {
-                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && model.lightDevices[arrayIndices].showAs !== 'switch' && !model.lightDevices[arrayIndices].ignoreDevice);"
+              "type": "object",
+              "properties": {
+                "sceneCode": {
+                  "title": "Scene Code",
+                  "type": "string",
+                  "minLength": 40,
+                  "description": "Enter a scene code from the logs to create a button named 'Scene' (in Eve app).",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch', 'outlet'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                }
               }
             },
             "sceneTwo": {
               "title": "Scene 2",
-              "type": "string",
-              "minLength": 40,
-              "description": "Enter a scene code from the logs to create a button named 'Scene 2' (in Eve app).",
-              "condition": {
-                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && model.lightDevices[arrayIndices].showAs !== 'switch' && !model.lightDevices[arrayIndices].ignoreDevice);"
+              "type": "object",
+              "properties": {
+                "sceneCode": {
+                  "title": "Scene Code",
+                  "type": "string",
+                  "minLength": 40,
+                  "description": "Enter a scene code from the logs to create a button named 'Scene 2' (in Eve app).",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch', 'outlet'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                }
               }
             },
             "sceneThree": {
               "title": "Scene 3",
-              "type": "string",
-              "minLength": 40,
-              "description": "Enter a scene code from the logs to create a button named 'Scene 3' (in Eve app).",
-              "condition": {
-                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && model.lightDevices[arrayIndices].showAs !== 'switch' && !model.lightDevices[arrayIndices].ignoreDevice);"
+              "type": "object",
+              "properties": {
+                "sceneCode": {
+                  "title": "Scene Code",
+                  "type": "string",
+                  "minLength": 40,
+                  "description": "Enter a scene code from the logs to create a button named 'Scene 3' (in Eve app).",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch', 'outlet'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                }
               }
             },
             "sceneFour": {
               "title": "Scene 4",
-              "type": "string",
-              "minLength": 40,
-              "description": "Enter a scene code from the logs to create a button named 'Scene 4' (in Eve app).",
-              "condition": {
-                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && model.lightDevices[arrayIndices].showAs !== 'switch' && !model.lightDevices[arrayIndices].ignoreDevice);"
+              "type": "object",
+              "properties": {
+                "sceneCode": {
+                  "title": "Scene Code",
+                  "type": "string",
+                  "minLength": 40,
+                  "description": "Enter a scene code from the logs to create a button named 'Scene 4' (in Eve app).",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch', 'outlet'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                }
               }
             },
             "musicMode": {
               "title": "Music Mode",
-              "type": "string",
-              "minLength": 40,
-              "description": "Enter a scene code from the logs to create a button named 'Music Mode' (in Eve app).",
-              "condition": {
-                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && model.lightDevices[arrayIndices].showAs !== 'switch' && !model.lightDevices[arrayIndices].ignoreDevice);"
+              "type": "object",
+              "properties": {
+                "sceneCode": {
+                  "title": "Scene Code",
+                  "type": "string",
+                  "minLength": 40,
+                  "description": "Enter a scene code from the logs to create a button named 'Music Mode' (in Eve app).",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch', 'outlet'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                }
               }
             },
             "musicModeTwo": {
               "title": "Music Mode 2",
-              "type": "string",
-              "minLength": 40,
-              "description": "Enter a scene code from the logs to create a button named 'Music Mode 2' (in Eve app).",
-              "condition": {
-                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && model.lightDevices[arrayIndices].showAs !== 'switch' && !model.lightDevices[arrayIndices].ignoreDevice);"
+              "type": "object",
+              "properties": {
+                "sceneCode": {
+                  "title": "Scene Code",
+                  "type": "string",
+                  "minLength": 40,
+                  "description": "Enter a scene code from the logs to create a button named 'Music Mode 2' (in Eve app).",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch', 'outlet'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                }
               }
             },
             "videoMode": {
               "title": "Video Mode",
-              "type": "string",
-              "minLength": 40,
-              "description": "Enter a scene code from the logs to create a button named 'Video Mode' (in Eve app).",
-              "condition": {
-                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && model.lightDevices[arrayIndices].showAs !== 'switch' && !model.lightDevices[arrayIndices].ignoreDevice);"
+              "type": "object",
+              "properties": {
+                "sceneCode": {
+                  "title": "Scene Code",
+                  "type": "string",
+                  "minLength": 40,
+                  "description": "Enter a scene code from the logs to create a button named 'Video Mode' (in Eve app).",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch', 'outlet'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                }
               }
             },
             "videoModeTwo": {
               "title": "Video Mode 2",
-              "type": "string",
-              "minLength": 40,
-              "description": "Enter a scene code from the logs to create a button named 'Video Mode 2' (in Eve app).",
-              "condition": {
-                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && model.lightDevices[arrayIndices].showAs !== 'switch' && !model.lightDevices[arrayIndices].ignoreDevice);"
+              "type": "object",
+              "properties": {
+                "sceneCode": {
+                  "title": "Scene Code",
+                  "type": "string",
+                  "minLength": 40,
+                  "description": "Enter a scene code from the logs to create a button named 'Video Mode 2' (in Eve app).",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch', 'outlet'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                }
               }
             },
             "diyMode": {
               "title": "DIY Mode",
-              "type": "string",
-              "minLength": 40,
-              "description": "Enter a scene code from the logs to create a button named 'DIY Mode' (in Eve app).",
-              "condition": {
-                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && model.lightDevices[arrayIndices].showAs !== 'switch' && !model.lightDevices[arrayIndices].ignoreDevice);"
+              "type": "object",
+              "properties": {
+                "sceneCode": {
+                  "title": "Scene Code",
+                  "type": "string",
+                  "minLength": 40,
+                  "description": "Enter a scene code from the logs to create a button named 'DIY Mode' (in Eve app).",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch', 'outlet'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                }
               }
             },
             "diyModeTwo": {
               "title": "DIY Mode 2",
-              "type": "string",
-              "minLength": 40,
-              "description": "Enter a scene code from the logs to create a button named 'DIY Mode 2' (in Eve app).",
-              "condition": {
-                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && model.lightDevices[arrayIndices].showAs !== 'switch' && !model.lightDevices[arrayIndices].ignoreDevice);"
+              "type": "object",
+              "properties": {
+                "sceneCode": {
+                  "title": "Scene Code",
+                  "type": "string",
+                  "minLength": 40,
+                  "description": "Enter a scene code from the logs to create a button named 'DIY Mode 2' (in Eve app).",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch', 'outlet'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                }
               }
             },
             "diyModeThree": {
               "title": "DIY Mode 3",
-              "type": "string",
-              "minLength": 40,
-              "description": "Enter a scene code from the logs to create a button named 'DIY Mode 3' (in Eve app).",
-              "condition": {
-                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && model.lightDevices[arrayIndices].showAs !== 'switch' && !model.lightDevices[arrayIndices].ignoreDevice);"
+              "type": "object",
+              "properties": {
+                "sceneCode": {
+                  "title": "Scene Code",
+                  "type": "string",
+                  "minLength": 40,
+                  "description": "Enter a scene code from the logs to create a button named 'DIY Mode 3' (in Eve app).",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch', 'outlet'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                }
               }
             },
             "diyModeFour": {
               "title": "DIY Mode 4",
-              "type": "string",
-              "minLength": 40,
-              "description": "Enter a scene code from the logs to create a button named 'DIY Mode 4' (in Eve app).",
-              "condition": {
-                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && model.lightDevices[arrayIndices].showAs !== 'switch' && !model.lightDevices[arrayIndices].ignoreDevice);"
+              "type": "object",
+              "properties": {
+                "sceneCode": {
+                  "title": "Scene Code",
+                  "type": "string",
+                  "minLength": 40,
+                  "description": "Enter a scene code from the logs to create a button named 'DIY Mode 4' (in Eve app).",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch', 'outlet'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                }
               }
             },
             "segmented": {
               "title": "Segmented",
-              "type": "string",
-              "minLength": 40,
-              "description": "Enter a scene code from the logs to create a button named 'Segmented' (in Eve app).",
-              "condition": {
-                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && model.lightDevices[arrayIndices].showAs !== 'switch' && !model.lightDevices[arrayIndices].ignoreDevice);"
+              "type": "object",
+              "properties": {
+                "sceneCode": {
+                  "title": "Scene Code",
+                  "type": "string",
+                  "minLength": 40,
+                  "description": "Enter a scene code from the logs to create a button named 'Segmented' (in Eve app).",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch', 'outlet'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                }
               }
             },
             "segmentedTwo": {
               "title": "Segmented 2",
-              "type": "string",
-              "minLength": 40,
-              "description": "Enter a scene code from the logs to create a button named 'Segmented 2' (in Eve app).",
-              "condition": {
-                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && model.lightDevices[arrayIndices].showAs !== 'switch' && !model.lightDevices[arrayIndices].ignoreDevice);"
+              "type": "object",
+              "properties": {
+                "sceneCode": {
+                  "title": "Scene Code",
+                  "type": "string",
+                  "minLength": 40,
+                  "description": "Enter a scene code from the logs to create a button named 'Segmented 2' (in Eve app).",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch', 'outlet'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                }
               }
             },
             "segmentedThree": {
               "title": "Segmented 3",
-              "type": "string",
-              "minLength": 40,
-              "description": "Enter a scene code from the logs to create a button named 'Segmented 3' (in Eve app).",
-              "condition": {
-                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && model.lightDevices[arrayIndices].showAs !== 'switch' && !model.lightDevices[arrayIndices].ignoreDevice);"
+              "type": "object",
+              "properties": {
+                "sceneCode": {
+                  "title": "Scene Code",
+                  "type": "string",
+                  "minLength": 40,
+                  "description": "Enter a scene code from the logs to create a button named 'Segmented 3' (in Eve app).",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch', 'outlet'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                }
               }
             },
             "segmentedFour": {
               "title": "Segmented 4",
-              "type": "string",
-              "minLength": 40,
-              "description": "Enter a scene code from the logs to create a button named 'Segmented 4' (in Eve app).",
-              "condition": {
-                "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && model.lightDevices[arrayIndices].showAs !== 'switch' && !model.lightDevices[arrayIndices].ignoreDevice);"
+              "type": "object",
+              "properties": {
+                "sceneCode": {
+                  "title": "Scene Code",
+                  "type": "string",
+                  "minLength": 40,
+                  "description": "Enter a scene code from the logs to create a button named 'Segmented 4' (in Eve app).",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch', 'outlet'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                }
               }
             }
           }
