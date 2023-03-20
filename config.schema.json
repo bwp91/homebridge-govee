@@ -23,25 +23,6 @@
         "title": "Govee Password",
         "description": "Required for certain light models. <a href=\"https://github.com/bwp91/homebridge-govee/wiki/Supported-Devices\" target=\"_blank\">Read more →</a>"
       },
-      "apiKey": {
-        "type": "string",
-        "title": "Govee API Key",
-        "description": "Required to enable support for API devices. You can obtain your API key using <a href=\"https://github.com/bwp91/homebridge-govee/wiki/Configuration#obtaining-your-api-key\" target=\"_blank\">this guide</a>."
-      },
-      "apiWhitelist": {
-        "type": "boolean",
-        "title": "Govee API Whitelist",
-        "condition": {
-          "functionBody": "return (model.apiKey && model.apiKey.length === 36);"
-        }
-      },
-      "apiRefreshTime": {
-        "title": "API Refresh Interval",
-        "type": "integer",
-        "description": "An interval (in seconds) in which your API devices will refresh with the plugin. Must be 30 or more.",
-        "placeholder": 30,
-        "minimum": 30
-      },
       "httpRefreshTime": {
         "title": "HTTP Refresh Interval",
         "type": "integer",
@@ -94,17 +75,12 @@
           "functionBody": "return (!model.lanDisable);"
         }
       },
-      "apiBleControlInterval": {
-        "title": "API/BLE Control Interval",
+      "bleControlInterval": {
+        "title": "BLE Control Interval",
         "type": "integer",
         "description": "A minimum delay (in seconds) between device updates being sent. Increasing this may help if you find device updates are not working or if you use HomeKit scenes/groupings. Must be 5 or more.",
         "placeholder": 5,
         "minimum": 5
-      },
-      "offlineAsOff": {
-        "type": "boolean",
-        "title": "Offline As Off",
-        "description": "If true then devices that are reported as offline will be shown as off in HomeKit. Can be useful for lights that are powered by a television. This option has no effect for LAN-only devices."
       },
       "colourSafeMode": {
         "type": "boolean",
@@ -943,8 +919,6 @@
       "items": [
         "username",
         "password",
-        "apiKey",
-        "apiWhitelist"
       ]
     },
     {
@@ -954,7 +928,6 @@
       "expandable": true,
       "items": [
         "disableDeviceLogging",
-        "apiRefreshTime",
         "httpRefreshTime",
         "awsDisable",
         "bleDisable",
@@ -962,8 +935,7 @@
         "lanDisable",
         "lanRefreshTime",
         "lanScanInterval",
-        "apiBleControlInterval",
-        "offlineAsOff",
+        "bleControlInterval",
         "colourSafeMode"
       ]
     },

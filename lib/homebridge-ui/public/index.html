@@ -8,13 +8,7 @@
 <div id="pageIntro" class="text-center" style="display: none;">
   <p class="lead">Thank you for installing <strong>homebridge-govee</strong></p>
   <p>
-    You will need your Govee email & password and/or
-    <a
-      href="https://github.com/bwp91/homebridge-govee/wiki/Configuration#obtaining-your-api-key"
-      target="_blank"
-      >Govee API key</a
-    >
-    to continue
+    You will need your Govee email & password to continue - this plugin does not need a Govee API key
   </p>
   <button type="button" class="btn btn-primary" id="introContinue">Continue &rarr;</button>
 </div>
@@ -51,18 +45,6 @@
         <tr>
           <th scope="row">Govee Model</th>
           <td id="model"></td>
-        </tr>
-        <tr id="row_cloud_status" style="display: none;">
-          <th scope="row">Cloud Status</th>
-          <td id="cloud_status"></td>
-        </tr>
-        <tr>
-          <th scope="row">API Supported</th>
-          <td id="api_supported"></td>
-        </tr>
-        <tr id="row_api_enabled" style="display: none;">
-          <th scope="row">API Enabled</th>
-          <td id="api_enabled"></td>
         </tr>
         <tr>
           <th scope="row">AWS Supported</th>
@@ -313,24 +295,6 @@
           document.getElementById('displayName').innerHTML = thisAcc.displayName
           document.getElementById('deviceId').innerHTML = context.gvDeviceId || 'N/A'
           document.getElementById('model').innerHTML = context.gvModel || 'N/A'
-          if (context.isOnline) {
-            // Reports 'yes' or 'no'
-            document.getElementById('cloud_status').innerHTML =
-              context.isOnline === 'yes'
-                ? '<i class="fas fa-circle mr-1 green-text"></i> Online'
-                : '<i class="fas fa-circle mr-1 red-text"></i> Offline'
-            document.getElementById('row_cloud_status').style.display = 'table-row'
-          } else {
-            document.getElementById('row_cloud_status').style.display = 'none'
-          }
-          if (context.hasAPIControl) {
-            document.getElementById('api_supported').innerHTML = 'Yes'
-            document.getElementById('api_enabled').innerHTML = context.useAPIControl ? 'Yes' : 'No'
-            document.getElementById('row_api_enabled').style.display = 'table-row'
-          } else {
-            document.getElementById('api_supported').innerHTML = 'No'
-            document.getElementById('row_api_enabled').style.display = 'none'
-          }
           if (context.hasAWSControl) {
             document.getElementById('aws_supported').innerHTML = 'Yes'
             document.getElementById('aws_enabled').innerHTML = context.useAWSControl ? 'Yes' : 'No'

@@ -6,6 +6,8 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ### Breaking
 
+- Remove API connection method
+  - This also removes the need for the `offlineAsOff` config option
 - Remove official support for Node 14
 - Remove option to disable plugin - this is now available in the Homebridge UI
 - Remove option for debug logging - this will be enabled when using a beta version of the plugin
