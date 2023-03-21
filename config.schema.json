@@ -221,7 +221,7 @@
               "type": "object",
               "properties": {
                 "sceneCode": {
-                  "title": "Scene Code",
+                  "title": "Scene: Scene Code",
                   "type": "string",
                   "minLength": 40,
                   "description": "Enter a scene code from the logs to create a button named 'Scene' (in Eve app).",
@@ -236,7 +236,7 @@
               "type": "object",
               "properties": {
                 "sceneCode": {
-                  "title": "Scene Code",
+                  "title": "Scene 2: Scene Code",
                   "type": "string",
                   "minLength": 40,
                   "description": "Enter a scene code from the logs to create a button named 'Scene 2' (in Eve app).",
@@ -251,7 +251,7 @@
               "type": "object",
               "properties": {
                 "sceneCode": {
-                  "title": "Scene Code",
+                  "title": "Scene 3: Scene Code",
                   "type": "string",
                   "minLength": 40,
                   "description": "Enter a scene code from the logs to create a button named 'Scene 3' (in Eve app).",
@@ -266,7 +266,7 @@
               "type": "object",
               "properties": {
                 "sceneCode": {
-                  "title": "Scene Code",
+                  "title": "Scene 4: Scene Code",
                   "type": "string",
                   "minLength": 40,
                   "description": "Enter a scene code from the logs to create a button named 'Scene 4' (in Eve app).",
@@ -281,7 +281,7 @@
               "type": "object",
               "properties": {
                 "sceneCode": {
-                  "title": "Scene Code",
+                  "title": "Music Mode: Scene Code",
                   "type": "string",
                   "minLength": 40,
                   "description": "Enter a scene code from the logs to create a button named 'Music Mode' (in Eve app).",
@@ -296,7 +296,7 @@
               "type": "object",
               "properties": {
                 "sceneCode": {
-                  "title": "Scene Code",
+                  "title": "Music Mode 2: Scene Code",
                   "type": "string",
                   "minLength": 40,
                   "description": "Enter a scene code from the logs to create a button named 'Music Mode 2' (in Eve app).",
@@ -311,7 +311,7 @@
               "type": "object",
               "properties": {
                 "sceneCode": {
-                  "title": "Scene Code",
+                  "title": "Video Mode: Scene Code",
                   "type": "string",
                   "minLength": 40,
                   "description": "Enter a scene code from the logs to create a button named 'Video Mode' (in Eve app).",
@@ -326,7 +326,7 @@
               "type": "object",
               "properties": {
                 "sceneCode": {
-                  "title": "Scene Code",
+                  "title": "Video Mode 2: Scene Code",
                   "type": "string",
                   "minLength": 40,
                   "description": "Enter a scene code from the logs to create a button named 'Video Mode 2' (in Eve app).",
@@ -341,7 +341,7 @@
               "type": "object",
               "properties": {
                 "sceneCode": {
-                  "title": "Scene Code",
+                  "title": "DIY Mode: Scene Code",
                   "type": "string",
                   "minLength": 40,
                   "description": "Enter a scene code from the logs to create a button named 'DIY Mode' (in Eve app).",
@@ -356,7 +356,7 @@
               "type": "object",
               "properties": {
                 "sceneCode": {
-                  "title": "Scene Code",
+                  "title": "DIY Mode 2: Scene Code",
                   "type": "string",
                   "minLength": 40,
                   "description": "Enter a scene code from the logs to create a button named 'DIY Mode 2' (in Eve app).",
@@ -371,7 +371,7 @@
               "type": "object",
               "properties": {
                 "sceneCode": {
-                  "title": "Scene Code",
+                  "title": "DIY Mode 3: Scene Code",
                   "type": "string",
                   "minLength": 40,
                   "description": "Enter a scene code from the logs to create a button named 'DIY Mode 3' (in Eve app).",
@@ -386,7 +386,7 @@
               "type": "object",
               "properties": {
                 "sceneCode": {
-                  "title": "Scene Code",
+                  "title": "DIY Mode 4: Scene Code",
                   "type": "string",
                   "minLength": 40,
                   "description": "Enter a scene code from the logs to create a button named 'DIY Mode 4' (in Eve app).",
@@ -401,7 +401,7 @@
               "type": "object",
               "properties": {
                 "sceneCode": {
-                  "title": "Scene Code",
+                  "title": "Segmented: Scene Code",
                   "type": "string",
                   "minLength": 40,
                   "description": "Enter a scene code from the logs to create a button named 'Segmented' (in Eve app).",
@@ -416,7 +416,7 @@
               "type": "object",
               "properties": {
                 "sceneCode": {
-                  "title": "Scene Code",
+                  "title": "Segmented 2: Scene Code",
                   "type": "string",
                   "minLength": 40,
                   "description": "Enter a scene code from the logs to create a button named 'Segmented 2' (in Eve app).",
@@ -431,7 +431,7 @@
               "type": "object",
               "properties": {
                 "sceneCode": {
-                  "title": "Scene Code",
+                  "title": "Segmented 3: Scene Code",
                   "type": "string",
                   "minLength": 40,
                   "description": "Enter a scene code from the logs to create a button named 'Segmented 3' (in Eve app).",
@@ -446,7 +446,7 @@
               "type": "object",
               "properties": {
                 "sceneCode": {
-                  "title": "Scene Code",
+                  "title": "Segmented 4: Scene Code",
                   "type": "string",
                   "minLength": 40,
                   "description": "Enter a scene code from the logs to create a button named 'Segmented 4' (in Eve app).",
