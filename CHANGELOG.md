@@ -2,6 +2,12 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## 8.0.2 (2023-03-21)
+
+### Fixed
+
+- Plugin config screen fix for scene codes
+
 ## 8.0.1 (2023-03-21)
 
 ### Fixed
