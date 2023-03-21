@@ -2,12 +2,15 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
-## BETA
+## 8.0.0 (2023-03-21)
 
 ### Breaking
 
-- Remove API connection method
+- ⚠️ Remove API connection method
   - This also removes the need for the `offlineAsOff` config option
+- ⚠️ Lists of different AWS command types and brightness scales have been removed and replaces with a user configuration
+- ⚠️ Scenes have also changed - please use the Homebridge UI to configure scenes again
+  - This change is to (in the future) allow for more customisation of scenes, for example to expose as a switch to allow in Home Assistant
 - Remove official support for Node 14
 - Remove option to disable plugin - this is now available in the Homebridge UI
 - Remove option for debug logging - this will be enabled when using a beta version of the plugin
