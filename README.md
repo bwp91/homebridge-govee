@@ -23,6 +23,7 @@ Homebridge plugin to integrate Govee devices into HomeKit
 - This plugin allows you to view and control your Govee devices within HomeKit. The plugin:
   - requires your Govee credentials for most device models and Cloud/BLE connections
   - can control certain models locally via LAN control without any Govee credentials
+  - does **not** make use of the Govee API key
 
 ### Prerequisites
 
