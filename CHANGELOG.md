@@ -2,11 +2,15 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
-## BETA
+## 8.1.0 (2023-03-24)
 
 ### Added
 
 - Support for fan H7100
+
+### Changed
+
+- Plugin initialisation logging
 
 ## 8.0.2 (2023-03-21)
 
