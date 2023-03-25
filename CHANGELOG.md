@@ -2,6 +2,12 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## BETA
+
+### Fixed
+
+- Better logging info about OpenSSL
+
 ## 8.1.0 (2023-03-24)
 
 ### Added
