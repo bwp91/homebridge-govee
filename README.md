@@ -7,11 +7,10 @@
 
 Homebridge plugin to integrate Govee devices into HomeKit
 
+[![npm](https://img.shields.io/npm/v/homebridge-govee/latest?label=latest)](https://www.npmjs.com/package/homebridge-govee)
+[![npm](https://img.shields.io/npm/v/homebridge-govee/beta?label=beta)](https://github.com/bwp91/homebridge-govee/wiki/Beta-Version)   
 [![verified-by-homebridge](https://badgen.net/badge/homebridge/verified/purple)](https://github.com/homebridge/homebridge/wiki/Verified-Plugins)
 [![npm](https://img.shields.io/npm/dt/homebridge-govee)](https://www.npmjs.com/package/homebridge-govee)  
- [![npm](https://img.shields.io/npm/v/homebridge-govee/latest?label=latest)](https://www.npmjs.com/package/homebridge-govee)
-[![npm](https://img.shields.io/npm/v/homebridge-govee/beta?label=beta)](https://github.com/bwp91/homebridge-govee/wiki/Beta-Version)   
- [![Discord](https://img.shields.io/discord/784827113378676736?color=728ED5&logo=discord&label=bwp91-discord)](https://discord.com/channels/784827113378676736/784827113378676739)
 [![Discord](https://img.shields.io/discord/432663330281226270?color=728ED5&logo=discord&label=hb-discord)](https://discord.com/channels/432663330281226270/742733745743855627)
 
 </span>
@@ -25,9 +24,10 @@ Homebridge plugin to integrate Govee devices into HomeKit
 
 ### Prerequisites
 
-- [Homebridge](https://homebridge.io): v1.6 - refer to link for more information and installation instructions.
-- Node: latest version of v16 or v18 - any other major version is not supported.
-- For bluetooth connectivity, it may be necessary to install extra packages on your system, see [Bluetooth Control](https://github.com/bwp91/homebridge-govee/wiki/Bluetooth-Control). Bluetooth works best when using a Raspberry Pi, not been tested on Windows, and Mac devices are unsupported.
+- To use this plugin, you will need to already have:
+  - [Node](https://nodejs.org): latest version of v16 or v18 - any other major version is not supported.
+  - [Homebridge](https://homebridge.io): v1.6 - refer to link for more information and installation instructions.
+  - For bluetooth connectivity, it may be necessary to install extra packages on your system, see [Bluetooth Control](https://github.com/bwp91/homebridge-govee/wiki/Bluetooth-Control). Bluetooth works best when using a Raspberry Pi, not been tested on Windows, and Mac devices are unsupported.
 
 ### Setup
 
