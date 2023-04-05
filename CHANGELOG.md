@@ -2,7 +2,11 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
-## BETA
+## 8.1.1 (2023-04-05)
+
+### Changed
+
+- Bump `node` recommended versions to v16.20.0 or v18.15.0
 
 ### Fixed
 
