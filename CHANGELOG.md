@@ -2,6 +2,13 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## BETA
+
+### Changed
+
+- Remove 'H6052', 'H6110', 'H6141', 'H6143', 'H6144', 'H615A', 'H615B' and 'H615C' from LAN supported
+  - These models seem to have been removed from the Govee LAN API supported list
+
 ## 8.1.1 (2023-04-05)
 
 ### Changed
