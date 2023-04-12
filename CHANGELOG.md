@@ -2,6 +2,12 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## BETA
+
+### Added
+
+- Support for `H61C3` lights
+
 ## 8.1.2 (2023-04-10)
 
 ### Changed
