@@ -8,6 +8,10 @@ All notable changes to homebridge-govee will be documented in this file.
 
 - Support for `H61C3` lights
 
+### Changed
+
+- Bump `node` supported versions to v16.20.0 or v18.16.0 or v20.0.0
+
 ## 8.1.2 (2023-04-10)
 
 ### Changed
