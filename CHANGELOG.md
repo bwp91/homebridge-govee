@@ -4,13 +4,13 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ## BETA
 
-Note this release makes breaking changes to scene codes and will require re-configuring. Apologies for changing this again.
+Note this release makes breaking changes to scene codes and will require reconfiguring. Apologies for changing this again.
 This is to:
 
 - make finding scene codes straightforward and reliable
 - allow scene codes to be sent via LAN mode
+- allow scene codes to be sent via BLE mode (separate scene code required - see docs)
 - bring some consistency to how the plugin handles scenes
-- the method allows for finding bluetooth codes too which could eventually be implemented into the plugin
 
 See the first section of the updated wiki document for instructions:
   - https://github.com/bwp91/homebridge-govee/wiki/Scene,-Music,-DIY-Modes
@@ -22,9 +22,10 @@ See the first section of the updated wiki document for instructions:
 - LAN mode support for the following devices:
   - `H6078`, `H6168`, `H61A8`, `H61C3`, `H7055`, `H705A`, `H705B`
 - Log added scene codes on plugin startup
-- Scene codes via LAN mode 😁
+- Scene codes via LAN mode
+- Scene codes via BLE mode
 - Option to show a scene code as an extra Home App switch instead of an Eve button
-  - This could be useful for Home Assistant users who wish to integrate scenes
+  - This could be useful for Home Assistant or ioBroker users who wish to integrate scenes
 
 ### Changed
 

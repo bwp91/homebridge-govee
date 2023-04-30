@@ -221,10 +221,17 @@
               "type": "object",
               "properties": {
                 "sceneCode": {
-                  "title": "Scene: Scene Code",
+                  "title": "Scene (AWS): Scene Code",
                   "type": "string",
-                  "minLength": 40,
                   "description": "Enter a scene code from the logs to create a button named 'Scene' (in Eve app).",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "bleCode": {
+                  "title": "Scene (BLE): Scene Code",
+                  "type": "string",
+                  "description": "Can be (1) left blank, (2) used instead of, or (3) used along with the above AWS code. In the case of (3) please make sure both codes correspond to the same Govee mode.",
                   "condition": {
                     "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
                   }
@@ -248,7 +255,7 @@
                     }
                   ],
                   "condition": {
-                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].scene && model.lightDevices[arrayIndices].scene.sceneCode);"
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].scene && (model.lightDevices[arrayIndices].scene.sceneCode || model.lightDevices[arrayIndices].scene.bleCode));"
                   }
                 }
               }
@@ -258,10 +265,17 @@
               "type": "object",
               "properties": {
                 "sceneCode": {
-                  "title": "Scene 2: Scene Code",
+                  "title": "Scene 2 (AWS): Scene Code",
                   "type": "string",
-                  "minLength": 40,
                   "description": "Enter a scene code from the logs to create a button named 'Scene 2' (in Eve app).",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "bleCode": {
+                  "title": "Scene 2 (BLE): Scene Code",
+                  "type": "string",
+                  "description": "Can be (1) left blank, (2) used instead of, or (3) used along with the above AWS code. In the case of (3) please make sure both codes correspond to the same Govee mode.",
                   "condition": {
                     "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
                   }
@@ -285,7 +299,7 @@
                     }
                   ],
                   "condition": {
-                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].sceneTwo && model.lightDevices[arrayIndices].sceneTwo.sceneCode);"
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].sceneTwo && (model.lightDevices[arrayIndices].sceneTwo.sceneCode || model.lightDevices[arrayIndices].sceneTwo.bleCode));"
                   }
                 }
               }
@@ -295,10 +309,17 @@
               "type": "object",
               "properties": {
                 "sceneCode": {
-                  "title": "Scene 3: Scene Code",
+                  "title": "Scene 3 (AWS): Scene Code",
                   "type": "string",
-                  "minLength": 40,
                   "description": "Enter a scene code from the logs to create a button named 'Scene 3' (in Eve app).",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "bleCode": {
+                  "title": "Scene 3 (BLE): Scene Code",
+                  "type": "string",
+                  "description": "Can be (1) left blank, (2) used instead of, or (3) used along with the above AWS code. In the case of (3) please make sure both codes correspond to the same Govee mode.",
                   "condition": {
                     "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
                   }
@@ -322,7 +343,7 @@
                     }
                   ],
                   "condition": {
-                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].sceneThree && model.lightDevices[arrayIndices].sceneThree.sceneCode);"
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].sceneThree && (model.lightDevices[arrayIndices].sceneThree.sceneCode || model.lightDevices[arrayIndices].sceneThree.bleCode));"
                   }
                 }
               }
@@ -332,10 +353,17 @@
               "type": "object",
               "properties": {
                 "sceneCode": {
-                  "title": "Scene 4: Scene Code",
+                  "title": "Scene 4 (AWS): Scene Code",
                   "type": "string",
-                  "minLength": 40,
                   "description": "Enter a scene code from the logs to create a button named 'Scene 4' (in Eve app).",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "bleCode": {
+                  "title": "Scene 4 (BLE): Scene Code",
+                  "type": "string",
+                  "description": "Can be (1) left blank, (2) used instead of, or (3) used along with the above AWS code. In the case of (3) please make sure both codes correspond to the same Govee mode.",
                   "condition": {
                     "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
                   }
@@ -359,7 +387,7 @@
                     }
                   ],
                   "condition": {
-                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].sceneFour && model.lightDevices[arrayIndices].sceneFour.sceneCode);"
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].sceneFour && (model.lightDevices[arrayIndices].sceneFour.sceneCode || model.lightDevices[arrayIndices].sceneFour.bleCode));"
                   }
                 }
               }
@@ -369,10 +397,17 @@
               "type": "object",
               "properties": {
                 "sceneCode": {
-                  "title": "Music Mode: Scene Code",
+                  "title": "Music Mode (AWS): Scene Code",
                   "type": "string",
-                  "minLength": 40,
                   "description": "Enter a scene code from the logs to create a button named 'Music Mode' (in Eve app).",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "bleCode": {
+                  "title": "Music Mode (BLE): Scene Code",
+                  "type": "string",
+                  "description": "Can be (1) left blank, (2) used instead of, or (3) used along with the above AWS code. In the case of (3) please make sure both codes correspond to the same Govee mode.",
                   "condition": {
                     "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
                   }
@@ -396,7 +431,7 @@
                     }
                   ],
                   "condition": {
-                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].musicMode && model.lightDevices[arrayIndices].musicMode.sceneCode);"
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].musicMode && (model.lightDevices[arrayIndices].musicMode.sceneCode || model.lightDevices[arrayIndices].musicMode.bleCode));"
                   }
                 }
               }
@@ -406,10 +441,17 @@
               "type": "object",
               "properties": {
                 "sceneCode": {
-                  "title": "Music Mode 2: Scene Code",
+                  "title": "Music Mode 2 (AWS): Scene Code",
                   "type": "string",
-                  "minLength": 40,
                   "description": "Enter a scene code from the logs to create a button named 'Music Mode 2' (in Eve app).",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "bleCode": {
+                  "title": "Music Mode 2 (BLE): Scene Code",
+                  "type": "string",
+                  "description": "Can be (1) left blank, (2) used instead of, or (3) used along with the above AWS code. In the case of (3) please make sure both codes correspond to the same Govee mode.",
                   "condition": {
                     "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
                   }
@@ -433,7 +475,7 @@
                     }
                   ],
                   "condition": {
-                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].musicModeTwo && model.lightDevices[arrayIndices].musicModeTwo.sceneCode);"
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].musicModeTwo && (model.lightDevices[arrayIndices].musicModeTwo.sceneCode || model.lightDevices[arrayIndices].musicModeTwo.bleCode));"
                   }
                 }
               }
@@ -443,10 +485,17 @@
               "type": "object",
               "properties": {
                 "sceneCode": {
-                  "title": "Video Mode: Scene Code",
+                  "title": "Video Mode (AWS): Scene Code",
                   "type": "string",
-                  "minLength": 40,
                   "description": "Enter a scene code from the logs to create a button named 'Video Mode' (in Eve app).",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "bleCode": {
+                  "title": "Video Mode (BLE): Scene Code",
+                  "type": "string",
+                  "description": "Can be (1) left blank, (2) used instead of, or (3) used along with the above AWS code. In the case of (3) please make sure both codes correspond to the same Govee mode.",
                   "condition": {
                     "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
                   }
@@ -470,7 +519,7 @@
                     }
                   ],
                   "condition": {
-                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].videoMode && model.lightDevices[arrayIndices].videoMode.sceneCode);"
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].videoMode && (model.lightDevices[arrayIndices].videoMode.sceneCode || model.lightDevices[arrayIndices].videoMode.bleCode));"
                   }
                 }
               }
@@ -480,10 +529,17 @@
               "type": "object",
               "properties": {
                 "sceneCode": {
-                  "title": "Video Mode 2: Scene Code",
+                  "title": "Video Mode 2 (AWS): Scene Code",
                   "type": "string",
-                  "minLength": 40,
                   "description": "Enter a scene code from the logs to create a button named 'Video Mode 2' (in Eve app).",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "bleCode": {
+                  "title": "Video Mode 2 (BLE): Scene Code",
+                  "type": "string",
+                  "description": "Can be (1) left blank, (2) used instead of, or (3) used along with the above AWS code. In the case of (3) please make sure both codes correspond to the same Govee mode.",
                   "condition": {
                     "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
                   }
@@ -507,7 +563,7 @@
                     }
                   ],
                   "condition": {
-                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].videoModeTwo && model.lightDevices[arrayIndices].videoModeTwo.sceneCode);"
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].videoModeTwo && (model.lightDevices[arrayIndices].videoModeTwo.sceneCode || model.lightDevices[arrayIndices].videoModeTwo.bleCode));"
                   }
                 }
               }
@@ -517,10 +573,17 @@
               "type": "object",
               "properties": {
                 "sceneCode": {
-                  "title": "DIY Mode: Scene Code",
+                  "title": "DIY Mode (AWS): Scene Code",
                   "type": "string",
-                  "minLength": 40,
                   "description": "Enter a scene code from the logs to create a button named 'DIY Mode' (in Eve app).",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "bleCode": {
+                  "title": "DIY Mode (BLE): Scene Code",
+                  "type": "string",
+                  "description": "Can be (1) left blank, (2) used instead of, or (3) used along with the above AWS code. In the case of (3) please make sure both codes correspond to the same Govee mode.",
                   "condition": {
                     "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
                   }
@@ -544,7 +607,7 @@
                     }
                   ],
                   "condition": {
-                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].diyMode && model.lightDevices[arrayIndices].diyMode.sceneCode);"
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].diyMode && (model.lightDevices[arrayIndices].diyMode.sceneCode || model.lightDevices[arrayIndices].diyMode.bleCode));"
                   }
                 }
               }
@@ -554,10 +617,17 @@
               "type": "object",
               "properties": {
                 "sceneCode": {
-                  "title": "DIY Mode 2: Scene Code",
+                  "title": "DIY Mode 2 (AWS): Scene Code",
                   "type": "string",
-                  "minLength": 40,
                   "description": "Enter a scene code from the logs to create a button named 'DIY Mode 2' (in Eve app).",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "bleCode": {
+                  "title": "DIY Mode 2 (BLE): Scene Code",
+                  "type": "string",
+                  "description": "Can be (1) left blank, (2) used instead of, or (3) used along with the above AWS code. In the case of (3) please make sure both codes correspond to the same Govee mode.",
                   "condition": {
                     "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
                   }
@@ -581,7 +651,7 @@
                     }
                   ],
                   "condition": {
-                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].diyModeTwo && model.lightDevices[arrayIndices].diyModeTwo.sceneCode);"
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].diyModeTwo && (model.lightDevices[arrayIndices].diyModeTwo.sceneCode || model.lightDevices[arrayIndices].diyModeTwo.bleCode));"
                   }
                 }
               }
@@ -591,10 +661,17 @@
               "type": "object",
               "properties": {
                 "sceneCode": {
-                  "title": "DIY Mode 3: Scene Code",
+                  "title": "DIY Mode 3 (AWS): Scene Code",
                   "type": "string",
-                  "minLength": 40,
                   "description": "Enter a scene code from the logs to create a button named 'DIY Mode 3' (in Eve app).",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "bleCode": {
+                  "title": "DIY Mode 3 (BLE): Scene Code",
+                  "type": "string",
+                  "description": "Can be (1) left blank, (2) used instead of, or (3) used along with the above AWS code. In the case of (3) please make sure both codes correspond to the same Govee mode.",
                   "condition": {
                     "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
                   }
@@ -618,7 +695,7 @@
                     }
                   ],
                   "condition": {
-                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].diyModeThree && model.lightDevices[arrayIndices].diyModeThree.sceneCode);"
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].diyModeThree && (model.lightDevices[arrayIndices].diyModeThree.sceneCode || model.lightDevices[arrayIndices].diyModeThree.bleCode));"
                   }
                 }
               }
@@ -628,10 +705,17 @@
               "type": "object",
               "properties": {
                 "sceneCode": {
-                  "title": "DIY Mode 4: Scene Code",
+                  "title": "DIY Mode 4 (AWS): Scene Code",
                   "type": "string",
-                  "minLength": 40,
                   "description": "Enter a scene code from the logs to create a button named 'DIY Mode 4' (in Eve app).",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "bleCode": {
+                  "title": "DIY Mode 4 (BLE): Scene Code",
+                  "type": "string",
+                  "description": "Can be (1) left blank, (2) used instead of, or (3) used along with the above AWS code. In the case of (3) please make sure both codes correspond to the same Govee mode.",
                   "condition": {
                     "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
                   }
@@ -655,7 +739,7 @@
                     }
                   ],
                   "condition": {
-                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].diyModeFour && model.lightDevices[arrayIndices].diyModeFour.sceneCode);"
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].diyModeFour && (model.lightDevices[arrayIndices].diyModeFour.sceneCode || model.lightDevices[arrayIndices].diyModeFour.bleCode));"
                   }
                 }
               }
@@ -665,10 +749,17 @@
               "type": "object",
               "properties": {
                 "sceneCode": {
-                  "title": "Segmented: Scene Code",
+                  "title": "Segmented (AWS): Scene Code",
                   "type": "string",
-                  "minLength": 40,
                   "description": "Enter a scene code from the logs to create a button named 'Segmented' (in Eve app).",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "bleCode": {
+                  "title": "Segmented (BLE): Scene Code",
+                  "type": "string",
+                  "description": "Can be (1) left blank, (2) used instead of, or (3) used along with the above AWS code. In the case of (3) please make sure both codes correspond to the same Govee mode.",
                   "condition": {
                     "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
                   }
@@ -692,7 +783,7 @@
                     }
                   ],
                   "condition": {
-                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].segmented && model.lightDevices[arrayIndices].segmented.sceneCode);"
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].segmented && (model.lightDevices[arrayIndices].segmented.sceneCode || model.lightDevices[arrayIndices].segmented.bleCode));"
                   }
                 }
               }
@@ -702,10 +793,17 @@
               "type": "object",
               "properties": {
                 "sceneCode": {
-                  "title": "Segmented 2: Scene Code",
+                  "title": "Segmented 2 (AWS): Scene Code",
                   "type": "string",
-                  "minLength": 40,
                   "description": "Enter a scene code from the logs to create a button named 'Segmented 2' (in Eve app).",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "bleCode": {
+                  "title": "Segmented 2 (BLE): Scene Code",
+                  "type": "string",
+                  "description": "Can be (1) left blank, (2) used instead of, or (3) used along with the above AWS code. In the case of (3) please make sure both codes correspond to the same Govee mode.",
                   "condition": {
                     "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
                   }
@@ -729,7 +827,7 @@
                     }
                   ],
                   "condition": {
-                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].segmentedTwo && model.lightDevices[arrayIndices].segmentedTwo.sceneCode);"
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].segmentedTwo && (model.lightDevices[arrayIndices].segmentedTwo.sceneCode || model.lightDevices[arrayIndices].segmentedTwo.bleCode));"
                   }
                 }
               }
@@ -739,10 +837,17 @@
               "type": "object",
               "properties": {
                 "sceneCode": {
-                  "title": "Segmented 3: Scene Code",
+                  "title": "Segmented 3 (AWS): Scene Code",
                   "type": "string",
-                  "minLength": 40,
                   "description": "Enter a scene code from the logs to create a button named 'Segmented 3' (in Eve app).",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "bleCode": {
+                  "title": "Segmented 3 (BLE): Scene Code",
+                  "type": "string",
+                  "description": "Can be (1) left blank, (2) used instead of, or (3) used along with the above AWS code. In the case of (3) please make sure both codes correspond to the same Govee mode.",
                   "condition": {
                     "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
                   }
@@ -766,7 +871,7 @@
                     }
                   ],
                   "condition": {
-                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].segmentedThree && model.lightDevices[arrayIndices].segmentedThree.sceneCode);"
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].segmentedThree && (model.lightDevices[arrayIndices].segmentedThree.sceneCode || model.lightDevices[arrayIndices].segmentedThree.bleCode));"
                   }
                 }
               }
@@ -776,10 +881,17 @@
               "type": "object",
               "properties": {
                 "sceneCode": {
-                  "title": "Segmented 4: Scene Code",
+                  "title": "Segmented 4 (AWS): Scene Code",
                   "type": "string",
-                  "minLength": 40,
                   "description": "Enter a scene code from the logs to create a button named 'Segmented 4' (in Eve app).",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "bleCode": {
+                  "title": "Segmented 4 (BLE): Scene Code",
+                  "type": "string",
+                  "description": "Can be (1) left blank, (2) used instead of, or (3) used along with the above AWS code. In the case of (3) please make sure both codes correspond to the same Govee mode.",
                   "condition": {
                     "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
                   }
@@ -803,7 +915,7 @@
                     }
                   ],
                   "condition": {
-                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].segmentedFour && model.lightDevices[arrayIndices].segmentedFour.sceneCode);"
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].segmentedFour && (model.lightDevices[arrayIndices].segmentedFour.sceneCode || model.lightDevices[arrayIndices].segmentedFour.bleCode));"
                   }
                 }
               }
@@ -1319,36 +1431,52 @@
               "description": "Use these settings to start creating HomeKit scenes with your Govee scenes, music mode and DIY modes. <a href=\"https://github.com/bwp91/homebridge-govee/wiki/Scene%2C-Music%2C-DIY-Modes\" target=\"_blank\">Read more →</a>",
               "items": [
                 "lightDevices[].scene.sceneCode",
+                "lightDevices[].scene.bleCode",
                 "lightDevices[].scene.showAs",
                 "lightDevices[].sceneTwo.sceneCode",
+                "lightDevices[].sceneTwo.bleCode",
                 "lightDevices[].sceneTwo.showAs",
                 "lightDevices[].sceneThree.sceneCode",
+                "lightDevices[].sceneThree.bleCode",
                 "lightDevices[].sceneThree.showAs",
                 "lightDevices[].sceneFour.sceneCode",
+                "lightDevices[].sceneFour.bleCode",
                 "lightDevices[].sceneFour.showAs",
                 "lightDevices[].musicMode.sceneCode",
+                "lightDevices[].musicMode.bleCode",
                 "lightDevices[].musicMode.showAs",
                 "lightDevices[].musicModeTwo.sceneCode",
+                "lightDevices[].musicModeTwo.bleCode",
                 "lightDevices[].musicModeTwo.showAs",
                 "lightDevices[].videoMode.sceneCode",
+                "lightDevices[].videoMode.bleCode",
                 "lightDevices[].videoMode.showAs",
                 "lightDevices[].videoModeTwo.sceneCode",
+                "lightDevices[].videoModeTwo.bleCode",
                 "lightDevices[].videoModeTwo.showAs",
                 "lightDevices[].diyMode.sceneCode",
+                "lightDevices[].diyMode.bleCode",
                 "lightDevices[].diyMode.showAs",
                 "lightDevices[].diyModeTwo.sceneCode",
+                "lightDevices[].diyModeTwo.bleCode",
                 "lightDevices[].diyModeTwo.showAs",
                 "lightDevices[].diyModeThree.sceneCode",
+                "lightDevices[].diyModeThree.bleCode",
                 "lightDevices[].diyModeThree.showAs",
                 "lightDevices[].diyModeFour.sceneCode",
+                "lightDevices[].diyModeFour.bleCode",
                 "lightDevices[].diyModeFour.showAs",
                 "lightDevices[].segmented.sceneCode",
+                "lightDevices[].segmented.bleCode",
                 "lightDevices[].segmented.showAs",
                 "lightDevices[].segmentedTwo.sceneCode",
+                "lightDevices[].segmentedTwo.bleCode",
                 "lightDevices[].segmentedTwo.showAs",
                 "lightDevices[].segmentedThree.sceneCode",
+                "lightDevices[].segmentedThree.bleCode",
                 "lightDevices[].segmentedThree.showAs",
                 "lightDevices[].segmentedFour.sceneCode",
+                "lightDevices[].segmentedFour.bleCode",
                 "lightDevices[].segmentedFour.showAs"
               ]
             }
