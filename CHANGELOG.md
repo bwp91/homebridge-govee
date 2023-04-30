@@ -4,13 +4,20 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ## BETA
 
+Note this release makes breaking changes to scene codes and will require re-configuring (sorry!)
+
 ### Added
 
 - Support for `H61C3` lights
 - Support for `H7102` fan
+- LAN mode support for the following devices:
+  - `H6078`, `H6168`, `H61A8`, `H61C3`, `H7055`, `H705A`, `H705B`
+- Log added scene codes on plugin startup
+- Scene codes via LAN mode 😁
 
 ### Changed
 
+- ⚠️ Scene codes reverted back to old raw `base64` format
 - Bump `node` supported versions to v16.20.0 or v18.16.0 or v20.0.0
 - Updated dependencies
 
