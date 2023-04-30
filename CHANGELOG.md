@@ -4,7 +4,16 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ## BETA
 
-Note this release makes breaking changes to scene codes and will require re-configuring (sorry!)
+Note this release makes breaking changes to scene codes and will require re-configuring. Apologies for changing this again.
+This is to:
+
+- make finding scene codes straightforward and reliable
+- allow scene codes to be sent via LAN mode
+- bring some consistency to how the plugin handles scenes
+- the method allows for finding bluetooth codes too which could eventually be implemented into the plugin
+
+See the first section of the updated wiki document for instructions:
+  - https://github.com/bwp91/homebridge-govee/wiki/Scene,-Music,-DIY-Modes
 
 ### Added
 
