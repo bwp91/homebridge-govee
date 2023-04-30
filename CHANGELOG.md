@@ -23,6 +23,8 @@ See the first section of the updated wiki document for instructions:
   - `H6078`, `H6168`, `H61A8`, `H61C3`, `H7055`, `H705A`, `H705B`
 - Log added scene codes on plugin startup
 - Scene codes via LAN mode 😁
+- Option to show a scene code as an extra Home App switch instead of an Eve button
+  - This could be useful for Home Assistant users who wish to integrate scenes
 
 ### Changed
 

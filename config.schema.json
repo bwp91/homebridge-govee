@@ -228,6 +228,28 @@
                   "condition": {
                     "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
                   }
+                },
+                "showAs": {
+                  "type": "string",
+                  "title": "Scene: Show As",
+                  "description": "Change this setting to Accessory Switch to show this as an extra switch in the Home app.",
+                  "oneOf": [
+                    {
+                      "title": "Eve Switch (Default)",
+                      "enum": [
+                        "default"
+                      ]
+                    },
+                    {
+                      "title": "Accessory Switch",
+                      "enum": [
+                        "switch"
+                      ]
+                    }
+                  ],
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].scene && model.lightDevices[arrayIndices].scene.sceneCode);"
+                  }
                 }
               }
             },
@@ -242,6 +264,28 @@
                   "description": "Enter a scene code from the logs to create a button named 'Scene 2' (in Eve app).",
                   "condition": {
                     "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "showAs": {
+                  "type": "string",
+                  "title": "Scene 2: Show As",
+                  "description": "Change this setting to Accessory Switch to show this as an extra switch in the Home app.",
+                  "oneOf": [
+                    {
+                      "title": "Eve Switch (Default)",
+                      "enum": [
+                        "default"
+                      ]
+                    },
+                    {
+                      "title": "Accessory Switch",
+                      "enum": [
+                        "switch"
+                      ]
+                    }
+                  ],
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].sceneTwo && model.lightDevices[arrayIndices].sceneTwo.sceneCode);"
                   }
                 }
               }
@@ -258,6 +302,28 @@
                   "condition": {
                     "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
                   }
+                },
+                "showAs": {
+                  "type": "string",
+                  "title": "Scene 3: Show As",
+                  "description": "Change this setting to Accessory Switch to show this as an extra switch in the Home app.",
+                  "oneOf": [
+                    {
+                      "title": "Eve Switch (Default)",
+                      "enum": [
+                        "default"
+                      ]
+                    },
+                    {
+                      "title": "Accessory Switch",
+                      "enum": [
+                        "switch"
+                      ]
+                    }
+                  ],
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].sceneThree && model.lightDevices[arrayIndices].sceneThree.sceneCode);"
+                  }
                 }
               }
             },
@@ -272,6 +338,28 @@
                   "description": "Enter a scene code from the logs to create a button named 'Scene 4' (in Eve app).",
                   "condition": {
                     "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "showAs": {
+                  "type": "string",
+                  "title": "Scene 4: Show As",
+                  "description": "Change this setting to Accessory Switch to show this as an extra switch in the Home app.",
+                  "oneOf": [
+                    {
+                      "title": "Eve Switch (Default)",
+                      "enum": [
+                        "default"
+                      ]
+                    },
+                    {
+                      "title": "Accessory Switch",
+                      "enum": [
+                        "switch"
+                      ]
+                    }
+                  ],
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].sceneFour && model.lightDevices[arrayIndices].sceneFour.sceneCode);"
                   }
                 }
               }
@@ -288,6 +376,28 @@
                   "condition": {
                     "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
                   }
+                },
+                "showAs": {
+                  "type": "string",
+                  "title": "Music Mode: Show As",
+                  "description": "Change this setting to Accessory Switch to show this as an extra switch in the Home app.",
+                  "oneOf": [
+                    {
+                      "title": "Eve Switch (Default)",
+                      "enum": [
+                        "default"
+                      ]
+                    },
+                    {
+                      "title": "Accessory Switch",
+                      "enum": [
+                        "switch"
+                      ]
+                    }
+                  ],
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].musicMode && model.lightDevices[arrayIndices].musicMode.sceneCode);"
+                  }
                 }
               }
             },
@@ -302,6 +412,28 @@
                   "description": "Enter a scene code from the logs to create a button named 'Music Mode 2' (in Eve app).",
                   "condition": {
                     "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "showAs": {
+                  "type": "string",
+                  "title": "Music Mode 2: Show As",
+                  "description": "Change this setting to Accessory Switch to show this as an extra switch in the Home app.",
+                  "oneOf": [
+                    {
+                      "title": "Eve Switch (Default)",
+                      "enum": [
+                        "default"
+                      ]
+                    },
+                    {
+                      "title": "Accessory Switch",
+                      "enum": [
+                        "switch"
+                      ]
+                    }
+                  ],
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].musicModeTwo && model.lightDevices[arrayIndices].musicModeTwo.sceneCode);"
                   }
                 }
               }
@@ -318,6 +450,28 @@
                   "condition": {
                     "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
                   }
+                },
+                "showAs": {
+                  "type": "string",
+                  "title": "Video Mode: Show As",
+                  "description": "Change this setting to Accessory Switch to show this as an extra switch in the Home app.",
+                  "oneOf": [
+                    {
+                      "title": "Eve Switch (Default)",
+                      "enum": [
+                        "default"
+                      ]
+                    },
+                    {
+                      "title": "Accessory Switch",
+                      "enum": [
+                        "switch"
+                      ]
+                    }
+                  ],
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].videoMode && model.lightDevices[arrayIndices].videoMode.sceneCode);"
+                  }
                 }
               }
             },
@@ -332,6 +486,28 @@
                   "description": "Enter a scene code from the logs to create a button named 'Video Mode 2' (in Eve app).",
                   "condition": {
                     "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "showAs": {
+                  "type": "string",
+                  "title": "Video Mode 2: Show As",
+                  "description": "Change this setting to Accessory Switch to show this as an extra switch in the Home app.",
+                  "oneOf": [
+                    {
+                      "title": "Eve Switch (Default)",
+                      "enum": [
+                        "default"
+                      ]
+                    },
+                    {
+                      "title": "Accessory Switch",
+                      "enum": [
+                        "switch"
+                      ]
+                    }
+                  ],
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].videoModeTwo && model.lightDevices[arrayIndices].videoModeTwo.sceneCode);"
                   }
                 }
               }
@@ -348,6 +524,28 @@
                   "condition": {
                     "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
                   }
+                },
+                "showAs": {
+                  "type": "string",
+                  "title": "DIY Mode: Show As",
+                  "description": "Change this setting to Accessory Switch to show this as an extra switch in the Home app.",
+                  "oneOf": [
+                    {
+                      "title": "Eve Switch (Default)",
+                      "enum": [
+                        "default"
+                      ]
+                    },
+                    {
+                      "title": "Accessory Switch",
+                      "enum": [
+                        "switch"
+                      ]
+                    }
+                  ],
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].diyMode && model.lightDevices[arrayIndices].diyMode.sceneCode);"
+                  }
                 }
               }
             },
@@ -362,6 +560,28 @@
                   "description": "Enter a scene code from the logs to create a button named 'DIY Mode 2' (in Eve app).",
                   "condition": {
                     "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "showAs": {
+                  "type": "string",
+                  "title": "DIY Mode 2: Show As",
+                  "description": "Change this setting to Accessory Switch to show this as an extra switch in the Home app.",
+                  "oneOf": [
+                    {
+                      "title": "Eve Switch (Default)",
+                      "enum": [
+                        "default"
+                      ]
+                    },
+                    {
+                      "title": "Accessory Switch",
+                      "enum": [
+                        "switch"
+                      ]
+                    }
+                  ],
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].diyModeTwo && model.lightDevices[arrayIndices].diyModeTwo.sceneCode);"
                   }
                 }
               }
@@ -378,6 +598,28 @@
                   "condition": {
                     "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
                   }
+                },
+                "showAs": {
+                  "type": "string",
+                  "title": "DIY Mode 3: Show As",
+                  "description": "Change this setting to Accessory Switch to show this as an extra switch in the Home app.",
+                  "oneOf": [
+                    {
+                      "title": "Eve Switch (Default)",
+                      "enum": [
+                        "default"
+                      ]
+                    },
+                    {
+                      "title": "Accessory Switch",
+                      "enum": [
+                        "switch"
+                      ]
+                    }
+                  ],
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].diyModeThree && model.lightDevices[arrayIndices].diyModeThree.sceneCode);"
+                  }
                 }
               }
             },
@@ -392,6 +634,28 @@
                   "description": "Enter a scene code from the logs to create a button named 'DIY Mode 4' (in Eve app).",
                   "condition": {
                     "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "showAs": {
+                  "type": "string",
+                  "title": "DIY Mode 4: Show As",
+                  "description": "Change this setting to Accessory Switch to show this as an extra switch in the Home app.",
+                  "oneOf": [
+                    {
+                      "title": "Eve Switch (Default)",
+                      "enum": [
+                        "default"
+                      ]
+                    },
+                    {
+                      "title": "Accessory Switch",
+                      "enum": [
+                        "switch"
+                      ]
+                    }
+                  ],
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].diyModeFour && model.lightDevices[arrayIndices].diyModeFour.sceneCode);"
                   }
                 }
               }
@@ -408,6 +672,28 @@
                   "condition": {
                     "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
                   }
+                },
+                "showAs": {
+                  "type": "string",
+                  "title": "Segmented: Show As",
+                  "description": "Change this setting to Accessory Switch to show this as an extra switch in the Home app.",
+                  "oneOf": [
+                    {
+                      "title": "Eve Switch (Default)",
+                      "enum": [
+                        "default"
+                      ]
+                    },
+                    {
+                      "title": "Accessory Switch",
+                      "enum": [
+                        "switch"
+                      ]
+                    }
+                  ],
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].segmented && model.lightDevices[arrayIndices].segmented.sceneCode);"
+                  }
                 }
               }
             },
@@ -422,6 +708,28 @@
                   "description": "Enter a scene code from the logs to create a button named 'Segmented 2' (in Eve app).",
                   "condition": {
                     "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "showAs": {
+                  "type": "string",
+                  "title": "Segmented 2: Show As",
+                  "description": "Change this setting to Accessory Switch to show this as an extra switch in the Home app.",
+                  "oneOf": [
+                    {
+                      "title": "Eve Switch (Default)",
+                      "enum": [
+                        "default"
+                      ]
+                    },
+                    {
+                      "title": "Accessory Switch",
+                      "enum": [
+                        "switch"
+                      ]
+                    }
+                  ],
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].segmentedTwo && model.lightDevices[arrayIndices].segmentedTwo.sceneCode);"
                   }
                 }
               }
@@ -438,6 +746,28 @@
                   "condition": {
                     "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
                   }
+                },
+                "showAs": {
+                  "type": "string",
+                  "title": "Segmented 3: Show As",
+                  "description": "Change this setting to Accessory Switch to show this as an extra switch in the Home app.",
+                  "oneOf": [
+                    {
+                      "title": "Eve Switch (Default)",
+                      "enum": [
+                        "default"
+                      ]
+                    },
+                    {
+                      "title": "Accessory Switch",
+                      "enum": [
+                        "switch"
+                      ]
+                    }
+                  ],
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].segmentedThree && model.lightDevices[arrayIndices].segmentedThree.sceneCode);"
+                  }
                 }
               }
             },
@@ -452,6 +782,28 @@
                   "description": "Enter a scene code from the logs to create a button named 'Segmented 4' (in Eve app).",
                   "condition": {
                     "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "showAs": {
+                  "type": "string",
+                  "title": "Segmented 4: Show As",
+                  "description": "Change this setting to Accessory Switch to show this as an extra switch in the Home app.",
+                  "oneOf": [
+                    {
+                      "title": "Eve Switch (Default)",
+                      "enum": [
+                        "default"
+                      ]
+                    },
+                    {
+                      "title": "Accessory Switch",
+                      "enum": [
+                        "switch"
+                      ]
+                    }
+                  ],
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].segmentedFour && model.lightDevices[arrayIndices].segmentedFour.sceneCode);"
                   }
                 }
               }
@@ -967,21 +1319,37 @@
               "description": "Use these settings to start creating HomeKit scenes with your Govee scenes, music mode and DIY modes. <a href=\"https://github.com/bwp91/homebridge-govee/wiki/Scene%2C-Music%2C-DIY-Modes\" target=\"_blank\">Read more →</a>",
               "items": [
                 "lightDevices[].scene.sceneCode",
+                "lightDevices[].scene.showAs",
                 "lightDevices[].sceneTwo.sceneCode",
+                "lightDevices[].sceneTwo.showAs",
                 "lightDevices[].sceneThree.sceneCode",
+                "lightDevices[].sceneThree.showAs",
                 "lightDevices[].sceneFour.sceneCode",
+                "lightDevices[].sceneFour.showAs",
                 "lightDevices[].musicMode.sceneCode",
+                "lightDevices[].musicMode.showAs",
                 "lightDevices[].musicModeTwo.sceneCode",
+                "lightDevices[].musicModeTwo.showAs",
                 "lightDevices[].videoMode.sceneCode",
+                "lightDevices[].videoMode.showAs",
                 "lightDevices[].videoModeTwo.sceneCode",
+                "lightDevices[].videoModeTwo.showAs",
                 "lightDevices[].diyMode.sceneCode",
+                "lightDevices[].diyMode.showAs",
                 "lightDevices[].diyModeTwo.sceneCode",
+                "lightDevices[].diyModeTwo.showAs",
                 "lightDevices[].diyModeThree.sceneCode",
+                "lightDevices[].diyModeThree.showAs",
                 "lightDevices[].diyModeFour.sceneCode",
+                "lightDevices[].diyModeFour.showAs",
                 "lightDevices[].segmented.sceneCode",
+                "lightDevices[].segmented.showAs",
                 "lightDevices[].segmentedTwo.sceneCode",
+                "lightDevices[].segmentedTwo.showAs",
                 "lightDevices[].segmentedThree.sceneCode",
-                "lightDevices[].segmentedFour.sceneCode"
+                "lightDevices[].segmentedThree.showAs",
+                "lightDevices[].segmentedFour.sceneCode",
+                "lightDevices[].segmentedFour.showAs"
               ]
             }
           ]
