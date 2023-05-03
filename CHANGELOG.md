@@ -2,6 +2,12 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+## 9.0.1 (2023-05-03)
+
+### Fixed
+
+- Temperature readings for some Govee appliances
+
 ## 9.0.0 (2023-04-30)
 
 ️Note this release makes breaking changes to scene codes and will require reconfiguring (apologies for changing this again!). This is to:
