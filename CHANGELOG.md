@@ -2,6 +2,16 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+### 9.0.2 (2023-05-06)
+
+### Changed
+
+- Bump `node` supported versions to v16.20.0 or v18.16.0 or v20.1.0
+
+### Fixed
+
+- Properly match configured device id to actual device id
+
 ## 9.0.1 (2023-05-03)
 
 ### Fixed
