@@ -2,6 +2,17 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
+### BETA
+
+### Added
+
+- Support for humidifier `H7143`
+
+### Changed
+
+- Bump `node` supported versions to v16.20.0 or v18.16.0 or **v20.2.0**
+- Updated dependencies
+
 ### 9.0.2 (2023-05-06)
 
 ### Changed
