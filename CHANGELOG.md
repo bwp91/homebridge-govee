@@ -2,7 +2,7 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
-### BETA
+### 9.1.0 (2023-06-12)
 
 ### Added
 
@@ -11,7 +11,7 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ### Changed
 
-- Bump `node` supported versions to v16.20.0 or v18.16.0 or **v20.2.0**
+- Bump `node` supported versions to v16.20.0 or v18.16.0 or **v20.3.0**
 - Updated dependencies
 
 ### 9.0.2 (2023-05-06)
