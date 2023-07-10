@@ -6,6 +6,7 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ### Added
 
+- Support for heater `H7135`
 - Support for humidifier `H7140`
 - Support for lights `H7033`
 
