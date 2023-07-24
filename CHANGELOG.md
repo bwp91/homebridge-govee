@@ -2,7 +2,13 @@
 
 All notable changes to homebridge-govee will be documented in this file.
 
-### BETA
+This project tries to adhere to [Semantic Versioning](http://semver.org/). In practice, this means that the version number will be incremented based on the following:
+
+- `MAJOR` version when a minimum supported version of `homebridge` or `node` is increased to a new major version, or when a breaking change is made to the plugin config
+- `MINOR` version when a new device type is added, or when a new feature is added that is backwards-compatible
+- `PATCH` version when backwards-compatible bug fixes are implemented
+
+### 9.2.0 (2023-07-24)
 
 ### Added
 
@@ -12,7 +18,7 @@ All notable changes to homebridge-govee will be documented in this file.
 
 ### Changed
 
-- Bump `node` supported versions to v16.20.0 or v18.16.0 or **v20.3.0**
+- Bump `node` recommended versions to v16.20.1 or v18.17.0 or v20.5.0
 
 ### 9.1.0 (2023-06-12)
 
