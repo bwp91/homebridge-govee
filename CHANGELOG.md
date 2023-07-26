@@ -8,7 +8,13 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 - `MINOR` version when a new device type is added, or when a new feature is added that is backwards-compatible
 - `PATCH` version when backwards-compatible bug fixes are implemented
 
-### 9.2.0 (2023-07-24)
+## BETA
+
+### Added
+
+- Support for `H7019` bluetooth lights
+
+## 9.2.0 (2023-07-24)
 
 ### Added
 
