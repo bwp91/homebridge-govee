@@ -8,11 +8,12 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 - `MINOR` version when a new device type is added, or when a new feature is added that is backwards-compatible
 - `PATCH` version when backwards-compatible bug fixes are implemented
 
-## BETA
+## 9.3.0 (2023-07-29)
 
 ### Added
 
 - Support for `H61BE` (+ LAN) and `H7019` bluetooth lights
+- Work-in-progress support for `H6602` device
 
 ### Changed
 
