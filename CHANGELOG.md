@@ -14,6 +14,10 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 
 - Support for `H61BE` (+ LAN) and `H7019` bluetooth lights
 
+### Changed
+
+- 'no connection method' log entry now includes a link to a wiki page for more info
+
 ## 9.2.0 (2023-07-24)
 
 ### Added
