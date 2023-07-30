@@ -8,6 +8,12 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 - `MINOR` version when a new device type is added, or when a new feature is added that is backwards-compatible
 - `PATCH` version when backwards-compatible bug fixes are implemented
 
+## BETA
+
+### Fixed
+
+- Do not attempt to control models via LAN when an IP is entered in the config, but the model is not LAN supported
+
 ## 9.3.0 (2023-07-29)
 
 ### Added
