@@ -10,6 +10,13 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 
 ## BETA
 
+### Added
+
+- Support for:
+  - `H7029` bluetooth lights
+  - `H5104` thermo-hygrometer sensor
+  - `H7151` dehumidifier
+
 ### Fixed
 
 - Do not attempt to control models via LAN when an IP is entered in the config, but the model is not LAN supported
