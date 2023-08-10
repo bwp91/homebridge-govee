@@ -13,8 +13,9 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 ### Added
 
 - Support for:
-  - `H7029` bluetooth lights
+  - `H5058` leak sensors
   - `H5104` thermo-hygrometer sensor
+  - `H7029` bluetooth lights
   - `H7151` dehumidifier
 
 ### Fixed
