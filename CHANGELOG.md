@@ -15,6 +15,7 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 - Support for:
   - `H5058` leak sensors
   - `H5104` thermo-hygrometer sensor
+  - `H6609` gaming lights
   - `H7029` bluetooth lights
   - `H7134` heater
   - `H7151` dehumidifier
