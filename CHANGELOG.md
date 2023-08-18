@@ -18,6 +18,7 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
   - `H6609` gaming lights
   - `H7029` bluetooth lights
   - `H7134` heater
+  - `H713A` lights
   - `H7151` dehumidifier
 
 ### Fixed
