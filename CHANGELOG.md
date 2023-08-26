@@ -8,7 +8,7 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 - `MINOR` version when a new device type is added, or when a new feature is added that is backwards-compatible
 - `PATCH` version when backwards-compatible bug fixes are implemented
 
-## BETA
+## 9.4.0 (2023-08-26)
 
 ### Added
 
@@ -18,7 +18,7 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
   - `H6609` gaming lights
   - `H7029` bluetooth lights
   - `H7134` heater
-  - `H713A` lights
+  - `H705C`, `H713A` lights
   - `H7151` dehumidifier
 
 ### Fixed
