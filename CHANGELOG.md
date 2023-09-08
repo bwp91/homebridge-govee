@@ -13,6 +13,8 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 ### Added
 
 - Support for heater `H713C`
+- Support for lights `H61BA`
+- Support for air purifier `H7126`
 
 ## 9.4.2 (2023-08-28)
 
