@@ -15,7 +15,7 @@ assignees: ''
 
 
 
-* **Which connection methods does this device have? Wifi? Bluetooth? Both?**
+* **Which connection methods does this device have? Wifi? Bluetooth? LAN mode? All?**
 
 
 
