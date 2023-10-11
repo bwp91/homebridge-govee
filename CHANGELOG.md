@@ -13,8 +13,8 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 ### Added
 
 - Support for heater `H713C`
-- Support for lights `H6010`, `H601B`, `H6088`, `H60A0`, `H61BA`, `H61BC`, `H617F` and `H7066`
-- Support for air purifier `H7126`
+- Support for lights `H6010`, `H601B`, `H6088`, `H60A0`, `H617F`, `H61BA`, `H61BC`, `H61C5`, `H7066` and `H70C1`
+- Support for air purifier `H7126` (work-in-progress)
 
 ## 9.4.2 (2023-08-28)
 
