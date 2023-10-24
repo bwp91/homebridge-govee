@@ -19,7 +19,6 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 
 ### Changed
 
-- Updated HomeKit native ignore list
 - Updated dependencies
 - Bump `node` supported versions to v18.18.2 or v20.8.1
 
