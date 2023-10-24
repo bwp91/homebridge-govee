@@ -8,13 +8,24 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 - `MINOR` version when a new device type is added, or when a new feature is added that is backwards-compatible
 - `PATCH` version when backwards-compatible bug fixes are implemented
 
-## BETA
+## 10.0.0 (2023-10-24)
 
 ### Added
 
 - Support for heater `H713C`
-- Support for lights `H6010`, `H601B`, `H6088`, `H60A0`, `H617F`, `H61BA`, `H61BC`, `H61C5`, `H7066` and `H70C1`
+- Support for lights
+  - `H6010`, `H601B`, `H6088`, `H60A0`, `H6167`, `H617F`, `H61BA`, `H61BC`, `H61C2`, `H61C5`, `H7066`, `H70C1` and `H70C2`
 - Support for air purifier `H7126` (work-in-progress)
+
+### Changed
+
+- Updated HomeKit native ignore list
+- Updated dependencies
+- Bump `node` supported versions to v18.18.2 or v20.8.1
+
+### Removed
+
+- Support for node 16
 
 ## 9.4.2 (2023-08-28)
 
