@@ -26,7 +26,7 @@
   },
   "engines": {
     "homebridge": "^1.6.0",
-    "node": "^18.18.2 || ^20.8.1"
+    "node": "^18.18.2 || ^20.9.0"
   },
   "repository": {
     "type": "git",
@@ -55,8 +55,8 @@
   ],
   "dependencies": {
     "@homebridge/plugin-ui-utils": "^1.0.0",
-    "aws-iot-device-sdk": "^2.2.12",
-    "axios": "^1.5.1",
+    "aws-iot-device-sdk": "^2.2.13",
+    "axios": "^1.6.0",
     "node-persist": "^3.1.3",
     "node-rsa": "^1.1.1",
     "p-queue": "^7.4.1",
@@ -68,7 +68,7 @@
     "govee-bt-client": "^1.0.15"
   },
   "devDependencies": {
-    "eslint": "^8.52.0",
+    "eslint": "^8.53.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.29.0",
     "eslint-plugin-import-newlines": "^1.3.4",
