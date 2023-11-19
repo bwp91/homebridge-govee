@@ -8,13 +8,17 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 - `MINOR` version when a new device type is added, or when a new feature is added that is backwards-compatible
 - `PATCH` version when backwards-compatible bug fixes are implemented
 
-## BETA
+## 10.1.0 (2023-11-19)
 
 ### Added
 
 - Support for `H608A`, `H608B`, `H608C` lights (thanks [@twhitson](https://github.com/twhitson)!)
-- Support for `H70A1` lights
+- Support for `H601C`, `H6185`, `H6176`, `H70A1` lights
 - Support for heater `H7133`
+
+### Changed
+
+- Updated dependencies
 
 ## 10.0.0 (2023-10-24)
 
