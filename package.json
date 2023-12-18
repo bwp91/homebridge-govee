@@ -1,5 +1,6 @@
 {
   "name": "homebridge-govee",
+  "displayName": "Govee",
   "alias": "Govee",
   "version": "10.2.0",
   "author": {
