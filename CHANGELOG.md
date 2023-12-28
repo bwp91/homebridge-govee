@@ -13,7 +13,8 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 ### Added
 
 - Support for `H6004`, `H601D`, `H70A1`, `H706A` lights
-- Support for `H7173`, `H7175` kettle
+- Support for `H7173`, `H7175` kettles
+- Support for `H7161`, `H7162` diffusers
 
 ### Changed
 
