@@ -8,13 +8,14 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 - `MINOR` version when a new device type is added, or when a new feature is added that is backwards-compatible
 - `PATCH` version when backwards-compatible bug fixes are implemented
 
-## BETA
+## 10.3.0 (2023-12-30)
 
 ### Added
 
 - Support for `H6004`, `H601D`, `H70A1`, `H706A` lights
 - Support for `H7173`, `H7175` kettles
 - Support for `H7161`, `H7162` diffusers
+- Work-in-progress support for `H5198` thermometer sensor(s)
 
 ### Changed
 
