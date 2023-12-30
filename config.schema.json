@@ -1085,7 +1085,7 @@
             "deviceId": {
               "title": "Device ID",
               "type": "string",
-              "description": "Enter the 23 digit Govee Device ID to begin (e.g. 12:AB:A1:C5:A8:99:D2:17).",
+              "description": "Enter the 23/26 digit Govee Device ID to begin (e.g. 12:AB:A1:C5:A8:99:D2:17).",
               "minLength": 23,
               "maxLength": 23
             },
@@ -1094,7 +1094,7 @@
               "title": "Hide From HomeKit",
               "description": "If true, this accessory will be removed and ignored from HomeKit.",
               "condition": {
-                "functionBody": "return (model.thermoDevices && model.thermoDevices[arrayIndices] && model.thermoDevices[arrayIndices].deviceId && model.thermoDevices[arrayIndices].deviceId.length === 23);"
+                "functionBody": "return (model.thermoDevices && model.thermoDevices[arrayIndices] && model.thermoDevices[arrayIndices].deviceId && [23,26].includes(model.thermoDevices[arrayIndices].deviceId.length));"
               }
             },
             "lowBattThreshold": {
@@ -1104,7 +1104,7 @@
               "placeholder": 20,
               "minimum": 1,
               "condition": {
-                "functionBody": "return (model.thermoDevices && model.thermoDevices[arrayIndices] && model.thermoDevices[arrayIndices].deviceId && model.thermoDevices[arrayIndices].deviceId.length === 23 && !model.thermoDevices[arrayIndices].ignoreDevice);"
+                "functionBody": "return (model.thermoDevices && model.thermoDevices[arrayIndices] && model.thermoDevices[arrayIndices].deviceId && [23,26].includes(model.thermoDevices[arrayIndices].deviceId.length) && !model.thermoDevices[arrayIndices].ignoreDevice);"
               }
             }
           }
