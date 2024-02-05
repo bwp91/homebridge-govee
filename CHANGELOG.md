@@ -13,6 +13,12 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 ### Added
 
 - Support for `H6099` lights
+- Add support for H5105 (#727) (@ALPHAy00)
+
+### Changed
+
+- Bump `node` supported versions to v18.19.0 or v20.11.0
+- Updated dependencies
 
 ## 10.3.0 (2023-12-30)
 
