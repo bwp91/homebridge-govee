@@ -14,6 +14,7 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 
 - Support for `H6099` lights
 - Add support for H5105 (#727) (@ALPHAy00)
+- Add LAN support for `H70A1`
 
 ### Changed
 
