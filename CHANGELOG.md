@@ -8,6 +8,18 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 - `MINOR` version when a new device type is added, or when a new feature is added that is backwards-compatible
 - `PATCH` version when backwards-compatible bug fixes are implemented
 
+## BETA
+
+### Added
+
+- Allow `H5108` Thermometer (#736) (@BroHammie)
+- Add support for `H61B5`
+
+### Changed
+
+- Bump `node` supported versions to v18.19.1 or v20.11.1
+- Updated dependencies
+
 ## 10.4.0 (2024-02-06)
 
 ### Added
