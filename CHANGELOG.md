@@ -13,7 +13,7 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 ### Added
 
 - Allow `H5108` Thermometer (#736) (@BroHammie)
-- Add support for `H600A`, `H61B5`
+- Add support for `H600A`, `H61B5`, `H61D5`
 
 ### Changed
 
