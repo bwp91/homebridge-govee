@@ -13,11 +13,11 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 ### Added
 
 - Allow `H5108` Thermometer (#736) (@BroHammie)
-- Add support for `H61B5`
+- Add support for `H600A`, `H61B5`
 
 ### Changed
 
-- Bump `node` supported versions to v18.19.1 or v20.11.1
+- Bump `node` supported versions to v18.20.0 or v20.12.0
 - Updated dependencies
 
 ## 10.4.0 (2024-02-06)
