@@ -26,11 +26,11 @@
   },
   "engines": {
     "homebridge": "^1.6.0",
-    "node": "^18.20.0 || ^20.12.0"
+    "node": "^18.20.2 || ^20.12.2"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bwp91/homebridge-govee.git"
+    "url": "git+https://github.com/bwp91/homebridge-govee.git"
   },
   "bugs": {
     "url": "https://github.com/bwp91/homebridge-govee/issues"
@@ -54,7 +54,7 @@
     }
   ],
   "dependencies": {
-    "@homebridge/plugin-ui-utils": "^1.0.1",
+    "@homebridge/plugin-ui-utils": "^1.0.3",
     "aws-iot-device-sdk": "^2.2.13",
     "axios": "^1.6.8",
     "node-persist": "^4.0.1",

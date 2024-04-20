@@ -8,6 +8,22 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 - `MINOR` version when a new device type is added, or when a new feature is added that is backwards-compatible
 - `PATCH` version when backwards-compatible bug fixes are implemented
 
+## 10.6.0 (2024-04-20)
+
+### Added
+
+- Support for light models:
+  - `H6042` `H6043` `H6063` `H607C` `H608D`
+  - `H616C` `H616D` `H616E` `H6175` `H61A9`
+  - `H61B1` `H7021` `H7052` `H7053` `H705D`
+  - `H705E` `H705F` `H7063` `H706B` `H7075`
+  - `H70BC` `H805A` `H805B` `H805C`
+
+## Changed
+
+- Updated LAN supported models based on latest Govee docs
+- Bump `node` supported versions to v18.20.2 or v20.12.2
+
 ## 10.5.0 (2024-03-28)
 
 ### Added
