@@ -8,6 +8,16 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 - `MINOR` version when a new device type is added, or when a new feature is added that is backwards-compatible
 - `PATCH` version when backwards-compatible bug fixes are implemented
 
+## BETA
+
+### Added
+
+- Support device H6079 (floor lamp) (#775) (@bwitting)
+
+### Fixed
+
+- HTTP connection
+
 ## 10.6.0 (2024-04-20)
 
 ### Added
