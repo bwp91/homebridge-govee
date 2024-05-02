@@ -8,7 +8,7 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 - `MINOR` version when a new device type is added, or when a new feature is added that is backwards-compatible
 - `PATCH` version when backwards-compatible bug fixes are implemented
 
-## BETA
+## 10.7.0 (2024-05-02)
 
 ### Added
 
@@ -16,7 +16,7 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 
 ### Fixed
 
-- HTTP connection
+- HTTP connection with leak sensors
 
 ## 10.6.0 (2024-04-20)
 
