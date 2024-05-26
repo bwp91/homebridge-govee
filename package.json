@@ -26,7 +26,7 @@
   },
   "engines": {
     "homebridge": "^1.6.0",
-    "node": "^18.20.2 || ^20.12.2"
+    "node": "^18.20.3 || ^20.13.1"
   },
   "repository": {
     "type": "git",
@@ -56,15 +56,15 @@
   "dependencies": {
     "@homebridge/plugin-ui-utils": "^1.0.3",
     "aws-iot-device-sdk": "^2.2.13",
-    "axios": "^1.6.8",
+    "axios": "^1.7.2",
     "node-persist": "^4.0.1",
     "node-rsa": "^1.1.1",
     "p-queue": "^8.0.1",
     "pem": "^1.14.8"
   },
   "optionalDependencies": {
-    "@abandonware/bluetooth-hci-socket": "0.5.3-11",
-    "@abandonware/noble": "1.9.2-24",
+    "@abandonware/bluetooth-hci-socket": "0.5.3-12",
+    "@abandonware/noble": "1.9.2-25",
     "govee-bt-client": "^1.0.15"
   },
   "devDependencies": {

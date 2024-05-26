@@ -8,6 +8,20 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 - `MINOR` version when a new device type is added, or when a new feature is added that is backwards-compatible
 - `PATCH` version when backwards-compatible bug fixes are implemented
 
+## 10.8.0 (2024-05-26)
+
+### Added
+
+- Support for light models:
+  - `H60A1` `H61D3` `H7038` `H7039` `H7105`
+- Support for light models:
+  - `H7015`
+  - `H7016` (thanks @rusnewman)
+
+### Changed
+
+ - Updated dependencies
+
 ## 10.7.1 (2024-05-03)
 
 ### Fixed
