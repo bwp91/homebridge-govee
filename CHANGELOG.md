@@ -8,6 +8,13 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 - `MINOR` version when a new device type is added, or when a new feature is added that is backwards-compatible
 - `PATCH` version when backwards-compatible bug fixes are implemented
 
+## 10.9.1 (2024-07-13)
+
+### Changed
+
+- Always log new scene codes for appliances
+  - this is helpful for development
+
 ## 10.9.0 (2024-07-13)
 
 ### Added
