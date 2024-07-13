@@ -8,6 +8,14 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 - `MINOR` version when a new device type is added, or when a new feature is added that is backwards-compatible
 - `PATCH` version when backwards-compatible bug fixes are implemented
 
+## BETA
+
+### Changed
+
+- Fixed for `hap-nodejs` v1.0.0
+- Updated dependencies
+- Bump `node` recommended versions to v18.20.4 or v20.15.1
+
 ## 10.8.0 (2024-05-26)
 
 ### Added
