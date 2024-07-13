@@ -8,7 +8,7 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 - `MINOR` version when a new device type is added, or when a new feature is added that is backwards-compatible
 - `PATCH` version when backwards-compatible bug fixes are implemented
 
-## BETA
+## 10.8.1 (2024-07-13)
 
 ### Changed
 
