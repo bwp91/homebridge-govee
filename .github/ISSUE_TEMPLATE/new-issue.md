@@ -14,28 +14,16 @@ assignees: ''
 
 ### What issue do you have? Please be as thorough and explicit as possible.
 
-
-
 ### Details of your setup.
-* Do you use (1) Homebridge UI-X (2) Homebridge CLI or (3) HOOBS? 
-
-
+* Do you use (1) Homebridge UI-X (2) Homebridge CLI or (3) HOOBS?
 
 * Which version of Homebridge/HOOBS do you have?
 
-
-
 * Which platform do you run Homebridge/HOOBS on (e.g. Raspberry Pi/Windows/HOOBS Box)? Please also mention your version of Node.js/NPM if known.
-
-
 
 * Which version of this plugin (homebridge-govee) do you have? Has the issue started since upgrading from a previous version?
 
-
-
 * Which Govee devices do you have that are causing issues? Please include product models if applicable.
-
-
 
 ### Please paste any relevant logs below.
 <!-- ABOUT LOGS

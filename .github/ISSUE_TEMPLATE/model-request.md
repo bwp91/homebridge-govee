@@ -9,16 +9,8 @@ assignees: ''
 
 * **Which model is this? Need the `Hxxxx` number.**
 
-
-
 * **Which type of device is this? Light, heater, leak sensor, etc.**
-
-
 
 * **Which connection methods does this device have? Wifi? Bluetooth? LAN mode? All?**
 
-
-
 * **Anything else?**
-
-
