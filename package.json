@@ -68,7 +68,7 @@
     "govee-bt-client": "^1.0.15"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.23.2",
-    "eslint": "^9.7.0"
+    "@antfu/eslint-config": "^2.24.0",
+    "eslint": "^9.8.0"
   }
 }
