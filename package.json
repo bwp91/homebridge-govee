@@ -56,8 +56,8 @@
   "dependencies": {
     "@homebridge/plugin-ui-utils": "^1.0.3",
     "aws-iot-device-sdk": "^2.2.15",
-    "axios": "^1.7.2",
-    "node-persist": "^4.0.2",
+    "axios": "^1.7.3",
+    "node-persist": "^4.0.3",
     "node-rsa": "^1.1.1",
     "p-queue": "^8.0.1",
     "pem": "^1.14.8"
@@ -68,7 +68,7 @@
     "govee-bt-client": "^1.0.15"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.24.0",
+    "@antfu/eslint-config": "^2.24.1",
     "eslint": "^9.8.0"
   }
 }
