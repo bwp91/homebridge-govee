@@ -46,8 +46,8 @@
   ],
   "main": "lib/index.js",
   "engines": {
-    "homebridge": "^1.6.0 || ^2.0.0-alpha.0",
-    "node": "^18.20.4 || ^20.15.1"
+    "homebridge": "^1.6.0 || ^2.0.0-beta.0",
+    "node": "^18.20.4 || ^20.16.0 || ^22.5.0"
   },
   "scripts": {
     "lint": "eslint . --fix",
