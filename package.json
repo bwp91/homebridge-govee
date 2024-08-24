@@ -47,7 +47,7 @@
   "main": "lib/index.js",
   "engines": {
     "homebridge": "^1.6.0 || ^2.0.0-beta.0",
-    "node": "^18.20.4 || ^20.16.0 || ^22.5.0"
+    "node": "^18.20.4 || ^20.17.0 || ^22.7.0"
   },
   "scripts": {
     "lint": "eslint . --fix",
@@ -56,7 +56,7 @@
   "dependencies": {
     "@homebridge/plugin-ui-utils": "^1.0.3",
     "aws-iot-device-sdk": "^2.2.15",
-    "axios": "^1.7.3",
+    "axios": "^1.7.5",
     "node-persist": "^4.0.3",
     "node-rsa": "^1.1.1",
     "p-queue": "^8.0.1",
@@ -68,7 +68,7 @@
     "govee-bt-client": "^1.0.15"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.24.1",
-    "eslint": "^9.8.0"
+    "@antfu/eslint-config": "^2.27.1",
+    "eslint": "^9.9.1"
   }
 }
