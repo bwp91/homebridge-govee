@@ -12,8 +12,10 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 
 ### Added
 
-- Lights: `H6093` `H615F` `H61E5` `H61F5` `H7037` `H70B4` `H70C5` `H70D1` `H801C`
+- Lights: `H6089` `H6093` `H6097` `H613G` `H615F` `H61B3` `H61B6` `H61E5` `H61F5` `H7037` `H70B4` `H70C5` `H70D1` `H801C`
+- Switches: `H5086`
 - Purifiers (beta): `H7124` `H7127` `H712C`
+- Presence sensor (beta): `H5127`
 - Template devices: `H5121` `H5126`
 
 ### Changed
