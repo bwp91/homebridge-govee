@@ -8,26 +8,33 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 - `MINOR` version when a new device type is added, or when a new feature is added that is backwards-compatible
 - `PATCH` version when backwards-compatible bug fixes are implemented
 
-## BETA
+## v10.10.0 (2024-10-13)
+
+### Added
+
+- Lights: `H6093` `H615F` `H61E5` `H61F5` `H7037` `H70B4` `H70C5` `H70D1` `H801C`
+- Purifiers (beta): `H7124` `H7127` `H712C`
+- Template devices: `H5121` `H5126`
 
 ### Changed
 
+- Bump `node` recommended versions to `v18.20.4` or `v20.18.0` or `v22.9.0`
 - Updated `eslint` and use new code style
 
-## 10.9.2 (2024-07-15)
+## v10.9.2 (2024-07-15)
 
 ### Changed
 
 - Split appliances into different files for more specific features per model
 
-## 10.9.1 (2024-07-13)
+## v10.9.1 (2024-07-13)
 
 ### Changed
 
 - Always log new scene codes for appliances
   - this is helpful for development
 
-## 10.9.0 (2024-07-13)
+## v10.9.0 (2024-07-13)
 
 ### Added
 
@@ -36,7 +43,7 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 - Support (beta) for sensor:
   - `H5190`
 
-## 10.8.1 (2024-07-13)
+## v10.8.1 (2024-07-13)
 
 ### Changed
 
@@ -44,7 +51,7 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 - Updated dependencies
 - Bump `node` recommended versions to v18.20.4 or v20.15.1
 
-## 10.8.0 (2024-05-26)
+## v10.8.0 (2024-05-26)
 
 ### Added
 
@@ -58,13 +65,13 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 
  - Updated dependencies
 
-## 10.7.1 (2024-05-03)
+## v10.7.1 (2024-05-03)
 
 ### Fixed
 
 - Use existing access token on HTTP login
 
-## 10.7.0 (2024-05-02)
+## v10.7.0 (2024-05-02)
 
 ### Added
 
@@ -74,7 +81,7 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 
 - HTTP connection with leak sensors
 
-## 10.6.0 (2024-04-20)
+## v10.6.0 (2024-04-20)
 
 ### Added
 
@@ -85,12 +92,12 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
   - `H705E` `H705F` `H7063` `H706B` `H7075`
   - `H70BC` `H805A` `H805B` `H805C`
 
-## Changed
+## vChanged
 
 - Updated LAN supported models based on latest Govee docs
 - Bump `node` supported versions to v18.20.2 or v20.12.2
 
-## 10.5.0 (2024-03-28)
+## v10.5.0 (2024-03-28)
 
 ### Added
 
@@ -102,7 +109,7 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 - Bump `node` supported versions to v18.20.0 or v20.12.0
 - Updated dependencies
 
-## 10.4.0 (2024-02-06)
+## v10.4.0 (2024-02-06)
 
 ### Added
 
@@ -115,7 +122,7 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 - Bump `node` supported versions to v18.19.0 or v20.11.0
 - Updated dependencies
 
-## 10.3.0 (2023-12-30)
+## v10.3.0 (2023-12-30)
 
 ### Added
 
@@ -129,7 +136,7 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 - Bump `node` supported versions to v18.19.0 or v20.10.0
 - Updated dependencies
 
-## 10.2.0 (2023-11-30)
+## v10.2.0 (2023-11-30)
 
 ### Added
 
@@ -140,7 +147,7 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 
 - Bump `node` supported versions to v18.18.2 or v20.10.0
 
-## 10.1.0 (2023-11-19)
+## v10.1.0 (2023-11-19)
 
 ### Added
 
@@ -152,7 +159,7 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 
 - Updated dependencies
 
-## 10.0.0 (2023-10-24)
+## v10.0.0 (2023-10-24)
 
 ### Added
 
@@ -170,7 +177,7 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 
 - Support for node 16
 
-## 9.4.2 (2023-08-28)
+## v9.4.2 (2023-08-28)
 
 ⚠️ Note this will be the last version of the plugin to support Node 16.
 - Node 16 moves to 'end of life' on 2023-09-11 ([more info](https://nodejs.org/en/blog/announcements/nodejs16-eol))
@@ -181,7 +188,7 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 
 - Update dependencies
 
-## 9.4.1 (2023-08-27)
+## v9.4.1 (2023-08-27)
 
 ### Changed
 
@@ -192,7 +199,7 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 - `H713A` is not a light it is a header 😅
 - Support for `H713B` heater
 
-## 9.4.0 (2023-08-26)
+## v9.4.0 (2023-08-26)
 
 ### Added
 
@@ -209,7 +216,7 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 
 - Do not attempt to control models via LAN when an IP is entered in the config, but the model is not LAN supported
 
-## 9.3.0 (2023-07-29)
+## v9.3.0 (2023-07-29)
 
 ### Added
 
@@ -220,7 +227,7 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 
 - 'no connection method' log entry now includes a link to a wiki page for more info
 
-## 9.2.0 (2023-07-24)
+## v9.2.0 (2023-07-24)
 
 ### Added
 
@@ -254,13 +261,13 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 
 - Properly match configured device id to actual device id
 
-## 9.0.1 (2023-05-03)
+## v9.0.1 (2023-05-03)
 
 ### Fixed
 
 - Temperature readings for some Govee appliances
 
-## 9.0.0 (2023-04-30)
+## v9.0.0 (2023-04-30)
 
 ️Note this release makes breaking changes to scene codes and will require reconfiguring (apologies for changing this again!). This is to:
 
@@ -290,14 +297,14 @@ See the first section of the updated wiki document for instructions:
 - Bump `node` supported versions to v16.20.0 or v18.16.0 or v20.0.0
 - Updated dependencies
 
-## 8.1.2 (2023-04-10)
+## v8.1.2 (2023-04-10)
 
 ### Changed
 
 - Remove 'H6052', 'H6110', 'H6141', 'H6143', 'H6144', 'H615A', 'H615B' and 'H615C' from LAN supported
   - These models seem to have been removed from the Govee LAN API supported list
 
-## 8.1.1 (2023-04-05)
+## v8.1.1 (2023-04-05)
 
 ### Changed
 
@@ -307,7 +314,7 @@ See the first section of the updated wiki document for instructions:
 
 - Better logging info about OpenSSL
 
-## 8.1.0 (2023-03-24)
+## v8.1.0 (2023-03-24)
 
 ### Added
 
@@ -317,19 +324,19 @@ See the first section of the updated wiki document for instructions:
 
 - Plugin initialisation logging
 
-## 8.0.2 (2023-03-21)
+## v8.0.2 (2023-03-21)
 
 ### Fixed
 
 - Plugin config screen fix for scene codes
 
-## 8.0.1 (2023-03-21)
+## v8.0.1 (2023-03-21)
 
 ### Fixed
 
 - Plugin config screen fix
 
-## 8.0.0 (2023-03-21)
+## v8.0.0 (2023-03-21)
 
 ### Breaking
 
@@ -353,13 +360,13 @@ See the first section of the updated wiki document for instructions:
 - Bump `node` recommended versions to v16.19.1 or v18.14.2
 - Updated dependencies
 
-## 7.9.3 (2023-02-26)
+## v7.9.3 (2023-02-26)
 
 ### Changed
 
 - Remove JSON logging for all API appliances as no more devices needed
 
-## 7.9.2 (2023-02-26)
+## v7.9.2 (2023-02-26)
 
 ### Changed
 
@@ -370,7 +377,7 @@ See the first section of the updated wiki document for instructions:
 
 - AWS commands for H6003, H6009 and H601A
 
-## 7.9.1 (2023-01-28)
+## v7.9.1 (2023-01-28)
 
 ### Changed
 
@@ -382,7 +389,7 @@ See the first section of the updated wiki document for instructions:
 
 - AWS commands for H6054
 
-## 7.9.0 (2023-01-20)
+## v7.9.0 (2023-01-20)
 
 ### Added
 
@@ -393,7 +400,7 @@ See the first section of the updated wiki document for instructions:
 - Kettle commands
 - AWS commands for H615E and H6195
 
-## 7.8.0 (2023-01-12)
+## v7.8.0 (2023-01-12)
 
 **Kettle Users**
 Unfortunately this update will break your kettle. This is something I am working on and will hopefully be fixed soon.
@@ -411,7 +418,7 @@ Unfortunately this update will break your kettle. This is something I am working
 
 - AWS connection method polling - it is unnecessary as changes are provided to the plugin in realtime anyway
 
-## 7.7.1 (2022-12-27)
+## v7.7.1 (2022-12-27)
 
 ### Changed
 
@@ -419,7 +426,7 @@ Unfortunately this update will break your kettle. This is something I am working
   - If anyone has a H7143 or H7160 please get in contact!
 - Other fixes for purifiers and dehumidifiers
 
-## 7.7.0 (2022-12-25) 🎄
+## v7.7.0 (2022-12-25) 🎄
 
 ### Added
 
@@ -436,7 +443,7 @@ Unfortunately this update will break your kettle. This is something I am working
 - Downgrade (and fix) bluetooth package versions
 - Updated LAN model list
 
-## 7.6.0 (2022-12-18)
+## v7.6.0 (2022-12-18)
 
 ### Added
 
@@ -451,11 +458,11 @@ Unfortunately this update will break your kettle. This is something I am working
 - AWS commands for H5082 and H6054
 - Avoid Homebridge characteristic warning for `ColourMode`
 
-## 7.5.1 (2022-12-09)
+## v7.5.1 (2022-12-09)
 
 - Maintenance release
 
-## 7.5.0 (2022-12-06)
+## v7.5.0 (2022-12-06)
 
 ### Added
 
@@ -471,14 +478,14 @@ Unfortunately this update will break your kettle. This is something I am working
 
 - AWS commands for H619A
 
-## 7.4.2 (2022-12-04)
+## v7.4.2 (2022-12-04)
 
 ### Fixed
 
 - Hide scene logging when device is not switched on
 - AWS commands for H6159
 
-## 7.4.1 (2022-12-04)
+## v7.4.1 (2022-12-04)
 
 ### Changed
 
@@ -491,7 +498,7 @@ Unfortunately this update will break your kettle. This is something I am working
 - AWS commands for H7020
 - BLE commands for H6052 and H6058
 
-## 7.4.0 (2022-12-02)
+## v7.4.0 (2022-12-02)
 
 ### Added
 
@@ -504,7 +511,7 @@ Unfortunately this update will break your kettle. This is something I am working
 
 - BLE colour commands for H6053, H6072 and H6199
 
-## 7.3.2 (2021-12-01)
+## v7.3.2 (2021-12-01)
 
 ### Changed
 
@@ -515,13 +522,13 @@ Unfortunately this update will break your kettle. This is something I am working
 - AWS command code logging
 - AWS commands for H6052
 
-## 7.3.1 (2022-12-01)
+## v7.3.1 (2022-12-01)
 
 ### Fixed
 
 - Some AWS related things
 
-## 7.3.0 (2022-12-01)
+## v7.3.0 (2022-12-01)
 
 ### Added
 
@@ -539,7 +546,7 @@ Unfortunately this update will break your kettle. This is something I am working
 - AWS commands for H6142 and H615B
 - Fix bluetooth status in Homebridge UI for sensors
 
-## 7.2.0 (2022-11-27)
+## v7.2.0 (2022-11-27)
 
 ### Added
 
@@ -557,7 +564,7 @@ Unfortunately this update will break your kettle. This is something I am working
 
 - Plugin will now correctly enable LAN mode for devices discovered **after** the initial scan, with extra debug logging
 
-## 7.1.9 (2022-11-23)
+## v7.1.9 (2022-11-23)
 
 ### Changed
 
@@ -567,7 +574,7 @@ Unfortunately this update will break your kettle. This is something I am working
 
 - AWS commands for H5080 outlet (for simulations)
 
-## 7.1.8 (2022-11-23)
+## v7.1.8 (2022-11-23)
 
 ### Changed
 
@@ -578,7 +585,7 @@ Unfortunately this update will break your kettle. This is something I am working
 - AWS commands for H5080 outlet
 - AWS fixes for H7050
 
-## 7.1.7 (2022-11-19)
+## v7.1.7 (2022-11-19)
 
 ### Changed
 
@@ -589,13 +596,13 @@ Unfortunately this update will break your kettle. This is something I am working
 - AWS fixes for H619C
 - Fixes an issue sending colour temperature updates for certain models
 
-## 7.1.6 (2022-11-18)
+## v7.1.6 (2022-11-18)
 
 ### Fixed
 
 - Colour control for some bluetooth-only models
 
-## 7.1.5 (2022-11-16)
+## v7.1.5 (2022-11-16)
 
 ### Fixed
 
@@ -603,13 +610,13 @@ Unfortunately this update will break your kettle. This is something I am working
 - Bluetooth commands for H6102 - similar models may use these commands, please create an issue if you have a bluetooth model and brightness/colour do not work
   - Thanks to [@bitfl0wer](https://github.com/bitfl0wer) for figuring out the commands
 
-## 7.1.4 (2022-11-15)
+## v7.1.4 (2022-11-15)
 
 ### Fixed
 
 - AWS fixes for H6009 (WIP) and H605C
 
-## 7.1.3 (2022-11-13)
+## v7.1.3 (2022-11-13)
 
 ### Changed
 
@@ -621,7 +628,7 @@ Unfortunately this update will break your kettle. This is something I am working
 - Issue with using improperly saved access token
 - AWS fixes for H6009 and H7041
 
-## 7.1.2 (2022-10-31) 🎃
+## v7.1.2 (2022-10-31) 🎃
 
 ### Changed
 
@@ -633,14 +640,14 @@ Unfortunately this update will break your kettle. This is something I am working
 - AWS control for H6159
 - AWS fixes for H6051 and H6056
 
-## 7.1.1 (2022-10-25)
+## v7.1.1 (2022-10-25)
 
 ### Fixed
 
 - Properly catch errors when parsing notifications with invalid JSON
 - AWS brightness scale for H6182
 
-## 7.1.0 (2022-10-25)
+## v7.1.0 (2022-10-25)
 
 ### Added
 
@@ -662,13 +669,13 @@ Unfortunately this update will break your kettle. This is something I am working
 - An issue parsing incoming API updates for lights
 - An issue when brightness was not scaled properly for certain incoming AWS updates
 
-## 7.0.1 (2022-10-22)
+## v7.0.1 (2022-10-22)
 
 - More features to the Govee Heater implementation
 - Fixed an issue with incoming AWS updates for accessories not in Homebridge
 - Log all scene codes received for a device (for debugging, this is not permanent)
 
-## 7.0.0 (2022-10-20)
+## v7.0.0 (2022-10-20)
 
 ### ⚠️ Config Changes
 
@@ -723,33 +730,33 @@ Unfortunately this update will break your kettle. This is something I am working
 - Fixes H5054 leak sensor status reporting (again)
 - Fixes an incorrect error when changing speed of appliances like heaters and humidifiers
 
-## 6.0.4 (2022-10-07)
+## v6.0.4 (2022-10-07)
 
 ### Changed
 
 - Small timeout to ignore incoming LAN updates when controlled, workaround for incorrect status updates when controlling via LAN
 - Bump `axios` to v1.1.2
 
-## 6.0.3 (2022-10-06)
+## v6.0.3 (2022-10-06)
 
 ### Changed
 
 - Use configured `label` for accessory name for LAN-only models
 
-## 6.0.2 (2022-10-06)
+## v6.0.2 (2022-10-06)
 
 ### Fixed
 
 - Ignore `offlineAsOff` for LAN-only devices
 - Remove scene characteristics from LAN-only devices as unsupported
 
-## 6.0.1 (2022-10-06)
+## v6.0.1 (2022-10-06)
 
 ### Fixed
 
 - A couple of small fixes for when using a custom IP address for LAN control
 
-## 6.0.0 (2022-10-05)
+## v6.0.0 (2022-10-05)
 
 ### Added
 
@@ -795,14 +802,14 @@ Unfortunately this update will break your kettle. This is something I am working
 - Removed the `disableAWS` option for lights
   - *This option was implemented when AWS was introduced as a way to disable it for lights that didn't work with it, but now that it's been tested on more lights, it's no longer needed*
 
-## 5.2.0 (2022-06-13)
+## v5.2.0 (2022-06-13)
 
 ### Added
 
 - **New Devices** via Govee Developer API v1.8
   - H601A, H6046, H6047, H604C, H6057, H605C, H6065, H610B, H61A3, H61E1, H7055, H705A, H705B, H7065
 
-## 5.1.0 (2022-06-08)
+## v5.1.0 (2022-06-08)
 
 ### Added
 
@@ -819,14 +826,14 @@ Unfortunately this update will break your kettle. This is something I am working
 - A potential issue showing errors in the logs
 - AWS improvements for H618E
 
-## 5.0.1 (2022-05-28)
+## v5.0.1 (2022-05-28)
 
 ### Changed
 
 - Try BLE-only device connection for 8 seconds and 4 seconds for API/AWS models
 - More fixes and refactoring
 
-## 5.0.0 (2022-05-28)
+## v5.0.0 (2022-05-28)
 
 ### Potentially Breaking Changes
 
@@ -840,26 +847,26 @@ Unfortunately this update will break your kettle. This is something I am working
 - Changed to ESM package
 - Bump `node` recommended versions to v14.19.3 or v16.15.0
 
-## 4.30.3 (2022-04-10)
+## v4.30.3 (2022-04-10)
 
 ### Fixed
 
 - An issue updating colour for certain RGB models
 
-## 4.30.2 (2022-04-03)
+## v4.30.2 (2022-04-03)
 
 ### Changed
 
 - Updated dependencies
 
-## 4.30.1 (2022-04-01)
+## v4.30.1 (2022-04-01)
 
 ### Changed
 
 - Bump `aws-iot-device-sdk` to v2.2.12
 - Improve AWS support for H6008, H604A, H6056 and H6073
 
-## 4.30.0 (2022-03-20)
+## v4.30.0 (2022-03-20)
 
 ### Added
 
@@ -872,7 +879,7 @@ Unfortunately this update will break your kettle. This is something I am working
 - Bump `axios` to v0.26.1
 - Bump `node` recommended versions to v14.19.1 or v16.14.2
 
-## 4.29.0 (2022-02-27)
+## v4.29.0 (2022-02-27)
 
 ### Added
 
@@ -889,7 +896,7 @@ Unfortunately this update will break your kettle. This is something I am working
 - Improved AWS support for H610A, H6144, H6159, H6172, H61A0, H619C and H619E
 - Improved AWS support for H6052 thanks @DuckMasterAl
 
-## 4.28.0 (2022-02-02)
+## v4.28.0 (2022-02-02)
 
 ### Added
 
@@ -906,18 +913,18 @@ Unfortunately this update will break your kettle. This is something I am working
 - Brightness fix for H6050
 - Improved AWS support for H6072 and H6141
 
-## 4.27.0 (2022-01-15)
+## v4.27.0 (2022-01-15)
 
 ### Added
 
 - Added H6178 and H617A to bluetooth only light strips
 - Added lock control and display light control to Govee Purifiers
 
-## Fixed
+## vFixed
 
 - Improved AWS support for H6058 and H605B
 
-## 4.26.0 (2022-01-13)
+## v4.26.0 (2022-01-13)
 
 ### Added
 
@@ -934,7 +941,7 @@ Unfortunately this update will break your kettle. This is something I am working
 - Improved AWS support for H6141
 - Incorrectly marking AWS-only devices as command failed when it was in fact sent
 
-## 4.25.0 (2022-01-09)
+## v4.25.0 (2022-01-09)
 
 ### Added
 
@@ -946,7 +953,7 @@ Unfortunately this update will break your kettle. This is something I am working
 - Properly throw an error if bluetooth fails and is the only connection method
 - Missing RGB data for selecting 5600K colour temperature
 
-## 4.24.0 (2022-01-08)
+## v4.24.0 (2022-01-08)
 
 ### Added
 
@@ -956,20 +963,20 @@ Unfortunately this update will break your kettle. This is something I am working
 
 - Improved AWS support for H6062
 
-## 4.23.2 (2022-01-07)
+## v4.23.2 (2022-01-07)
 
 ### Fixed
 
 - Improved AWS support for H6003, H6054, H6199
 - Plugin crash for older versions of Homebridge
 
-## 4.23.1 (2021-01-05)
+## v4.23.1 (2021-01-05)
 
 ### Fixed
 
 - Improved AWS support for H619A
 
-## 4.23.0 (2022-01-03)
+## v4.23.0 (2022-01-03)
 
 ### Added
 
@@ -980,7 +987,7 @@ Unfortunately this update will break your kettle. This is something I am working
 
 - Colour and colour temperature fixes for the H6086
 
-## 4.22.0 (2021-12-31)
+## v4.22.0 (2021-12-31)
 
 See ⚠️ for potentially-breaking changes.
 
@@ -1003,7 +1010,7 @@ See ⚠️ for potentially-breaking changes.
 - ⚠️ Remove support for bluetooth-only thermo-hygrometer devices
   - The plugin will log a recommendation to use `homebridge-plugin-govee`
 
-## 4.21.0 (2021-12-30)
+## v4.21.0 (2021-12-30)
 
 ### Added
 
@@ -1017,19 +1024,19 @@ See ⚠️ for potentially-breaking changes.
 - Improved support for colour temperature for devices that support `colorwc` AWS command
 - Plugin will log HAPNodeJS version on startup
 
-## 4.20.3 (2021-12-29)
+## v4.20.3 (2021-12-29)
 
 ### Fixed
 
 - Use `colorwc` AWS command for H6059 and H6143 for colour
 
-## 4.20.2 (2021-12-26)
+## v4.20.2 (2021-12-26)
 
 ### Fixed
 
 - Hide error stack info for more known warnings on plugin startup
 
-## 4.20.1 (2021-12-24)
+## v4.20.1 (2021-12-24)
 
 ### Fixed
 
@@ -1037,7 +1044,7 @@ See ⚠️ for potentially-breaking changes.
 - A `Disabling HTTP client as server is busy` message
 - AWS brightness fix for H6059
 
-## 4.20.0 (2021-12-21)
+## v4.20.0 (2021-12-21)
 
 ### Added
 
@@ -1053,7 +1060,7 @@ See ⚠️ for potentially-breaking changes.
 - Some config options rearranged for easier access
 - Only use the (promise) queue for API updates, ie, don't use the queue for AWS and BLE updates
 
-## 4.19.0 (2021-12-08)
+## v4.19.0 (2021-12-08)
 
 ### Added
 
@@ -1076,7 +1083,7 @@ See ⚠️ for potentially-breaking changes.
 - Avoid repeated logging for state changes of certain accessories
 - Properly remove ignored accessories from the Homebridge cache
 
-## 4.18.0 (2021-11-18)
+## v4.18.0 (2021-11-18)
 
 ### Added
 
@@ -1091,7 +1098,7 @@ See ⚠️ for potentially-breaking changes.
 - AWS brightness fix for H6003, H6008 and H6062
 - AWS colour fix for H6003
 
-## 4.17.0 (2021-11-03)
+## v4.17.0 (2021-11-03)
 
 ### Added
 
@@ -1106,7 +1113,7 @@ See ⚠️ for potentially-breaking changes.
 - Configuration text label from `username` to `email` for clarification
 - Revert back from `@homebridge/noble` to `@abandonware/noble`
 
-## 4.16.0 (2021-10-31)
+## v4.16.0 (2021-10-31)
 
 ### Added
 
@@ -1122,7 +1129,7 @@ See ⚠️ for potentially-breaking changes.
 - Bump `node` recommended versions to v14.18.1 or v16.13.0
 - Bump `axios` to v0.24.0
 
-## 4.15.0 (2021-10-20)
+## v4.15.0 (2021-10-20)
 
 ### Added
 
@@ -1133,7 +1140,7 @@ See ⚠️ for potentially-breaking changes.
 
 - Some small changes to Fakegato debug logging
 
-## 4.14.0 (2021-10-16)
+## v4.14.0 (2021-10-16)
 
 ### Added
 
@@ -1151,13 +1158,13 @@ See ⚠️ for potentially-breaking changes.
 
 - H6072 brightness and colour commands don't work with AWS
 
-## 4.13.1 (2021-10-03)
+## v4.13.1 (2021-10-03)
 
 ### Changed
 
 - Updated bluetooth dependencies
 
-## 4.13.0 (2021-10-03)
+## v4.13.0 (2021-10-03)
 
 ### Added
 
@@ -1168,32 +1175,32 @@ See ⚠️ for potentially-breaking changes.
 
 - Bump `axios` to v0.22.0
 
-## 4.12.3 (2021-09-30)
+## v4.12.3 (2021-09-30)
 
 ### Changed
 
 - Recommended node versions bumped to v14.18.0 or v16.10.0
 
-## 4.12.2 (2021-09-25)
+## v4.12.2 (2021-09-25)
 
 ### Fixed
 
 - 'Segmented' scenes not being added correctly
 
-## 4.12.1 (2021-09-25)
+## v4.12.1 (2021-09-25)
 
 ### Changed
 
 - Use `@homebridge/noble` repo to fix noble `EALREADY` crash
 
-## 4.12.0 (2021-09-21)
+## v4.12.0 (2021-09-21)
 
 ### Added
 
 - Added four more custom scene options called 'Segmented' for segmented light scenes
 - Added the option to use an AWS code using the `bulb` AWS command property
 
-## 4.11.0 (2021-09-14)
+## v4.11.0 (2021-09-14)
 
 ### Added
 
@@ -1206,7 +1213,7 @@ See ⚠️ for potentially-breaking changes.
 - Don't throw error when **only** AWS update is used
 - Disable colour commands via AWS/BLE for `H6199` as seems not supported
 
-## 4.10.0 (2021-09-09)
+## v4.10.0 (2021-09-09)
 
 ### Added
 
@@ -1218,7 +1225,7 @@ See ⚠️ for potentially-breaking changes.
 - `configureAccessory` function simplified to reduce chance of accessory cache retrieval failing
 - Bump `axios` to v0.21.4
 
-## 4.9.0 (2021-09-05)
+## v4.9.0 (2021-09-05)
 
 ### Added
 
@@ -1230,7 +1237,7 @@ See ⚠️ for potentially-breaking changes.
 - Recommended node version bumped to v14.17.6
 - Bump `axios` to v0.21.3
 
-## 4.8.0 (2021-08-30)
+## v4.8.0 (2021-08-30)
 
 ### Added
 
@@ -1241,21 +1248,21 @@ See ⚠️ for potentially-breaking changes.
 - Remove `node-machine-id` in favour of generating a client id based on Govee username
 - AWS client id is now unique per device
 
-## 4.7.0 (2021-08-26)
+## v4.7.0 (2021-08-26)
 
 ### Added
 
 - **New Devices**
   - Added `H6102` to bluetooth-only supported list
 
-## 4.6.0 (2021-08-22)
+## v4.6.0 (2021-08-22)
 
 ### Added
 
 - **New Devices**
   - Added `H6179` to bluetooth-only supported list
 
-## 4.5.0 (2021-08-16)
+## v4.5.0 (2021-08-16)
 
 ### Added
 
@@ -1277,13 +1284,13 @@ See ⚠️ for potentially-breaking changes.
 - Attempt to fix a situation when `node-machine-id` fails to obtain the machine uuid
 - Attempt to fix a situation when the plugin would crash Homebridge in a loop if running on a non-macOS platform with no bluetooth module
 
-## 4.4.1 (2021-08-10)
+## v4.4.1 (2021-08-10)
 
 ### Fixed
 
 - Removed H6144 from 'scale brightness' list, fixes [#99](https://github.com/bwp91/homebridge-govee/issues/99)
 
-## 4.4.0 (2021-08-09)
+## v4.4.0 (2021-08-09)
 
 ### Added
 
@@ -1291,7 +1298,7 @@ See ⚠️ for potentially-breaking changes.
   - Added `H5051` to temp/humidity sensor supported list
   - Added new API models: `H7050` `H6051` `H6056` `H6061` `H6058` `H6073` `H6076` `H619A` `H619C` `H618A` `H618C` `H6008` `H6071` `H6075` `H614A` `H614B` `H614E` `H618E` `H619E`
 
-## 4.3.0 (2021-08-05)
+## v4.3.0 (2021-08-05)
 
 ### Added
 
@@ -1308,7 +1315,7 @@ See ⚠️ for potentially-breaking changes.
 
 - Fixes an issue preventing outlet devices from initialising
 
-## 4.2.0 (2021-08-04)
+## v4.2.0 (2021-08-04)
 
 ### Added
 
@@ -1319,7 +1326,7 @@ See ⚠️ for potentially-breaking changes.
 
 - Fixes an issue where AWS was not being enabled for non-configured light strips
 
-## 4.1.0 (2021-08-04)
+## v4.1.0 (2021-08-04)
 
 ### Added
 
@@ -1334,7 +1341,7 @@ See ⚠️ for potentially-breaking changes.
   - Certain common errors made easier to read
   - Stringify new device objects so they appear in HOOBS log
 
-## 4.0.2 (2021-07-30)
+## v4.0.2 (2021-07-30)
 
 ### Changed
 
@@ -1344,13 +1351,13 @@ See ⚠️ for potentially-breaking changes.
 
 - Adaptive Lighting will now be turned off when using the Govee app to use a scene for these certain models
 
-## 4.0.1 (2021-07-29)
+## v4.0.1 (2021-07-29)
 
 ### Fixed
 
 - An issue where custom scenes weren't visible in Eve app
 
-## 4.0.0 (2021-07-29)
+## v4.0.0 (2021-07-29)
 
 ### Added
 
@@ -1382,14 +1389,14 @@ See ⚠️ for potentially-breaking changes.
 - 'Experimental' labels have been removed from AWS control, BLE control and scene mode settings
   - Whilst maybe not perfect(!), a lot of users have had success with both connection methods
 
-## 3.8.0 (2021-07-27)
+## v3.8.0 (2021-07-27)
 
 ### Added
 
 - `H6053` and `H6141` light models to bluetooth-only supported list
 - Optionally use a base64 encoded version of your Govee password in the configuration
 
-## 3.7.0 (2021-07-22)
+## v3.7.0 (2021-07-22)
 
 ### Added
 
@@ -1407,7 +1414,7 @@ See ⚠️ for potentially-breaking changes.
   - Plugin now uses a fix list of kelvin to RGB calculations (not a formula) which are the values that Govee uses
   - Reduced 'ignore timeout' from 2 minutes to 1 minute as Govee API reaction times seem to have improved
 
-## 3.6.0 (2021-07-20)
+## v3.6.0 (2021-07-20)
 
 ### Added
 
@@ -1433,7 +1440,7 @@ See ⚠️ for potentially-breaking changes.
 - A number of bugs/problems concerning the bluetooth packages and connection
 - An issue preventing Govee Outlets from initialising into Homebridge
 
-## 3.5.1 (2021-07-14)
+## v3.5.1 (2021-07-14)
 
 ### Changed
 
@@ -1444,7 +1451,7 @@ See ⚠️ for potentially-breaking changes.
 - A bug preventing accessories being added to Homebridge
 - A characteristic warning when an out of range brightness is received from Govee
 
-## 3.5.0 (2021-07-14)
+## v3.5.0 (2021-07-14)
 
 ### Added
 
@@ -1459,17 +1466,17 @@ See ⚠️ for potentially-breaking changes.
 
 - An issue where bluetooth control wasn't adhering to the configuration
 
-## 3.4.4 (2021-07-13)
+## v3.4.4 (2021-07-13)
 
-## 3.4.3 (2021-07-13)
+## v3.4.3 (2021-07-13)
 
-## 3.4.2 (2021-07-13)
+## v3.4.2 (2021-07-13)
 
 ### Changed
 
 - Continued refactoring and testing of bluetooth implementation
 
-## 3.4.1 (2021-07-12)
+## v3.4.1 (2021-07-12)
 
 ### Changed
 
@@ -1480,7 +1487,7 @@ See ⚠️ for potentially-breaking changes.
 
 - An issue where brightness would be repeatedly logged if the received value is more than `100`
 
-## 3.4.0 (2021-07-12)
+## v3.4.0 (2021-07-12)
 
 ### Added
 
@@ -1499,19 +1506,19 @@ See ⚠️ for potentially-breaking changes.
 
 - `ignoredDevices` configuration option (see alternate way of ignore a device above)
 
-## 3.3.2 (2021-07-08)
+## v3.3.2 (2021-07-08)
 
 ### Changes
 
 - Revert node version bump to v14.17.3 (back to v14.17.2)
 
-## 3.3.1 (2021-07-07)
+## v3.3.1 (2021-07-07)
 
-## Fixed
+## vFixed
 
 - Brightness issue for H6054
 
-## 3.3.0 (2021-07-06)
+## v3.3.0 (2021-07-06)
 
 ### Added
 
@@ -1538,7 +1545,7 @@ See ⚠️ for potentially-breaking changes.
 
 - `overrideDisabledLogging` setting for each accessory type
 
-## 3.2.4 (2021-06-06)
+## v3.2.4 (2021-06-06)
 
 ### Changed
 
@@ -1546,7 +1553,7 @@ See ⚠️ for potentially-breaking changes.
 - Use `standard-prettier` code formatting
 - Recommended node version bump to v14.17.0
 
-## 3.2.3 (2021-05-10)
+## v3.2.3 (2021-05-10)
 
 ### Changed
 
@@ -1554,19 +1561,19 @@ See ⚠️ for potentially-breaking changes.
 - Skip Adaptive Lighting update if kelvin value is same as previous update
 - Show light as off if brightness set to 0%
 
-## 3.2.2 (2021-05-10)
+## v3.2.2 (2021-05-10)
 
 ### Removed
 
 - Removed `language` config option
 
-## 3.2.1 (2021-05-10)
+## v3.2.1 (2021-05-10)
 
 ### Removed
 
 - Removed `forceUpdates` config option - this is now hard-coded to `true`
 
-## 3.2.0 (2021-05-10)
+## v3.2.0 (2021-05-10)
 
 ### Added
 
@@ -1590,7 +1597,7 @@ See ⚠️ for potentially-breaking changes.
 - Brightness fix for H6052
 - Update the correct corresponding characteristic after the 'No Response' timeout
 
-## 3.1.4 (2021-05-04)
+## v3.1.4 (2021-05-04)
 
 ### Changed
 
@@ -1601,7 +1608,7 @@ See ⚠️ for potentially-breaking changes.
 
 - Removal of device 'retrievable' and 'controllable' status as they seem to serve no purpose
 
-## 3.1.3 (2021-04-24)
+## v3.1.3 (2021-04-24)
 
 ### Changed
 
@@ -1613,7 +1620,7 @@ See ⚠️ for potentially-breaking changes.
 
 - Fixes a brightness issue with the H6143 model
 
-## 3.1.2 (2021-04-16)
+## v3.1.2 (2021-04-16)
 
 ### Changed
 
@@ -1624,13 +1631,13 @@ See ⚠️ for potentially-breaking changes.
 
 - Fix characteristic NaN warning for `LastActivation`
 
-## 3.1.1 (2021-04-12)
+## v3.1.1 (2021-04-12)
 
 ### Changed
 
 - Updated plugin-ui 'Support' page links to match GitHub readme file
 
-## 3.1.0 (2021-04-07)
+## v3.1.0 (2021-04-07)
 
 ### Added
 
@@ -1645,7 +1652,7 @@ See ⚠️ for potentially-breaking changes.
 
 - Removed development code for scene support
 
-## 3.0.0 (2021-04-03)
+## v3.0.0 (2021-04-03)
 
 ### Requirements
 
@@ -1661,19 +1668,19 @@ See ⚠️ for potentially-breaking changes.
 - Use the new `.onSet` methods available in Homebridge v1.3
 - Plugin will report 'offline' devices with a 'No Response' message in HomeKit apps when controlled (and this status will be reverted after 5 seconds)
 
-## 2.14.2 (2021-03-22)
+## v2.14.2 (2021-03-22)
 
 ### Changed
 
 - Updated plugin ui to use reported `online` status for the 'Cloud Status' instead of the reported `controllable` status
 
-## 2.14.1 (2021-03-21)
+## v2.14.1 (2021-03-21)
 
 ### Fixed
 
 - Fixes an issue with online/offline status as certain devices seem to report status as a boolean (not as a string)
 
-## 2.14.0 (2021-03-21)
+## v2.14.0 (2021-03-21)
 
 ### Added
 
@@ -1685,19 +1692,19 @@ See ⚠️ for potentially-breaking changes.
 - More welcome messages
 - Updated `plugin-ui-utils` dependency
 
-## 2.13.2 (2021-03-17)
+## v2.13.2 (2021-03-17)
 
 ### Changed
 
 - Modified config schema to show titles/descriptions for non Homebridge UI users
 
-## 2.13.1 (2021-03-14)
+## v2.13.1 (2021-03-14)
 
 ### Changed
 
 - Adaptive Lighting now requires Homebridge 1.3 release
 
-## 2.13.0 (2021-03-01)
+## v2.13.0 (2021-03-01)
 
 ### Added
 
@@ -1716,19 +1723,19 @@ See ⚠️ for potentially-breaking changes.
 - 502 and timeout errors will be hidden from the log if one has already been received during the previous minute
 - Updated minimum Node to v14.16.0
 
-## 2.12.2 (2021-02-17)
+## v2.12.2 (2021-02-17)
 
 ### Changed
 
 - In debug mode, the plugin will log each device's customised options when initialised
 
-## 2.12.1 (2021-02-17)
+## v2.12.1 (2021-02-17)
 
 ### Changed
 
 - Raised minimum Homebridge beta required for Adaptive Lighting to 1.3.0-beta.58
 
-## 2.12.0 (2021-02-13)
+## v2.12.0 (2021-02-13)
 
 ### Added
 
@@ -1743,7 +1750,7 @@ See ⚠️ for potentially-breaking changes.
   - Lighter colours appear brighter
   - Solid red is now easier to obtain via the Home app
 
-## 2.11.2 (2021-02-11)
+## v2.11.2 (2021-02-11)
 
 ### Changed
 
@@ -1756,7 +1763,7 @@ See ⚠️ for potentially-breaking changes.
 
 - Removed concurrency limit from http queue as throttling is based on the interval and cap
 
-## 2.11.1 (2021-02-10)
+## v2.11.1 (2021-02-10)
 
 ### Changed
 
@@ -1766,7 +1773,7 @@ See ⚠️ for potentially-breaking changes.
 
 - Fixes an issue when initialising switch devices
 
-## 2.11.0 (2021-02-09)
+## v2.11.0 (2021-02-09)
 
 ### Added
 
@@ -1782,7 +1789,7 @@ See ⚠️ for potentially-breaking changes.
 
 - Fixed a bug when trying to select a different device in the Homebridge plugin-ui
 
-## 2.10.1 (2021-02-08)
+## v2.10.1 (2021-02-08)
 
 ### Changed
 
@@ -1793,7 +1800,7 @@ See ⚠️ for potentially-breaking changes.
 - Fixed a bug where Adaptive Lighting would not be disabled if the colour was changed from the Govee app
 - Hide the `Config entry [plugin_map] is unused and can be removed` notice for HOOBS users
 
-## 2.10.0 (2021-02-08)
+## v2.10.0 (2021-02-08)
 
 ### Added
 
@@ -1810,7 +1817,7 @@ See ⚠️ for potentially-breaking changes.
 
 - Brightness fix for the H6003
 
-## 2.9.0 (2021-02-06)
+## v2.9.0 (2021-02-06)
 
 ### Added
 
@@ -1830,7 +1837,7 @@ See ⚠️ for potentially-breaking changes.
 - [Backend] Major code refactoring
 - [Backend] Code comments
 
-## 2.8.4 (2021-01-29)
+## v2.8.4 (2021-01-29)
 
 ### Changed
 
@@ -1842,19 +1849,19 @@ See ⚠️ for potentially-breaking changes.
 
 - H6109 brightness fix
 
-## 2.8.3 (2021-01-24)
+## v2.8.3 (2021-01-24)
 
 ### Fixed
 
 - H6195 brightness fix
 
-## 2.8.2 (2021-01-24)
+## v2.8.2 (2021-01-24)
 
 ### Changed
 
 - Backend - better handling of errors
 
-## 2.8.1 (2021-01-21)
+## v2.8.1 (2021-01-21)
 
 ### Changed
 
@@ -1878,7 +1885,7 @@ See ⚠️ for potentially-breaking changes.
 - Expose H5001, H5081 and H7014 as switches (not lightbulbs)
 - Ensures brightness value is in [0, 100]
 
-## 2.7.1 (2021-01-13)
+## v2.7.1 (2021-01-13)
 
 ### Changed
 
@@ -1888,7 +1895,7 @@ See ⚠️ for potentially-breaking changes.
 
 - Brightness fix for H6188
 
-## 2.7.0 (2021-01-12)
+## v2.7.0 (2021-01-12)
 
 ### New
 
