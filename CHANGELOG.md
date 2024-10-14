@@ -8,6 +8,12 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/). In pr
 - `MINOR` version when a new device type is added, or when a new feature is added that is backwards-compatible
 - `PATCH` version when backwards-compatible bug fixes are implemented
 
+## v10.11.0 (2024-10-14)
+
+### Added
+
+- Lights: `H6811` `H801B`
+
 ## v10.10.0 (2024-10-13)
 
 ### Added
