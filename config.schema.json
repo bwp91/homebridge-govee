@@ -1087,7 +1087,7 @@
               "type": "string",
               "description": "Enter the 23/26 digit Govee Device ID to begin (e.g. 12:AB:A1:C5:A8:99:D2:17).",
               "minLength": 23,
-              "maxLength": 23
+              "maxLength": 26
             },
             "ignoreDevice": {
               "type": "boolean",
