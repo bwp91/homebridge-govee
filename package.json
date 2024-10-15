@@ -27,7 +27,7 @@
       "url": "https://www.paypal.me/BenPotter"
     }
   ],
-  "homepage": "https://github.com/bwp91/homebridge-meross",
+  "homepage": "https://github.com/bwp91/homebridge-govee",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bwp91/homebridge-govee.git"
